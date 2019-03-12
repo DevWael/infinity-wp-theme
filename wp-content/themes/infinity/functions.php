@@ -1,11 +1,11 @@
 <?php
-$window_mag_theme = wp_get_theme();
-define( 'WINDOW_MAG_NAME', $window_mag_theme->name );
-define( 'WINDOW_MAG_DIR', get_template_directory() );
-define( 'WINDOW_MAG_URI', get_template_directory_uri() );
-define( 'WINDOW_MAG_CSS_URI', WINDOW_MAG_URI . '/assets/css/' );
-define( 'WINDOW_MAG_JS_URI', WINDOW_MAG_URI . '/assets/js/' );
-define( 'WINDOW_MAG_IMAGES_DIR', WINDOW_MAG_URI . '/assets/images/' );
-define( 'WINDOW_MAG_CORE', WINDOW_MAG_DIR . '/core/' );
-define( 'WINDOW_MAG_CORE_URI', WINDOW_MAG_URI . '/core/' );
-require_once WINDOW_MAG_CORE . 'init.php'; //Theme Core functions
+$dw_theme = wp_get_theme();
+define( 'DW_NAME', $dw_theme->name );
+define( 'DW_DIR', get_template_directory() );
+define( 'DW_URI', get_template_directory_uri() );
+define( 'DW_CSS_URI', DW_URI . '/assets/css/' );
+define( 'DW_JS_URI', DW_URI . '/assets/js/' );
+define( 'DW_IMAGES_DIR', DW_URI . '/assets/images/' );
+define( 'DW_CORE', DW_DIR . '/core/' );
+define( 'DW_CORE_URI', DW_URI . '/core/' );
+require_once DW_CORE . 'init.php'; //Theme Core functions

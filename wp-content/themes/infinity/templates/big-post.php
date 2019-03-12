@@ -13,10 +13,10 @@
 		<?php get_template_part( 'content', 'meta' ); ?>
 	</div>
 	<div class="post-text">
-		<p><?php window_mag_excerpt(); ?></p>
+		<p><?php dw_excerpt(); ?></p>
 		<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"
 		   class="read-more-button">
-			<?php esc_html_e( 'Read More...', 'window-mag' ); ?>
+			<?php esc_html_e( 'Read More...', 'dw' ); ?>
 		</a>
 	</div>
 </div>

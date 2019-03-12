@@ -3,7 +3,7 @@
 /**
  * Adds Social media icons widget.
  */
-class window_mag_soundcloud_box extends WP_Widget {
+class dw_soundcloud_box extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
@@ -11,8 +11,8 @@ class window_mag_soundcloud_box extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'window_soundcloud_box', // Base ID
-			WINDOW_MAG_NAME . esc_html__( ' Sound cloud track', 'window-mag' ), // Name
-			array( 'description' => esc_html__( 'add a sound cloud track', 'window-mag' ), ) // Args
+			DW_NAME . esc_html__( ' Sound cloud track', 'dw' ), // Name
+			array( 'description' => esc_html__( 'add a sound cloud track', 'dw' ), ) // Args
 		);
 	}
 
@@ -26,7 +26,7 @@ class window_mag_soundcloud_box extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 		$player_color  = '';
-		$player_color  = str_replace( '#', '', sanitize_hex_color( window_mag_get_setting( 'accent_color' ) ) );
+		$player_color  = str_replace( '#', '', sanitize_hex_color( dw_get_setting( 'accent_color' ) ) );
 		echo $args['before_widget'];
 		if ( ! empty( $instance['title'] ) ) {
 			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
@@ -44,7 +44,7 @@ class window_mag_soundcloud_box extends WP_Widget {
 			        src="<?php echo esc_attr( $protocol ) ?>://w.soundcloud.com/player/?url=<?php echo esc_url( $track_url ) ?>&amp;auto_play=<?php echo esc_attr( $autoplay ); ?>&amp;color=<?php echo esc_attr( $player_color ); ?>&amp;hide_related=false&amp;show_comments=true"></iframe>
 			<?php
 		else:
-			esc_html_e( 'You must provide a sound cloud track url', 'window-mag' );
+			esc_html_e( 'You must provide a sound cloud track url', 'dw' );
 		endif;
 		echo $args['after_widget'];
 	}
@@ -63,13 +63,13 @@ class window_mag_soundcloud_box extends WP_Widget {
 		?>
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'window-mag' ); ?></label>
+				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'dw' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
 			       name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
 			       value="<?php echo esc_attr( $title ); ?>">
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'track_url' ); ?>"><?php esc_html_e( 'Track url:', 'window-mag' );
+			<label for="<?php echo $this->get_field_id( 'track_url' ); ?>"><?php esc_html_e( 'Track url:', 'dw' );
 				?></label>
 			<input id="<?php echo $this->get_field_id( 'track_url' ); ?>"
 			       name="<?php echo $this->get_field_name( 'track_url' ); ?>" type="text" class="widefat"
@@ -77,7 +77,7 @@ class window_mag_soundcloud_box extends WP_Widget {
 		</p>
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'autoplay' ); ?>"><?php esc_html_e( 'Autoplay :', 'window-mag' ) ?></label>
+				for="<?php echo $this->get_field_id( 'autoplay' ); ?>"><?php esc_html_e( 'Autoplay :', 'dw' ) ?></label>
 			<input id="<?php echo $this->get_field_id( 'autoplay' ); ?>"
 			       name="<?php echo $this->get_field_name( 'autoplay' ); ?>"
 			       value="true" <?php if ( ! empty( $instance['autoplay'] ) ) { ?>

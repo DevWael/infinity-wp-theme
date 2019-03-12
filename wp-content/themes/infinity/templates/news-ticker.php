@@ -6,13 +6,13 @@
 global $post;
 $old_post        = $post;
 $cat_ids         = $tags_ids = $author_id = $top_posts_count = $visible_class = $ticker_title = '';
-$query_type      = window_mag_get_setting( 'news_ticker_switch/on/top_posts_query/type' );
-$ticker_title    = window_mag_get_setting( 'news_ticker_switch/on/ticker_title' );
-$show_mobile     = window_mag_get_setting( 'news_ticker_switch/on/visible_mobile' );
-$top_posts_count = window_mag_get_setting( 'news_ticker_switch/on/posts_count' );
-$cat_ids         = window_mag_get_setting( 'news_ticker_switch/on/top_posts_query/category/cat_select' );
-$tags_ids        = window_mag_get_setting( 'news_ticker_switch/on/top_posts_query/tag/tag_select' );
-$author_id       = window_mag_get_setting( 'news_ticker_switch/on/top_posts_query/author/author_select' );
+$query_type      = dw_get_setting( 'news_ticker_switch/on/top_posts_query/type' );
+$ticker_title    = dw_get_setting( 'news_ticker_switch/on/ticker_title' );
+$show_mobile     = dw_get_setting( 'news_ticker_switch/on/visible_mobile' );
+$top_posts_count = dw_get_setting( 'news_ticker_switch/on/posts_count' );
+$cat_ids         = dw_get_setting( 'news_ticker_switch/on/top_posts_query/category/cat_select' );
+$tags_ids        = dw_get_setting( 'news_ticker_switch/on/top_posts_query/tag/tag_select' );
+$author_id       = dw_get_setting( 'news_ticker_switch/on/top_posts_query/author/author_select' );
 if ( 'off' === $show_mobile ) {
 	$visible_class = ' hidden-xs';
 }

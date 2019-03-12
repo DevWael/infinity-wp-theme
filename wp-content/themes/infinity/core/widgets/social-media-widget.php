@@ -3,7 +3,7 @@
 /**
  * Adds Social media icons widget.
  */
-class window_mag_social_media extends WP_Widget {
+class dw_social_media extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
@@ -11,8 +11,8 @@ class window_mag_social_media extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'bbioon_social_media', // Base ID
-			WINDOW_MAG_NAME . esc_html__( ' Social media icons', 'window-mag' ), // Name
-			array( 'description' => esc_html__( 'add social media urls to your sidebar', 'window-mag' ), ) // Args
+			DW_NAME . esc_html__( ' Social media icons', 'dw' ), // Name
+			array( 'description' => esc_html__( 'add social media urls to your sidebar', 'dw' ), ) // Args
 		);
 	}
 
@@ -31,9 +31,9 @@ class window_mag_social_media extends WP_Widget {
 				echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 			}
 
-			if ( window_mag_social_media_urls() ) { ?>
+			if ( dw_social_media_urls() ) { ?>
 				<div class="social_widget_container">
-					<?php window_mag_social_media_urls( true ); ?>
+					<?php dw_social_media_urls( true ); ?>
 				</div>
 				<?php
 			}
@@ -53,25 +53,25 @@ class window_mag_social_media extends WP_Widget {
 		?>
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'window-mag' ); ?></label>
+				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'dw' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
 			       name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
-			       placeholder="<?php esc_attr_e( 'Follow us', 'window-mag' ) ?>"
+			       placeholder="<?php esc_attr_e( 'Follow us', 'dw' ) ?>"
 			       value="<?php echo esc_attr( $title ); ?>">
 		</p>
 		<?php if ( function_exists( 'fw_get_db_settings_option' ) ): ?>
 			<p>
-				<?php esc_html_e( 'There is no options here any more... just go to theme options page and add social media urls to activate them', 'window-mag' ); ?>
+				<?php esc_html_e( 'There is no options here any more... just go to theme options page and add social media urls to activate them', 'dw' ); ?>
 			</p>
-			<?php if ( window_mag_social_media_urls() ): ?>
+			<?php if ( dw_social_media_urls() ): ?>
 				<hr>
 				<p>
-					<?php esc_html_e( 'Active social media icons:', 'window-mag' ); ?>
+					<?php esc_html_e( 'Active social media icons:', 'dw' ); ?>
 				</p>
-				<p class="window-icons"><?php window_mag_social_media_urls( true ); ?></p>
+				<p class="window-icons"><?php dw_social_media_urls( true ); ?></p>
 			<?php endif; ?>
 		<?php else: ?>
-			<p style="color: red"><?php esc_html_e( 'You must install unyson framework plugin to get the social media urls working properly', 'window-mag' ); ?></p>
+			<p style="color: red"><?php esc_html_e( 'You must install unyson framework plugin to get the social media urls working properly', 'dw' ); ?></p>
 		<?php endif; ?>
 		<?php
 	}

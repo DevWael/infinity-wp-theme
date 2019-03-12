@@ -3,15 +3,15 @@
 /**
  * Adds Social media icons widget.
  */
-class window_mag_instagram_photos extends WP_Widget {
+class dw_instagram_photos extends WP_Widget {
 	/**
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
 		parent::__construct(
-			'window_mag_instagram_photos', // Base ID
-			WINDOW_MAG_NAME . esc_html__( ' Instagram Photos', 'window-mag' ), // Name
-			array( 'description' => esc_html__( 'add instagram photos to your sidebar', 'window-mag' ), ) // Args
+			'dw_instagram_photos', // Base ID
+			DW_NAME . esc_html__( ' Instagram Photos', 'dw' ), // Name
+			array( 'description' => esc_html__( 'add instagram photos to your sidebar', 'dw' ), ) // Args
 		);
 	}
 
@@ -52,28 +52,28 @@ class window_mag_instagram_photos extends WP_Widget {
 		?>
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'window-mag' ); ?></label>
+				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'dw' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
 			       name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
-			       placeholder="<?php esc_attr_e( 'Instagram', 'window-mag' ) ?>"
+			       placeholder="<?php esc_attr_e( 'Instagram', 'dw' ) ?>"
 			       value="<?php echo esc_attr( $title ); ?>">
 		</p>
 
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'username' ); ?>"><?php esc_html_e( 'Username:', 'window-mag' ); ?></label>
+				for="<?php echo $this->get_field_id( 'username' ); ?>"><?php esc_html_e( 'Username:', 'dw' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'username' ); ?>"
 			       name="<?php echo $this->get_field_name( 'username' ); ?>" type="text"
-			       placeholder="<?php esc_attr_e( 'instagram username', 'window-mag' ) ?>"
+			       placeholder="<?php esc_attr_e( 'instagram username', 'dw' ) ?>"
 			       value="<?php echo esc_attr( $username ); ?>">
 		</p>
 
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'limit' ); ?>"><?php esc_html_e( 'Photos count:', 'window-mag' ); ?></label>
+				for="<?php echo $this->get_field_id( 'limit' ); ?>"><?php esc_html_e( 'Photos count:', 'dw' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'limit' ); ?>"
 			       name="<?php echo $this->get_field_name( 'limit' ); ?>" type="number"
-			       placeholder="<?php esc_attr_e( '6', 'window-mag' ) ?>"
+			       placeholder="<?php esc_attr_e( '6', 'dw' ) ?>"
 			       value="<?php echo esc_attr( $limit ); ?>">
 		</p>
 

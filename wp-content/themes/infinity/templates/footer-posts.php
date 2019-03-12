@@ -6,12 +6,12 @@
 global $post;
 $old_post        = $post;
 $cat_ids         = $tags_ids = $author_id = $top_posts_count = $visible_class = '';
-$query_type      = window_mag_get_setting( 'footer_posts_switch/on/top_posts_query/type' );
-$show_mobile     = window_mag_get_setting( 'footer_posts_switch/on/visible_mobile' );
-$top_posts_count = window_mag_get_setting( 'footer_posts_switch/on/posts_count' );
-$cat_ids         = window_mag_get_setting( 'footer_posts_switch/on/top_posts_query/category/cat_select' );
-$tags_ids        = window_mag_get_setting( 'footer_posts_switch/on/top_posts_query/tag/tag_select' );
-$author_id       = window_mag_get_setting( 'footer_posts_switch/on/top_posts_query/author/author_select' );
+$query_type      = dw_get_setting( 'footer_posts_switch/on/top_posts_query/type' );
+$show_mobile     = dw_get_setting( 'footer_posts_switch/on/visible_mobile' );
+$top_posts_count = dw_get_setting( 'footer_posts_switch/on/posts_count' );
+$cat_ids         = dw_get_setting( 'footer_posts_switch/on/top_posts_query/category/cat_select' );
+$tags_ids        = dw_get_setting( 'footer_posts_switch/on/top_posts_query/tag/tag_select' );
+$author_id       = dw_get_setting( 'footer_posts_switch/on/top_posts_query/author/author_select' );
 if ( 'off' === $show_mobile ) {
 	$visible_class = ' hidden-xs';
 }
@@ -106,9 +106,9 @@ if ( $the_query->have_posts() ): ?>
 									<div class="listing-content">
 										<?php the_title( '<div class="post-title entry-header" itemprop="name headline">', '</div>' ); ?>
 										<aside class="top-post-time">
-											<?php if ( window_mag_time( true ) ): ?>
+											<?php if ( dw_post_time( true ) ): ?>
 												<span class="time">
-													<?php window_mag_time(); ?>
+													<?php dw_post_time(); ?>
 												</span>
 											<?php endif; ?>
 										</aside>

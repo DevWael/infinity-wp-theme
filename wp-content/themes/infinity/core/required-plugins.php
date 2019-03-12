@@ -30,46 +30,21 @@
  *
  */
 
-add_action( 'tgmpa_register', 'window_mag_register_required_plugins' );
+add_action( 'tgmpa_register', 'dw_register_required_plugins' );
 
-require WINDOW_MAG_CORE . 'class-tgm-plugin-activation.php';
+require DW_CORE . 'class-tgm-plugin-activation.php';
 
-if ( ! function_exists( 'window_mag_register_required_plugins' ) ) {
-	function window_mag_register_required_plugins() {
+if ( ! function_exists( 'dw_register_required_plugins' ) ) {
+	function dw_register_required_plugins() {
 		/**
 		 * Array of plugin arrays. Required keys are name and slug.
 		 * If the source is NOT from the .org repo, then source is also required.
 		 */
 		$plugins = array(
 			array(
-				'name'             => esc_html__( 'Unyson', 'window-mag' ),
+				'name'             => esc_html__( 'Unyson', 'dw' ),
 				'slug'             => 'unyson',
 				'required'         => true,
-				'force_activation' => false
-			),
-			array(
-				'name'             => esc_html__( 'Contact Form 7', 'window-mag' ),
-				'slug'             => 'contact-form-7',
-				'required'         => false,
-				'force_activation' => false
-			),
-			array(
-				'name'             => esc_html__( 'Font Awesome 4 Menus', 'window-mag' ),
-				'slug'             => 'font-awesome-4-menus',
-				'required'         => false,
-				'force_activation' => false
-			),
-			array(
-				'name'             => esc_html__( 'OneSignal - Free Web Push Notifications', 'window-mag' ),
-				'slug'             => 'onesignal-free-web-push-notifications',
-				'required'         => false,
-				'force_activation' => false
-			),
-			array(
-				'name'             => esc_html__( 'Envato Market', 'window-mag' ),
-				'slug'             => 'envato-market',
-				'source'           => WINDOW_MAG_CORE . 'plugins/envato-market.zip',
-				'required'         => false,
 				'force_activation' => false
 			)
 		);

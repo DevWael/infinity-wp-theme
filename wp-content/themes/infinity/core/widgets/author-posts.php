@@ -1,14 +1,14 @@
 <?php
 
-class window_mag_author_posts extends WP_Widget {
+class dw_author_posts extends WP_Widget {
 	/**
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
 		parent::__construct(
 			'window_author_posts', // Base ID
-			WINDOW_MAG_NAME . esc_html__( ' Author posts', 'window-mag' ), // Name
-			array( 'description' => esc_html__( 'add posts from specified author', 'window-mag' ), ) // Args
+			DW_NAME . esc_html__( ' Author posts', 'dw' ), // Name
+			array( 'description' => esc_html__( 'add posts from specified author', 'dw' ), ) // Args
 		);
 	}
 
@@ -43,19 +43,19 @@ class window_mag_author_posts extends WP_Widget {
 		);
 		switch ( $instance['style'] ) {
 			case 'slider':
-				window_mag_widget_slider_loop( $query_args );
+				dw_widget_slider_loop( $query_args );
 				break;
 			case 'small_list' :
-				window_mag_widget_small_list_loop( $query_args );
+				dw_widget_small_list_loop( $query_args );
 				break;
 			case 'big_list' :
-				window_mag_widget_big_list_loop( $query_args );
+				dw_widget_big_list_loop( $query_args );
 				break;
 			case 'pics' :
-				window_mag_widget_pics_loop( $query_args );
+				dw_widget_pics_loop( $query_args );
 				break;
 			default :
-				window_mag_widget_small_list_loop( $query_args );
+				dw_widget_small_list_loop( $query_args );
 		}
 		echo $args['after_widget'];
 	}
@@ -68,7 +68,7 @@ class window_mag_author_posts extends WP_Widget {
 	 * @param array $instance Previously saved values from database.
 	 */
 	public function form( $instance ) {
-		$all_authors    = window_mag_users();
+		$all_authors    = dw_users();
 		$title          = ! empty( $instance['title'] ) ? $instance['title'] : '';
 		$popular_number = ! empty( $instance['posts_count'] ) ? absint( $instance['posts_count'] ) : 5;
 		$author_id      = ! empty( $instance['author_id'] ) ? $instance['author_id'] : '';
@@ -76,7 +76,7 @@ class window_mag_author_posts extends WP_Widget {
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>">
-				<?php esc_html_e( 'Title:', 'window-mag' ); ?>
+				<?php esc_html_e( 'Title:', 'dw' ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
 			       name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
@@ -84,7 +84,7 @@ class window_mag_author_posts extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'author_id' ); ?>">
-				<?php esc_html_e( 'Select author:', 'window-mag' ); ?>
+				<?php esc_html_e( 'Select author:', 'dw' ); ?>
 			</label>
 			<select name="<?php echo $this->get_field_name( 'author_id' ); ?>"
 			        id="<?php echo $this->get_field_id( 'author_id' ); ?>" class="widefat"
@@ -100,30 +100,30 @@ class window_mag_author_posts extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'style' ); ?>">
-				<?php esc_html_e( 'Select style:', 'window-mag' ); ?>
+				<?php esc_html_e( 'Select style:', 'dw' ); ?>
 			</label>
 
 			<select name="<?php echo $this->get_field_name( 'style' ); ?>"
 			        id="<?php echo $this->get_field_id( 'style' ); ?>" class="widefat"
 			        style="margin-bottom:10px">
-				<option value=""><?php esc_html_e( 'Not selected', 'window-mag' ); ?></option>
+				<option value=""><?php esc_html_e( 'Not selected', 'dw' ); ?></option>
 				<option value="slider"<?php if ( 'slider' == $style ) { ?> selected="selected"<?php } ?>>
-					<?php esc_html_e( 'Slider', 'window-mag' ); ?>
+					<?php esc_html_e( 'Slider', 'dw' ); ?>
 				</option>
 				<option value="pics"<?php if ( 'pics' == $style ) { ?> selected="selected"<?php } ?>>
-					<?php esc_html_e( 'Posts Pictures', 'window-mag' ); ?>
+					<?php esc_html_e( 'Posts Pictures', 'dw' ); ?>
 				</option>
 				<option value="small_list"<?php if ( 'small_list' == $style ) { ?> selected="selected"<?php } ?>>
-					<?php esc_html_e( 'Small list', 'window-mag' ); ?>
+					<?php esc_html_e( 'Small list', 'dw' ); ?>
 				</option>
 				<option value="big_list"<?php if ( 'big_list' == $style ) { ?> selected="selected"<?php } ?>>
-					<?php esc_html_e( 'Big list', 'window-mag' ); ?>
+					<?php esc_html_e( 'Big list', 'dw' ); ?>
 				</option>
 			</select>
 		</p>
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'posts_count' ); ?>"><?php esc_html_e( 'Posts count :', 'window-mag' );
+				for="<?php echo $this->get_field_id( 'posts_count' ); ?>"><?php esc_html_e( 'Posts count :', 'dw' );
 				?></label>
 			<input id="<?php echo $this->get_field_id( 'posts_count' ); ?>"
 			       name="<?php echo $this->get_field_name( 'posts_count' ); ?>" type="number" size="3"

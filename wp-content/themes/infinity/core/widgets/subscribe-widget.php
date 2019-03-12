@@ -3,7 +3,7 @@
 /**
  * Adds Social media icons widget.
  */
-class window_mag_subscribe_box extends WP_Widget {
+class dw_subscribe_box extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
@@ -11,8 +11,8 @@ class window_mag_subscribe_box extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'subscribe_box', // Base ID
-			WINDOW_MAG_NAME . esc_html__( ' Newsletter', 'window-mag' ), // Name
-			array( 'description' => esc_html__( 'add newsletter subscribe form', 'window-mag' ), ) // Args
+			DW_NAME . esc_html__( ' Newsletter', 'dw' ), // Name
+			array( 'description' => esc_html__( 'add newsletter subscribe form', 'dw' ), ) // Args
 		);
 	}
 
@@ -39,12 +39,12 @@ class window_mag_subscribe_box extends WP_Widget {
 					<p class="description"><?php echo esc_html( $desc_text ); ?></p>
 				<?php } ?>
 				<p>
-					<input type="email" placeholder="<?php esc_attr_e( 'Put your email here...', 'window-mag' ); ?>"
+					<input type="email" placeholder="<?php esc_attr_e( 'Put your email here...', 'dw' ); ?>"
 					       name="email"/>
 				</p>
 				<input type="hidden" value="<?php echo esc_attr( $feed_id ); ?>" name="uri"/>
 				<input type="hidden" name="loc" value="en_US"/>
-				<input type="submit" value="<?php esc_attr_e( 'Subscribe', 'window-mag' ); ?>"/>
+				<input type="submit" value="<?php esc_attr_e( 'Subscribe', 'dw' ); ?>"/>
 			</form>
 		</div>
 		<?php
@@ -65,7 +65,7 @@ class window_mag_subscribe_box extends WP_Widget {
 		?>
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'window-mag' ); ?></label>
+				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'dw' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
 			       name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
 			       value="<?php echo esc_attr( $title ); ?>">
@@ -73,10 +73,10 @@ class window_mag_subscribe_box extends WP_Widget {
 
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'desc_text' ); ?>"><?php esc_html_e( 'Description Text:', 'window-mag' );
+				for="<?php echo $this->get_field_id( 'desc_text' ); ?>"><?php esc_html_e( 'Description Text:', 'dw' );
 				?></label>
 			<textarea name="<?php echo $this->get_field_name( 'desc_text' ); ?>"
-			          placeholder="<?php esc_attr_e( 'Enter your email address', 'window-mag' ); ?>"
+			          placeholder="<?php esc_attr_e( 'Enter your email address', 'dw' ); ?>"
 			          id="<?php echo $this->get_field_id( 'desc_text' ); ?>" cols="30" rows="3"
 			          class="widefat"><?php
 				if ( $desc_text ) {
@@ -87,7 +87,7 @@ class window_mag_subscribe_box extends WP_Widget {
 
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'feed_id' ); ?>"><?php esc_html_e( 'FeedBurner ID:', 'window-mag' );
+				for="<?php echo $this->get_field_id( 'feed_id' ); ?>"><?php esc_html_e( 'FeedBurner ID:', 'dw' );
 				?></label>
 			<input id="<?php echo $this->get_field_id( 'feed_id' ); ?>"
 			       name="<?php echo $this->get_field_name( 'feed_id' ); ?>" type="text" class="widefat"

@@ -3,7 +3,7 @@
  * audio view from post meta
  * this file is visible in single.php only
  */
-$audio_control = window_mag_get_meta( get_the_ID(), 'audio-box/gadget' );;
+$audio_control = dw_get_meta( get_the_ID(), 'audio-box/gadget' );;
 $allowed_files  = array( 'mp3', 'ogg', 'wma', 'm4a', 'wav' );
 $thumbnail_size = 'window_mag_slider_center';
 if ( $audio_control or has_post_thumbnail() ):
@@ -14,7 +14,7 @@ if ( $audio_control or has_post_thumbnail() ):
 			/**
 			 * if the selected audio source is url print out the audio url with the service provider
 			 */
-			$audio_url = window_mag_get_meta( get_the_ID(), 'audio-box/remote/audio-url' );
+			$audio_url = dw_get_meta( get_the_ID(), 'audio-box/remote/audio-url' );
 			if ( $audio_url && wp_oembed_get( $audio_url ) ) {
 				//display the audio embed with height 250 pixels
 				echo wp_oembed_get( esc_url( $audio_url ), array( 'height' => 250 ) );
@@ -37,7 +37,7 @@ if ( $audio_control or has_post_thumbnail() ):
 			 * check the file extension with allowed files
 			 * if the file is allowed run it with media element player and make the background of the player using the post thumbnail
 			 */
-			$audio_file = window_mag_get_meta( get_the_ID(), 'audio-box/local/audio-file/url' );
+			$audio_file = dw_get_meta( get_the_ID(), 'audio-box/local/audio-file/url' );
 			$ext        = pathinfo( esc_url( $audio_file ), PATHINFO_EXTENSION ); //get file extension
 			if ( in_array( $ext, $allowed_files ) ) { //make sure it supported in media element player
 				$bg_style = $bg_bool = '';

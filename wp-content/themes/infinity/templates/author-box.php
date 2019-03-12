@@ -15,7 +15,7 @@ $user_post_count = count_user_posts( $user_id );
 	</div>
 	<div class="author-info">
 		<h4 class="auhtor-name text-center">
-			<span class="word"><?php esc_html_e( 'Written by', 'window-mag' ); ?></span>
+			<span class="word"><?php esc_html_e( 'Written by', 'dw' ); ?></span>
 			<span class="name">
 				<?php
 				if ( is_singular() ) {
@@ -31,9 +31,9 @@ $user_post_count = count_user_posts( $user_id );
 				<?php echo esc_html( $author_desc ); ?>
 			</p>
 		<?php endif; ?>
-		<?php if ( window_mag_author_socials( $user_id, true ) ): ?>
-			<div class="user-social text-center" title="<?php esc_attr_e( 'Follow me', 'window-mag' ); ?>">
-				<?php window_mag_author_socials( $user_id ); ?>
+		<?php if ( dw_author_socials( $user_id, true ) ): ?>
+			<div class="user-social text-center" title="<?php esc_attr_e( 'Follow me', 'dw' ); ?>">
+				<?php dw_author_socials( $user_id ); ?>
 			</div>
 		<?php endif; ?>
 	</div>

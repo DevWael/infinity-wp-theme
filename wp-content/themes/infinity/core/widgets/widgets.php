@@ -2,8 +2,8 @@
 /**
  * Print the posts into the widget with slider style
  */
-if ( ! function_exists( 'window_mag_widget_slider_loop' ) ) {
-	function window_mag_widget_slider_loop( $query_data, $widget_id = false ) {
+if ( ! function_exists( 'dw_widget_slider_loop' ) ) {
+	function dw_widget_slider_loop( $query_data, $widget_id = false ) {
 		if ( isset( $query_data['meta_query'] ) ) {
 			$featured_image = array(
 				'key' => '_thumbnail_id'
@@ -44,8 +44,8 @@ if ( ! function_exists( 'window_mag_widget_slider_loop' ) ) {
 /**
  * Print the posts into the widget with images grid style
  */
-if ( ! function_exists( 'window_mag_widget_pics_loop' ) ) {
-	function window_mag_widget_pics_loop( $query_data, $widget_id = false ) {
+if ( ! function_exists( 'dw_widget_pics_loop' ) ) {
+	function dw_widget_pics_loop( $query_data, $widget_id = false ) {
 		$i = 1;
 		//fw_print( $query_data );
 		if ( isset( $query_data['meta_query'] ) ) {
@@ -83,8 +83,8 @@ if ( ! function_exists( 'window_mag_widget_pics_loop' ) ) {
 /**
  * Print the posts into the widget with Big list style
  */
-if ( ! function_exists( 'window_mag_widget_big_list_loop' ) ) {
-	function window_mag_widget_big_list_loop( $query_data, $widget_id = false ) {
+if ( ! function_exists( 'dw_widget_big_list_loop' ) ) {
+	function dw_widget_big_list_loop( $query_data, $widget_id = false ) {
 		$i          = 1;
 		$query_args = new WP_Query( $query_data );
 		if ( $query_args->have_posts() ) {
@@ -118,8 +118,8 @@ if ( ! function_exists( 'window_mag_widget_big_list_loop' ) ) {
 /**
  * Print the posts into the widget with small list style
  */
-if ( ! function_exists( 'window_mag_widget_small_list_loop' ) ) {
-	function window_mag_widget_small_list_loop( $query_data, $widget_id = false ) {
+if ( ! function_exists( 'dw_widget_small_list_loop' ) ) {
+	function dw_widget_small_list_loop( $query_data, $widget_id = false ) {
 		$query_args = new WP_Query( $query_data );
 		if ( $query_args->have_posts() ) {
 			while ( $query_args->have_posts() ) {
@@ -134,38 +134,38 @@ if ( ! function_exists( 'window_mag_widget_small_list_loop' ) ) {
 /**
  * Including custom widgets
  */
-require_once WINDOW_MAG_CORE . 'widgets/social-media-widget.php';// Social media widget
-require_once WINDOW_MAG_CORE . 'widgets/author-posts.php'; //Author posts widget
-require_once WINDOW_MAG_CORE . 'widgets/category-posts.php'; //Category posts widget
-require_once WINDOW_MAG_CORE . 'widgets/recent-posts-widget.php'; //Recent posts widget
-require_once WINDOW_MAG_CORE . 'widgets/facebook-widget.php'; // Facebook box widget
-require_once WINDOW_MAG_CORE . 'widgets/googleplus-widget.php'; // Google plus widget
-require_once WINDOW_MAG_CORE . 'widgets/subscribe-widget.php'; // Newsletter subscribe widget
-require_once WINDOW_MAG_CORE . 'widgets/instagram-photos-widget.php'; // Instagram photos widget
-require_once WINDOW_MAG_CORE . 'widgets/soundcloud-widget.php'; // Sound cloud widget
-require_once WINDOW_MAG_CORE . 'widgets/most-viewed-posts-widget.php'; //Most viewed posts widget
-require_once WINDOW_MAG_CORE . 'widgets/most-liked-posts-widget.php'; //Most liked posts widget
-require_once WINDOW_MAG_CORE . 'widgets/random-posts-widget.php'; //Random posts widget
-require_once WINDOW_MAG_CORE . 'widgets/login-widget.php'; //Login widget
-require_once WINDOW_MAG_CORE . 'widgets/review-posts-widget.php'; //Review Posts
+require_once DW_CORE . 'widgets/social-media-widget.php';// Social media widget
+require_once DW_CORE . 'widgets/author-posts.php'; //Author posts widget
+require_once DW_CORE . 'widgets/category-posts.php'; //Category posts widget
+require_once DW_CORE . 'widgets/recent-posts-widget.php'; //Recent posts widget
+require_once DW_CORE . 'widgets/facebook-widget.php'; // Facebook box widget
+require_once DW_CORE . 'widgets/googleplus-widget.php'; // Google plus widget
+require_once DW_CORE . 'widgets/subscribe-widget.php'; // Newsletter subscribe widget
+require_once DW_CORE . 'widgets/instagram-photos-widget.php'; // Instagram photos widget
+require_once DW_CORE . 'widgets/soundcloud-widget.php'; // Sound cloud widget
+require_once DW_CORE . 'widgets/most-viewed-posts-widget.php'; //Most viewed posts widget
+require_once DW_CORE . 'widgets/most-liked-posts-widget.php'; //Most liked posts widget
+require_once DW_CORE . 'widgets/random-posts-widget.php'; //Random posts widget
+require_once DW_CORE . 'widgets/login-widget.php'; //Login widget
+require_once DW_CORE . 'widgets/review-posts-widget.php'; //Review Posts
 
 /**
  * Register custom widgets
  */
-add_action( 'widgets_init', 'window_mag_widgets' );
-function window_mag_widgets() {
-	register_widget( 'window_mag_author_posts' );
-	register_widget( 'window_mag_category_posts' );
-	register_widget( 'window_mag_facebook_box' );
-	register_widget( 'window_mag_google_plus_box' );
-	register_widget( 'window_mag_most_liked' );
-	register_widget( 'window_mag_random_posts' );
-	register_widget( 'window_mag_most_viewed' );
-	register_widget( 'window_mag_recent_posts' );
-	register_widget( 'window_mag_social_media' );
-	register_widget( 'window_mag_soundcloud_box' );
-	register_widget( 'window_mag_subscribe_box' );
-	register_widget( 'window_mag_instagram_photos' );
-	register_widget( 'window_mag_login_box' );
-	register_widget( 'window_mag_review_posts' );
+add_action( 'widgets_init', 'dw_widgets' );
+function dw_widgets() {
+	register_widget( 'dw_author_posts' );
+	register_widget( 'dw_category_posts' );
+	register_widget( 'dw_facebook_box' );
+	register_widget( 'dw_google_plus_box' );
+	register_widget( 'dw_most_liked' );
+	register_widget( 'dw_random_posts' );
+	register_widget( 'dw_most_viewed' );
+	register_widget( 'dw_recent_posts' );
+	register_widget( 'dw_social_media' );
+	register_widget( 'dw_soundcloud_box' );
+	register_widget( 'dw_subscribe_box' );
+	register_widget( 'dw_instagram_photos' );
+	register_widget( 'dw_login_box' );
+	register_widget( 'dw_review_posts' );
 }

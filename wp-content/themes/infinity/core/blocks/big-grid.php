@@ -1,7 +1,7 @@
 <?php
 
-if ( ! function_exists( 'window_mag_big_grid' ) ) {
-	function window_mag_big_grid( $cat_ids, $posts_count = 6, $block_title = '' ) {
+if ( ! function_exists( 'dw_big_grid' ) ) {
+	function dw_big_grid( $cat_ids, $posts_count = 6, $block_title = '' ) {
 		$i           = 1;
 		$arguments   = array(
 			'posts_per_page'      => $posts_count,

@@ -1,6 +1,6 @@
 <?php
-if ( ! function_exists( 'window_mag_mini_grid' ) ) {
-	function window_mag_mini_grid( $cat_ids, $posts_count = 6, $block_title = '' ) {
+if ( ! function_exists( 'dw_mini_grid' ) ) {
+	function dw_mini_grid( $cat_ids, $posts_count = 6, $block_title = '' ) {
 		$i           = 1;
 		$arguments   = array(
 			'posts_per_page'      => $posts_count,

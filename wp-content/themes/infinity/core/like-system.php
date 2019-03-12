@@ -21,11 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 add_action( 'wp_enqueue_scripts', 'window_mag_like_script' );
 function window_mag_like_script() {
-	wp_enqueue_script( 'window-likes-public-js', WINDOW_MAG_JS_URI . 'like-system.js', array( 'jquery' ), '0.5', true );
+	wp_enqueue_script( 'window-likes-public-js', DW_JS_URI . 'like-system.js', array( 'jquery' ), '0.5', true );
 	wp_localize_script( 'window-likes-public-js', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
-		'like'    => esc_html__( 'Like', 'window-mag' ),
-		'unlike'  => esc_html__( 'Unlike', 'window-mag' )
+		'like'    => esc_html__( 'Like', 'dw' ),
+		'unlike'  => esc_html__( 'Unlike', 'dw' )
 	) );
 }
 
@@ -39,7 +39,7 @@ function window_mag_process_like() {
 	// Security
 	$nonce = isset( $_REQUEST['nonce'] ) ? sanitize_text_field( $_REQUEST['nonce'] ) : 0;
 	if ( ! wp_verify_nonce( $nonce, 'simple-likes-nonce' ) ) {
-		exit( esc_html__( 'Not permitted', 'window-mag' ) );
+		exit( esc_html__( 'Not permitted', 'dw' ) );
 	}
 	// Test if javascript is disabled
 	$disabled = ( isset( $_REQUEST['disabled'] ) && $_REQUEST['disabled'] == true ) ? true : false;
@@ -211,11 +211,11 @@ function window_mag_get_likes_button( $post_id, $is_comment = null ) {
 	// Liked/Unliked Variables
 	if ( window_mag_already_liked( $post_id, $is_comment ) ) {
 		$class = esc_attr( ' liked' );
-		$title = esc_attr__( 'Unlike', 'window-mag' );
+		$title = esc_attr__( 'Unlike', 'dw' );
 		$icon  = $icon_full;
 	} else {
 		$class = '';
-		$title = esc_attr__( 'Like', 'window-mag' );
+		$title = esc_attr__( 'Like', 'dw' );
 		$icon  = $icon_empty;
 	}
 	$output = '<a href="' . admin_url( 'admin-ajax.php?action=process_simple_like' . '&post_id=' . esc_attr( $post_id ) . '&nonce=' . $nonce . '&is_comment=' . $is_comment . '&disabled=true' ) . '" class="sl-button unliked' . esc_attr( $post_id_class . $class . $comment_class ) . '" data-nonce="' . esc_attr( $nonce ) . '" data-post-id="' . esc_attr( $post_id ) . '" data-iscomment="' . esc_attr( $is_comment ) . '" title="' . esc_attr( $title ) . '">' . $icon . $count . '</a>';
@@ -318,11 +318,11 @@ function window_mag_get_unliked_icon() {
 function window_mag_format_count( $number ) {
 	$precision = 2;
 	if ( $number >= 1000 && $number < 1000000 ) {
-		$formatted = number_format( $number / 1000, $precision ) . esc_html__( 'K', 'window-mag' );
+		$formatted = number_format( $number / 1000, $precision ) . esc_html__( 'K', 'dw' );
 	} else if ( $number >= 1000000 && $number < 1000000000 ) {
-		$formatted = number_format( $number / 1000000, $precision ) . esc_html__( 'M', 'window-mag' );
+		$formatted = number_format( $number / 1000000, $precision ) . esc_html__( 'M', 'dw' );
 	} else if ( $number >= 1000000000 ) {
-		$formatted = number_format( $number / 1000000000, $precision ) . esc_html__( 'B', 'window-mag' );
+		$formatted = number_format( $number / 1000000000, $precision ) . esc_html__( 'B', 'dw' );
 	} else {
 		$formatted = $number; // Number is less than 1000
 	}
@@ -337,7 +337,7 @@ function window_mag_format_count( $number ) {
  * @since    0.5
  */
 function window_mag_get_like_count( $like_count ) {
-	$like_text = esc_html__( 'Like', 'window-mag' );
+	$like_text = esc_html__( 'Like', 'dw' );
 	$number    = '';
 	if ( is_numeric( $like_count ) && $like_count > 0 ) {
 		$number = window_mag_format_count( $like_count );
@@ -356,7 +356,7 @@ add_action( 'edit_user_profile', 'window_mag_show_user_likes' );
 function window_mag_show_user_likes( $user ) { ?>
 	<table class="form-table">
 		<tr>
-			<th><label for="user_likes"><?php esc_html_e( 'Your Likes:', 'window-mag' ); ?></label></th>
+			<th><label for="user_likes"><?php esc_html_e( 'Your Likes:', 'dw' ); ?></label></th>
 			<td>
 				<?php
 				$types      = get_post_types( array( 'public' => true ) );
@@ -387,7 +387,7 @@ function window_mag_show_user_likes( $user ) { ?>
 						?>
 					</p>
 				<?php else : ?>
-					<p><?php esc_html_e( 'You did not like post yet.', 'window-mag' ); ?></p>
+					<p><?php esc_html_e( 'You did not like post yet.', 'dw' ); ?></p>
 					<?php
 				endif;
 				wp_reset_postdata();

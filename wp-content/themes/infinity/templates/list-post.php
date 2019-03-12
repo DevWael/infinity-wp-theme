@@ -13,9 +13,9 @@
 			<?php the_title( sprintf( '<h3 class="post-title h4" itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 			<?php get_template_part( 'content', 'meta' ); ?>
 		</div>
-		<p><?php window_mag_excerpt(); ?></p>
+		<p><?php dw_excerpt(); ?></p>
 		<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>" class="read-more-button">
-			<?php esc_html_e( 'Read More...', 'window-mag' ); ?>
+			<?php esc_html_e( 'Read More...', 'dw' ); ?>
 		</a>
 	</div>
 	<div class="clearfix"></div>

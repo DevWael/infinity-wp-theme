@@ -7,8 +7,8 @@
 global $post, $do_not_duplicate;
 $old_post   = $post;
 $related_no = $query_type = '';
-$related_no = window_mag_get_setting( 'related_posts_box/on/related_count' ) ? window_mag_get_setting( 'related_posts_box/on/related_count' ) : 6;
-$query_type = window_mag_get_setting( 'related_posts_box/on/query' );
+$related_no = dw_get_setting( 'related_posts_box/on/related_count' ) ? dw_get_setting( 'related_posts_box/on/related_count' ) : 6;
+$query_type = dw_get_setting( 'related_posts_box/on/query' );
 if ( $query_type == 'author' ) {
 	//some posts from the current author
 	$args = array(
@@ -47,16 +47,16 @@ if ( $query_type == 'author' ) {
 $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ): ?>
 	<div class="related-posts">
-		<?php if ( window_mag_get_setting( 'related_posts_box/on/related_title' ) ): ?>
+		<?php if ( dw_get_setting( 'related_posts_box/on/related_title' ) ): ?>
 			<div class="related-header">
 				<h3>
-					<span><?php echo window_mag_get_setting( 'related_posts_box/on/related_title' ); ?></span>
+					<span><?php echo dw_get_setting( 'related_posts_box/on/related_title' ); ?></span>
 				</h3>
 			</div>
 		<?php elseif ( ! function_exists( 'fw_get_db_settings_option' ) ): ?>
 			<div class="related-header">
 				<h3>
-					<span><?php esc_attr_e( 'You may also like', 'window-mag' ); ?></span>
+					<span><?php esc_attr_e( 'You may also like', 'dw' ); ?></span>
 				</h3>
 			</div>
 		<?php endif; ?>

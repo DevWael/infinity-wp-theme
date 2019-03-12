@@ -1,6 +1,6 @@
 <?php
-if ( ! function_exists( 'window_mag_dynamic_ads' ) ) {
-	function window_mag_dynamic_ads( $type, $image = '', $code = '' ) {
+if ( ! function_exists( 'dw_dynamic_ads' ) ) {
+	function dw_dynamic_ads( $type, $image = '', $code = '' ) {
 		$control = $type;
 		if ( 'code' == $control ) {
 			if ( $code ) {

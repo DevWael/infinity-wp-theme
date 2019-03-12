@@ -3,7 +3,7 @@
 /**
  * Adds Social media icons widget.
  */
-class window_mag_google_plus_box extends WP_Widget {
+class dw_google_plus_box extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
@@ -11,8 +11,8 @@ class window_mag_google_plus_box extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'google_plus_box', // Base ID
-			WINDOW_MAG_NAME . esc_html__( ' Google plus box', 'window-mag' ), // Name
-			array( 'description' => esc_html__( 'add a google plus page box', 'window-mag' ), ) // Args
+			DW_NAME . esc_html__( ' Google plus box', 'dw' ), // Name
+			array( 'description' => esc_html__( 'add a google plus page box', 'dw' ), ) // Args
 		);
 	}
 
@@ -66,14 +66,14 @@ class window_mag_google_plus_box extends WP_Widget {
 		?>
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'window-mag' ); ?></label>
+				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'dw' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
 			       name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
-			       placeholder="<?php esc_attr_e( 'Google plus', 'window-mag' ) ?>"
+			       placeholder="<?php esc_attr_e( 'Google plus', 'dw' ) ?>"
 			       value="<?php echo esc_attr( $title ); ?>">
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'page_url' ); ?>"><?php esc_html_e( 'Page url:', 'window-mag' );
+			<label for="<?php echo $this->get_field_id( 'page_url' ); ?>"><?php esc_html_e( 'Page url:', 'dw' );
 				?></label>
 			<input id="<?php echo $this->get_field_id( 'page_url' ); ?>"
 			       name="<?php echo $this->get_field_name( 'page_url' ); ?>" type="text" class="widefat"

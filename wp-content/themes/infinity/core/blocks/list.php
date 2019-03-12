@@ -1,7 +1,7 @@
 <?php
 
-if ( ! function_exists( 'window_mag_list_box' ) ) {
-	function window_mag_list_box( $cat_ids, $posts_count = 6, $block_title = '' ) {
+if ( ! function_exists( 'dw_list_box' ) ) {
+	function dw_list_box( $cat_ids, $posts_count = 6, $block_title = '' ) {
 		$arguments   = array(
 			'posts_per_page'      => $posts_count,
 			'category__in'        => $cat_ids,

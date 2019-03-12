@@ -9,15 +9,15 @@ if ( ! defined( 'FW' ) ) {
 
 $options = array(
 	'typography_tab' => array(
-		'title'   => esc_html__( 'Typography', 'window-mag' ),
+		'title'   => esc_html__( 'Typography', 'dw' ),
 		'type'    => 'tab',
 		'options' => array(
 			'typography_box'        => array(
-				'title'   => esc_html__( 'Content pages', 'window-mag' ),
+				'title'   => esc_html__( 'Content pages', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(
 					'site_title'            => array(
-						'label' => esc_html__( 'Site Title', 'window-mag' ),
+						'label' => esc_html__( 'Site Title', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'      => 'Montserrat',
@@ -29,7 +29,7 @@ $options = array(
 
 					),
 					'tag_line'              => array(
-						'label' => esc_html__( 'Site description', 'window-mag' ),
+						'label' => esc_html__( 'Site description', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -41,7 +41,7 @@ $options = array(
 						)
 					),
 					'block_widget_title'    => array(
-						'label' => esc_html__( 'Block and widget title', 'window-mag' ),
+						'label' => esc_html__( 'Block and widget title', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -53,7 +53,7 @@ $options = array(
 						)
 					),
 					'post_title'            => array(
-						'label' => esc_html__( 'Post Title', 'window-mag' ),
+						'label' => esc_html__( 'Post Title', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -65,7 +65,7 @@ $options = array(
 						)
 					),
 					'small_post_title'      => array(
-						'label' => esc_html__( 'Small Post Title', 'window-mag' ),
+						'label' => esc_html__( 'Small Post Title', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -77,7 +77,7 @@ $options = array(
 						)
 					),
 					'carousel_post_title'   => array(
-						'label' => esc_html__( 'Post Title in carousel block', 'window-mag' ),
+						'label' => esc_html__( 'Post Title in carousel block', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -89,8 +89,8 @@ $options = array(
 						)
 					),
 					'post_content_homepage' => array(
-						'label' => esc_html__( 'Post content', 'window-mag' ),
-						'desc'  => esc_html__( 'for any post excerpt on home page and archive pages', 'window-mag' ),
+						'label' => esc_html__( 'Post content', 'dw' ),
+						'desc'  => esc_html__( 'for any post excerpt on home page and archive pages', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -102,7 +102,7 @@ $options = array(
 						)
 					),
 					'read_more_btn'         => array(
-						'label' => esc_html__( 'Read more button', 'window-mag' ),
+						'label' => esc_html__( 'Read more button', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -114,7 +114,7 @@ $options = array(
 						)
 					),
 					'error_logo_typo'       => array(
-						'label' => esc_html__( 'Error 404 logo', 'window-mag' ),
+						'label' => esc_html__( 'Error 404 logo', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Verdana',
@@ -126,7 +126,7 @@ $options = array(
 						)
 					),
 					'error_message_typo'    => array(
-						'label' => esc_html__( 'Error 404 Message', 'window-mag' ),
+						'label' => esc_html__( 'Error 404 Message', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -138,7 +138,7 @@ $options = array(
 						)
 					),
 					'navbar_typo'    => array(
-						'label' => esc_html__( 'Navbar main elements', 'window-mag' ),
+						'label' => esc_html__( 'Navbar main elements', 'dw' ),
 						'type'  => 'typography-v2',
 						'components' => array(
 							'family'         => true,
@@ -156,7 +156,7 @@ $options = array(
 						)
 					),
 					'news_ticker_typo'    => array(
-						'label' => esc_html__( 'News Ticker', 'window-mag' ),
+						'label' => esc_html__( 'News Ticker', 'dw' ),
 						'type'  => 'typography-v2',
 						'components' => array(
 							'family'         => true,
@@ -175,11 +175,11 @@ $options = array(
 				)
 			),
 			'typography_box_single' => array(
-				'title'   => esc_html__( 'Single post', 'window-mag' ),
+				'title'   => esc_html__( 'Single post', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(
 					'single_post_title'       => array(
-						'label' => esc_html__( 'Post Title', 'window-mag' ),
+						'label' => esc_html__( 'Post Title', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -191,7 +191,7 @@ $options = array(
 						)
 					),
 					'single_post_title_cover' => array(
-						'label' => esc_html__( 'Post Title Cover mode', 'window-mag' ),
+						'label' => esc_html__( 'Post Title Cover mode', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -203,7 +203,7 @@ $options = array(
 						)
 					),
 					'post_content'            => array(
-						'label' => esc_html__( 'Post content', 'window-mag' ),
+						'label' => esc_html__( 'Post content', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -215,7 +215,7 @@ $options = array(
 						)
 					),
 					'heading_1'               => array(
-						'label' => esc_html__( 'H1', 'window-mag' ),
+						'label' => esc_html__( 'H1', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -227,7 +227,7 @@ $options = array(
 						)
 					),
 					'heading_2'               => array(
-						'label' => esc_html__( 'H2', 'window-mag' ),
+						'label' => esc_html__( 'H2', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -239,7 +239,7 @@ $options = array(
 						)
 					),
 					'heading_3'               => array(
-						'label' => esc_html__( 'H3', 'window-mag' ),
+						'label' => esc_html__( 'H3', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -251,7 +251,7 @@ $options = array(
 						)
 					),
 					'heading_4'               => array(
-						'label' => esc_html__( 'H4', 'window-mag' ),
+						'label' => esc_html__( 'H4', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -263,7 +263,7 @@ $options = array(
 						)
 					),
 					'heading_5'               => array(
-						'label' => esc_html__( 'H5', 'window-mag' ),
+						'label' => esc_html__( 'H5', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',
@@ -275,7 +275,7 @@ $options = array(
 						)
 					),
 					'heading_6'               => array(
-						'label' => esc_html__( 'H6', 'window-mag' ),
+						'label' => esc_html__( 'H6', 'dw' ),
 						'type'  => 'typography-v2',
 						'value' => array(
 							'family'         => 'Montserrat',

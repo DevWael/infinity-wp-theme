@@ -1,5 +1,5 @@
 <?php
-$url        = window_mag_get_meta( get_the_ID(), 'link-box' );
+$url        = dw_get_meta( get_the_ID(), 'link-box' );
 $image_size = 'window_mag_slider_center';
 if ( $url ):
 	$url = esc_url( $url );

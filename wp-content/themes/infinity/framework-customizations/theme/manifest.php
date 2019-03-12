@@ -3,7 +3,7 @@
 }
 
 $manifest                         = array();
-$manifest['id']                   = 'window';
+$manifest['id']                   = 'dw';
 $manifest['supported_extensions'] = array(
 	'backups'     => array(),
 	'breadcrumbs' => array(),

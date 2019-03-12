@@ -1,20 +1,20 @@
 <?php
 $window_mag_title_text   = $window_mag_sticky_nav = $window_mag_center_logo = $window_mag_retina = '';
-$window_mag_header_style = window_mag_get_setting( 'header_types' );
-if ( window_mag_get_setting( 'site_logo/tagline/center_text' ) == true ) {
+$window_mag_header_style = dw_get_setting( 'header_types' );
+if ( dw_get_setting( 'site_logo/tagline/center_text' ) == true ) {
 	$window_mag_title_text = ' text-center';
 }
 
-if ( window_mag_get_setting( 'site_logo/logo/center_logo' ) ) {
+if ( dw_get_setting( 'site_logo/logo/center_logo' ) ) {
 	$window_mag_center_logo = ' center-block';
 }
 
-if ( 'on' === window_mag_get_setting( 'sticky_nav' ) ) {
+if ( 'on' === dw_get_setting( 'sticky_nav' ) ) {
 	$window_mag_sticky_nav = ' sticky-nav';
 }
 
-if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
-	$window_mag_retina = window_mag_get_setting( 'site_logo/logo/retina_select/url' );
+if ( dw_get_setting( 'site_logo/logo/retina_select/url' ) ) {
+	$window_mag_retina = dw_get_setting( 'site_logo/logo/retina_select/url' );
 }
 
 ?>
@@ -29,15 +29,15 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php if ( window_mag_get_setting( 'website_layout' ) == 'boxed' ) { ?>
+<?php if ( dw_get_setting( 'website_layout' ) == 'boxed' ) { ?>
 <div class="wrapper">
-	<?php } elseif ( window_mag_get_setting( 'website_layout' ) == 'wide' ) { ?>
+	<?php } elseif ( dw_get_setting( 'website_layout' ) == 'wide' ) { ?>
 	<div class="wrapper wide">
 		<?php } ?>
 		<header class="main-header">
 			<?php
-			if ( 'on' == window_mag_get_setting( 'top_posts_switch/control' ) ) {
-				if ( 'on' === window_mag_get_setting( 'top_posts_switch/on/home_only' ) ) {
+			if ( 'on' == dw_get_setting( 'top_posts_switch/control' ) ) {
+				if ( 'on' === dw_get_setting( 'top_posts_switch/on/home_only' ) ) {
 					if ( is_front_page() ) {
 						get_template_part( 'templates/top', 'posts' );
 					}
@@ -55,13 +55,13 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 						<div class="row">
 							<div class="col-md-4">
 								<?php
-								if ( window_mag_get_setting( 'site_logo/gadget' ) == 'logo' && window_mag_get_setting( 'site_logo/logo/logo_select/url' ) ):
+								if ( dw_get_setting( 'site_logo/gadget' ) == 'logo' && dw_get_setting( 'site_logo/logo/logo_select/url' ) ):
 									?>
 									<div class="site-logo">
 										<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
 										   title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
 											<img
-												src="<?php echo esc_url( window_mag_get_setting( 'site_logo/logo/logo_select/url' ) ) ?>"
+												src="<?php echo esc_url( dw_get_setting( 'site_logo/logo/logo_select/url' ) ) ?>"
 												alt="<?php echo esc_attr( get_bloginfo( 'name' ) ) ?>"
 												class="img-responsive<?php echo esc_attr( $window_mag_center_logo ); ?>"
 												<?php if ( $window_mag_retina ){ ?>data-at2x="<?php echo esc_url( $window_mag_retina ); ?>"<?php } ?>>
@@ -81,9 +81,9 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 									</div>
 								<?php endif; ?>
 							</div>
-							<?php if ( 'off' !== window_mag_get_setting( 'banner_box1/gadget' ) ) { ?>
+							<?php if ( 'off' !== dw_get_setting( 'banner_box1/gadget' ) ) { ?>
 								<div class="col-md-8">
-									<?php window_mag_ads( '1', 'ad-beside-logo' ); ?>
+									<?php dw_ads( '1', 'ad-beside-logo' ); ?>
 								</div>
 							<?php } ?>
 						</div>
@@ -91,7 +91,7 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 				</div>
 				<div class="main-menu<?php echo esc_attr( $window_mag_sticky_nav ); ?>">
 					<div class="container">
-						<?php if ( 'off' !== window_mag_get_setting( 'search_nav' ) ) { ?>
+						<?php if ( 'off' !== dw_get_setting( 'search_nav' ) ) { ?>
 							<a href="#" class="search-toggle"><i class="fa fa-search"></i></a>
 							<div class="search-box">
 								<?php get_search_form(); ?>
@@ -115,8 +115,8 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 				</div>
 				<?php
 				//News Ticker Since V1.2
-				if ( 'on' == window_mag_get_setting( 'news_ticker_switch/control' ) ) {
-					if ( 'on' === window_mag_get_setting( 'news_ticker_switch/on/home_only' ) ) {
+				if ( 'on' == dw_get_setting( 'news_ticker_switch/control' ) ) {
+					if ( 'on' === dw_get_setting( 'news_ticker_switch/on/home_only' ) ) {
 						if ( is_front_page() ) {
 							get_template_part( 'templates/news', 'ticker' );
 						}
@@ -128,7 +128,7 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 			<?php elseif ( $window_mag_header_style == 'magazine' ) : ?>
 				<div class="main-menu<?php echo esc_attr( $window_mag_sticky_nav ); ?>">
 					<div class="container">
-						<?php if ( 'off' !== window_mag_get_setting( 'search_nav' ) ) { ?>
+						<?php if ( 'off' !== dw_get_setting( 'search_nav' ) ) { ?>
 							<a href="#" class="search-toggle"><i class="fa fa-search"></i></a>
 							<div class="search-box">
 								<?php get_search_form(); ?>
@@ -155,13 +155,13 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 						<div class="row">
 							<div class="col-md-4">
 								<?php
-								if ( window_mag_get_setting( 'site_logo/gadget' ) == 'logo' && window_mag_get_setting( 'site_logo/logo/logo_select/url' ) ):
+								if ( dw_get_setting( 'site_logo/gadget' ) == 'logo' && dw_get_setting( 'site_logo/logo/logo_select/url' ) ):
 									?>
 									<div class="site-logo">
 										<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
 										   title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
 											<img
-												src="<?php echo esc_url( window_mag_get_setting( 'site_logo/logo/logo_select/url' ) ) ?>"
+												src="<?php echo esc_url( dw_get_setting( 'site_logo/logo/logo_select/url' ) ) ?>"
 												alt="<?php echo esc_attr( get_bloginfo( 'name' ) ) ?>"
 												class="img-responsive<?php echo esc_attr( $window_mag_center_logo ); ?>"
 												<?php if ( $window_mag_retina ){ ?>data-at2x="<?php echo esc_url( $window_mag_retina ); ?>"<?php } ?>>
@@ -181,9 +181,9 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 									</div>
 								<?php endif; ?>
 							</div>
-							<?php if ( 'off' !== window_mag_get_setting( 'banner_box1/gadget' ) ) { ?>
+							<?php if ( 'off' !== dw_get_setting( 'banner_box1/gadget' ) ) { ?>
 								<div class="col-md-8">
-									<?php window_mag_ads( '1', 'ad-beside-logo' ); ?>
+									<?php dw_ads( '1', 'ad-beside-logo' ); ?>
 								</div>
 							<?php } ?>
 						</div>
@@ -191,8 +191,8 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 				</div>
 				<?php
 				//News Ticker Since V1.2
-				if ( 'on' == window_mag_get_setting( 'news_ticker_switch/control' ) ) {
-					if ( 'on' === window_mag_get_setting( 'news_ticker_switch/on/home_only' ) ) {
+				if ( 'on' == dw_get_setting( 'news_ticker_switch/control' ) ) {
+					if ( 'on' === dw_get_setting( 'news_ticker_switch/on/home_only' ) ) {
 						if ( is_front_page() ) {
 							get_template_part( 'templates/news', 'ticker' );
 						}
@@ -206,13 +206,13 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 					<div class="container">
 						<div class="col-md-12">
 							<?php
-							if ( window_mag_get_setting( 'site_logo/gadget' ) == 'logo' && window_mag_get_setting( 'site_logo/logo/logo_select/url' ) ):
+							if ( dw_get_setting( 'site_logo/gadget' ) == 'logo' && dw_get_setting( 'site_logo/logo/logo_select/url' ) ):
 								?>
 								<div class="site-logo">
 									<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
 									   title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
 										<img
-											src="<?php echo esc_url( window_mag_get_setting( 'site_logo/logo/logo_select/url' ) ) ?>"
+											src="<?php echo esc_url( dw_get_setting( 'site_logo/logo/logo_select/url' ) ) ?>"
 											alt="<?php echo esc_attr( get_bloginfo( 'name' ) ) ?>"
 											class="img-responsive<?php echo esc_attr( $window_mag_center_logo ); ?>"
 											<?php if ( $window_mag_retina ){ ?>data-at2x="<?php echo esc_url( $window_mag_retina ); ?>"<?php } ?>>
@@ -236,7 +236,7 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 				</div>
 				<div class="main-menu<?php echo esc_attr( $window_mag_sticky_nav ); ?>">
 					<div class="container">
-						<?php if ( 'off' !== window_mag_get_setting( 'search_nav' ) ) { ?>
+						<?php if ( 'off' !== dw_get_setting( 'search_nav' ) ) { ?>
 							<a href="#" class="search-toggle"><i class="fa fa-search"></i></a>
 							<div class="search-box">
 								<?php get_search_form(); ?>
@@ -261,8 +261,8 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 				</div>
 				<?php
 				//News Ticker Since V1.2
-				if ( 'on' == window_mag_get_setting( 'news_ticker_switch/control' ) ) {
-					if ( 'on' === window_mag_get_setting( 'news_ticker_switch/on/home_only' ) ) {
+				if ( 'on' == dw_get_setting( 'news_ticker_switch/control' ) ) {
+					if ( 'on' === dw_get_setting( 'news_ticker_switch/on/home_only' ) ) {
 						if ( is_front_page() ) {
 							get_template_part( 'templates/news', 'ticker' );
 						}
@@ -271,10 +271,10 @@ if ( window_mag_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 					}
 				}
 				?>
-				<?php if ( 'off' !== window_mag_get_setting( 'banner_box1/gadget' ) ) { ?>
+				<?php if ( 'off' !== dw_get_setting( 'banner_box1/gadget' ) ) { ?>
 					<div class="simple-ads">
 						<div class="container">
-							<?php window_mag_ads( '1', 'ad-header' ); ?>
+							<?php dw_ads( '1', 'ad-header' ); ?>
 						</div>
 					</div>
 				<?php } ?>

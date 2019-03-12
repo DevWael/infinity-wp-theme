@@ -3,19 +3,19 @@ global $post;
 $window_mag_old_post    = $post;
 $window_mag_posts_count = $window_mag_exclude_posts = $window_mag_thumbnail_size = $window_mag_image_url = '';
 // center-slide or many-slides or double-slides
-$window_mag_carousel_style = window_mag_get_setting( 'carousel_switch/on/carousel_style' );
+$window_mag_carousel_style = dw_get_setting( 'carousel_switch/on/carousel_style' );
 // trend - likes - views - category - tag - author
-$window_mag_query_type = window_mag_get_setting( 'carousel_switch/on/carousel_control/query_type' );
+$window_mag_query_type = dw_get_setting( 'carousel_switch/on/carousel_control/query_type' );
 //integer of posts count
-$window_mag_posts_count = window_mag_get_setting( 'carousel_switch/on/posts_count' );
+$window_mag_posts_count = dw_get_setting( 'carousel_switch/on/posts_count' );
 //array of post ids to exclude
-$window_mag_exclude_posts = window_mag_get_setting( 'carousel_switch/on/exclude' );
+$window_mag_exclude_posts = dw_get_setting( 'carousel_switch/on/exclude' );
 //array of categories ids
-$window_mag_cat_ids = window_mag_get_setting( 'carousel_switch/on/carousel_control/category/cat_select' );
+$window_mag_cat_ids = dw_get_setting( 'carousel_switch/on/carousel_control/category/cat_select' );
 //array of tags ids
-$window_mag_tag_ids = window_mag_get_setting( 'carousel_switch/on/carousel_control/tag/tag_select' );
+$window_mag_tag_ids = dw_get_setting( 'carousel_switch/on/carousel_control/tag/tag_select' );
 //integer of author id
-$window_mag_author_id = window_mag_get_setting( 'carousel_switch/on/carousel_control/author/author_select' );
+$window_mag_author_id = dw_get_setting( 'carousel_switch/on/carousel_control/author/author_select' );
 //Carousel style
 if ( ! $window_mag_carousel_style ) {
 	$window_mag_carousel_style = 'center-slide';
@@ -136,13 +136,13 @@ if ( $query->have_posts() ):
 							<div itemscope itemtype="http://schema.org/Article" class="contents">
 								<?php the_title( sprintf( '<h3 class="post-title" itemprop = "name headline" ><a href = "%s" rel = "bookmark" > ', esc_url( get_permalink() ) ), '</a ></h3>' ); ?>
 								<div class="slide-post-meta">
-									<span class="author" title="<?php esc_attr_e( 'Author', 'window-mag' ); ?>">
+									<span class="author" title="<?php esc_attr_e( 'Author', 'dw' ); ?>">
 										<i class="fa fa-user"></i>
 										<?php the_author_posts_link(); ?>
 									</span>
-									<span class="date" title="<?php esc_attr_e( 'Created on', 'window-mag' ); ?>">
+									<span class="date" title="<?php esc_attr_e( 'Created on', 'dw' ); ?>">
 										<i class="fa fa-calendar"></i>
-										<?php window_mag_time(); ?>
+										<?php dw_post_time(); ?>
 									</span>
 								</div>
 							</div>

@@ -1,14 +1,14 @@
 <?php
 
-class window_mag_login_box extends WP_Widget {
+class dw_login_box extends WP_Widget {
 	/**
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
 		parent::__construct(
-			'window_mag_login_box', // Base ID
-			WINDOW_MAG_NAME . esc_html__( ' Login Box', 'window-mag' ), // Name
-			array( 'description' => esc_html__( 'add login box to widgets area', 'window-mag' ), ) // Args
+			'dw_login_box', // Base ID
+			DW_NAME . esc_html__( ' Login Box', 'dw' ), // Name
+			array( 'description' => esc_html__( 'add login box to widgets area', 'dw' ), ) // Args
 		);
 	}
 
@@ -25,7 +25,7 @@ class window_mag_login_box extends WP_Widget {
 		if ( ! empty( $instance['title'] ) ) {
 			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 		}
-		window_mag_login_form();
+		dw_login_form();
 		echo $args['after_widget'];
 
 	}
@@ -43,7 +43,7 @@ class window_mag_login_box extends WP_Widget {
 		$title = ! empty( $instance['title'] ) ? $instance['title'] : ''; ?>
 		<p>
 			<label
-				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'window-mag' ) ?></label>
+				for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'dw' ) ?></label>
 			<input id="<?php echo $this->get_field_id( 'title' ); ?>"
 			       name="<?php echo $this->get_field_name( 'title' ); ?>"
 			       value="<?php echo esc_attr( $title ); ?>" class="widefat" type="text"/>

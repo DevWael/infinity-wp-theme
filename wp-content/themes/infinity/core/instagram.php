@@ -19,10 +19,10 @@ function window_mag_scrape_instagram( $username ) {
 		}
 		$remote = wp_remote_get( $url );
 		if ( is_wp_error( $remote ) ) {
-			return new WP_Error( 'site_down', esc_html__( 'Unable to communicate with Instagram.', 'window-mag' ) );
+			return new WP_Error( 'site_down', esc_html__( 'Unable to communicate with Instagram.', 'dw' ) );
 		}
 		if ( 200 !== wp_remote_retrieve_response_code( $remote ) ) {
-			return new WP_Error( 'invalid_response', esc_html__( 'Instagram did not return a 200.', 'window-mag' ) );
+			return new WP_Error( 'invalid_response', esc_html__( 'Instagram did not return a 200.', 'dw' ) );
 		}
 		$shards      = explode( 'window._sharedData = ', $remote['body'] );
 		$insta_json  = explode( ';</script>', $shards[1] );
@@ -31,7 +31,7 @@ function window_mag_scrape_instagram( $username ) {
 
 
 		if ( ! $insta_array ) {
-			return new WP_Error( 'bad_json', esc_html__( 'Instagram has returned invalid data.', 'window-mag' ) );
+			return new WP_Error( 'bad_json', esc_html__( 'Instagram has returned invalid data.', 'dw' ) );
 		}
 		//fw_print( $insta_array );
 		if ( isset( $insta_array['entry_data']['ProfilePage'][0]['graphql']['user']['edge_owner_to_timeline_media']['edges'] ) ) {
@@ -39,11 +39,11 @@ function window_mag_scrape_instagram( $username ) {
 		} elseif ( isset( $insta_array['entry_data']['TagPage'][0]['graphql']['hashtag']['edge_hashtag_to_media']['edges'] ) ) {
 			$images = $insta_array['entry_data']['TagPage'][0]['graphql']['hashtag']['edge_hashtag_to_media']['edges'];
 		} else {
-			return new WP_Error( 'bad_json_2', esc_html__( 'Instagram has returned invalid data. ff', 'window-mag' ) );
+			return new WP_Error( 'bad_json_2', esc_html__( 'Instagram has returned invalid data. ff', 'dw' ) );
 		}
 
 		if ( ! is_array( $images ) ) {
-			return new WP_Error( 'bad_array', esc_html__( 'Instagram has returned invalid data.', 'window-mag' ) );
+			return new WP_Error( 'bad_array', esc_html__( 'Instagram has returned invalid data.', 'dw' ) );
 		}
 
 
@@ -59,7 +59,7 @@ function window_mag_scrape_instagram( $username ) {
 						$type = 'image';
 					}
 
-					$caption = __( 'Instagram Image', 'window-mag' );
+					$caption = __( 'Instagram Image', 'dw' );
 					if ( ! empty( $image['node']['edge_media_to_caption']['edges'][0]['node']['text'] ) ) {
 						$caption = $image['node']['edge_media_to_caption']['edges'][0]['node']['text'];
 					}
@@ -84,7 +84,7 @@ function window_mag_scrape_instagram( $username ) {
 						$type = 'image';
 					}
 
-					$caption = __( 'Instagram Image', 'window-mag' );
+					$caption = __( 'Instagram Image', 'dw' );
 					if ( ! empty( $image['caption'] ) ) {
 						$caption = $image['caption'];
 					}
@@ -114,7 +114,7 @@ function window_mag_scrape_instagram( $username ) {
 	if ( ! empty( $instagram ) ) {
 		return unserialize( $instagram );
 	} else {
-		return new WP_Error( 'no_images', esc_html__( 'Instagram did not return any images.', 'window-mag' ) );
+		return new WP_Error( 'no_images', esc_html__( 'Instagram did not return any images.', 'dw' ) );
 	}
 }
 
@@ -144,7 +144,7 @@ if ( ! function_exists( 'window_mag_instagram_photos_views' ) ) {
                              alt="<?php echo esc_attr( $photo['description'] ) ?>"
                              class="img-responsive">
                         <a href="<?php echo esc_url( $photo['link'] ) ?>"
-                           title="<?php esc_attr_e( 'Go to the post', 'window-mag' ); ?>"
+                           title="<?php esc_attr_e( 'Go to the post', 'dw' ); ?>"
                            class="to-insta-photo" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
 					<?php

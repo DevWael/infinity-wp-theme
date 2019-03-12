@@ -4,14 +4,14 @@
  * this file is visible in single.php only
  */
 $thumbnail_size = 'window_mag_slider_center';
-$video_control  = window_mag_get_meta( get_the_ID(), 'video-box/gadget' );
+$video_control  = dw_get_meta( get_the_ID(), 'video-box/gadget' );
 $allowed_files  = array( 'mp4', 'm4v', 'webm', 'ogv', 'wmv', 'flv' );
 if ( $video_control or has_post_thumbnail() ):
 	?>
 	<div class="post-feature-box">
 		<?php
 		if ( 'remote' === $video_control ) {
-			$video_url = window_mag_get_meta( get_the_ID(), 'video-box/remote/video-url' );
+			$video_url = dw_get_meta( get_the_ID(), 'video-box/remote/video-url' );
 			if ( $video_url && wp_oembed_get( $video_url ) ) {
 				echo wp_oembed_get( esc_url( $video_url ) );
 			} else {
@@ -25,7 +25,7 @@ if ( $video_control or has_post_thumbnail() ):
 				<?php endif;
 			}
 		} elseif ( 'local' === $video_control ) {
-			$video_file = window_mag_get_meta( get_the_ID(), 'video-box/local/video-file/url' );
+			$video_file = dw_get_meta( get_the_ID(), 'video-box/local/video-file/url' );
 			$ext        = pathinfo( esc_url( $video_file ), PATHINFO_EXTENSION ); //get file extension
 			if ( $video_file && in_array( $ext, $allowed_files ) ) {
 				echo wp_video_shortcode( array(

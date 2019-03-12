@@ -3,7 +3,7 @@
 /**
  * Adds Social media icons widget.
  */
-class window_mag_facebook_box extends WP_Widget {
+class dw_facebook_box extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
@@ -11,8 +11,8 @@ class window_mag_facebook_box extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'window_facebook_box', // Base ID
-			WINDOW_MAG_NAME . esc_html__( ' Facebook box', 'window-mag' ), // Name
-			array( 'description' => esc_html__( 'add facebook page box', 'window-mag' ), ) // Args
+			DW_NAME . esc_html__( ' Facebook box', 'dw' ), // Name
+			array( 'description' => esc_html__( 'add facebook page box', 'dw' ), ) // Args
 		);
 	}
 
@@ -72,14 +72,14 @@ class window_mag_facebook_box extends WP_Widget {
 		$page_url = ! empty( $instance['page_url'] ) ? $instance['page_url'] : '';
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'window-mag' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'dw' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
 			       name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
-			       placeholder="<?php esc_attr_e( 'Like us on Facebook', 'window-mag' ) ?>"
+			       placeholder="<?php esc_attr_e( 'Like us on Facebook', 'dw' ) ?>"
 			       value="<?php echo esc_attr( $title ); ?>">
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'page_url' ); ?>"><?php _e( 'Page url :', 'window-mag' );
+			<label for="<?php echo $this->get_field_id( 'page_url' ); ?>"><?php _e( 'Page url :', 'dw' );
 				?></label>
 			<input id="<?php echo $this->get_field_id( 'page_url' ); ?>"
 			       name="<?php echo $this->get_field_name( 'page_url' ); ?>" type="text" class="widefat"

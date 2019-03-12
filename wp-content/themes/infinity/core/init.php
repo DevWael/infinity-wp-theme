@@ -1,21 +1,23 @@
 <?php
-
+//disable gutenberg editor
+add_filter( 'use_block_editor_for_post', '__return_false', 10 );
+add_filter( 'use_block_editor_for_page', '__return_false', 10 );
 /**
  * Post and comment like system
  */
-require_once WINDOW_MAG_CORE . 'like-system.php';
+require_once DW_CORE . 'like-system.php';
 
 /**
  * Load Required Plugins
  */
-require WINDOW_MAG_CORE . 'required-plugins.php';
-require WINDOW_MAG_CORE . 'instagram.php';
+require DW_CORE . 'required-plugins.php';
+require DW_CORE . 'instagram.php';
 
 /**
  * Load custom widgets
  */
-if ( file_exists( WINDOW_MAG_CORE . 'widgets/widgets.php' ) ) {
-	require WINDOW_MAG_CORE . 'widgets/widgets.php';
+if ( file_exists( DW_CORE . 'widgets/widgets.php' ) ) {
+	require DW_CORE . 'widgets/widgets.php';
 }
 
 /**
@@ -28,11 +30,11 @@ if ( ! isset( $content_width ) ) {
 /**
  * Load magazine blocks
  */
-require WINDOW_MAG_CORE . 'blocks/blocks.php';
+require DW_CORE . 'blocks/blocks.php';
 
-add_action( 'after_setup_theme', 'window_mag_theme_setup' );
-if ( ! function_exists( 'window_mag_theme_setup' ) ) {
-	function window_mag_theme_setup() {
+add_action( 'after_setup_theme', 'dw_theme_setup' );
+if ( ! function_exists( 'dw_theme_setup' ) ) {
+	function dw_theme_setup() {
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
@@ -43,10 +45,10 @@ if ( ! function_exists( 'window_mag_theme_setup' ) ) {
 		add_image_size( 'window_mag_pic_post', 150, 100, true );
 		add_image_size( 'window_mag_small_pic_post', 120, 80, true );
 		add_theme_support( 'post-formats', array( 'quote', 'gallery', 'video', 'audio', 'link' ) );
-		load_theme_textdomain( 'window-mag', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'dw', get_template_directory() . '/languages' );
 		register_nav_menus( array(
-			'header_menu' => esc_html__( 'Primary Menu', 'window-mag' ),
-			'footer_menu' => esc_html__( 'Footer Menu', 'window-mag' )
+			'header_menu' => esc_html__( 'Primary Menu', 'dw' ),
+			'footer_menu' => esc_html__( 'Footer Menu', 'dw' )
 		) );
 	}
 }
@@ -54,8 +56,8 @@ if ( ! function_exists( 'window_mag_theme_setup' ) ) {
 /**
  * Get all theme setting from database when unyson framework plugin is activated
  */
-if ( ! function_exists( 'window_mag_get_setting' ) ) {
-	function window_mag_get_setting( $option_id, $default_value = null ) {
+if ( ! function_exists( 'dw_get_setting' ) ) {
+	function dw_get_setting( $option_id, $default_value = null ) {
 		if ( function_exists( 'fw_get_db_settings_option' ) ) {
 			return fw_get_db_settings_option( $option_id, $default_value );
 		} else {
@@ -67,8 +69,8 @@ if ( ! function_exists( 'window_mag_get_setting' ) ) {
 /**
  * Get all post meta from database when unyson framework plugin is activated
  */
-if ( ! function_exists( 'window_mag_get_meta' ) ) {
-	function window_mag_get_meta( $post_id, $option_id, $default_value = null ) {
+if ( ! function_exists( 'dw_get_meta' ) ) {
+	function dw_get_meta( $post_id, $option_id, $default_value = null ) {
 		if ( function_exists( 'fw_get_db_post_option' ) ) {
 			return fw_get_db_post_option( $post_id, $option_id, $default_value );
 		} else {
@@ -80,8 +82,8 @@ if ( ! function_exists( 'window_mag_get_meta' ) ) {
 /**
  * Get term meta from database when unyson framework plugin is activated
  */
-if ( ! function_exists( 'window_mag_get_term_setting' ) ) {
-	function window_mag_get_term_setting( $cat_id, $option_id, $default_value = null ) {
+if ( ! function_exists( 'dw_get_term_setting' ) ) {
+	function dw_get_term_setting( $cat_id, $option_id, $default_value = null ) {
 		if ( function_exists( 'fw_get_db_term_option' ) ) {
 			$tax = '';
 			if ( is_category() ) {
@@ -100,9 +102,9 @@ if ( ! function_exists( 'window_mag_get_term_setting' ) ) {
 /**
  * load theme scripts
  */
-add_action( 'wp_enqueue_scripts', 'window_mag_enqueue_scripts' );
-if ( ! function_exists( 'window_mag_enqueue_scripts' ) ) {
-	function window_mag_enqueue_scripts() {
+add_action( 'wp_enqueue_scripts', 'dw_enqueue_scripts' );
+if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
+	function dw_enqueue_scripts() {
 		// Css files
 		$styles = array(
 			'font-awesome' => 'font-awesome.css',//font awesome lib
@@ -111,14 +113,14 @@ if ( ! function_exists( 'window_mag_enqueue_scripts' ) ) {
 			'owl-css'      => 'owl.carousel.css'//Owl carousel
 		);
 		foreach ( $styles as $key => $sc ) {
-			wp_enqueue_style( $key, WINDOW_MAG_CSS_URI . $sc );
+			wp_enqueue_style( $key, DW_CSS_URI . $sc );
 		}
 
 		//Default theme font
-		if ( window_mag_fonts_url() == '' ) {
+		if ( dw_fonts_url() == '' ) {
 			wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Montserrat:400,700' );
 		} else {
-			wp_enqueue_style( 'google-fonts', window_mag_fonts_url(), array() );//google Fonts
+			wp_enqueue_style( 'google-fonts', dw_fonts_url(), array() );//google Fonts
 		}
 
 
@@ -126,9 +128,9 @@ if ( ! function_exists( 'window_mag_enqueue_scripts' ) ) {
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 		//Javascript files
-		if ( window_mag_get_setting( 'code_highlight' ) == 'on' ) {
+		if ( dw_get_setting( 'code_highlight' ) == 'on' ) {
 			//Code highlighting lib
-			wp_enqueue_script( 'code-highlight', WINDOW_MAG_JS_URI . 'highlight.js', array( 'jquery' ), '1.0', true );
+			wp_enqueue_script( 'code-highlight', DW_JS_URI . 'highlight.js', array( 'jquery' ), '1.0', true );
 		}
 
 		wp_enqueue_script( 'masonry' );
@@ -143,21 +145,21 @@ if ( ! function_exists( 'window_mag_enqueue_scripts' ) ) {
 			'main'           => 'main.js'
 		);
 		foreach ( $scripts as $alias => $src ) {
-			wp_enqueue_script( $alias, WINDOW_MAG_JS_URI . $src, array( 'jquery' ), '1.0', true );
+			wp_enqueue_script( $alias, DW_JS_URI . $src, array( 'jquery' ), '1.0', true );
 		}
 
 		//if ( window_mag_get_setting( 'retina_support' ) == 'on' ) {
-			wp_enqueue_script( 'parallax-effect', WINDOW_MAG_JS_URI . 'parallax.min.js', array( 'jquery' ), '1.0', true );
+			wp_enqueue_script( 'parallax-effect', DW_JS_URI . 'parallax.min.js', array( 'jquery' ), '1.0', true );
 		//}
 
-		if ( window_mag_get_setting( 'retina_support' ) == 'on' ) {
-			wp_enqueue_script( 'retina', WINDOW_MAG_JS_URI . 'retina.js', array( 'jquery' ), '1.0', true );
+		if ( dw_get_setting( 'retina_support' ) == 'on' ) {
+			wp_enqueue_script( 'retina', DW_JS_URI . 'retina.js', array( 'jquery' ), '1.0', true );
 		}
 
 		if ( is_singular() ) {
 			wp_enqueue_script( "comment-reply" );
 		}
-		window_mag_open_graph();
+		dw_open_graph();
 	}
 }
 
@@ -165,9 +167,9 @@ if ( ! function_exists( 'window_mag_enqueue_scripts' ) ) {
  * For improving page loading speed
  * Removing Query String From The Static Resources
  */
-add_filter( 'script_loader_src', 'window_mag_remove_script_version', 15, 1 );
-add_filter( 'style_loader_src', 'window_mag_remove_script_version', 15, 1 );
-function window_mag_remove_script_version( $src ) {
+add_filter( 'script_loader_src', 'dw_remove_script_version', 15, 1 );
+add_filter( 'style_loader_src', 'dw_remove_script_version', 15, 1 );
+function dw_remove_script_version( $src ) {
 	if ( strpos( $src, '?ver=' ) ) {
 		$src = remove_query_arg( 'ver', $src );
 	}
@@ -178,11 +180,11 @@ function window_mag_remove_script_version( $src ) {
 /**
  * Review system
  */
-if ( ! function_exists( 'window_mag_review_system' ) ) {
-	function window_mag_review_system( $post_id, $size = 'small', $before = '', $after = '' ) {
-		$review_title  = window_mag_get_meta( $post_id, 'window_review-title' );
-		$review_desc   = window_mag_get_meta( $post_id, 'window_review-desc' );
-		$rating_scores = window_mag_get_meta( $post_id, 'window_review-rating' );
+if ( ! function_exists( 'dw_review_system' ) ) {
+	function dw_review_system( $post_id, $size = 'small', $before = '', $after = '' ) {
+		$review_title  = dw_get_meta( $post_id, 'window_review-title' );
+		$review_desc   = dw_get_meta( $post_id, 'window_review-desc' );
+		$rating_scores = dw_get_meta( $post_id, 'window_review-rating' );
 		$rates         = array();
 		$rates_average = '';
 		if ( $rating_scores ) {
@@ -202,7 +204,7 @@ if ( ! function_exists( 'window_mag_review_system' ) ) {
                              itemtype="http://schema.org/Thing"><span
                                     itemprop="name"><?php echo esc_html( $review_title ); ?></span></div>
                         <div class="hide" itemprop="reviewBody">
-							<?php window_mag_excerpt(); ?>
+							<?php dw_excerpt(); ?>
                         </div>
 
                         <div class="updated hide"><?php echo get_the_time( get_option( 'date_format' ) ); ?></div>
@@ -228,7 +230,7 @@ if ( ! function_exists( 'window_mag_review_system' ) ) {
 							<?php if ( $score['feature_name'] ) : ?>
                                 <div class="criteria-title">
 									<?php echo $score['feature_name'] . ' - ' . $score['score']; ?>
-                                    <span class="out-of"><?php esc_html_e( '/ 10', 'window-mag' ); ?></span>
+                                    <span class="out-of"><?php esc_html_e( '/ 10', 'dw' ); ?></span>
                                 </div>
 							<?php endif; ?>
                             <div class="progress">
@@ -272,19 +274,19 @@ if ( ! function_exists( 'window_mag_review_system' ) ) {
 									 */
 									switch ( $final_score ) {
 										case ( $final_score <= 10 && $final_score >= 8.5 ) :
-											esc_html_e( 'Excellent', 'window-mag' );
+											esc_html_e( 'Excellent', 'dw' );
 											break;
 										case ( $final_score <= 8.4 && $final_score >= 7.5 ) :
-											esc_html_e( 'Very Good', 'window-mag' );
+											esc_html_e( 'Very Good', 'dw' );
 											break;
 										case ( $final_score <= 7.4 && $final_score >= 6 ) :
-											esc_html_e( 'Good', 'window-mag' );
+											esc_html_e( 'Good', 'dw' );
 											break;
 										case ( $final_score <= 5.9 && $final_score >= 4 ) :
-											esc_html_e( 'Average', 'window-mag' );
+											esc_html_e( 'Average', 'dw' );
 											break;
 										case ( $final_score < 4 ) :
-											esc_html_e( 'Poor', 'window-mag' );
+											esc_html_e( 'Poor', 'dw' );
 											break;
 									}
 									?>
@@ -326,7 +328,7 @@ if ( ! function_exists( 'window_mag_review_system' ) ) {
 				}
 				if ( $rates_average ):
 					?>
-                    <span class="small-rating" title="<?php esc_attr_e( 'Rating Score', 'window-mag' ); ?>">
+                    <span class="small-rating" title="<?php esc_attr_e( 'Rating Score', 'dw' ); ?>">
 						<i class="fa fa-bar-chart"></i>
 						<?php echo esc_html( round( $rates_average, 1 ) ); ?>
 					</span>
@@ -341,8 +343,8 @@ if ( ! function_exists( 'window_mag_review_system' ) ) {
 /**
  * Setup selected google fonts from theme options and add the link to database
  */
-add_action( 'fw_settings_form_saved', 'window_mag_process_google_fonts', 999, 2 );
-function window_mag_process_google_fonts() {
+add_action( 'fw_settings_form_saved', 'dw_process_google_fonts', 999, 2 );
+function dw_process_google_fonts() {
 	if ( function_exists( 'fw_get_db_settings_option' ) ) {
 		$include_from_google = array();
 		$google_fonts        = fw_get_google_fonts();
@@ -377,7 +379,7 @@ function window_mag_process_google_fonts() {
 			}
 		}
 
-		$google_fonts_links = window_mag_get_remote_fonts( $include_from_google );
+		$google_fonts_links = dw_get_remote_fonts( $include_from_google );
 		// set a option in db for save google fonts link
 		update_option( 'window_google_fonts_include', $google_fonts_links );
 	}
@@ -386,8 +388,8 @@ function window_mag_process_google_fonts() {
 /**
  * Create the google fonts request
  */
-if ( ! function_exists( 'window_mag_get_remote_fonts' ) ) {
-	function window_mag_get_remote_fonts( $include_from_google ) {
+if ( ! function_exists( 'dw_get_remote_fonts' ) ) {
+	function dw_get_remote_fonts( $include_from_google ) {
 		if ( ! sizeof( $include_from_google ) ) {
 			return '';
 		}
@@ -405,8 +407,8 @@ if ( ! function_exists( 'window_mag_get_remote_fonts' ) ) {
  * Register Google Fonts
  * @return string google fonts full url
  */
-if ( ! function_exists( 'window_mag_fonts_url' ) ) {
-	function window_mag_fonts_url() {
+if ( ! function_exists( 'dw_fonts_url' ) ) {
+	function dw_fonts_url() {
 		$fonts_url = '';
 		/*
 		 * Detect if google fonts selected and saved in database
@@ -416,7 +418,7 @@ if ( ! function_exists( 'window_mag_fonts_url' ) ) {
 			 * Translators: If there are characters in your language that are not supported
 			 * by chosen font(s), translate this to 'off'. Do not translate into your own language.
 			 */
-			if ( 'off' !== _x( 'on', 'Google fonts: on or off (Do not translate this into your own language)', 'window-mag' ) ) {
+			if ( 'off' !== _x( 'on', 'Google fonts: on or off (Do not translate this into your own language)', 'dw' ) ) {
 				$fonts_url = add_query_arg( 'family', urlencode( get_option( 'window_google_fonts_include' ) ), "//fonts.googleapis.com/css" );
 			}
 		}
@@ -433,54 +435,54 @@ if ( ! function_exists( 'window_mag_fonts_url' ) ) {
  * @param string $before string wrapper start
  * @param string $after string wrapper end
  */
-function window_mag_typography( $selector, $option, $before = '', $after = '' ) {
-	if ( window_mag_get_setting( $option ) ) {
+function dw_typography( $selector, $option, $before = '', $after = '' ) {
+	if ( dw_get_setting( $option ) ) {
 		$font_styles  = array( 'normal', 'italic', 'oblique' ); //All available font styles
 		$font_weights = array( 'bold', 'bolder', 'lighter', 'regular' ); //All available font weights
 		echo $before;
-		if ( window_mag_get_setting( $option . '/family' ) ) {
+		if ( dw_get_setting( $option . '/family' ) ) {
 			//Css selector
 			echo $selector . ' {';
 			//Font family
-			echo esc_html( 'font-family: ' . window_mag_get_setting( $option . '/family' ) . ';' );
-			if ( window_mag_get_setting( $option . '/size' ) ) {
+			echo esc_html( 'font-family: ' . dw_get_setting( $option . '/family' ) . ';' );
+			if ( dw_get_setting( $option . '/size' ) ) {
 				//Font size
-				echo esc_html( 'font-size: ' . window_mag_get_setting( $option . '/size' ) . 'px;' );
+				echo esc_html( 'font-size: ' . dw_get_setting( $option . '/size' ) . 'px;' );
 			}
-			if ( window_mag_get_setting( $option . '/variation' ) ) {
-				if ( ctype_digit( window_mag_get_setting( $option . '/variation' ) ) ) {
+			if ( dw_get_setting( $option . '/variation' ) ) {
+				if ( ctype_digit( dw_get_setting( $option . '/variation' ) ) ) {
 					//Numbers only
-					echo esc_html( 'font-weight: ' . intval( window_mag_get_setting( $option . '/variation' ) ) . ';' );
-				} elseif ( ctype_alpha( window_mag_get_setting( $option . '/variation' ) ) ) {
+					echo esc_html( 'font-weight: ' . intval( dw_get_setting( $option . '/variation' ) ) . ';' );
+				} elseif ( ctype_alpha( dw_get_setting( $option . '/variation' ) ) ) {
 					//Letters only
-					if ( in_array( window_mag_get_setting( $option . '/variation' ), $font_weights ) ) {
+					if ( in_array( dw_get_setting( $option . '/variation' ), $font_weights ) ) {
 						// Font weight
-						if ( window_mag_get_setting( $option . '/variation' ) == 'regular' ) {
+						if ( dw_get_setting( $option . '/variation' ) == 'regular' ) {
 							echo esc_html( 'font-weight: normal;' );
 						} else {
-							echo esc_html( 'font-weight: ' . window_mag_get_setting( $option . '/variation' ) . ';' );
+							echo esc_html( 'font-weight: ' . dw_get_setting( $option . '/variation' ) . ';' );
 						}
-					} elseif ( in_array( window_mag_get_setting( $option . '/variation' ), $font_styles ) ) {
+					} elseif ( in_array( dw_get_setting( $option . '/variation' ), $font_styles ) ) {
 						//Font style
-						echo esc_html( 'font-style: ' . window_mag_get_setting( $option . '/variation' ) . ';' );
+						echo esc_html( 'font-style: ' . dw_get_setting( $option . '/variation' ) . ';' );
 					}
-				} elseif ( ctype_alnum( window_mag_get_setting( $option . '/variation' ) ) ) {
+				} elseif ( ctype_alnum( dw_get_setting( $option . '/variation' ) ) ) {
 					//Letters and numbers
-					echo esc_html( 'font-weight: ' . intval( substr( window_mag_get_setting( $option . '/variation' ), 0, 3 ) ) . ';' );
-					echo esc_html( 'font-style: ' . substr( window_mag_get_setting( $option . '/variation' ), 3 ) . ';' );
+					echo esc_html( 'font-weight: ' . intval( substr( dw_get_setting( $option . '/variation' ), 0, 3 ) ) . ';' );
+					echo esc_html( 'font-style: ' . substr( dw_get_setting( $option . '/variation' ), 3 ) . ';' );
 				}
 			}
-			if ( window_mag_get_setting( $option . '/color' ) ) {
+			if ( dw_get_setting( $option . '/color' ) ) {
 				//Font color
-				echo esc_html( 'color: ' . sanitize_hex_color( window_mag_get_setting( $option . '/color' ) ) . ';' );
+				echo esc_html( 'color: ' . sanitize_hex_color( dw_get_setting( $option . '/color' ) ) . ';' );
 			}
-			if ( ctype_digit( window_mag_get_setting( $option . '/letter-spacing' ) ) ) {
+			if ( ctype_digit( dw_get_setting( $option . '/letter-spacing' ) ) ) {
 				//Letter spacing
-				echo esc_html( 'letter-spacing: ' . window_mag_get_setting( $option . '/letter-spacing' ) . 'px;' );
+				echo esc_html( 'letter-spacing: ' . dw_get_setting( $option . '/letter-spacing' ) . 'px;' );
 			}
-			if ( ctype_digit( window_mag_get_setting( $option . '/line-height' ) ) ) {
+			if ( ctype_digit( dw_get_setting( $option . '/line-height' ) ) ) {
 				//Line height
-				echo esc_html( 'line-height: ' . window_mag_get_setting( $option . '/line-height' ) . 'px;' );
+				echo esc_html( 'line-height: ' . dw_get_setting( $option . '/line-height' ) . 'px;' );
 			}
 			echo '}';
 		}
@@ -488,48 +490,48 @@ function window_mag_typography( $selector, $option, $before = '', $after = '' ) 
 	}
 }
 
-add_action( 'wp_head', 'window_mag_user_custom_scripts' );
-if ( ! function_exists( 'window_mag_user_custom_scripts' ) ) {
-	function window_mag_user_custom_scripts() {
+add_action( 'wp_head', 'dw_user_custom_scripts' );
+if ( ! function_exists( 'dw_user_custom_scripts' ) ) {
+	function dw_user_custom_scripts() {
 		if ( function_exists( 'fw_get_db_settings_option' ) ) {
 			echo '<style type="text/css">';
-			require WINDOW_MAG_CORE . 'dynamic-style.php';
+			require DW_CORE . 'dynamic-style.php';
 			echo '</style>';
 		}
 		//Custom Javascript code
-		if ( window_mag_get_setting( 'js' ) ) {
+		if ( dw_get_setting( 'js' ) ) {
 			?>
             <script type="text/javascript">
-				<?php echo window_mag_get_setting( 'js' ); ?>
+				<?php echo dw_get_setting( 'js' ); ?>
             </script>
 			<?php
 		}
 		//App icons
-		if ( window_mag_get_setting( 'favicon/attachment_id' ) ): ?>
+		if ( dw_get_setting( 'favicon/attachment_id' ) ): ?>
             <link rel="shortcut icon"
-                  href="<?php echo esc_url( wp_get_attachment_image_url( window_mag_get_setting( 'favicon/attachment_id' ), 'thumbnail', true ) ); ?>"/>
+                  href="<?php echo esc_url( wp_get_attachment_image_url( dw_get_setting( 'favicon/attachment_id' ), 'thumbnail', true ) ); ?>"/>
 		<?php endif;
-		if ( window_mag_get_setting( 'apple57/url' ) ): ?>
+		if ( dw_get_setting( 'apple57/url' ) ): ?>
             <link rel="apple-touch-icon-precomposed" sizes="57x57"
-                  href="<?php echo esc_url( window_mag_get_setting( 'apple57/url' ) ); ?>"/>
+                  href="<?php echo esc_url( dw_get_setting( 'apple57/url' ) ); ?>"/>
 		<?php endif; ?>
-		<?php if ( window_mag_get_setting( 'apple72/url' ) ): ?>
+		<?php if ( dw_get_setting( 'apple72/url' ) ): ?>
             <link rel="apple-touch-icon-precomposed" sizes="72x72"
-                  href="<?php echo esc_url( window_mag_get_setting( 'apple72/url' ) ); ?>"/>
+                  href="<?php echo esc_url( dw_get_setting( 'apple72/url' ) ); ?>"/>
 		<?php endif;
-		if ( window_mag_get_setting( 'apple114/url' ) ): ?>
+		if ( dw_get_setting( 'apple114/url' ) ): ?>
             <link rel="apple-touch-icon-precomposed" sizes="114x114"
-                  href="<?php echo esc_url( window_mag_get_setting( 'apple114/url' ) ); ?>"/>
+                  href="<?php echo esc_url( dw_get_setting( 'apple114/url' ) ); ?>"/>
             <meta name="msapplication-TileImage"
-                  content="<?php echo esc_url( window_mag_get_setting( 'apple114/url' ) ); ?>">
+                  content="<?php echo esc_url( dw_get_setting( 'apple114/url' ) ); ?>">
 
 		<?php endif; ?>
         <meta name="application-name" content="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"/>
 		<?php
 		//Google chrome theme color for mobile devices
 		$main_color = '#CD483C'; //The Default red color
-		if ( window_mag_get_setting( 'accent_color' ) ) {
-			$main_color = window_mag_get_setting( 'accent_color' );
+		if ( dw_get_setting( 'accent_color' ) ) {
+			$main_color = dw_get_setting( 'accent_color' );
 		}
 		?>
         <meta name="theme-color" content="<?php echo sanitize_hex_color( $main_color ); ?>">
@@ -559,7 +561,7 @@ if ( ! function_exists( 'sanitize_hex_color' ) ) {
  *
  * @return string color in rgb type
  */
-function window_mag_hex2rgb( $hex ) {
+function dw_hex2rgb( $hex ) {
 	$hex = sanitize_hex_color( $hex );
 	$hex = str_replace( "#", "", $hex );
 	if ( strlen( $hex ) == 3 ) {
@@ -580,17 +582,17 @@ function window_mag_hex2rgb( $hex ) {
 /**
  * Add 'window-class' class to body tag
  */
-add_filter( 'body_class', 'window_mag_class_name' );
-if ( ! function_exists( 'window_mag_class_name' ) ) {
-	function window_mag_class_name( $classes ) {
+add_filter( 'body_class', 'dw_class_name' );
+if ( ! function_exists( 'dw_class_name' ) ) {
+	function dw_class_name( $classes ) {
 		$classes[] = 'window-class';
 
-		if ( window_mag_get_setting( 'code_highlight' ) == 'on' ) {
+		if ( dw_get_setting( 'code_highlight' ) == 'on' ) {
 			$classes[] = 'window-code';
 		}
 
-		if ( window_mag_get_setting( 'headers_style' ) ) {
-			$classes[] = window_mag_get_setting( 'headers_style' );
+		if ( dw_get_setting( 'headers_style' ) ) {
+			$classes[] = dw_get_setting( 'headers_style' );
 		}
 
 		return $classes;
@@ -600,36 +602,36 @@ if ( ! function_exists( 'window_mag_class_name' ) ) {
 /**
  * Window Demo content
  */
-add_filter( 'fw:ext:backups-demo:demos', 'window_mag_demo_content' );
-function window_mag_demo_content( $demos ) {
+add_filter( 'fw:ext:backups-demo:demos', 'dw_demo_content' );
+function dw_demo_content( $demos ) {
 	$demos_array = array(
 		'news-demo'  => array(
-			'title'        => esc_html__( 'News Demo', 'window-mag' ),
+			'title'        => esc_html__( 'News Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/news.png',
 			'preview_link' => 'http://bbioon.com/window/news'
 		),
 		'sport-demo' => array(
-			'title'        => esc_html__( 'Sport Demo', 'window-mag' ),
+			'title'        => esc_html__( 'Sport Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/sport.png',
 			'preview_link' => 'http://bbioon.com/window/sport'
 		),
 		'food-demo'  => array(
-			'title'        => esc_html__( 'Food Demo', 'window-mag' ),
+			'title'        => esc_html__( 'Food Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/food.png',
 			'preview_link' => 'http://bbioon.com/window/food'
 		),
 		'blog-demo'  => array(
-			'title'        => esc_html__( 'Blog Demo', 'window-mag' ),
+			'title'        => esc_html__( 'Blog Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/blog.png',
 			'preview_link' => 'http://bbioon.com/window/blog'
 		),
 		'styles-demo'  => array(
-			'title'        => esc_html__( 'Fashion Demo', 'window-mag' ),
+			'title'        => esc_html__( 'Fashion Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/styles.png',
 			'preview_link' => 'http://bbioon.com/window/styles'
 		),
 		'tech-demo'  => array(
-			'title'        => esc_html__( 'Technology Demo', 'window-mag' ),
+			'title'        => esc_html__( 'Technology Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/techno.png',
 			'preview_link' => 'http://www.bbioon.com/window/techno/'
 		)
@@ -657,8 +659,8 @@ function window_mag_demo_content( $demos ) {
 /*
  * Add window version in wp-admin footer
  */
-add_filter( 'update_footer', 'window_mag_footer_version', 12 );
-function window_mag_footer_version( $html ) {
+add_filter( 'update_footer', 'dw_footer_version', 12 );
+function dw_footer_version( $html ) {
 	if ( ( current_user_can( 'update_themes' ) || current_user_can( 'update_plugins' ) ) && defined( "FW" ) ) {
 		return ( empty( $html ) ? '' : $html . ' | ' ) . fw()->theme->manifest->get( 'name' ) . ' ' . fw()->theme->manifest->get( 'version' );
 	} else {
@@ -669,8 +671,8 @@ function window_mag_footer_version( $html ) {
 /**
  * Add help links to admin bar ( Online documentation and Theme settings page )
  */
-add_action( 'admin_bar_menu', 'window_mag_toolbar_links', 999 );
-function window_mag_toolbar_links( $wp_admin_bar ) {
+add_action( 'admin_bar_menu', 'dw_toolbar_links', 999 );
+function dw_toolbar_links( $wp_admin_bar ) {
 	if ( current_user_can( 'administrator' ) && defined( "FW" ) && ! is_admin() ) {
 		//Theme options
 		$args_1 = array(
@@ -695,12 +697,12 @@ function window_mag_toolbar_links( $wp_admin_bar ) {
 /**
  * add scripts and styles to admin screen
  */
-add_action( 'admin_enqueue_scripts', 'window_mag_admin_scripts' );
-if ( ! function_exists( 'window_mag_admin_scripts' ) ) {
-	function window_mag_admin_scripts() {
-		wp_enqueue_style( 'admin_fontawesome', WINDOW_MAG_CSS_URI . 'font-awesome.css' );
-		wp_enqueue_style( 'admin_style', WINDOW_MAG_CORE_URI . 'scripts/admin-stylesheet.css' );
-		wp_enqueue_script( 'post_format', WINDOW_MAG_CORE_URI . 'scripts/post-formats.js' );
+add_action( 'admin_enqueue_scripts', 'dw_admin_scripts' );
+if ( ! function_exists( 'dw_admin_scripts' ) ) {
+	function dw_admin_scripts() {
+		wp_enqueue_style( 'admin_fontawesome', DW_CSS_URI . 'font-awesome.css' );
+		wp_enqueue_style( 'admin_style', DW_CORE_URI . 'scripts/admin-stylesheet.css' );
+		wp_enqueue_script( 'post_format', DW_CORE_URI . 'scripts/post-formats.js' );
 	}
 }
 
@@ -709,9 +711,9 @@ if ( ! function_exists( 'window_mag_admin_scripts' ) ) {
  *
  * @param $page_name -- page name in theme options page
  */
-if ( ! function_exists( 'window_mag_content_area_start' ) ) {
-	function window_mag_content_area_start( $page_name ) {
-		$sidebar_position = window_mag_get_setting( $page_name );
+if ( ! function_exists( 'dw_content_area_start' ) ) {
+	function dw_content_area_start( $page_name ) {
+		$sidebar_position = dw_get_setting( $page_name );
 
 		if ( $sidebar_position == 'left_sidebar' ) {
 			echo '<div class="col-md-8 col-xs-12 col-md-push-4 with-sidebar left-sidebar">';
@@ -723,8 +725,8 @@ if ( ! function_exists( 'window_mag_content_area_start' ) ) {
 	}
 }
 
-if ( ! function_exists( 'window_mag_content_area_end' ) ) {
-	function window_mag_content_area_end() {
+if ( ! function_exists( 'dw_content_area_end' ) ) {
+	function dw_content_area_end() {
 		echo '</div>';
 	}
 }
@@ -734,11 +736,11 @@ if ( ! function_exists( 'window_mag_content_area_end' ) ) {
  *
  * @param $page_name -- page name in theme options page
  */
-if ( ! function_exists( 'window_mag_sidebar_start' ) ) {
-	function window_mag_sidebar_start( $page_name ) {
+if ( ! function_exists( 'dw_sidebar_start' ) ) {
+	function dw_sidebar_start( $page_name ) {
 		$sticky_sidebar   = $sidebar_position = '';
-		$sidebar_position = window_mag_get_setting( $page_name );
-		if ( 'on' === window_mag_get_setting( 'sticky_sidebar' ) ) {
+		$sidebar_position = dw_get_setting( $page_name );
+		if ( 'on' === dw_get_setting( 'sticky_sidebar' ) ) {
 			$sticky_sidebar = 'sticky-sidebar ';
 		}
 		if ( $sidebar_position == 'left_sidebar' ) {
@@ -751,8 +753,8 @@ if ( ! function_exists( 'window_mag_sidebar_start' ) ) {
 	}
 }
 
-if ( ! function_exists( 'window_mag_sidebar_end' ) ) {
-	function window_mag_sidebar_end() {
+if ( ! function_exists( 'dw_sidebar_end' ) ) {
+	function dw_sidebar_end() {
 		echo '</div>';
 	}
 }
@@ -761,12 +763,12 @@ if ( ! function_exists( 'window_mag_sidebar_end' ) ) {
 /**
  * Register our sidebars and widgetized areas.
  */
-add_action( 'widgets_init', 'window_mag_widget_area' );
-if ( ! function_exists( 'window_mag_widget_area' ) ) {
-	function window_mag_widget_area() {
+add_action( 'widgets_init', 'dw_widget_area' );
+if ( ! function_exists( 'dw_widget_area' ) ) {
+	function dw_widget_area() {
 		$args = array(
 			array(
-				'name'          => esc_html__( 'Default Sidebar', 'window-mag' ),
+				'name'          => esc_html__( 'Default Sidebar', 'dw' ),
 				'id'            => 'home_side_bar',
 				'before_widget' => '<div class="widget %2$s">',
 				'after_widget'  => '</div>',
@@ -774,7 +776,7 @@ if ( ! function_exists( 'window_mag_widget_area' ) ) {
 				'after_title'   => '</span></h4>'
 			),
 			array(
-				'name'          => esc_html__( 'Footer one', 'window-mag' ),
+				'name'          => esc_html__( 'Footer one', 'dw' ),
 				'id'            => 'footer1',
 				'before_widget' => '<div class="widget %2$s">',
 				'after_widget'  => '</div>',
@@ -782,7 +784,7 @@ if ( ! function_exists( 'window_mag_widget_area' ) ) {
 				'after_title'   => '</span></h4>'
 			),
 			array(
-				'name'          => esc_html__( 'Footer two', 'window-mag' ),
+				'name'          => esc_html__( 'Footer two', 'dw' ),
 				'id'            => 'footer2',
 				'before_widget' => '<div class="widget %2$s">',
 				'after_widget'  => '</div>',
@@ -790,7 +792,7 @@ if ( ! function_exists( 'window_mag_widget_area' ) ) {
 				'after_title'   => '</span></h4>'
 			),
 			array(
-				'name'          => esc_html__( 'Footer three', 'window-mag' ),
+				'name'          => esc_html__( 'Footer three', 'dw' ),
 				'id'            => 'footer3',
 				'before_widget' => '<div class="widget %2$s">',
 				'after_widget'  => '</div>',
@@ -810,8 +812,8 @@ if ( ! function_exists( 'window_mag_widget_area' ) ) {
  *
  * @return int $i --> determine the count of active widget areas in footer to add bootstrap grid classes
  */
-if ( ! function_exists( 'window_mag_active_widgets' ) ) {
-	function window_mag_active_widgets( $exstra_class = null ) {
+if ( ! function_exists( 'dw_active_widgets' ) ) {
+	function dw_active_widgets( $exstra_class = null ) {
 		$i = 0;
 		if ( is_active_sidebar( 'footer1' ) ) {
 			$i ++;
@@ -841,9 +843,9 @@ if ( ! function_exists( 'window_mag_active_widgets' ) ) {
 /**
  * WordPress Excerpt Length
  * */
-if ( ! function_exists( 'window_mag_excerpt_global_length' ) ) {
-	function window_mag_excerpt_global_length( $length ) {
-		$len = absint( window_mag_get_setting( 'post_excerpt' ) );
+if ( ! function_exists( 'dw_excerpt_global_length' ) ) {
+	function dw_excerpt_global_length( $length ) {
+		$len = absint( dw_get_setting( 'post_excerpt' ) );
 		if ( $len ) {
 			return $len;
 		} else {
@@ -853,17 +855,17 @@ if ( ! function_exists( 'window_mag_excerpt_global_length' ) ) {
 	}
 }
 
-function window_mag_excerpt() {
-	add_filter( 'excerpt_length', 'window_mag_excerpt_global_length', 999 );
+function dw_excerpt() {
+	add_filter( 'excerpt_length', 'dw_excerpt_global_length', 999 );
 	echo get_the_excerpt();
 }
 
 /**
  * Read More text
  * */
-add_filter( 'excerpt_more', 'window_mag_remove_excerpt' );
-if ( ! function_exists( 'window_mag_remove_excerpt' ) ) {
-	function window_mag_remove_excerpt( $more ) {
+add_filter( 'excerpt_more', 'dw_remove_excerpt' );
+if ( ! function_exists( 'dw_remove_excerpt' ) ) {
+	function dw_remove_excerpt( $more ) {
 		return '...';
 	}
 }
@@ -871,8 +873,8 @@ if ( ! function_exists( 'window_mag_remove_excerpt' ) ) {
 /**
  * Posts Pagination
  */
-if ( ! function_exists( 'window_mag_pagination' ) ) {
-	function window_mag_pagination() {
+if ( ! function_exists( 'dw_pagination' ) ) {
+	function dw_pagination() {
 		if ( is_singular() ) {
 			return;
 		}
@@ -926,9 +928,9 @@ if ( ! function_exists( 'window_mag_pagination' ) ) {
  *
  * @return mixed array of social media html anchors or print them if $echo is true
  */
-if ( ! function_exists( 'window_mag_social_media_urls' ) ) {
-	function window_mag_social_media_urls( $echo = false ) {
-		$icons = window_mag_get_setting( 'social_icon' );
+if ( ! function_exists( 'dw_social_media_urls' ) ) {
+	function dw_social_media_urls( $echo = false ) {
+		$icons = dw_get_setting( 'social_icon' );
 		if ( ! $icons ) {
 			return false;
 		}
@@ -957,8 +959,8 @@ if ( ! function_exists( 'window_mag_social_media_urls' ) ) {
 /**
  * Set open graph meta data
  */
-if ( ! function_exists( 'window_mag_open_graph' ) ) {
-	function window_mag_open_graph() {
+if ( ! function_exists( 'dw_open_graph' ) ) {
+	function dw_open_graph() {
 		global $post;
 		$post_thumb = '';
 		if ( function_exists( "has_post_thumbnail" ) && has_post_thumbnail() ) {
@@ -983,8 +985,8 @@ if ( ! function_exists( 'window_mag_open_graph' ) ) {
 		<?php
 		if ( ! empty( $post_thumb ) && is_singular() ) {
 			echo '<meta property="og:image" content="' . esc_url( $post_thumb ) . '" />' . "\n";
-		} elseif ( window_mag_get_setting( 'site_logo/gadget' ) == 'logo' && window_mag_get_setting( 'site_logo/logo/logo_select/url' ) ) {
-			echo '<meta property="og:image" content="' . esc_url( window_mag_get_setting( 'site_logo/logo/logo_select/url' ) ) . '" />' . "\n";
+		} elseif ( dw_get_setting( 'site_logo/gadget' ) == 'logo' && dw_get_setting( 'site_logo/logo/logo_select/url' ) ) {
+			echo '<meta property="og:image" content="' . esc_url( dw_get_setting( 'site_logo/logo/logo_select/url' ) ) . '" />' . "\n";
 		}
 	}
 }
@@ -995,30 +997,30 @@ if ( ! function_exists( 'window_mag_open_graph' ) ) {
  * @param $ads_id int Ad area -> header(1) - footer(2) - top_article(3) - bottom_article(4)
  * @param string $class_attr html class attribute
  */
-function window_mag_ads( $ads_id, $class_attr = 'ads-banner' ) {
-	$control = window_mag_get_setting( 'banner_box' . $ads_id . '/gadget' );
+function dw_ads( $ads_id, $class_attr = 'ads-banner' ) {
+	$control = dw_get_setting( 'banner_box' . $ads_id . '/gadget' );
 	if ( 'code' == $control ) {
-		if ( window_mag_get_setting( 'banner_box' . $ads_id . '/code/code_block' ) ) { ?>
+		if ( dw_get_setting( 'banner_box' . $ads_id . '/code/code_block' ) ) { ?>
             <div class="<?php echo esc_attr( $class_attr ) ?>">
-				<?php echo do_shortcode( htmlspecialchars_decode( window_mag_get_setting( 'banner_box' . $ads_id . '/code/code_block' ) ) ); ?>
+				<?php echo do_shortcode( htmlspecialchars_decode( dw_get_setting( 'banner_box' . $ads_id . '/code/code_block' ) ) ); ?>
             </div>
 		<?php }
 	} elseif ( 'image' == $control ) {
-		if ( window_mag_get_setting( 'banner_box' . $ads_id . '/image/img' ) ) {
+		if ( dw_get_setting( 'banner_box' . $ads_id . '/image/img' ) ) {
 			$target = $nofollow = false;
-			if ( window_mag_get_setting( 'banner_box' . $ads_id . '/image/tab' ) ) {
+			if ( dw_get_setting( 'banner_box' . $ads_id . '/image/tab' ) ) {
 				$target = true;
 			}
-			if ( window_mag_get_setting( 'banner_box' . $ads_id . '/image/follow' ) ) {
+			if ( dw_get_setting( 'banner_box' . $ads_id . '/image/follow' ) ) {
 				$nofollow = true;
 			}
 			?>
             <div class="<?php echo esc_attr( $class_attr ) ?>">
-                <a href="<?php echo esc_url( window_mag_get_setting( 'banner_box' . $ads_id . '/image/url' ) ); ?>"
-                   title="<?php echo esc_attr( window_mag_get_setting( 'banner_box' . $ads_id . '/image/alt' ) ); ?>"<?php if ( $target ) { ?> target="_blank"<?php } ?><?php if ( $nofollow ) { ?> rel="nofollow"<?php } ?>>
+                <a href="<?php echo esc_url( dw_get_setting( 'banner_box' . $ads_id . '/image/url' ) ); ?>"
+                   title="<?php echo esc_attr( dw_get_setting( 'banner_box' . $ads_id . '/image/alt' ) ); ?>"<?php if ( $target ) { ?> target="_blank"<?php } ?><?php if ( $nofollow ) { ?> rel="nofollow"<?php } ?>>
                     <img
-                            src="<?php echo esc_url( window_mag_get_setting( 'banner_box' . $ads_id . '/image/img/url' ) ); ?>"
-                            alt="<?php echo esc_attr( window_mag_get_setting( 'banner_box' . $ads_id . '/image/alt' ) ); ?>"
+                            src="<?php echo esc_url( dw_get_setting( 'banner_box' . $ads_id . '/image/img/url' ) ); ?>"
+                            alt="<?php echo esc_attr( dw_get_setting( 'banner_box' . $ads_id . '/image/alt' ) ); ?>"
                             class="img-responsive"/>
                 </a>
             </div>
@@ -1035,21 +1037,21 @@ function window_mag_ads( $ads_id, $class_attr = 'ads-banner' ) {
  *
  * @return string -> post views count
  */
-function window_mag_getPostViews( $postID ) {
+function dw_getPostViews( $postID ) {
 	$count_key = 'bbioon_post_views';
 	$count     = get_post_meta( $postID, $count_key, true );
 	if ( $count == '' ) {
 		delete_post_meta( $postID, $count_key );
 		add_post_meta( $postID, $count_key, '0' );
 
-		return esc_html__( '0 view', 'window-mag' );
+		return esc_html__( '0 view', 'dw' );
 	} else {
 		return $count;
 	}
 }
 
 
-function window_mag_setPostViews( $postID ) {
+function dw_setPostViews( $postID ) {
 	$count_key = 'bbioon_post_views';
 	$count     = get_post_meta( $postID, $count_key, true );
 	if ( $count == '' ) {
@@ -1068,8 +1070,8 @@ function window_mag_setPostViews( $postID ) {
  *
  * @param $post_id -> The current post id
  */
-add_action( 'wp_head', 'window_mag_count_popular_posts' );
-function window_mag_count_popular_posts( $post_id ) {
+add_action( 'wp_head', 'dw_count_popular_posts' );
+function dw_count_popular_posts( $post_id ) {
 	if ( ! is_singular() ) {
 		return;
 	}
@@ -1078,21 +1080,21 @@ function window_mag_count_popular_posts( $post_id ) {
 			global $post;
 			$post_id = $post->ID;
 		}
-		window_mag_setPostViews( $post_id );
+		dw_setPostViews( $post_id );
 	}
 }
 
 
 // Add it to a column in WP-Admin
-add_filter( 'manage_posts_columns', 'window_mag_posts_column_views' );
-function window_mag_posts_column_views( $defaults ) {
-	$defaults['post_views'] = esc_html__( 'Views Count', 'window-mag' );
+add_filter( 'manage_posts_columns', 'dw_posts_column_views' );
+function dw_posts_column_views( $defaults ) {
+	$defaults['post_views'] = esc_html__( 'Views Count', 'dw' );
 
 	return $defaults;
 }
 
-add_action( 'manage_posts_custom_column', 'window_mag_posts_custom_column_views', 5, 2 );
-function window_mag_posts_custom_column_views( $column_name ) {
+add_action( 'manage_posts_custom_column', 'dw_posts_custom_column_views', 5, 2 );
+function dw_posts_custom_column_views( $column_name ) {
 	if ( $column_name === 'post_views' ) {
 		echo (int) get_post_meta( get_the_ID(), 'bbioon_post_views', true );
 	}
@@ -1101,33 +1103,33 @@ function window_mag_posts_custom_column_views( $column_name ) {
 /*
  * Navbar Fallback
  */
-if ( ! function_exists( 'window_mag_nav_fallback' ) ) {
-	function window_mag_nav_fallback() {
-		echo '<ul class="navbar-alert"><li><span class="fall-back">' . esc_html__( 'Use WP menu builder to build menus', 'window-mag' ) . '</span></li></ul>';
+if ( ! function_exists( 'dw_nav_fallback' ) ) {
+	function dw_nav_fallback() {
+		echo '<ul class="navbar-alert"><li><span class="fall-back">' . esc_html__( 'Use WP menu builder to build menus', 'dw' ) . '</span></li></ul>';
 	}
 }
 
 /**
  * Display html code for login form or logged in user data
  */
-if ( ! function_exists( 'window_mag_login_form' ) ) {
-	function window_mag_login_form( $login_only = 0 ) {
+if ( ! function_exists( 'dw_login_form' ) ) {
+	function dw_login_form( $login_only = 0 ) {
 		global $user_ID, $user_level, $user_identity;
 		$redirect = site_url();
 		if ( $user_ID ) : ?>
 			<?php if ( empty( $login_only ) ): ?>
                 <div class="user-login">
                     <div class="author-avatar"><?php echo get_avatar( $user_ID, $size = '80' ); ?></div>
-                    <p class="welcome-text"><?php esc_html_e( 'Welcome', 'window-mag' ); ?>
+                    <p class="welcome-text"><?php esc_html_e( 'Welcome', 'dw' ); ?>
                         <strong><?php echo $user_identity ?></strong> .</p>
                     <ul>
-                        <li><a href="<?php echo admin_url() ?>"><?php esc_html_e( 'Dashboard', 'window-mag' ); ?> </a>
+                        <li><a href="<?php echo admin_url() ?>"><?php esc_html_e( 'Dashboard', 'dw' ); ?> </a>
                         </li>
                         <li>
-                            <a href="<?php echo admin_url() ?>profile.php"><?php esc_html_e( 'Your Profile', 'window-mag' ); ?> </a>
+                            <a href="<?php echo admin_url() ?>profile.php"><?php esc_html_e( 'Your Profile', 'dw' ); ?> </a>
                         </li>
                         <li>
-                            <a href="<?php echo wp_logout_url( $redirect ); ?>"><?php esc_html_e( 'Logout', 'window-mag' ); ?> </a>
+                            <a href="<?php echo wp_logout_url( $redirect ); ?>"><?php esc_html_e( 'Logout', 'dw' ); ?> </a>
                         </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -1139,28 +1141,28 @@ if ( ! function_exists( 'window_mag_login_form' ) ) {
                       action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
                     <p class="log-username">
                         <input type="text" name="log" class="log"
-                               title="<?php esc_html_e( 'Username', 'window-mag' ); ?>"
-                               placeholder="<?php esc_html_e( 'Username', 'window-mag' ); ?>"
+                               title="<?php esc_html_e( 'Username', 'dw' ); ?>"
+                               placeholder="<?php esc_html_e( 'Username', 'dw' ); ?>"
                                size="33"/>
                     </p>
                     <p class="log-pass">
                         <input type="password" name="pwd" class="pwd"
-                               title="<?php esc_html_e( 'Password', 'window-mag' ); ?>"
-                               placeholder="<?php esc_html_e( 'Password', 'window-mag' ); ?>"
+                               title="<?php esc_html_e( 'Password', 'dw' ); ?>"
+                               placeholder="<?php esc_html_e( 'Password', 'dw' ); ?>"
                                size="33"/>
                     </p>
-                    <input type="submit" name="submit" value="<?php esc_html_e( 'Log in', 'window-mag' ) ?>"
+                    <input type="submit" name="submit" value="<?php esc_html_e( 'Log in', 'dw' ) ?>"
                            class="login-button"/>
                     <label for="rememberme"><input name="rememberme" class="rememberme" type="checkbox"
                                                    checked="checked"
-                                                   value="forever"/> <?php esc_html_e( 'Remember Me', 'window-mag' ); ?>
+                                                   value="forever"/> <?php esc_html_e( 'Remember Me', 'dw' ); ?>
                     </label>
                     <input type="hidden" name="redirect_to" value="<?php echo $_SERVER['REQUEST_URI']; ?>"/>
                 </form>
                 <ul class="login-links">
 					<?php echo wp_register(); ?>
                     <li>
-                        <a href="<?php echo wp_lostpassword_url( $redirect ) ?>"><?php esc_html_e( 'Lost your password?', 'window-mag' ); ?></a>
+                        <a href="<?php echo wp_lostpassword_url( $redirect ) ?>"><?php esc_html_e( 'Lost your password?', 'dw' ); ?></a>
                     </li>
                 </ul>
             </div>
@@ -1172,15 +1174,15 @@ if ( ! function_exists( 'window_mag_login_form' ) ) {
  * Add user's social accounts
  *
  */
-add_action( 'show_user_profile', 'window_mag_show_extra_profile_fields' );
-add_action( 'edit_user_profile', 'window_mag_show_extra_profile_fields' );
-if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
-	function window_mag_show_extra_profile_fields( $user ) {
+add_action( 'show_user_profile', 'dw_show_extra_profile_fields' );
+add_action( 'edit_user_profile', 'dw_show_extra_profile_fields' );
+if ( ! function_exists( 'dw_show_extra_profile_fields' ) ) {
+	function dw_show_extra_profile_fields( $user ) {
 		?>
-        <h3><?php esc_html_e( 'Social Networking', 'window-mag' ) ?></h3>
+        <h3><?php esc_html_e( 'Social Networking', 'dw' ) ?></h3>
         <table class="form-table">
             <tr>
-                <th><label for="facebook"><?php esc_html_e( 'FaceBook URL', 'window-mag' ); ?></label></th>
+                <th><label for="facebook"><?php esc_html_e( 'FaceBook URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="facebook" id="facebook"
                            value="<?php echo esc_attr( get_the_author_meta( 'facebook', $user->ID ) ); ?>"
@@ -1188,7 +1190,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="twitter"><?php esc_html_e( 'Twitter URL', 'window-mag' ); ?></label></th>
+                <th><label for="twitter"><?php esc_html_e( 'Twitter URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="twitter" id="twitter"
                            value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>"
@@ -1196,7 +1198,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="google"><?php esc_html_e( 'Google + URL', 'window-mag' ); ?></label></th>
+                <th><label for="google"><?php esc_html_e( 'Google + URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="google" id="google"
                            value="<?php echo esc_attr( get_the_author_meta( 'google', $user->ID ) ); ?>"
@@ -1204,7 +1206,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="dribbble"><?php esc_html_e( 'Dribbble URL', 'window-mag' ); ?></label></th>
+                <th><label for="dribbble"><?php esc_html_e( 'Dribbble URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="dribbble" id="dribbble"
                            value="<?php echo esc_attr( get_the_author_meta( 'dribbble', $user->ID ) ); ?>"
@@ -1212,7 +1214,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="github"><?php esc_html_e( 'Github URL', 'window-mag' ); ?></label></th>
+                <th><label for="github"><?php esc_html_e( 'Github URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="github" id="github"
                            value="<?php echo esc_attr( get_the_author_meta( 'github', $user->ID ) ); ?>"
@@ -1220,7 +1222,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="instagram"><?php esc_html_e( 'Instagram URL', 'window-mag' ); ?></label></th>
+                <th><label for="instagram"><?php esc_html_e( 'Instagram URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="instagram" id="instagram"
                            value="<?php echo esc_attr( get_the_author_meta( 'instagram', $user->ID ) ); ?>"
@@ -1228,7 +1230,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="linkedin"><?php esc_html_e( 'linkedIn URL', 'window-mag' ); ?></label></th>
+                <th><label for="linkedin"><?php esc_html_e( 'linkedIn URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="linkedin" id="linkedin"
                            value="<?php echo esc_attr( get_the_author_meta( 'linkedin', $user->ID ) ); ?>"
@@ -1236,7 +1238,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="tumblr"><?php esc_html_e( 'Tumblr URL', 'window-mag' ); ?></label></th>
+                <th><label for="tumblr"><?php esc_html_e( 'Tumblr URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="tumblr" id="tumblr"
                            value="<?php echo esc_attr( get_the_author_meta( 'tumblr', $user->ID ) ); ?>"
@@ -1244,7 +1246,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="flickr"><?php esc_html_e( 'Flickr URL', 'window-mag' ); ?></label></th>
+                <th><label for="flickr"><?php esc_html_e( 'Flickr URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="flickr" id="flickr"
                            value="<?php echo esc_attr( get_the_author_meta( 'flickr', $user->ID ) ); ?>"
@@ -1252,7 +1254,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="pinterest"><?php esc_html_e( 'Pinterest URL', 'window-mag' ); ?></label></th>
+                <th><label for="pinterest"><?php esc_html_e( 'Pinterest URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="pinterest" id="pinterest"
                            value="<?php echo esc_attr( get_the_author_meta( 'pinterest', $user->ID ) ); ?>"
@@ -1260,7 +1262,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="vimeo"><?php esc_html_e( 'Vimeo URL', 'window-mag' ); ?></label></th>
+                <th><label for="vimeo"><?php esc_html_e( 'Vimeo URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="vimeo" id="vimeo"
                            value="<?php echo esc_attr( get_the_author_meta( 'vimeo', $user->ID ) ); ?>"
@@ -1268,7 +1270,7 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
                 </td>
             </tr>
             <tr>
-                <th><label for="youtube"><?php esc_html_e( 'YouTube URL', 'window-mag' ); ?></label></th>
+                <th><label for="youtube"><?php esc_html_e( 'YouTube URL', 'dw' ); ?></label></th>
                 <td>
                     <input type="text" name="youtube" id="youtube"
                            value="<?php echo esc_attr( get_the_author_meta( 'youtube', $user->ID ) ); ?>"
@@ -1284,10 +1286,10 @@ if ( ! function_exists( 'window_mag_show_extra_profile_fields' ) ) {
 /**
  * Save user's social accounts
  * */
-add_action( 'personal_options_update', 'window_mag_save_extra_profile_fields' );
-add_action( 'edit_user_profile_update', 'window_mag_save_extra_profile_fields' );
-if ( ! function_exists( 'window_mag_save_extra_profile_fields' ) ) {
-	function window_mag_save_extra_profile_fields( $user_id ) {
+add_action( 'personal_options_update', 'dw_save_extra_profile_fields' );
+add_action( 'edit_user_profile_update', 'dw_save_extra_profile_fields' );
+if ( ! function_exists( 'dw_save_extra_profile_fields' ) ) {
+	function dw_save_extra_profile_fields( $user_id ) {
 		if ( ! current_user_can( 'edit_user', $user_id ) ) {
 			return false;
 		}
@@ -1316,8 +1318,8 @@ if ( ! function_exists( 'window_mag_save_extra_profile_fields' ) ) {
  *
  * @return mixed --> for print icons with links or bool for found links
  */
-if ( ! function_exists( 'window_mag_author_socials' ) ) {
-	function window_mag_author_socials( $user_id, $bool = false ) {
+if ( ! function_exists( 'dw_author_socials' ) ) {
+	function dw_author_socials( $user_id, $bool = false ) {
 		$user_meta = array(
 			'fa-facebook'    => get_the_author_meta( 'facebook', $user_id ),
 			'fa-twitter'     => get_the_author_meta( 'twitter', $user_id ),
@@ -1358,9 +1360,9 @@ if ( ! function_exists( 'window_mag_author_socials' ) ) {
 /**
  * remove parentheses from category list and add span class to post count
  */
-add_filter( 'wp_list_categories', 'window_mag_categories_count' );
-if ( ! function_exists( 'window_mag_categories_count' ) ) {
-	function window_mag_categories_count( $variable ) {
+add_filter( 'wp_list_categories', 'dw_categories_count' );
+if ( ! function_exists( 'dw_categories_count' ) ) {
+	function dw_categories_count( $variable ) {
 		$variable = str_replace( '(', '<span class="post-count">', $variable );
 		$variable = str_replace( ')', '</span>', $variable );
 
@@ -1371,9 +1373,9 @@ if ( ! function_exists( 'window_mag_categories_count' ) ) {
 /**
  * remove parentheses and ( &nbsp; ) from category list and add span class to post count
  */
-add_filter( 'get_archives_link', 'window_mag_archive_count' );
-if ( ! function_exists( 'window_mag_archive_count' ) ) {
-	function window_mag_archive_count( $links ) {
+add_filter( 'get_archives_link', 'dw_archive_count' );
+if ( ! function_exists( 'dw_archive_count' ) ) {
+	function dw_archive_count( $links ) {
 		$links = str_replace( '&nbsp;(', '<span class="post-count">', $links );
 		$links = str_replace( ')', '</span>', $links );
 
@@ -1384,10 +1386,10 @@ if ( ! function_exists( 'window_mag_archive_count' ) ) {
 /**
  * Exclude posts from search query
  */
-add_filter( 'pre_get_posts', 'window_mag_search_filter' );
-function window_mag_search_filter( $query ) {
+add_filter( 'pre_get_posts', 'dw_search_filter' );
+function dw_search_filter( $query ) {
 	if ( is_search() && $query->is_main_query() ) {
-		if ( 'yes' === window_mag_get_setting( 'search_exclude' ) && ! is_admin() ) {
+		if ( 'yes' === dw_get_setting( 'search_exclude' ) && ! is_admin() ) {
 			$post_types = get_post_types( array( 'public' => true, 'exclude_from_search' => false ) );
 			unset( $post_types['page'] );
 			$query->set( 'post_type', $post_types );
@@ -1402,8 +1404,8 @@ function window_mag_search_filter( $query ) {
  * Get all users data to select it in theme options and custom widgets
  * the output is array key->author_id, Value->Author_name ordered by posts count of each user
  */
-if ( ! function_exists( 'window_mag_users' ) ) {
-	function window_mag_users() {
+if ( ! function_exists( 'dw_users' ) ) {
+	function dw_users() {
 		$users     = array();
 		$args      = array(
 			'orderby' => 'post_count',
@@ -1414,7 +1416,7 @@ if ( ! function_exists( 'window_mag_users' ) ) {
 		$i         = 1;
 		foreach ( $all_users as $user_data ) {
 			if ( $i == 1 ) {
-				$users[''] = esc_html__( 'Please select an author...', 'window-mag' );
+				$users[''] = esc_html__( 'Please select an author...', 'dw' );
 			}
 			$users[ $user_data->ID ] = $user_data->display_name;
 			$i ++;
@@ -1428,8 +1430,8 @@ if ( ! function_exists( 'window_mag_users' ) ) {
  * Get all categories data to select it in theme options and custom widgets
  * the output is array key->term_id, Value->cat_name
  */
-if ( ! function_exists( 'window_mag_categories' ) ) {
-	function window_mag_categories() {
+if ( ! function_exists( 'dw_categories' ) ) {
+	function dw_categories() {
 		$cats           = array();
 		$all_categories = get_categories();
 		foreach ( $all_categories as $category ) {
@@ -1444,10 +1446,10 @@ if ( ! function_exists( 'window_mag_categories' ) ) {
  * Get Time
  * @return string time format with the selected style in theme options
  */
-if ( ! function_exists( 'window_mag_time' ) ) {
-	function window_mag_time( $bool = false ) {
+if ( ! function_exists( 'dw_post_time' ) ) {
+	function dw_post_time( $bool = false ) {
 		$since = '';
-		if ( window_mag_get_setting( 'blog_time' ) == 'ago' ) {
+		if ( dw_get_setting( 'blog_time' ) == 'ago' ) {
 			$to   = current_time( 'timestamp' ); //time();
 			$from = get_the_time( 'U' );
 			$diff = (int) abs( $to - $from );
@@ -1456,22 +1458,22 @@ if ( ! function_exists( 'window_mag_time' ) ) {
 				if ( $mins <= 1 ) {
 					$mins = 1;
 				}
-				$since = sprintf( _n( '%s Min', '%s Mins', $mins, 'window-mag' ), $mins ) . ' ' . esc_html__( 'ago', 'window-mag' );
+				$since = sprintf( _n( '%s Min', '%s Mins', $mins, 'dw' ), $mins ) . ' ' . esc_html__( 'ago', 'dw' );
 			} else if ( ( $diff <= 86400 ) && ( $diff > 3600 ) ) {
 				$hours = round( $diff / 3600 );
 				if ( $hours <= 1 ) {
 					$hours = 1;
 				}
-				$since = sprintf( _n( '%s Hour', '%s Hours', $hours, 'window-mag' ), $hours ) . ' ' . esc_html__( 'ago', 'window-mag' );
+				$since = sprintf( _n( '%s Hour', '%s Hours', $hours, 'dw' ), $hours ) . ' ' . esc_html__( 'ago', 'dw' );
 			} elseif ( $diff >= 86400 ) {
 				$days = round( $diff / 86400 );
 				if ( $days <= 1 ) {
 					$days  = 1;
-					$since = sprintf( _n( '%s Day', '%s Days', $days, 'window-mag' ), $days ) . ' ' . esc_html__( 'ago', 'window-mag' );
+					$since = sprintf( _n( '%s Day', '%s Days', $days, 'dw' ), $days ) . ' ' . esc_html__( 'ago', 'dw' );
 				} elseif ( $days > 29 ) {
 					$since = get_the_time( get_option( 'date_format' ) );
 				} else {
-					$since = sprintf( _n( '%s Day', '%s Days', $days, 'window-mag' ), $days ) . ' ' . esc_html__( 'ago', 'window-mag' );
+					$since = sprintf( _n( '%s Day', '%s Days', $days, 'dw' ), $days ) . ' ' . esc_html__( 'ago', 'dw' );
 				}
 			}
 		} else {
@@ -1485,18 +1487,18 @@ if ( ! function_exists( 'window_mag_time' ) ) {
 	}
 }
 
-add_action( 'wp_footer', 'window_mag_fly_box' );
-function window_mag_fly_box( $post_id = false ) {
+add_action( 'wp_footer', 'dw_fly_box' );
+function dw_fly_box( $post_id = false ) {
 	if ( ! is_single() ) {
 		return;
 	}
-	if ( window_mag_get_setting( 'fly_box' ) == 'off' ) {
+	if ( dw_get_setting( 'fly_box' ) == 'off' ) {
 		return; //hide fly box at all
 	}
 	if ( ! $post_id ) {
 		$post_id = get_the_ID();
 	}
-	if ( window_mag_get_meta( $post_id, 'fly_box' ) == 'off' ) {
+	if ( dw_get_meta( $post_id, 'fly_box' ) == 'off' ) {
 		return; //hide if turned off in specific post
 	}
 	if ( get_next_post() ) {
@@ -1510,12 +1512,12 @@ function window_mag_fly_box( $post_id = false ) {
 	?>
     <div class="bbioon-fly-box">
         <div class="box-title">
-            <div class="delete-fly-box" title="<?php esc_attr_e( 'Disable it', 'window-mag' ); ?>">
+            <div class="delete-fly-box" title="<?php esc_attr_e( 'Disable it', 'dw' ); ?>">
                 <i class="fa fa-trash-o"></i>
             </div>
             <div class="close-fly-box"><i class="fa fa-times"></i></div>
             <span>
-                <?php esc_attr_e( 'Check Also', 'window-mag' ) ?>
+                <?php esc_attr_e( 'Check Also', 'dw' ) ?>
             </span>
         </div>
         <div class="box-content">
@@ -1540,9 +1542,9 @@ function window_mag_fly_box( $post_id = false ) {
 /**
  * Set accent color to theme options page title background
  */
-add_action( 'admin_head', 'window_mag_theme_options_color' );
-function window_mag_theme_options_color() {
-	$accent_color = window_mag_get_setting( 'accent_color' );
+add_action( 'admin_head', 'dw_theme_options_color' );
+function dw_theme_options_color() {
+	$accent_color = dw_get_setting( 'accent_color' );
 	?>
     <style>
         .fw-backend-side-tabs .fw-settings-form-header {
@@ -1556,7 +1558,7 @@ function window_mag_theme_options_color() {
  * Get current category id
  * @return int category id
  */
-function window_mag_current_cat_id() {
+function dw_current_cat_id() {
 	$window_category = get_category( get_query_var( 'cat' ) );
 
 	return $window_category->cat_ID;
@@ -1565,10 +1567,10 @@ function window_mag_current_cat_id() {
 /**
  * print category cover html
  */
-function window_mag_category_cover() {
-	if ( 'on' === window_mag_get_term_setting( window_mag_current_cat_id(), 'cat_cover/control' ) && 'show' === window_mag_get_setting( 'category_page_description' ) ) {
+function dw_category_cover() {
+	if ( 'on' === dw_get_term_setting( dw_current_cat_id(), 'cat_cover/control' ) && 'show' === dw_get_setting( 'category_page_description' ) ) {
 		//category cover image url
-		$window_mag_cover_image = window_mag_get_term_setting( window_mag_current_cat_id(), 'cat_cover/on/photo/url' );
+		$window_mag_cover_image = dw_get_term_setting( dw_current_cat_id(), 'cat_cover/on/photo/url' );
 		?>
         <div class="post-cover category-cover"<?php if ( $window_mag_cover_image ) { ?>
             style="background-image: url('<?php echo esc_url( $window_mag_cover_image ); ?>')" <?php } ?>>
@@ -1577,9 +1579,9 @@ function window_mag_category_cover() {
 				<?php
 				the_archive_title( '<h2 class="post-box-title h3">', '</h2>' );
 				the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				if ( window_mag_get_setting( 'category_posts_count' ) !== 'off' ) {
+				if ( dw_get_setting( 'category_posts_count' ) !== 'off' ) {
 					$window_mag_cat = get_queried_object();//Posts count
-					echo sprintf( '<div class="count">' . esc_html( '%s ' ) . esc_html( _n( 'Post ', 'Posts', $window_mag_cat->count, 'window-mag' ) ) . '</div>', $window_mag_cat->count );
+					echo sprintf( '<div class="count">' . esc_html( '%s ' ) . esc_html( _n( 'Post ', 'Posts', $window_mag_cat->count, 'dw' ) ) . '</div>', $window_mag_cat->count );
 				}
 				?>
             </div>
@@ -1592,14 +1594,14 @@ function window_mag_category_cover() {
 	<?php }
 }
 
-add_action( 'wp_footer', 'window_mag_reading_indicator' );
-function window_mag_reading_indicator() {
+add_action( 'wp_footer', 'dw_reading_indicator' );
+function dw_reading_indicator() {
 	if ( is_singular() ) {
 		$html = '<div class="reading-indicator"></div>';
-		if ( window_mag_get_meta( get_the_ID(), 'reading_indicator' ) == 'off' ) {
+		if ( dw_get_meta( get_the_ID(), 'reading_indicator' ) == 'off' ) {
 			return false;
 		}
-		if ( window_mag_get_setting( 'reading_indicator_post' ) == 'off' ) {
+		if ( dw_get_setting( 'reading_indicator_post' ) == 'off' ) {
 			return false;
 		}
 		echo $html;
@@ -1609,17 +1611,17 @@ function window_mag_reading_indicator() {
 /**
  * Comments callback
  */
-if ( ! function_exists( 'window_mag_comment' ) ) {
-	function window_mag_comment( $comment, $args, $depth ) {
+if ( ! function_exists( 'dw_comment' ) ) {
+	function dw_comment( $comment, $args, $depth ) {
 		$GLOBALS['comment'] = $comment;
 		switch ( $comment->comment_type ) :
 			case 'pingback' :
 			case 'trackback' :
 				?>
                 <li <?php comment_class( 'single-comment base-box' ); ?> id="comment-<?php comment_ID(); ?>">
-                <p><?php esc_html_e( 'Pingback:', 'window-mag' );
+                <p><?php esc_html_e( 'Pingback:', 'dw' );
 					comment_author_link();
-					edit_comment_link( esc_html__( '(Edit)', 'window-mag' ), '<span class="edit-link">', '</span>' ); ?>
+					edit_comment_link( esc_html__( '(Edit)', 'dw' ), '<span class="edit-link">', '</span>' ); ?>
                 </p>
 				<?php
 				break;
@@ -1629,7 +1631,7 @@ if ( ! function_exists( 'window_mag_comment' ) ) {
             <li <?php comment_class( 'single-comment' ); ?> id="li-comment-<?php comment_ID(); ?>">
                 <div id="comment-<?php comment_ID(); ?>" class="comment-wrap base-box">
 					<?php if ( '0' == $comment->comment_approved ) : ?>
-                        <em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'window-mag' ); ?></em>
+                        <em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'dw' ); ?></em>
 					<?php endif; ?>
                     <div class="commentHead">
 						<?php echo get_avatar( $comment, 80 ); ?>
@@ -1643,19 +1645,19 @@ if ( ! function_exists( 'window_mag_comment' ) ) {
 							<?php
 							printf( '<span class="comment-meta commentmetadata "><a href="%1$s"><time datetime="%2$s">%3$s</time></a></span>', esc_url( get_comment_link( $comment->comment_ID ) ), get_comment_time( 'c' ),
 								/* translators: 1: date, 2: time */
-								sprintf( esc_html__( '%1$s at %2$s', 'window-mag' ), get_comment_date(), get_comment_time() )
+								sprintf( esc_html__( '%1$s at %2$s', 'dw' ), get_comment_date(), get_comment_time() )
 							);
 							?>
                         </div>
                         <div class="CommentHeadLinks">
 							<?php comment_reply_link( array_merge( $args, array(
-								'reply_text' => esc_html__( 'Reply', 'window-mag' ),
+								'reply_text' => esc_html__( 'Reply', 'dw' ),
 								'after'      => '',
 								'depth'      => $depth,
 								'max_depth'  => $args['max_depth']
 							) ) );
 							echo window_mag_get_likes_button( get_comment_ID(), 1 );
-							edit_comment_link( esc_html__( 'Edit', 'window-mag' ) ); ?>
+							edit_comment_link( esc_html__( 'Edit', 'dw' ) ); ?>
                         </div>
                     </div>
                     <div class="comment-content">
@@ -1667,83 +1669,3 @@ if ( ! function_exists( 'window_mag_comment' ) ) {
 		endswitch;
 	}
 }
-
-
-
-
-/**
- * Retina images
- *
- * This function is attached to the 'wp_generate_attachment_metadata' filter hook.
- */
-add_filter( 'wp_generate_attachment_metadata', 'window_mag_retina_support_attachment_meta', 10, 2 );
-function window_mag_retina_support_attachment_meta( $metadata, $attachment_id ) {
-	if ( window_mag_get_setting( 'retina_support' ) == 'on' ) {
-		foreach ( $metadata as $key => $value ) {
-			if ( is_array( $value ) ) {
-				foreach ( $value as $image => $attr ) {
-					if ( is_array( $attr ) && isset ( $attr['width'] ) && isset ( $attr['height'] ) ) {
-						window_mag_retina_support_create_images( get_attached_file( $attachment_id ), $attr['width'], $attr['height'], true );
-					}
-				}
-			}
-		}
-
-		return $metadata;
-	}
-}
-
-/**
- * Create retina-ready images
- *
- * Referenced via retina_support_attachment_meta().
- */
-function window_mag_retina_support_create_images( $file, $width, $height, $crop = false ) {
-	if ( $width || $height ) {
-		$resized_file = wp_get_image_editor( $file );
-		if ( ! is_wp_error( $resized_file ) ) {
-			$filename = $resized_file->generate_filename( $width . 'x' . $height . '@2x' );
-
-			$resized_file->resize( $width * 2, $height * 2, $crop );
-			$resized_file->save( $filename );
-
-			$info = $resized_file->get_size();
-
-			return array(
-				'file'   => wp_basename( $filename ),
-				'width'  => $info['width'],
-				'height' => $info['height'],
-			);
-		}
-	}
-
-	return false;
-}
-
-add_filter( 'delete_attachment', 'window_mag_delete_retina_support_images' );
-/**
- * Delete retina-ready images
- *
- * This function is attached to the 'delete_attachment' filter hook.
- */
-function window_mag_delete_retina_support_images( $attachment_id ) {
-	if ( window_mag_get_setting( 'retina_support' ) == 'on' ) {
-		$meta       = wp_get_attachment_metadata( $attachment_id );
-		$upload_dir = wp_upload_dir();
-		if ( isset( $meta['file'] ) ) {
-			$path = pathinfo( $meta['file'] );
-			foreach ( $meta as $key => $value ) {
-				if ( 'sizes' === $key ) {
-					foreach ( $value as $sizes => $size ) {
-						$original_filename = $upload_dir['basedir'] . '/' . $path['dirname'] . '/' . $size['file'];
-						$retina_filename   = substr_replace( $original_filename, '@2x.', strrpos( $original_filename, '.' ), strlen( '.' ) );
-						if ( file_exists( $retina_filename ) ) {
-							unlink( $retina_filename );
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
