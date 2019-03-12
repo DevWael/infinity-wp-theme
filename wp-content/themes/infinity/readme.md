@@ -1,4 +1,5 @@
 === INFINITY WORLD WORDPRESS MAGAZINE THEME ===
+
 /*
 Theme Name: Infinity World
 Author: Ahmad Wael
