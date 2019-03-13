@@ -109,7 +109,7 @@ $options = array(
 							'value' => 'left_sidebar',
 							'label' => esc_html__( 'Left', 'dw' )
 						),
-					)
+					),
 				)
 			),
 			'archive_page_layout'  => array(

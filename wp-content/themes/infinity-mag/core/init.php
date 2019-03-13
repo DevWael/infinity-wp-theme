@@ -122,12 +122,6 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 		//Default stylesheet file (style.css)
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
 
-		//Javascript files
-		if ( dw_get_setting( 'code_highlight' ) == 'on' ) {
-			//Code highlighting lib
-			wp_enqueue_script( 'code-highlight', DW_JS_URI . 'highlight.js', array( 'jquery' ), '1.0', true );
-		}
-
 		wp_enqueue_script( 'masonry' );
 		$scripts = array(
 			'bootstrap'      => 'bootstrap.js',
