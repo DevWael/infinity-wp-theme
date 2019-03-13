@@ -8,7 +8,7 @@ $video_control  = dw_get_meta( get_the_ID(), 'video-box/gadget' );
 $allowed_files  = array( 'mp4', 'm4v', 'webm', 'ogv', 'wmv', 'flv' );
 if ( $video_control or has_post_thumbnail() ):
 	?>
-	<div class="post-feature-box">
+    <div class="post-feature-box">
 		<?php
 		if ( 'remote' === $video_control ) {
 			$video_url = dw_get_meta( get_the_ID(), 'video-box/remote/video-url' );
@@ -16,12 +16,12 @@ if ( $video_control or has_post_thumbnail() ):
 				echo wp_oembed_get( esc_url( $video_url ) );
 			} else {
 				if ( has_post_thumbnail() ): ?>
-					<div class="gallery-box">
+                    <div class="gallery-box">
 						<?php the_post_thumbnail( $thumbnail_size, array( 'class' => 'img-responsive' ) ); ?>
-						<a href="<?php the_post_thumbnail_url( 'full' ); ?>" class="magnific-gallery zoom-in">
-							<i class="fa fa-arrows-alt"></i>
-						</a>
-					</div>
+                        <a href="<?php the_post_thumbnail_url( 'full' ); ?>" class="magnific-gallery zoom-in">
+                            <i class="fa fa-arrows-alt"></i>
+                        </a>
+                    </div>
 				<?php endif;
 			}
 		} elseif ( 'local' === $video_control ) {
@@ -33,23 +33,23 @@ if ( $video_control or has_post_thumbnail() ):
 				) );
 			} else {
 				if ( has_post_thumbnail() ): ?>
-					<div class="gallery-box">
+                    <div class="gallery-box">
 						<?php the_post_thumbnail( $thumbnail_size, array( 'class' => 'img-responsive' ) ); ?>
-						<a href="<?php the_post_thumbnail_url( 'full' ); ?>" class="magnific-gallery zoom-in">
-							<i class="fa fa-arrows-alt"></i>
-						</a>
-					</div>
+                        <a href="<?php the_post_thumbnail_url( 'full' ); ?>" class="magnific-gallery zoom-in">
+                            <i class="fa fa-arrows-alt"></i>
+                        </a>
+                    </div>
 				<?php endif;
 			}
 		} else {
 			if ( has_post_thumbnail() ): ?>
-				<div class="gallery-box">
+                <div class="gallery-box">
 					<?php the_post_thumbnail( $thumbnail_size, array( 'class' => 'img-responsive' ) ); ?>
-					<a href="<?php the_post_thumbnail_url( 'full' ); ?>" class="magnific-gallery zoom-in">
-						<i class="fa fa-arrows-alt"></i>
-					</a>
-				</div>
+                    <a href="<?php the_post_thumbnail_url( 'full' ); ?>" class="magnific-gallery zoom-in">
+                        <i class="fa fa-arrows-alt"></i>
+                    </a>
+                </div>
 			<?php endif;
 		} ?>
-	</div>
+    </div>
 <?php endif; ?>

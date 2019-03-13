@@ -10,27 +10,27 @@ $options = array(
 		'options' => array(
 			'colors_box' => array(
 				'title'   => esc_html__( 'General', 'dw' ),
-				'type'    => 'box',
+				'type'    => 'tab',
 				'options' => array(
 					'accent_color'             => array(
-						'type'     => 'color-picker',
-						'label'    => esc_html__( 'Main Color', 'dw' ),
-						'value'    => '#E74C3C'
+						'type'  => 'color-picker',
+						'label' => esc_html__( 'Main Color', 'dw' ),
+						'value' => '#E74C3C'
 					),
 					'second_color'             => array(
-						'type'     => 'color-picker',
-						'label'    => esc_html__( 'Second color', 'dw' ),
-						'value'    => '#181818'
+						'type'  => 'color-picker',
+						'label' => esc_html__( 'Second color', 'dw' ),
+						'value' => '#181818'
 					),
 					'navbar_links_color'       => array(
-						'type'     => 'color-picker',
-						'label'    => esc_html__( 'Navbar text Color', 'dw' ),
-						'value'    => '#ffffff'
+						'type'  => 'color-picker',
+						'label' => esc_html__( 'Navbar text Color', 'dw' ),
+						'value' => '#ffffff'
 					),
 					'navbar_links_color_hover' => array(
-						'type'     => 'color-picker',
-						'label'    => esc_html__( 'Navbar text Color on hover', 'dw' ),
-						'value'    => '#ffffff'
+						'type'  => 'color-picker',
+						'label' => esc_html__( 'Navbar text Color on hover', 'dw' ),
+						'value' => '#ffffff'
 					),
 					'favicon'                  => array(
 						'type'        => 'upload',
@@ -59,7 +59,7 @@ $options = array(
 			),
 			'body_box'   => array(
 				'title'   => esc_html__( 'Body', 'dw' ),
-				'type'    => 'box',
+				'type'    => 'tab',
 				'options' => array(
 					'body_background' => array(
 						'type'         => 'multi-picker',

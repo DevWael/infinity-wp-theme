@@ -99,10 +99,10 @@ $options = array(
 									'choices' => array(
 										'category' => array(
 											'cat_select' => array(
-												'type'       => 'multi-select',
-												'label'      => esc_html__( 'Select Categories', 'dw' ),
+												'type'        => 'multi-select',
+												'label'       => esc_html__( 'Select Categories', 'dw' ),
 												'prepopulate' => 999,
-												'choices' => dw_categories()
+												'choices'     => dw_categories()
 											)
 										),
 										'tag'      => array(

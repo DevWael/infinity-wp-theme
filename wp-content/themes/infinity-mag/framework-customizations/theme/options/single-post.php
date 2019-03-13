@@ -12,7 +12,7 @@ $options = array(
 				'title'   => esc_html__( 'Post Settings', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(
-					'single_sidebar'  => array(
+					'single_sidebar'         => array(
 						'type'         => 'switch',
 						'value'        => 'right_sidebar',
 						'label'        => esc_html__( 'Sidebar Position', 'dw' ),
@@ -25,7 +25,7 @@ $options = array(
 							'label' => esc_html__( 'Left', 'dw' )
 						),
 					),
-					'date_meta'       => array(
+					'date_meta'              => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Date Meta', 'dw' ),
@@ -38,7 +38,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'categories_meta' => array(
+					'categories_meta'        => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Categories meta', 'dw' ),
@@ -51,7 +51,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'tags_meta'       => array(
+					'tags_meta'              => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Tags meta', 'dw' ),
@@ -64,7 +64,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'views_meta'      => array(
+					'views_meta'             => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Views meta', 'dw' ),
@@ -77,7 +77,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'like_meta'       => array(
+					'like_meta'              => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Like meta', 'dw' ),
@@ -90,7 +90,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'author_name'     => array(
+					'author_name'            => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Author name', 'dw' ),
@@ -103,7 +103,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'author_bio_box'  => array(
+					'author_bio_box'         => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Author bio', 'dw' ),
@@ -116,7 +116,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'nxt_prv_posts'   => array(
+					'nxt_prv_posts'          => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Next and prev posts', 'dw' ),
@@ -129,7 +129,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'fly_box'   => array(
+					'fly_box'                => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Post Fly Box', 'dw' ),
@@ -142,7 +142,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'reading_indicator_post'   => array(
+					'reading_indicator_post' => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Reading position indicator', 'dw' ),
@@ -155,7 +155,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'share_posts'     => array(
+					'share_posts'            => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Share buttons on posts', 'dw' ),
@@ -168,7 +168,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'share_pages'     => array(
+					'share_pages'            => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Share buttons on pages', 'dw' ),
@@ -181,7 +181,7 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
-					'comments_system' => array(
+					'comments_system'        => array(
 						'type'  => 'multi-picker',
 						'label' => false,
 
@@ -277,20 +277,6 @@ $options = array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Share on Linked in', 'dw' ),
-						'right-choice' => array(
-							'value' => 'on',
-							'label' => esc_html__( 'show', 'dw' )
-
-						),
-						'left-choice'  => array(
-							'value' => 'off',
-							'label' => esc_html__( 'hide', 'dw' )
-						)
-					),
-					'share_stumble'   => array(
-						'type'         => 'switch',
-						'value'        => 'on',
-						'label'        => esc_html__( 'Share on Stumbleupon', 'dw' ),
 						'right-choice' => array(
 							'value' => 'on',
 							'label' => esc_html__( 'show', 'dw' )

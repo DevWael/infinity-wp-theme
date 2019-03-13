@@ -6,7 +6,7 @@ $options['body_box'] = array(
 	'title'   => esc_html__( 'Category Background', 'dw' ),
 	'type'    => 'box',
 	'options' => array(
-		'cat_cover'      => array(
+		'cat_cover'       => array(
 			'type'    => 'multi-picker',
 			'label'   => false,
 			'picker'  => array(
@@ -37,9 +37,9 @@ $options['body_box'] = array(
 			)
 		),
 		'body_background' => array(
-			'type'         => 'multi-picker',
-			'label'        => false,
-			'picker'       => array(
+			'type'    => 'multi-picker',
+			'label'   => false,
+			'picker'  => array(
 				'control' => array(
 					'label'        => esc_html__( 'Category Background', 'dw' ),
 					'type'         => 'switch',
@@ -56,7 +56,7 @@ $options['body_box'] = array(
 					),
 				)
 			),
-			'choices'      => array(
+			'choices' => array(
 				'background' => array(
 					'color_select' => array(
 						'type'     => 'color-picker',

@@ -137,9 +137,9 @@ $options = array(
 							'color'          => '#404040'
 						)
 					),
-					'navbar_typo'    => array(
-						'label' => esc_html__( 'Navbar main elements', 'dw' ),
-						'type'  => 'typography-v2',
+					'navbar_typo'           => array(
+						'label'      => esc_html__( 'Navbar main elements', 'dw' ),
+						'type'       => 'typography-v2',
 						'components' => array(
 							'family'         => true,
 							'size'           => true,
@@ -147,7 +147,7 @@ $options = array(
 							'letter-spacing' => true,
 							'color'          => false
 						),
-						'value' => array(
+						'value'      => array(
 							'family'         => 'Montserrat',
 							'variation'      => 'regular',
 							'line-height'    => 43,
@@ -155,9 +155,9 @@ $options = array(
 							'letter-spacing' => 1,
 						)
 					),
-					'news_ticker_typo'    => array(
-						'label' => esc_html__( 'News Ticker', 'dw' ),
-						'type'  => 'typography-v2',
+					'news_ticker_typo'      => array(
+						'label'      => esc_html__( 'News Ticker', 'dw' ),
+						'type'       => 'typography-v2',
 						'components' => array(
 							'family'         => true,
 							'size'           => true,
@@ -165,7 +165,7 @@ $options = array(
 							'letter-spacing' => false,
 							'color'          => false
 						),
-						'value' => array(
+						'value'      => array(
 							'family'         => 'Montserrat',
 							'variation'      => 'regular',
 							'size'           => 14,

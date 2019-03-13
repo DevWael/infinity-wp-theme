@@ -92,35 +92,35 @@ if ( $query_type == 'likes' ) {
 }
 $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ): ?>
-	<div class="footer-posts-carousel<?php echo esc_attr( $visible_class ); ?>">
-		<div class="container">
-			<div class="carousel-container">
-				<div class="posts-carousel owl-carousel">
+    <div class="footer-posts-carousel<?php echo esc_attr( $visible_class ); ?>">
+        <div class="container">
+            <div class="carousel-container">
+                <div class="posts-carousel owl-carousel">
 					<?php while ( $the_query->have_posts() ):$the_query->the_post(); ?>
-						<div <?php post_class( 'top-post' ) ?>>
-							<a href="<?php echo esc_url( get_permalink() ); ?>">
-								<div class="article" itemscope itemtype="http://schema.org/Article" role="article">
+                        <div <?php post_class( 'top-post' ) ?>>
+                            <a href="<?php echo esc_url( get_permalink() ); ?>">
+                                <div class="article" itemscope itemtype="http://schema.org/Article" role="article">
 									<?php if ( has_post_thumbnail() ): ?>
 										<?php the_post_thumbnail( 'window_mag_big_post', array( 'class' => 'img-responsive' ) ); ?>
 									<?php endif; ?>
-									<div class="listing-content">
+                                    <div class="listing-content">
 										<?php the_title( '<div class="post-title entry-header" itemprop="name headline">', '</div>' ); ?>
-										<aside class="top-post-time">
+                                        <aside class="top-post-time">
 											<?php if ( dw_post_time( true ) ): ?>
-												<span class="time">
+                                                <span class="time">
 													<?php dw_post_time(); ?>
 												</span>
 											<?php endif; ?>
-										</aside>
-									</div>
-								</div>
-							</a>
-						</div>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 					<?php endwhile; ?>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<?php
 	$post = $old_post;
 	wp_reset_postdata();

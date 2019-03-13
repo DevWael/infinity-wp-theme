@@ -53,7 +53,7 @@ $options = array(
 						),
 						'inline'  => true
 					),
-					'post_thumb'      => array(
+					'post_thumb'               => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Featured image visibility', 'dw' ),
@@ -92,7 +92,7 @@ $options = array(
 							'label' => esc_html__( 'Show', 'dw' )
 						)
 					),
-					'reading_indicator'   => array(
+					'reading_indicator'        => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Reading position indicator', 'dw' ),
@@ -185,7 +185,7 @@ $options = array(
 					)
 				)
 			),
-			'body_box'        => array(
+			'body_box'       => array(
 				'title'   => esc_html__( 'Page Background', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(
@@ -212,9 +212,9 @@ $options = array(
 						'choices' => array(
 							'background' => array(
 								'color_select' => array(
-									'type'     => 'color-picker',
-									'label'    => esc_html__( 'Background Color', 'dw' ),
-									'value'    => '#f5f5f5'
+									'type'  => 'color-picker',
+									'label' => esc_html__( 'Background Color', 'dw' ),
+									'value' => '#f5f5f5'
 								),
 								'image_select' => array(
 									'type'        => 'upload',

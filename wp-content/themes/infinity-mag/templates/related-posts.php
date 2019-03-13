@@ -46,36 +46,36 @@ if ( $query_type == 'author' ) {
 }
 $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ): ?>
-	<div class="related-posts">
+    <div class="related-posts">
 		<?php if ( dw_get_setting( 'related_posts_box/on/related_title' ) ): ?>
-			<div class="related-header">
-				<h3>
-					<span><?php echo dw_get_setting( 'related_posts_box/on/related_title' ); ?></span>
-				</h3>
-			</div>
+            <div class="related-header">
+                <h3>
+                    <span><?php echo dw_get_setting( 'related_posts_box/on/related_title' ); ?></span>
+                </h3>
+            </div>
 		<?php elseif ( ! function_exists( 'fw_get_db_settings_option' ) ): ?>
-			<div class="related-header">
-				<h3>
-					<span><?php esc_attr_e( 'You may also like', 'dw' ); ?></span>
-				</h3>
-			</div>
+            <div class="related-header">
+                <h3>
+                    <span><?php esc_attr_e( 'You may also like', 'dw' ); ?></span>
+                </h3>
+            </div>
 		<?php endif; ?>
-		<div class="row">
+        <div class="row">
 			<?php $i = 1;
 			while ( $the_query->have_posts() ):
 			$the_query->the_post();
 			$do_not_duplicate[] = get_the_ID(); ?>
-			<div class="col-md-6 col-xs-12">
+            <div class="col-md-6 col-xs-12">
 				<?php get_template_part( 'templates/small', 'post' ); ?>
-			</div>
+            </div>
 			<?php if ( $i % 2 == 0 ) { ?>
-		</div>
-		<div class="row">
+        </div>
+        <div class="row">
 			<?php } ?>
 			<?php $i ++;
 			endwhile; ?>
-		</div>
-	</div>
+        </div>
+    </div>
 	<?php
 	$post = $old_post;
 	wp_reset_postdata();

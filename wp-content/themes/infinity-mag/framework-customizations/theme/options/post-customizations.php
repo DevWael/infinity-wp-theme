@@ -53,7 +53,7 @@ $options = array(
 						),
 						'inline'  => true
 					),
-					'post_thumb'      => array(
+					'post_thumb'                => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Featured image visibility', 'dw' ),
@@ -92,7 +92,7 @@ $options = array(
 							'label' => esc_html__( 'Show', 'dw' )
 						)
 					),
-					'reading_indicator'   => array(
+					'reading_indicator'         => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Reading position indicator', 'dw' ),

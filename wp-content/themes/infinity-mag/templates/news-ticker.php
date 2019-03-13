@@ -82,26 +82,26 @@ if ( $query_type == 'likes' ) {
 }
 $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ): ?>
-	<div class="news-ticker clearfix<?php echo esc_attr( $visible_class ); ?>">
-		<div class="ticker-section container">
+    <div class="news-ticker clearfix<?php echo esc_attr( $visible_class ); ?>">
+        <div class="ticker-section container">
 			<?php if ( $ticker_title ) { ?>
-				<div class="ticker-title">
-					<div class="title">
+                <div class="ticker-title">
+                    <div class="title">
 						<?php echo esc_html( $ticker_title ); ?>
-					</div>
-				</div>
+                    </div>
+                </div>
 			<?php } ?>
-			<div class="ticker-container">
-				<div class="posts-carousel owl-carousel">
+            <div class="ticker-container">
+                <div class="posts-carousel owl-carousel">
 					<?php while ( $the_query->have_posts() ):$the_query->the_post(); ?>
-						<div <?php post_class( 'ticker-post' ) ?> itemscope itemtype="http://schema.org/Article">
+                        <div <?php post_class( 'ticker-post' ) ?> itemscope itemtype="http://schema.org/Article">
 							<?php the_title( sprintf( '<h5 class="post-title" itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h5>' ); ?>
-						</div>
+                        </div>
 					<?php endwhile; ?>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<?php
 	$post = $old_post;
 	wp_reset_postdata();

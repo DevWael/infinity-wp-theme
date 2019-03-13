@@ -487,38 +487,6 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
     }
 
 <?php
-/**
- * Get the custom typography settings from theme options and output them as css syntax to use them in the browser
- */
-$window_mag_typo_settings = array(
-	// option id              => css element selector
-	'site_title'              => 'header .site-title a',
-	'tag_line'                => 'header .site-tagline',
-	'block_widget_title'      => '.block-name span,.widget .widget-title span',
-	'post_title'              => '.list-post .post-text .post-content .post-title.h4 a, .big-post .post-content .post-title.h4 a',
-	'single_post_title'       => '.singular .post-box-title',
-	'single_post_title_cover' => '.post-cover .post-data .post-box-title',
-	'post_content_homepage'   => '.list-post .post-text p,.big-post .post-text p',
-	'post_content'            => '.singular .post-box-content p',
-	'small_post_title'        => '.small-post .post-content .post-title a',
-	'carousel_post_title'     => '.carousel-box .carousel-post .post-content .post-title a, .widget-carousel .carousel-post .post-content .post-title a, .widget .big-post.has-post-thumbnail .post-content .post-title a',
-	'read_more_btn'           => '.read-more-button',
-	'error_logo_typo'         => '.error-page .error-logo',
-	'error_message_typo'      => '.error-message',
-	'navbar_typo'             => '#navbar .menu li a', //Buyer wrestlecorp suggestion Ver 1.1
-	'news_ticker_typo'        => '.news-ticker .ticker-container .ticker-post .post-title a, .news-ticker .ticker-title .title',
-	//Ver 1.2
-	'heading_1'               => '.singular .post-box-content h1',
-	'heading_2'               => '.singular .post-box-content h2',
-	'heading_3'               => '.singular .post-box-content h3',
-	'heading_4'               => '.singular .post-box-content h4',
-	'heading_5'               => '.singular .post-box-content h5',
-	'heading_6'               => '.singular .post-box-content h6',
-);
-foreach ( $window_mag_typo_settings as $option => $selector ) {
-	dw_typography( $selector, $option );
-}
-
 //Custom css code
 if ( dw_get_setting( 'css' ) ) {
 	echo dw_get_setting( 'css' );
