@@ -7,7 +7,7 @@ Author: Ahmad Wael
 
 Description: Infinity World - WordPress Magazine theme
 
-Version: 1.6
+Version: 10
 
 Text Domain: dw
 
