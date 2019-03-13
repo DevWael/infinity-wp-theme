@@ -47,6 +47,19 @@ $options = array(
 							'layout_type' => dw_half_width_area()
 						)
 					),
+					'sidebar_area_1'      => array(
+						'type'         => 'switch',
+						'value'        => 'right_sidebar',
+						'label'        => esc_html__( 'Area (1) Sidebar Position', 'dw' ),
+						'right-choice' => array(
+							'value' => 'right_sidebar',
+							'label' => esc_html__( 'Right', 'dw' )
+						),
+						'left-choice'  => array(
+							'value' => 'left_sidebar',
+							'label' => esc_html__( 'Left', 'dw' )
+						),
+					),
 
 					'home_full_width_2' => array(
 						'type'            => 'addable-popup',
@@ -82,6 +95,19 @@ $options = array(
 							),
 							'layout_type' => dw_half_width_area()
 						)
+					),
+					'sidebar_area_2'      => array(
+						'type'         => 'switch',
+						'value'        => 'right_sidebar',
+						'label'        => esc_html__( 'Area (2) Sidebar Position', 'dw' ),
+						'right-choice' => array(
+							'value' => 'right_sidebar',
+							'label' => esc_html__( 'Right', 'dw' )
+						),
+						'left-choice'  => array(
+							'value' => 'left_sidebar',
+							'label' => esc_html__( 'Left', 'dw' )
+						),
 					),
 					'home_recent_posts' => array(
 						'type'    => 'multi-picker',
