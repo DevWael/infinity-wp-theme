@@ -22,29 +22,6 @@ $options = array(
 						'label' => esc_html__( 'Second color', 'dw' ),
 						'value' => '#181818'
 					),
-					'favicon'                  => array(
-						'type'        => 'upload',
-						'label'       => esc_html__( 'Website Favicon', 'dw' ),
-						'images_only' => true
-					),
-					'apple57'                  => array(
-						'type'        => 'upload',
-						'label'       => esc_html__( 'Apple icon : 57px X 57px', 'dw' ),
-						'desc'        => esc_html__( 'Select image with height: 57px and width:57px for apple devices', 'dw' ),
-						'images_only' => true
-					),
-					'apple72'                  => array(
-						'type'        => 'upload',
-						'label'       => esc_html__( 'Apple icon : 72px X 72px', 'dw' ),
-						'desc'        => esc_html__( 'Select image with height: 72px and width:72px for apple devices', 'dw' ),
-						'images_only' => true
-					),
-					'apple114'                 => array(
-						'type'        => 'upload',
-						'label'       => esc_html__( 'Apple icon : 114px X 114px', 'dw' ),
-						'desc'        => esc_html__( 'Select image with height: 114px and width:114px for apple devices', 'dw' ),
-						'images_only' => true
-					)
 				)
 			),
 			'body_box'   => array(
@@ -145,6 +122,35 @@ $options = array(
 							)
 						),
 						'show_borders' => false
+					)
+				)
+			),
+			'icons_box' => array(
+				'title'   => esc_html__( 'Icons', 'dw' ),
+				'type'    => 'tab',
+				'options' => array(
+					'favicon'                  => array(
+						'type'        => 'upload',
+						'label'       => esc_html__( 'Website Favicon', 'dw' ),
+						'images_only' => true
+					),
+					'apple57'                  => array(
+						'type'        => 'upload',
+						'label'       => esc_html__( 'Apple icon : 57px X 57px', 'dw' ),
+						'desc'        => esc_html__( 'Select image with height: 57px and width:57px for apple devices', 'dw' ),
+						'images_only' => true
+					),
+					'apple72'                  => array(
+						'type'        => 'upload',
+						'label'       => esc_html__( 'Apple icon : 72px X 72px', 'dw' ),
+						'desc'        => esc_html__( 'Select image with height: 72px and width:72px for apple devices', 'dw' ),
+						'images_only' => true
+					),
+					'apple114'                 => array(
+						'type'        => 'upload',
+						'label'       => esc_html__( 'Apple icon : 114px X 114px', 'dw' ),
+						'desc'        => esc_html__( 'Select image with height: 114px and width:114px for apple devices', 'dw' ),
+						'images_only' => true
 					)
 				)
 			),
