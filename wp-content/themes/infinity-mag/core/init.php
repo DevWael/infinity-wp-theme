@@ -117,13 +117,7 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 			wp_enqueue_style( $key, DW_CSS_URI . $sc );
 		}
 
-		//Default theme font
-		if ( dw_fonts_url() == '' ) {
-			wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Montserrat:400,700' );
-		} else {
-			wp_enqueue_style( 'google-fonts', dw_fonts_url(), array() );//google Fonts
-		}
-
+		wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Montserrat:400,700' );
 
 		//Default stylesheet file (style.css)
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
