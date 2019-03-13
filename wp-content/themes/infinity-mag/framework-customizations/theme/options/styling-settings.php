@@ -22,16 +22,6 @@ $options = array(
 						'label' => esc_html__( 'Second color', 'dw' ),
 						'value' => '#181818'
 					),
-					'navbar_links_color'       => array(
-						'type'  => 'color-picker',
-						'label' => esc_html__( 'Navbar text Color', 'dw' ),
-						'value' => '#ffffff'
-					),
-					'navbar_links_color_hover' => array(
-						'type'  => 'color-picker',
-						'label' => esc_html__( 'Navbar text Color on hover', 'dw' ),
-						'value' => '#ffffff'
-					),
 					'favicon'                  => array(
 						'type'        => 'upload',
 						'label'       => esc_html__( 'Website Favicon', 'dw' ),
