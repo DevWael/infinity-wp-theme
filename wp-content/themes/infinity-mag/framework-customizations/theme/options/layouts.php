@@ -96,6 +96,7 @@ $options = array(
 							'layout_type' => dw_half_width_area()
 						)
 					),
+
 					'sidebar_area_2'      => array(
 						'type'         => 'switch',
 						'value'        => 'right_sidebar',
