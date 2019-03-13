@@ -413,7 +413,24 @@ function dw_hex2rgb( $hex ) {
 	return implode( ",", $rgb ); // returns the rgb values separated by commas
 	//return $rgb; // returns an array with the rgb values
 }
-
+if ( ! function_exists( 'dw_color_palettes' ) ) {
+	function dw_color_palettes() {
+		return apply_filters(
+			'dw_default_color_palettes', array(
+				'#2979FF',
+				'#ce2189',
+				'#ABBE83',
+				'#074876',
+				'#CDD6D5',
+				'#424442',
+				'#C19990',
+				'#1075A0',
+				'#FFF7E4',
+				'#FEEABD'
+			)
+		);
+	}
+}
 /**
  * Add 'window-class' class to body tag
  */

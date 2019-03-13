@@ -234,6 +234,45 @@ $options = array(
 					)
 				)
 			),
+			'alert_bar_tab' => array(
+				'title'   => esc_html__( 'Top Alert Bar', 'dw' ),
+				'type'    => 'tab',
+				'options' => array(
+					'alert_bar' => array(
+						'type'         => 'multi-picker',
+						'label'        => false,
+						'picker'       => array(
+							'control' => array(
+								'type'         => 'switch',
+								'value'        => 'off',
+								'label'        => esc_html__( 'Top Alert Bar', 'dw' ),
+								'right-choice' => array(
+									'value' => 'on',
+									'label' => esc_html__( 'Show', 'dw' )
+								),
+								'left-choice'  => array(
+									'value' => 'off',
+									'label' => esc_html__( 'Hide', 'dw' )
+								)
+							)
+						),
+						'choices'      => array(
+							'on' => array(
+								'bar_content' => array(
+									'type'          => 'textarea',
+									'label'         => esc_html__( 'Content', 'dw' ),
+								),
+								'bar_bg'      => array(
+									'type'     => 'rgba-color-picker',
+									'value'    => 'rgba(255,0,68,1)',
+									'palettes' => dw_color_palettes(),
+									'label'    => esc_html__( 'Select Color', 'dw' )
+								)
+							)
+						),
+					),
+				)
+			),
 			'news_ticker' => array(
 				'title'   => esc_html__( 'News Ticker', 'dw' ),
 				'type'    => 'tab',
