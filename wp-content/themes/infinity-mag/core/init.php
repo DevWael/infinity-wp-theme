@@ -6,6 +6,7 @@ add_filter( 'use_block_editor_for_page', '__return_false', 10 );
  * Post and comment like system
  */
 require_once DW_CORE . 'like-system.php';
+require_once DW_CORE . 'blocks/init.php';
 
 /**
  * Load Required Plugins
@@ -149,7 +150,7 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 		}
 
 		//if ( window_mag_get_setting( 'retina_support' ) == 'on' ) {
-			wp_enqueue_script( 'parallax-effect', DW_JS_URI . 'parallax.min.js', array( 'jquery' ), '1.0', true );
+		wp_enqueue_script( 'parallax-effect', DW_JS_URI . 'parallax.min.js', array( 'jquery' ), '1.0', true );
 		//}
 
 		if ( is_singular() ) {
@@ -210,7 +211,7 @@ if ( ! function_exists( 'dw_review_system' ) ) {
                         <meta itemprop="datePublished"
                               content="<?php echo get_the_time( get_option( 'date_format' ) ); ?>">
                     </div>
-					<?php
+				<?php
 				endif;
 				foreach ( $rating_scores as $score ) {
 					if ( is_numeric( $score['score'] ) ) {
@@ -297,7 +298,7 @@ if ( ! function_exists( 'dw_review_system' ) ) {
                             <div class="review-description" itemprop="description">
 								<?php echo esc_html( $review_desc ); ?>
                             </div>
-							<?php
+						<?php
 						endif;
 						?>
                     </div>
@@ -328,7 +329,7 @@ if ( ! function_exists( 'dw_review_system' ) ) {
 						<i class="fa fa-bar-chart"></i>
 						<?php echo esc_html( round( $rates_average, 1 ) ); ?>
 					</span>
-					<?php
+				<?php
 				endif;
 				echo $after;
 			}
@@ -451,32 +452,32 @@ if ( ! function_exists( 'dw_class_name' ) ) {
 add_filter( 'fw:ext:backups-demo:demos', 'dw_demo_content' );
 function dw_demo_content( $demos ) {
 	$demos_array = array(
-		'news-demo'  => array(
+		'news-demo'   => array(
 			'title'        => esc_html__( 'News Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/news.png',
 			'preview_link' => 'http://bbioon.com/window/news'
 		),
-		'sport-demo' => array(
+		'sport-demo'  => array(
 			'title'        => esc_html__( 'Sport Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/sport.png',
 			'preview_link' => 'http://bbioon.com/window/sport'
 		),
-		'food-demo'  => array(
+		'food-demo'   => array(
 			'title'        => esc_html__( 'Food Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/food.png',
 			'preview_link' => 'http://bbioon.com/window/food'
 		),
-		'blog-demo'  => array(
+		'blog-demo'   => array(
 			'title'        => esc_html__( 'Blog Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/blog.png',
 			'preview_link' => 'http://bbioon.com/window/blog'
 		),
-		'styles-demo'  => array(
+		'styles-demo' => array(
 			'title'        => esc_html__( 'Fashion Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/styles.png',
 			'preview_link' => 'http://bbioon.com/window/styles'
 		),
-		'tech-demo'  => array(
+		'tech-demo'   => array(
 			'title'        => esc_html__( 'Technology Demo', 'dw' ),
 			'screenshot'   => 'http://bbioon.com/window/demo_content/content/techno.png',
 			'preview_link' => 'http://www.bbioon.com/window/techno/'
@@ -1462,399 +1463,6 @@ function dw_reading_indicator() {
 	}
 }
 
-function dw_half_width_area(){
-    return array(
-	    'type'    => 'multi-picker',
-	    'label'   => false,
-	    'picker'  => array(
-		    'control' => array(
-			    'type'         => 'switch',
-			    'value'        => 'hello',
-			    'label'        => esc_html__( 'Block type', 'dw' ),
-			    'left-choice'  => array(
-				    'value' => 'posts',
-				    'label' => esc_html__( 'Posts Mode', 'dw' )
-			    ),
-			    'right-choice' => array(
-				    'value' => 'ads',
-				    'label' => esc_html__( 'Advertise Mode', 'dw' )
-			    ),
-		    )
-	    ),
-	    'choices' => array(
-		    'posts' => array(
-			    'post_style'  => array(
-				    'type'    => 'image-picker',
-				    'label'   => esc_html__( 'Block Style', 'dw' ),
-				    'choices' => array(
-					    'simple-grid' => array(
-						    // (required) url for thumbnail
-						    'small' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/simple.png',
-							    'height' => 70
-						    ),
-						    // (optional) url for large image that will appear in tooltip
-						    'large' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/simple.png',
-							    'height' => 160
-						    )
-					    ),
-					    'carousel'    => array(
-						    // (required) url for thumbnail
-						    'small' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/carousel.png',
-							    'height' => 70
-						    ),
-						    // (optional) url for large image that will appear in tooltip
-						    'large' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/carousel.png',
-							    'height' => 160
-						    )
-					    ),
-					    'img-grid'    => array(
-						    // (required) url for thumbnail
-						    'small' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/img-grid.png',
-							    'height' => 70
-						    ),
-						    // (optional) url for large image that will appear in tooltip
-						    'large' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/img-grid.png',
-							    'height' => 160
-						    )
-					    ),
-					    'list'        => array(
-						    // (required) url for thumbnail
-						    'small' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/recent-list.png',
-							    'height' => 70
-						    ),
-						    // (optional) url for large image that will appear in tooltip
-						    'large' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/recent-list.png',
-							    'height' => 160
-						    )
-					    ),
-					    'masonry'     => array(
-						    // (required) url for thumbnail
-						    'small' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/masonry.png',
-							    'height' => 70
-						    ),
-						    // (optional) url for large image that will appear in tooltip
-						    'large' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/masonry.png',
-							    'height' => 160
-						    )
-					    ),
-					    'mini-grid'   => array(
-						    // (required) url for thumbnail
-						    'small' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/mini-grid.png',
-							    'height' => 70
-						    ),
-						    // (optional) url for large image that will appear in tooltip
-						    'large' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/mini-grid.png',
-							    'height' => 160
-						    )
-					    ),
-					    'big-grid'    => array(
-						    // (required) url for thumbnail
-						    'small' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/big-grid.png',
-							    'height' => 70
-						    ),
-						    // (optional) url for large image that will appear in tooltip
-						    'large' => array(
-							    'src'    => DW_IMAGES_DIR . 'blocks/big-grid.png',
-							    'height' => 160
-						    )
-					    ),
-					    'slides'      => array(
-						    // (required) url for thumbnail
-						    'small' => array(
-							    'src'    => DW_IMAGES_DIR . 'sliders/center.png',
-							    'height' => 70
-						    ),
-						    // (optional) url for large image that will appear in tooltip
-						    'large' => array(
-							    'src'    => DW_IMAGES_DIR . 'sliders/center.png',
-							    'height' => 160
-						    )
-					    )
-				    ),
-				    'blank'   => false
-			    ),
-			    'posts_count' => array(
-				    'type'       => 'slider',
-				    'value'      => 6,
-				    'properties' => array(
-					    'min'  => 2,
-					    'max'  => 60,
-					    'step' => 1, // Set slider step. Always > 0. Could be fractional.
-				    ),
-				    'label'      => esc_html__( 'Posts Count', 'dw' )
-			    ),
-			    'cat_select'  => array(
-				    'type'        => 'multi-select',
-				    'label'       => esc_html__( 'Select Categories', 'dw' ),
-				    'prepopulate' => 999,
-				    'choices'     => dw_categories()
-			    )
-		    ),
-		    'ads'   => array(
-			    'ads_box' => array(
-				    'type'    => 'multi-picker',
-				    'label'   => false,
-				    'picker'  => array(
-					    'gadget' => array(
-						    'label'   => esc_html__( 'AD Type', 'dw' ),
-						    'type'    => 'radio',
-						    'choices' => array(
-							    'image' => esc_html__( 'Image AD', 'dw' ),
-							    'code'  => esc_html__( 'Custom Code', 'dw' )
-						    ),
-						    'inline'  => true,
-						    'value'   => 'image'
-					    )
-				    ),
-				    'choices' => array(
-					    'image' => array(
-						    'img'    => array(
-							    'type'        => 'upload',
-							    'label'       => esc_html__( 'Image banner', 'dw' ),
-							    'images_only' => true
-						    ),
-						    'url'    => array(
-							    'type'  => 'text',
-							    'label' => esc_html__( 'Banner url', 'dw' ),
-						    ),
-						    'alt'    => array(
-							    'type'  => 'text',
-							    'label' => esc_html__( 'Alternative Text For The image', 'dw' ),
-						    ),
-						    'tab'    => array(
-							    'type'  => 'checkbox',
-							    'value' => true,
-							    'label' => esc_html__( 'Open url in new tab', 'dw' )
-						    ),
-						    'follow' => array(
-							    'type'  => 'checkbox',
-							    'value' => false,
-							    'label' => esc_html__( 'No follow', 'dw' )
-						    )
-					    ),
-					    'code'  => array(
-						    'code_block' => array(
-							    'type'  => 'textarea',
-							    'label' => esc_html__( 'Custom Ad Code', 'dw' ),
-							    'desc'  => esc_html__( 'Supports: HTML, Javascript, Text and Shortcodes.', 'dw' )
-						    )
-					    )
-				    )
-			    )
-		    )
-	    )
-    );
-}
-
-function dw_full_width_area(){
-	return array(
-		'type'    => 'multi-picker',
-		'label'   => false,
-		'picker'  => array(
-			'control' => array(
-				'type'         => 'switch',
-				'value'        => 'hello',
-				'label'        => esc_html__( 'Block type', 'dw' ),
-				'left-choice'  => array(
-					'value' => 'posts',
-					'label' => esc_html__( 'Posts Mode', 'dw' )
-				),
-				'right-choice' => array(
-					'value' => 'ads',
-					'label' => esc_html__( 'Advertise Mode', 'dw' )
-				),
-			)
-		),
-		'choices' => array(
-			'posts' => array(
-				'post_style'  => array(
-					'type'    => 'image-picker',
-					'label'   => esc_html__( 'Block Style', 'dw' ),
-					'choices' => array(
-						'simple-grid' => array(
-							// (required) url for thumbnail
-							'small' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/simple.png',
-								'height' => 70
-							),
-							// (optional) url for large image that will appear in tooltip
-							'large' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/simple.png',
-								'height' => 160
-							)
-						),
-						'carousel'    => array(
-							// (required) url for thumbnail
-							'small' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/carousel.png',
-								'height' => 70
-							),
-							// (optional) url for large image that will appear in tooltip
-							'large' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/carousel.png',
-								'height' => 160
-							)
-						),
-						'img-grid'    => array(
-							// (required) url for thumbnail
-							'small' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/img-grid.png',
-								'height' => 70
-							),
-							// (optional) url for large image that will appear in tooltip
-							'large' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/img-grid.png',
-								'height' => 160
-							)
-						),
-						'list'        => array(
-							// (required) url for thumbnail
-							'small' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/recent-list.png',
-								'height' => 70
-							),
-							// (optional) url for large image that will appear in tooltip
-							'large' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/recent-list.png',
-								'height' => 160
-							)
-						),
-						'masonry'     => array(
-							// (required) url for thumbnail
-							'small' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/masonry.png',
-								'height' => 70
-							),
-							// (optional) url for large image that will appear in tooltip
-							'large' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/masonry.png',
-								'height' => 160
-							)
-						),
-						'mini-grid'   => array(
-							// (required) url for thumbnail
-							'small' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/mini-grid.png',
-								'height' => 70
-							),
-							// (optional) url for large image that will appear in tooltip
-							'large' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/mini-grid.png',
-								'height' => 160
-							)
-						),
-						'big-grid'    => array(
-							// (required) url for thumbnail
-							'small' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/big-grid.png',
-								'height' => 70
-							),
-							// (optional) url for large image that will appear in tooltip
-							'large' => array(
-								'src'    => DW_IMAGES_DIR . 'blocks/big-grid.png',
-								'height' => 160
-							)
-						),
-						'slides'      => array(
-							// (required) url for thumbnail
-							'small' => array(
-								'src'    => DW_IMAGES_DIR . 'sliders/center.png',
-								'height' => 70
-							),
-							// (optional) url for large image that will appear in tooltip
-							'large' => array(
-								'src'    => DW_IMAGES_DIR . 'sliders/center.png',
-								'height' => 160
-							)
-						)
-					),
-					'blank'   => false
-				),
-				'posts_count' => array(
-					'type'       => 'slider',
-					'value'      => 6,
-					'properties' => array(
-						'min'  => 2,
-						'max'  => 60,
-						'step' => 1, // Set slider step. Always > 0. Could be fractional.
-					),
-					'label'      => esc_html__( 'Posts Count', 'dw' )
-				),
-				'cat_select'  => array(
-					'type'        => 'multi-select',
-					'label'       => esc_html__( 'Select Categories', 'dw' ),
-					'prepopulate' => 999,
-					'choices'     => dw_categories()
-				)
-			),
-			'ads'   => array(
-				'ads_box' => array(
-					'type'    => 'multi-picker',
-					'label'   => false,
-					'picker'  => array(
-						'gadget' => array(
-							'label'   => esc_html__( 'AD Type', 'dw' ),
-							'type'    => 'radio',
-							'choices' => array(
-								'image' => esc_html__( 'Image AD', 'dw' ),
-								'code'  => esc_html__( 'Custom Code', 'dw' )
-							),
-							'inline'  => true,
-							'value'   => 'image'
-						)
-					),
-					'choices' => array(
-						'image' => array(
-							'img'    => array(
-								'type'        => 'upload',
-								'label'       => esc_html__( 'Image banner', 'dw' ),
-								'images_only' => true
-							),
-							'url'    => array(
-								'type'  => 'text',
-								'label' => esc_html__( 'Banner url', 'dw' ),
-							),
-							'alt'    => array(
-								'type'  => 'text',
-								'label' => esc_html__( 'Alternative Text For The image', 'dw' ),
-							),
-							'tab'    => array(
-								'type'  => 'checkbox',
-								'value' => true,
-								'label' => esc_html__( 'Open url in new tab', 'dw' )
-							),
-							'follow' => array(
-								'type'  => 'checkbox',
-								'value' => false,
-								'label' => esc_html__( 'No follow', 'dw' )
-							)
-						),
-						'code'  => array(
-							'code_block' => array(
-								'type'  => 'textarea',
-								'label' => esc_html__( 'Custom Ad Code', 'dw' ),
-								'desc'  => esc_html__( 'Supports: HTML, Javascript, Text and Shortcodes.', 'dw' )
-							)
-						)
-					)
-				)
-			)
-		)
-	);
-}
 /**
  * Comments callback
  */
