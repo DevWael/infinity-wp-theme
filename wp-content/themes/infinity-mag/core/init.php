@@ -117,10 +117,11 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 			wp_enqueue_style( $key, DW_CSS_URI . $sc );
 		}
 
-		wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Montserrat:400,700' );
+		wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Ubuntu' );
 
 		//Default stylesheet file (style.css)
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
+		wp_enqueue_style( 'main-style', get_template_directory_uri() . '/main-style.css' );
 
 		wp_enqueue_script( 'masonry' );
 		$scripts = array(

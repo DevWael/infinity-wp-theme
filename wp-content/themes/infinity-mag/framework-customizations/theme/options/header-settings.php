@@ -21,7 +21,7 @@ $options = array(
 						),
 						'label'   => esc_html__( 'Header Style', 'dw' ),
 						'choices' => array(
-							'simple'   => array(
+							'header-one'   => array(
 								// (required) url for thumbnail
 								'small' => array(
 									'src'    => DW_IMAGES_DIR . 'simple.png',
@@ -33,7 +33,7 @@ $options = array(
 									'height' => 200
 								)
 							),
-							'modern'   => array(
+							'header-two'   => array(
 								// (required) url for thumbnail
 								'small' => array(
 									'src'    => DW_IMAGES_DIR . 'modern.png',
@@ -45,7 +45,19 @@ $options = array(
 									'height' => 200
 								)
 							),
-							'magazine' => array(
+							'header-three' => array(
+								// (required) url for thumbnail
+								'small' => array(
+									'src'    => DW_IMAGES_DIR . 'magazine.png',
+									'height' => 100
+								),
+								// (optional) url for large image that will appear in tooltip
+								'large' => array(
+									'src'    => DW_IMAGES_DIR . 'magazine.png',
+									'height' => 200
+								)
+							),
+							'header-four' => array(
 								// (required) url for thumbnail
 								'small' => array(
 									'src'    => DW_IMAGES_DIR . 'magazine.png',
@@ -66,7 +78,7 @@ $options = array(
 						'picker'       => array(
 							// '<custom-key>' => option
 							'control' => array(
-								'label'        => esc_html__( 'Body Background', 'dw' ),
+								'label'        => esc_html__( 'Header Background', 'dw' ),
 								'type'         => 'switch', // or 'short-select'
 								'inline'       => true,
 								'value'        => 'off',
@@ -259,7 +271,26 @@ $options = array(
 									'type'     => 'rgba-color-picker',
 									'value'    => 'rgba(255,0,68,1)',
 									'palettes' => dw_color_palettes(),
-									'label'    => esc_html__( 'Select Color', 'dw' )
+									'label'    => esc_html__( 'Select background Color', 'dw' )
+								),
+								'bar_text'      => array(
+									'type'     => 'rgba-color-picker',
+									'value'    => 'rgba(255,255,255,1)',
+									'palettes' => dw_color_palettes(),
+									'label'    => esc_html__( 'Select Text Color', 'dw' )
+								),
+								'text_style' => array(
+									'type'         => 'switch',
+									'value'        => 'normal_text',
+									'label'        => esc_html__( 'Text Style', 'dw' ),
+									'right-choice' => array(
+										'value' => 'normal_text',
+										'label' => esc_html__( 'Normal', 'dw' )
+									),
+									'left-choice'  => array(
+										'value' => 'italic_text',
+										'label' => esc_html__( 'Italic', 'dw' )
+									)
 								)
 							)
 						),

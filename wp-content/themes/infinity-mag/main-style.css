@@ -1,0 +1,14 @@
+.italic_text {
+	font-style: italic;
+}
+
+.top-alert-bar {
+	padding: 15px 0;
+	font-weight: bold;
+	text-transform: capitalize;
+
+}
+
+.top-alert-bar .text a{
+	text-decoration: underline;
+}

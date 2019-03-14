@@ -1,16 +1,16 @@
 <?php
-$window_mag_footer_class = $window_mag_column_class = '';
+$dw_footer_class = $dw_column_class = '';
 //Instagram carousel
 if ( 'on' === dw_get_setting( 'footer_instagram/control' ) && dw_get_setting( 'footer_instagram/on/insta_user' ) ) {
 	window_mag_instagram_photos_views( dw_get_setting( 'footer_instagram/on/insta_user' ), dw_get_setting( 'footer_instagram/on/limit' ), '<div class="insta-carousel owl-carousel">', '</div>' );
 }
 
 if ( dw_get_setting( 'footer_widgets' ) === 'on' and ( is_active_sidebar( 'footer1' ) or is_active_sidebar( 'footer2' ) or is_active_sidebar( 'footer3' ) ) ) {
-	$window_mag_footer_class = ' has-widgets';
+	$dw_footer_class = ' has-widgets';
 }
 ?>
-<footer class="footer<?php echo esc_attr( $window_mag_footer_class ); ?>">
-	<div class="overlay">
+<footer class="footer<?php echo esc_attr( $dw_footer_class ); ?>">
+    <div class="overlay">
 		<?php
 		//Footer Carousel Posts --> Since V1.2
 		if ( 'on' == dw_get_setting( 'footer_posts_switch/control' ) ) {
@@ -27,31 +27,31 @@ if ( dw_get_setting( 'footer_widgets' ) === 'on' and ( is_active_sidebar( 'foote
 			get_sidebar( 'footer' );
 		}
 		if ( dw_get_setting( 'footer_rights' ) or dw_get_setting( 'footer_rights_block' ) === 'on' ) {
-			$window_mag_column_class = 'col-md-6';
+			$dw_column_class = 'col-md-6';
 			if ( dw_get_setting( 'footer_rights_block' ) == 'off' ) {
-				$window_mag_column_class = 'col-md-12 text-center';
+				$dw_column_class = 'col-md-12 text-center';
 			}
 			if ( 'off' !== dw_get_setting( 'banner_box2/gadget' ) ) {
 				?>
-				<div class="simple-ads">
-					<div class="container">
+                <div class="simple-ads">
+                    <div class="container">
 						<?php dw_ads( '2', 'ad-footer' ); ?>
-					</div>
-				</div>
+                    </div>
+                </div>
 			<?php } ?>
-			<div class="rights container">
-				<div class="rights-wrapper">
-					<div class="row">
-						<div class="<?php echo esc_attr( $window_mag_column_class ); ?>">
+            <div class="rights container">
+                <div class="rights-wrapper">
+                    <div class="row">
+                        <div class="<?php echo esc_attr( $dw_column_class ); ?>">
 							<?php echo dw_get_setting( 'footer_rights' ); ?>
-						</div>
+                        </div>
 						<?php if ( dw_get_setting( 'footer_rights_block' ) != 'off' ) { ?>
-							<div class="col-md-6">
+                            <div class="col-md-6">
 								<?php
 								if ( dw_social_media_urls() && 'social' === dw_get_setting( 'footer_rights_block' ) ) { ?>
-									<div class="social-footer-icons">
+                                    <div class="social-footer-icons">
 										<?php dw_social_media_urls( true ); ?>
-									</div>
+                                    </div>
 									<?php
 								} elseif ( 'navbar' === dw_get_setting( 'footer_rights_block' ) ) {
 									wp_nav_menu(
@@ -64,30 +64,28 @@ if ( dw_get_setting( 'footer_widgets' ) === 'on' and ( is_active_sidebar( 'foote
 										)
 									);
 								} ?>
-							</div>
+                            </div>
 						<?php } ?>
-					</div>
-				</div>
-			</div>
+                    </div>
+                </div>
+            </div>
 		<?php } elseif ( ! function_exists( 'fw_get_db_settings_option' ) ) { ?>
-			<div class="rights container text-center">
-				<div class="rights-wrapper">
+            <div class="rights container text-center">
+                <div class="rights-wrapper">
 					<?php echo esc_html__( 'All rights reserved to', 'dw' ) . ' ' . esc_html( get_bloginfo( 'name' ) ); ?>
-				</div>
-			</div>
+                </div>
+            </div>
 		<?php }
 		if ( dw_get_setting( 'scroll_top' ) != 'off' ) { ?>
-			<div class="scroll hidden-xs">
-				<button id="scroll">
-					<i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
-				</button>
-			</div>
+            <div class="scroll hidden-xs">
+                <button id="scroll">
+                    <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+                </button>
+            </div>
 		<?php } ?>
-	</div>
+    </div>
 </footer>
-<?php if ( dw_get_setting( 'website_layout' ) == 'boxed' or dw_get_setting( 'website_layout' ) == 'wide' ) { ?>
-	</div>
-<?php } ?>
+</div>
 <?php wp_footer(); ?>
 </body>
 </html>
