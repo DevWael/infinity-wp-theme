@@ -202,13 +202,6 @@ $options = array(
 								'logo_select'   => array(
 									'type'        => 'upload',
 									'label'       => esc_html__( 'Upload logo', 'dw' ),
-									'desc'        => esc_html__( 'Recommended size (MAX) : 250px x 70px', 'dw' ),
-									'images_only' => true
-								),
-								'retina_select' => array(
-									'type'        => 'upload',
-									'label'       => esc_html__( 'Logo Image (Retina Version @2x)', 'dw' ),
-									'desc'        => esc_html__( 'Choose an image file for the retina version of the logo. It should be double the size of main logo.', 'dw' ),
 									'images_only' => true
 								),
 								'center_logo'   => array(

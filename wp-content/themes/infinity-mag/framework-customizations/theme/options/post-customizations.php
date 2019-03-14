@@ -34,8 +34,6 @@ $options = array(
 								'photo' => array(
 									'type'        => 'upload',
 									'label'       => esc_html__( 'Upload Cover Photo', 'dw' ),
-									'help'        => esc_html__( 'Minimum recommended size 1200px X 500px', 'dw' ),
-									'desc'        => esc_html__( 'Upload cover photo with high resolution (1200px X 350px recommended as a minimum size) to display it as a background for the post title and meta', 'dw' ),
 									'images_only' => true
 								)
 							)
@@ -283,7 +281,6 @@ $options = array(
 							)
 						),
 						'template'              => '{{- feature_name }} <i class="fa fa-long-arrow-right" aria-hidden="true"></i> {{- score }}',
-						// box title
 						'add-button-text'       => esc_html__( 'Add Feature and Score', 'dw' ),
 						'sortable'              => false
 					)
@@ -301,7 +298,6 @@ $options = array(
 								'label'        => esc_html__( 'Post Background', 'dw' ),
 								'type'         => 'switch',
 								'inline'       => true,
-								'help'         => esc_html__( 'Works only when you select Framed or Boxed from Theme settings -> Site settings -> Website Layout', 'dw' ),
 								'value'        => 'off',
 								'left-choice'  => array(
 									'value' => 'off',

@@ -3,38 +3,38 @@ get_header();
 /**
  * Single post layout --> sidebar position
  */
-$window_mag_sticky_sidebar = '';
+$dw_sticky_sidebar = '';
 if ( 'on' === dw_get_setting( 'sticky_sidebar' ) ) {
-	$window_mag_sticky_sidebar = ' sticky-sidebar ';
+	$dw_sticky_sidebar = ' sticky-sidebar ';
 }
-$window_mag_post_layout_meta  = dw_get_meta( get_the_ID(), 'window_single_sidebar' );
-$window_mag_post_layout_theme = dw_get_setting( 'single_sidebar' );
-$window_mag_content_class     = 'col-md-8 col-xs-12';
-$window_mag_sidebar_class     = 'col-md-4 col-xs-12' . esc_attr( $window_mag_sticky_sidebar );
-if ( $window_mag_post_layout_meta ) {
+$dw_post_layout_meta  = dw_get_meta( get_the_ID(), 'window_single_sidebar' );
+$dw_post_layout_theme = dw_get_setting( 'single_sidebar' );
+$dw_content_class     = 'col-md-8 col-xs-12';
+$dw_sidebar_class     = 'col-md-4 col-xs-12' . esc_attr( $dw_sticky_sidebar );
+if ( $dw_post_layout_meta ) {
 	/**
 	 * Layout from post metabox
 	 */
-	if ( $window_mag_post_layout_meta === 'left' ) {
-		$window_mag_content_class = 'col-md-8 col-xs-12 col-md-push-4';
-		$window_mag_sidebar_class = 'col-md-4 col-xs-12 col-md-pull-8' . esc_attr( $window_mag_sticky_sidebar );
-	} elseif ( $window_mag_post_layout_meta === 'right' ) {
-		$window_mag_content_class = 'col-md-8 col-xs-12';
-		$window_mag_sidebar_class = 'col-md-4 col-xs-12' . esc_attr( $window_mag_sticky_sidebar );
+	if ( $dw_post_layout_meta === 'left' ) {
+		$dw_content_class = 'col-md-8 col-xs-12 col-md-push-4';
+		$dw_sidebar_class = 'col-md-4 col-xs-12 col-md-pull-8' . esc_attr( $dw_sticky_sidebar );
+	} elseif ( $dw_post_layout_meta === 'right' ) {
+		$dw_content_class = 'col-md-8 col-xs-12';
+		$dw_sidebar_class = 'col-md-4 col-xs-12' . esc_attr( $dw_sticky_sidebar );
 	}
 } else {
 	/**
 	 * Layout from theme options page or the default when the unyson framework is not installed
 	 */
-	if ( $window_mag_post_layout_theme === 'left_sidebar' ) {
-		$window_mag_content_class = 'col-md-8 col-xs-12 col-md-push-4';
-		$window_mag_sidebar_class = 'col-md-4 col-xs-12 col-md-pull-8' . esc_attr( $window_mag_sticky_sidebar );
-	} elseif ( $window_mag_post_layout_theme === 'right_sidebar' ) {
-		$window_mag_content_class = 'col-md-8 col-xs-12';
-		$window_mag_sidebar_class = 'col-md-4 col-xs-12' . esc_attr( $window_mag_sticky_sidebar );
+	if ( $dw_post_layout_theme === 'left_sidebar' ) {
+		$dw_content_class = 'col-md-8 col-xs-12 col-md-push-4';
+		$dw_sidebar_class = 'col-md-4 col-xs-12 col-md-pull-8' . esc_attr( $dw_sticky_sidebar );
+	} elseif ( $dw_post_layout_theme === 'right_sidebar' ) {
+		$dw_content_class = 'col-md-8 col-xs-12';
+		$dw_sidebar_class = 'col-md-4 col-xs-12' . esc_attr( $dw_sticky_sidebar );
 	} else {
-		$window_mag_content_class = 'col-md-8 col-xs-12';
-		$window_mag_sidebar_class = 'col-md-4 col-xs-12' . esc_attr( $window_mag_sticky_sidebar );
+		$dw_content_class = 'col-md-8 col-xs-12';
+		$dw_sidebar_class = 'col-md-4 col-xs-12' . esc_attr( $dw_sticky_sidebar );
 	}
 }
 ?>
@@ -66,7 +66,7 @@ if ( $window_mag_post_layout_meta ) {
 				</div>
 			<?php endif; ?>
 			<div class="row">
-				<div class="<?php echo esc_attr( $window_mag_content_class ); ?>">
+				<div class="<?php echo esc_attr( $dw_content_class ); ?>">
 					<?php
 					/**
 					 * Post top ads area
@@ -156,8 +156,8 @@ if ( $window_mag_post_layout_meta ) {
 				/**
 				 * Widgets area (Sidebar)
 				 */
-				if ( $window_mag_sidebar_class ): ?>
-					<div class="<?php echo esc_attr( $window_mag_sidebar_class ); ?>">
+				if ( $dw_sidebar_class ): ?>
+					<div class="<?php echo esc_attr( $dw_sidebar_class ); ?>">
 						<?php get_sidebar(); ?>
 					</div>
 				<?php endif; ?>
