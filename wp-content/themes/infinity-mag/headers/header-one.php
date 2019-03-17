@@ -9,5 +9,7 @@
 			'fallback_cb'    => 'window_mag_nav_fallback'
 		)
 	);
+
+
 	?>
 </nav>
