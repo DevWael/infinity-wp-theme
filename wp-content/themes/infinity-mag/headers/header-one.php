@@ -1,4 +1,4 @@
-<nav id="dw_navigation">
+<nav class="dw_navigation" id="dw_navigation">
 	<?php
 	wp_nav_menu(
 		array(
