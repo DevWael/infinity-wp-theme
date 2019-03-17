@@ -39,6 +39,7 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
+//		add_theme_support( 'woocommerce' );
 		add_image_size( 'window_mag_slider_center', 800, 450, true );
 		add_image_size( 'window_mag_slider_double', 600, 450, true );
 		add_image_size( 'window_mag_slider_many', 350, 450, true );
