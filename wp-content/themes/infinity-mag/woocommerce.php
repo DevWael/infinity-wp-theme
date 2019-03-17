@@ -1,4 +1,4 @@
-error<?php
+<?php
 get_header();
 /**
  * Single post layout --> sidebar position
