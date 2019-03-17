@@ -2,7 +2,7 @@
 <div class="dw-navbar">
     <div class="top-nav">
         <div class="logo-box">
-            <img src="../assets/images/ui/logo.png" alt="img" class="img-fluid">
+            <img src="<?php get_template_directory_uri(); ?> /images/logo.png" alt="img" class="img-fluid">
         </div>
         <div class="dw-menu">
             <nav class="dw_navigation" id="dw_navigation">
