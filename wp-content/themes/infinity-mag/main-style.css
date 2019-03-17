@@ -1,3 +1,21 @@
+/*=================================================================================*/
+/*=================================================================================*/
+/*=================================================================================*/
+/*==========================||---------------------------||========================*/
+/*==========================|| DESIGNED BY  HOSSAM HILAL ||========================*/
+/*==========================||---------------------------||========================*/
+/*====================================||------||===================================*/
+/*====================================|| 2019 ||===================================*/
+/*====================================||------||===================================*/
+/*=================================================================================*/
+/*=================================================================================*/
+
+
+body {
+	direction: ltr;
+	overflow-x: hidden;
+}
+
 .italic_text {
 	font-style: italic;
 }
@@ -11,4 +29,70 @@
 
 .top-alert-bar .text a{
 	text-decoration: underline;
+}
+
+.dw-navbar {
+	position: relative;
+}
+
+.dw-navbar .top-nav {
+	background: #3E3E3E;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.dw-navbar .dw-menu .menu {
+	display: flex;
+}
+
+.dw-navbar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dw-navbar .dw-menu .menu li {
+	position: relative;
+	z-index: 1;
+}
+
+.dw-navbar .dw-menu .menu li:before {
+	display: none;
+}
+
+.dw-navbar a {
+	color: #fff;
+}
+
+.dw-navbar ul a {
+	padding: 10px 15px;
+	position: relative;
+	display: block;
+}
+
+.dw-navbar .dw-menu .menu .sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #3E3E3E;
+	min-width: 180px;
+	display: none;
+}
+
+.dw-navbar .dw-menu .menu .sub-menu .sub-menu {
+	left: 100%;
+}
+
+.dw-navbar .dw-menu .menu li:hover>.sub-menu {
+	display: block;
+}
+
+.dw-navbar .top-nav .dw-links {
+	display: flex;
+}
+
+.dw-navbar .top-nav .dw-links .dw-nav-social {
+	display: flex;
 }

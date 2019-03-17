@@ -20,7 +20,7 @@
             </nav>
         </div>
         <div class="dw-links">
-            <ul>
+            <ul class="dw-nav-social">
                 <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
                 <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
                 <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
