@@ -39,7 +39,6 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
-//		add_theme_support( 'woocommerce' );
 		add_image_size( 'window_mag_slider_center', 800, 450, true );
 		add_image_size( 'window_mag_slider_double', 600, 450, true );
 		add_image_size( 'window_mag_slider_many', 350, 450, true );
@@ -51,6 +50,19 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 		register_nav_menus( array(
 			'header_menu' => esc_html__( 'Primary Menu', 'dw' ),
 			'footer_menu' => esc_html__( 'Footer Menu', 'dw' )
+		) );
+		add_theme_support( 'woocommerce', array(
+			'thumbnail_image_width' => 150,
+			'single_image_width'    => 300,
+
+			'product_grid'          => array(
+				'default_rows'    => 3,
+				'min_rows'        => 2,
+				'max_rows'        => 8,
+				'default_columns' => 4,
+				'min_columns'     => 2,
+				'max_columns'     => 5,
+			),
 		) );
 	}
 }
