@@ -55,7 +55,7 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 			'thumbnail_image_width' => 150,
 			'single_image_width'    => 300,
 
-			'product_grid'          => array(
+			'product_grid' => array(
 				'default_rows'    => 3,
 				'min_rows'        => 2,
 				'max_rows'        => 8,
@@ -154,7 +154,7 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 		//if ( window_mag_get_setting( 'retina_support' ) == 'on' ) {
 		wp_enqueue_script( 'parallax-effect', DW_JS_URI . 'parallax.min.js', array( 'jquery' ), '1.0', true );
 		//}
-
+		wp_enqueue_script( 'main-js', get_template_directory_uri() . '/main.js', array( 'jquery' ) );
 		if ( is_singular() ) {
 			wp_enqueue_script( "comment-reply" );
 		}
@@ -427,6 +427,7 @@ function dw_hex2rgb( $hex ) {
 	return implode( ",", $rgb ); // returns the rgb values separated by commas
 	//return $rgb; // returns an array with the rgb values
 }
+
 if ( ! function_exists( 'dw_color_palettes' ) ) {
 	function dw_color_palettes() {
 		return apply_filters(
