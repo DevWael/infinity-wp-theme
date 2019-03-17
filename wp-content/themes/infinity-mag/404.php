@@ -1,4 +1,4 @@
-   <?php get_header(); ?>
+   xx<?php get_header(); ?>
 <section class="home-posts">
 	<div class="container">
 		<div class="blog-column">
