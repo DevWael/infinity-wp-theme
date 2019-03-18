@@ -1,5 +1,14 @@
 
-<div class="dw-navbar">
+<div class="dw-navbar header-four">
+    <div class="top-social">
+        <div class="container">
+            <ul class="dw-nav-social">
+                <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
+                <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
+                <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
+            </ul>
+        </div>
+    </div>
     <div class="top-nav-heder">
         <div class="container">
             <div class="top-nav">
@@ -7,11 +16,6 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/logo.png" alt="img" class="img-responsive">
                 </a>
                 <div class="dw-links">
-                    <ul class="dw-nav-social">
-                        <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
-                    </ul>
                     <div class="buttons">
                         <div class="dw-cart"> <a href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </a> </div>
                         <div class="dw-search-btn"> <i class="fa fa-search" aria-hidden="true"></i> </div>

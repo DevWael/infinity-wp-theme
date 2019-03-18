@@ -169,6 +169,10 @@ body {
 	cursor: pointer;
 }
 
+.dw-navbar .dw-cart a {
+	color: #00AD9D;
+}
+
 .dw-navbar .dw-search-btn {
 	width: 40px;
 	text-align: center;
@@ -243,11 +247,29 @@ body {
 }
 
 .header-four-nav .dw-menu .menu>li.menu-item-has-children:after {
-	right: 15px;
+	right: 10px;
 }
 
 .header-four-nav {
 	border-bottom: 1px solid #f9f9f9;
+}
+
+.header-four .top-social {
+	background: #363636;
+	padding: 8px 0;
+}
+
+.header-four .top-social .container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.header-four .top-social li a {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 11px;
 }
 
 .header-four-nav .dw-menu .menu>li:last-of-type {
