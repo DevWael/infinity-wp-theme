@@ -3,7 +3,7 @@
 
 Theme Name: Infinity World
 
-Author: Ahmad Wael
+Author: Awamer Alshabaka
 
 Description: Infinity World - WordPress Magazine theme
 

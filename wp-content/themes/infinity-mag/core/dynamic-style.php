@@ -403,7 +403,6 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
     .home-slider.center-slide .main-item .post-data .contents .post-title a:hover,
     .home-slider.center-slide .main-item .post-data .contents .slide-post-meta a:hover,
     .page-header h1 span,
-    body a:hover,
     .small-post .post-content .post-meta a:hover,
     .small-post .post-content .post-meta a:focus,
     .small-post .post-content .post-meta a:active,

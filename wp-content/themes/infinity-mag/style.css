@@ -41,25 +41,25 @@ body {
     color: #565656;
 }
 
-body a {
-    color: #404040;
-    text-decoration: none;
-}
+/*body a {*/
+    /*color: #404040;*/
+    /*text-decoration: none;*/
+/*}*/
 
-body a:hover {
-    color: #CD483C;
-    text-decoration: none;
-}
+/*body a:hover {*/
+    /*color: #CD483C;*/
+    /*text-decoration: none;*/
+/*}*/
 
-body a:focus {
-    outline: none;
-    text-decoration: none;
-}
+/*body a:focus {*/
+    /*outline: none;*/
+    /*text-decoration: none;*/
+/*}*/
 
-body a:active {
-    outline: none;
-    text-decoration: none;
-}
+/*body a:active {*/
+    /*outline: none;*/
+    /*text-decoration: none;*/
+/*}*/
 
 /*-----------------------------------------------*/
 /*WordPress Core*/
