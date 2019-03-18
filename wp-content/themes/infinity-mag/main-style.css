@@ -276,6 +276,11 @@ body {
 	border-right: 1px solid #f9f9f9;
 }
 
+.header-four-nav .sub-menu {
+	margin-top: 0 !important;
+}
+
+
 @media screen and (max-width: 575px)
 {
 	.dw-header-three-top {
@@ -397,6 +402,9 @@ body {
 		justify-content: space-between;
 		width: 100%;
 	}
+	.header-four .nav-btn {
+		top: 60px;
+	}
 }
 
 @media  (min-width:1200px) {
@@ -469,7 +477,7 @@ body {
 
 .search-big-box .search-form {
 	width: 100%;
-	max-width: 700px;
+	max-width: 900px;
 	position: relative;
 }
 
