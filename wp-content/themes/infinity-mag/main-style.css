@@ -95,6 +95,8 @@ body {
 	visibility: hidden;
 	opacity: 0;
 	transition: all .3s ease-in-out;
+	margin-top: 18px;
+	border-top: 2px solid #00AD9D;
 }
 
 .dw-navbar .dw-menu .menu li:hover>.sub-menu {
@@ -126,6 +128,7 @@ body {
 
 .dw-navbar .sub-menu .menu-item-has-children .sub-menu {
 	top: 0 !important;
+	margin-top: 0;
 }
 
 .dw-navbar .sub-menu .menu-item-has-children:hover::after {
