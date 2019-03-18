@@ -49,8 +49,14 @@ body {
 	padding: 0px;
 }
 
+.dw-navbar .dw_navigation {
+	height: 100%;
+}
+
 .dw-navbar .dw-menu .menu {
 	display: flex;
+	height: 100%;
+	align-items: center;
 }
 
 .dw-navbar ul {
@@ -87,6 +93,11 @@ body {
 	display: block;
 }
 
+.dw-navbar .dw-menu .menu>li>a {
+	height: 100%;
+	text-transform: capitalize;
+}
+
 .dw-navbar .dw-menu .menu .sub-menu {
 	position: absolute;
 	top: 100%;
@@ -96,7 +107,7 @@ body {
 	visibility: hidden;
 	opacity: 0;
 	transition: all .3s ease-in-out;
-	margin-top: 18px;
+	margin-top: 15px;
 	border-top: 2px solid #00AD9D;
 }
 
@@ -160,6 +171,10 @@ body {
 	margin: 0 5px;
 }
 
+.dw-navbar .dw-nav-social a:hover {
+	border-color: #00AD9D;
+}
+
 .dw-navbar .dw-cart {
 	width: 40px;
 	text-align: center;
@@ -192,3 +207,88 @@ body {
 }
 
 
+/*SEARCH BOX*/
+
+.search-big-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	z-index: 9999;
+	padding: 40px 20px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.show-search {
+	opacity: 01 !important;
+	visibility: visible !important;
+}
+
+.search-big-box .search-query-text {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 40px;
+	color: #00AD9D;
+	border: 0;
+	text-transform: uppercase;
+}
+
+.search-big-box .search-query-text:active ,
+.search-big-box .search-query-text:focus {
+	box-shadow: none;
+	outline: 0;
+}
+
+.search-big-box .search-form {
+	width: 100%;
+	max-width: 700px;
+}
+
+.search-big-box .search-message {
+	position: relative;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.search-big-box .search-message::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 1px;
+	width: 100%;
+	background: #00AD9D;
+}
+
+.search-big-box .text-message {
+	background: #fff;
+	position: relative;
+	z-index: 1;
+	padding: 0 10px;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.search-big-box .search-form button {
+	display: none;
+}
+
+.search-big-box .close-button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 20px 40px;
+	font-size: 27px;
+	cursor: pointer;
+}

@@ -44,3 +44,23 @@
 
 
 
+
+
+
+
+
+
+<!--SEARCH BOX POPUP -->
+<div class="search-big-box">
+    <div class="search-form">
+        <form>
+            <input type="text" class="search-query-text" name="s" value="" placeholder="Search and hit enter" title="Search">
+            <button type="submit"> <i class="fa fa-search"></i> </button>
+        </form>
+        <div class="search-message">
+            <span class="text-message">  Input your search keywords and press Enter.  </span>
+        </div>
+    </div>
+    <div class="close-button">  <i class="fa fa-times" aria-hidden="true"></i>  </div>
+</div>
+
