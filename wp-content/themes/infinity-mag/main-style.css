@@ -92,10 +92,46 @@ body {
 	display: block;
 }
 
-.dw-navbar .top-nav .dw-links {
+.dw-navbar .dw-links {
 	display: flex;
 }
 
-.dw-navbar .top-nav .dw-links .dw-nav-social {
+.dw-navbar .logo-box img {
+	max-width: 160px;
+}
+
+.dw-navbar .dw-nav-social {
 	display: flex;
+}
+
+.dw-navbar .dw-nav-social a {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	height: 30px;
+	line-height: 30px;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	margin: 0 5px;
+}
+
+.dw-navbar .dw-cart {
+	width: 40px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 5px;
+	color: #00AD9D;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.dw-navbar .dw-search-btn {
+	width: 40px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 5px;
+	font-size: 24px;
+	cursor: pointer;
 }

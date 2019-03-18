@@ -3,7 +3,7 @@
     <div class="top-nav">
         <div class="container">
             <a class="logo-box">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/logo.png" alt="img" class="img-fluid">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/logo.png" alt="img" class="img-responsive">
             </a>
             <div class="dw-menu">
                 <nav class="dw_navigation" id="dw_navigation">
@@ -26,7 +26,7 @@
                 <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
                 <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
             </ul>
-            <div class="dw-art"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </div>
+            <div class="dw-cart"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </div>
             <div class="dw-search-btn"> <i class="fa fa-search" aria-hidden="true"></i> </div>
         </div>
         </div>
@@ -34,7 +34,7 @@
     <div class="wd-nav-banner">
         <div class="container">
              <a class="banner-box">
-                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/banner.png" alt="img" class="img-fluid">
+                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/banner.png" alt="img" class="img-responsive">
              </a>
         </div>
     </div>
