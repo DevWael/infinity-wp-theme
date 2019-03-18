@@ -35,15 +35,18 @@ body {
 	position: relative;
 }
 
-.dw-navbar .top-nav {
+.dw-navbar .top-nav-heder {
 	background: #3E3E3E;
-	color: #fff;
-	padding: 15px;
+	padding: 15px 20px;
 }
-
-.dw-navbar .top-nav .container {
+.dw-navbar .top-nav {
+	color: #fff;
 	display: flex;
 	justify-content: space-between;
+}
+
+.dw-navbar .container {
+	padding: 0px;
 }
 
 .dw-navbar .dw-menu .menu {
@@ -69,6 +72,14 @@ body {
 	color: #fff;
 }
 
+.dw-navbar .current-menu-item a {
+	color: #00AD9D;
+}
+
+.dw-navbar a:hover {
+	color: #00AD9D;
+}
+
 .dw-navbar ul a {
 	padding: 10px 15px;
 	position: relative;
@@ -78,18 +89,47 @@ body {
 .dw-navbar .dw-menu .menu .sub-menu {
 	position: absolute;
 	top: 100%;
-	left: 0;
+	left: 20px;
 	background: #3E3E3E;
 	min-width: 180px;
-	display: none;
-}
-
-.dw-navbar .dw-menu .menu .sub-menu .sub-menu {
-	left: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .3s ease-in-out;
 }
 
 .dw-navbar .dw-menu .menu li:hover>.sub-menu {
-	display: block;
+	visibility: visible;
+	opacity: 1;
+	left: 0;
+}
+
+.dw-navbar .dw-menu .menu .sub-menu .sub-menu {
+	left: 120%;
+}
+
+.dw-navbar .dw-menu .menu .sub-menu li:hover .sub-menu {
+	left: 100%;
+}
+
+.dw-navbar .sub-menu .menu-item-has-children::after {
+	content: "\f105";
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+
+.dw-navbar .sub-menu .menu-item-has-children .sub-menu {
+	top: 0 !important;
+}
+
+.dw-navbar .sub-menu .menu-item-has-children:hover::after {
+	color: #00AD9D;
 }
 
 .dw-navbar .dw-links {
@@ -136,3 +176,13 @@ body {
 	font-size: 24px;
 	cursor: pointer;
 }
+
+.wd-nav-banner {
+	padding: 20px;
+}
+
+.wd-nav-banner img {
+	max-height: 100px;
+}
+
+
