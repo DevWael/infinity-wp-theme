@@ -27,8 +27,10 @@
                         <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
                         <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
                     </ul>
-                    <div class="dw-cart"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </div>
-                    <div class="dw-search-btn"> <i class="fa fa-search" aria-hidden="true"></i> </div>
+                    <div class="buttons">
+                        <div class="dw-cart"> <a href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </a> </div>
+                        <div class="dw-search-btn"> <i class="fa fa-search" aria-hidden="true"></i> </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,6 +42,8 @@
              </a>
         </div>
     </div>
+    <div class="nav-btn"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+    <div class="overlay"></div>
 </div>
 
 
@@ -54,7 +58,8 @@
 <div class="search-big-box">
     <div class="search-form">
         <form>
-            <input type="text" class="search-query-text" name="s" value="" placeholder="Search and hit enter" title="Search">
+            <input type="text" class="search-query-text" name="s" value="" id="search_input" title="Search">
+            <label for="search_input"> Search and hit enter </label>
             <button type="submit"> <i class="fa fa-search"></i> </button>
         </form>
         <div class="search-message">
