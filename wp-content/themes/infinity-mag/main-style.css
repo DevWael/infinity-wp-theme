@@ -70,6 +70,7 @@ body {
 
 .dw-navbar a {
 	color: #fff;
+	text-decoration: none;
 }
 
 .dw-navbar .current-menu-item a {
@@ -186,6 +187,8 @@ body {
 
 .wd-nav-banner img {
 	max-height: 100px;
+	margin: auto;
+	display: block;
 }
 
 
