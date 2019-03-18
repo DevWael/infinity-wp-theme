@@ -2,7 +2,7 @@
 <div class="dw-navbar">
     <div class="top-nav">
         <div class="container">
-            <a class="logo-box">
+            <a class="logo-box" href="#">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/logo.png" alt="img" class="img-responsive">
             </a>
             <div class="dw-menu">
@@ -33,7 +33,7 @@
     </div>
     <div class="wd-nav-banner">
         <div class="container">
-             <a class="banner-box">
+             <a class="banner-box" href="#">
                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/banner.png" alt="img" class="img-responsive">
              </a>
         </div>

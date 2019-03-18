@@ -94,6 +94,7 @@ body {
 
 .dw-navbar .dw-links {
 	display: flex;
+	align-items: center;
 }
 
 .dw-navbar .logo-box img {
