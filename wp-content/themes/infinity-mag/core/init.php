@@ -154,7 +154,7 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 		//if ( window_mag_get_setting( 'retina_support' ) == 'on' ) {
 		wp_enqueue_script( 'parallax-effect', DW_JS_URI . 'parallax.min.js', array( 'jquery' ), '1.0', true );
 		//}
-		wp_enqueue_script( 'main-js', get_template_directory_uri() . '/main.js', array( 'jquery' ) );
+		wp_enqueue_script( 'main-js', get_template_directory_uri() . '/main.js', array( 'jquery','owl-carousel' ) );
 		if ( is_singular() ) {
 			wp_enqueue_script( "comment-reply" );
 		}

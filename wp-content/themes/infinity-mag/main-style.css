@@ -553,3 +553,124 @@ body {
 	font-size: 27px;
 	cursor: pointer;
 }
+
+
+ /*FiRST HERO FULL SLIDER*/
+
+.single-article-slide {
+    position: relative;
+}
+
+.single-article-slide img {
+    height: 450px;
+}
+
+.single-article-slide .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 40px 6% 60px;
+    color: #fff;
+}
+
+.single-article-slide h3 {
+    text-transform: capitalize;
+    font-weight: bold;
+    max-width: 650px;
+}
+
+.single-article-slide p {
+    max-width: 650px;
+}
+
+.single-article-slide .info {
+    max-width: 650px;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+}
+
+.single-article-slide .info ul {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.single-article-slide .info li {
+    padding-right: 20px;
+}
+
+.single-article-slide .info i {
+    margin-right: 5px;
+}
+
+.single-article-slide .info span {
+    display: inline-block;
+}
+
+.full-article-slider .owl-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 6%;
+    display: flex;
+    font-size: 25px;
+    color: #fff;
+    width: 70px;
+    justify-content: space-between;
+}
+
+.full-article-slider .owl-nav div:hover {
+    color:  #00AD9D;
+}
+
+.full-article-slider .owl-dots {
+    position: absolute;
+    bottom: 15px;
+    left: calc( 6% + 90px );
+    display: flex;
+    height: 37px;
+    align-items: center;
+}
+
+.full-article-slider .owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    opacity: .7;
+}
+
+.full-article-slider .owl-dot.active {
+    background: #00AD9D;
+    opacity: 1;
+}
+
+@media screen and (max-width:768px)
+{
+    .single-article-slide .text-overlay {
+        padding: 20px;
+    }
+    .single-article-slide img {
+        height: 300px;
+    }
+    .single-article-slide h3 {
+        font-size: 19px;
+        max-width: 100%;
+    }
+    .single-article-slide p {
+        max-width: 100%;
+    }
+    .single-article-slide .info li {
+        padding-right: 10px;
+    }
+}

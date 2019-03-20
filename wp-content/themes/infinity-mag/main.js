@@ -39,6 +39,32 @@
         $('.dw-navbar .overlay').hide();
     });
 
+    // FULL ARTICLE OWL
+    $('.full-article-owl').owlCarousel({
+        rtl: true,
+        margin: 0,
+        autoplay: true,
+        loop: true,
+        nav: true,
+        dots:true,
+        autoplaySpeed: 2000,
+        navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
+        responsive: {
+            0: {
+                items: 1 ,
+                dotsEach: 1
+            },
+            600: {
+                items: 1 ,
+                dotsEach: 1
+            },
+            1000: {
+                items: 1 ,
+                dotsEach: 1
+            }
+        }
+    });
+
     // $(document).on('click','.menu-item-has-children .menu-item-has-children',function () {
     //     $('.dw-navbar .dw-menu .menu .sub-menu ul').hide();
     //     if($(this).find('.sub-menu').is(':visible')){
