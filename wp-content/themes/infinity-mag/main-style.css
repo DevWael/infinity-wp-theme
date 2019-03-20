@@ -564,8 +564,31 @@ body {
 
 .single-article-slide {
     position: relative;
-    background-size: cover !important;
+	overflow: hidden;
     height: 550px;
+}
+
+.transition-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover !important;
+	transition: all 1.3s ease-in-out;
+	-webkit-transition: all 1.3s ease-in-out;
+	-moz-transition: all 1.3s ease-in-out;
+	-ms-transition: all 1.3s ease-in-out;
+	-o-transition: all 1.3s ease-in-out;
+	z-index: -1;
+}
+
+.single-article-slide:hover .transition-img {
+	transform: scale(1.3)rotate(2deg);
+	-webkit-transform: scale(1.3)rotate(2deg);
+	-moz-transform: scale(1.3)rotate(2deg);
+	-ms-transform: scale(1.3)rotate(2deg);
+	-o-transform: scale(1.3)rotate(2deg);
 }
 
 .single-article-slide .text-overlay {
@@ -596,7 +619,6 @@ body {
 .single-article-slide:hover h3 a {
 	color:#00AD9D;
 }
-
 
 .single-article-slide p {
     max-width: 650px;
@@ -711,7 +733,15 @@ body {
 
 .multi-article-slide {
 	position: relative;
-	background-size: cover !important;
+	overflow: hidden;
+}
+
+.multi-article-slide:hover .transition-img {
+	transform: scale(1.3)rotate(2deg);
+	-webkit-transform: scale(1.3)rotate(2deg);
+	-moz-transform: scale(1.3)rotate(2deg);
+	-ms-transform: scale(1.3)rotate(2deg);
+	-o-transform: scale(1.3)rotate(2deg);
 }
 
 .multi-article-slide .text-overlay {
@@ -734,8 +764,6 @@ body {
 	color:#00AD9D;
 	text-decoration: none;
 }
-
-
 
 .multi-article-slide .writer-info {
 	font-size: 12px;
@@ -825,7 +853,15 @@ body {
 
 .main-article {
 	position: relative;
-	background-size: cover !important;
+	overflow: hidden;
+}
+
+.main-article:hover .transition-img {
+	transform: scale(1.3)rotate(2deg);
+	-webkit-transform: scale(1.3)rotate(2deg);
+	-moz-transform: scale(1.3)rotate(2deg);
+	-ms-transform: scale(1.3)rotate(2deg);
+	-o-transform: scale(1.3)rotate(2deg);
 }
 
 .main-article .text-overlay {

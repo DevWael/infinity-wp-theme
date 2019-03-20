@@ -127,9 +127,10 @@ if ( $query->have_posts() ):
 						<?php
 						$dw_image_url = get_the_post_thumbnail_url( get_the_ID(), $dw_thumbnail_size );
 						?>
-                        <div class="multi-article-slide" <?php if ( $dw_image_url ) {
-							echo 'style="background-image: url(' . esc_url( $dw_image_url ) . ');"';
-						} ?>>
+                        <div class="multi-article-slide">
+                            <div class="transition-img" <?php if ( $dw_image_url ) {
+	                            echo 'style="background-image: url(' . esc_url( $dw_image_url ) . ');"';
+                            } ?>></div>
                             <div class="text-overlay">
 								<?php the_title( sprintf( '<h3 class="post-title"><a href = "%s" rel = "bookmark" > ', esc_url( get_permalink() ) ), '</a ></h3>' ); ?>
 
