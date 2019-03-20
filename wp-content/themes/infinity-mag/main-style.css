@@ -845,6 +845,31 @@ body {
 	height: 540px;
 }
 
+.two-block-owl .owl-dots {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    margin-top: 15px;
+}
+
+.two-block-owl .owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #00AD9D;
+    border-radius: 50%;
+    margin: 0 10px;
+    opacity: .3;
+}
+
+.two-block-owl .owl-dot.active {
+    opacity: 1;
+}
+
+.two-block-owl .owl-nav {
+    display: none;
+}
+
 @media screen and (max-width:767px)
 {
 	.main-article.big  {
