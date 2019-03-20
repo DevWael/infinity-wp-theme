@@ -632,12 +632,12 @@ body {
 }
 
 .full-article-slider .owl-dots {
-    position: absolute;
-    bottom: 15px;
-    left: calc( 6% + 90px );
-    display: flex;
-    height: 37px;
-    align-items: center;
+	position: absolute;
+	bottom: 15px;
+	left: calc( 6% + 70px );
+	display: flex;
+	height: 35px;
+	align-items: center;
 }
 
 .full-article-slider .owl-dot {
