@@ -5,11 +5,11 @@ if ( ! defined( 'FW' ) ) {
 
 $options = array(
 	'main_carousel_settings' => array(
-		'title'   => esc_html__( 'Carousel Settings', 'dw' ),
+		'title'   => esc_html__( 'Hero Section', 'dw' ),
 		'type'    => 'tab',
 		'options' => array(
 			'main_carousel_box' => array(
-				'title'   => esc_html__( 'Carousel Settings', 'dw' ),
+				'title'   => esc_html__( 'Hero Section', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(
 					'carousel_switch' => array(
@@ -37,40 +37,52 @@ $options = array(
 									'value'   => 'center-slide',
 									'label'   => esc_html__( 'Carousel Style', 'dw' ),
 									'choices' => array(
-										'center-slide'  => array(
+										'hero-one'  => array(
 											// (required) url for thumbnail
 											'small' => array(
-												'src'    => esc_url( DW_IMAGES_DIR . 'sliders/center.png' ),
+												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_one.png' ),
 												'height' => 100
 											),
 											// (optional) url for large image that will appear in tooltip
 											'large' => array(
-												'src'    => esc_url( DW_IMAGES_DIR . 'sliders/center.png' ),
-												'height' => 200
+												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_one.png' ),
+												'height' => 300
 											),
 										),
-										'double-slides' => array(
+										'hero-two' => array(
 											// (required) url for thumbnail
 											'small' => array(
-												'src'    => esc_url( DW_IMAGES_DIR . 'sliders/double.png' ),
+												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_two.png' ),
 												'height' => 100
 											),
 											// (optional) url for large image that will appear in tooltip
 											'large' => array(
-												'src'    => esc_url( DW_IMAGES_DIR . 'sliders/double.png' ),
-												'height' => 200
+												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_two.png' ),
+												'height' => 300
 											),
 										),
-										'many-slides'   => array(
+										'hero-three'   => array(
 											// (required) url for thumbnail
 											'small' => array(
-												'src'    => esc_url( DW_IMAGES_DIR . 'sliders/many.png' ),
+												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_three.png' ),
 												'height' => 100
 											),
 											// (optional) url for large image that will appear in tooltip
 											'large' => array(
-												'src'    => esc_url( DW_IMAGES_DIR . 'sliders/many.png' ),
-												'height' => 200
+												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_three.png' ),
+												'height' => 300
+											),
+										),
+										'hero-four'   => array(
+											// (required) url for thumbnail
+											'small' => array(
+												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_four.png' ),
+												'height' => 100
+											),
+											// (optional) url for large image that will appear in tooltip
+											'large' => array(
+												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_four.png' ),
+												'height' => 300
 											),
 										)
 									),
