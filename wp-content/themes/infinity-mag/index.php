@@ -1,7 +1,7 @@
 <?php global $wp_query;
 get_header();
 if ( 'on' === dw_get_setting( 'carousel_switch/query_type' ) ) {
-	get_template_part( 'hero', dw_get_setting( 'carousel_switch/on/carousel_style' ) );
+	get_template_part( 'hero/' . dw_get_setting( 'carousel_switch/on/carousel_style' ) );
 }
 ?>
     <section class="home-posts">
