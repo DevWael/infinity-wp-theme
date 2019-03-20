@@ -13,21 +13,21 @@
     //     $('.dw-navbar .dw-menu .menu ul').slideUp();
     // }
 
-    $(document).on('click','.parent-item>a',function () {
-        if($(this).parent().find('.sub-menu').first().is(':visible')){
-            $(this).parent().find('.sub-menu').first().slideUp();
-        }else{
-            $(this).parent().find('.sub-menu').first().slideToggle();
-        }
-    });
-
-    $(document).on('click','.child-item>a',function () {
-        if($(this).parent().find('.sub-menu').first().is(':visible')){
-            $(this).parent().find('.sub-menu').first().slideUp();
-        }else{
-            $(this).parent().find('.sub-menu').first().slideToggle();
-        }
-    });
+    // $(document).on('click','.parent-item>a',function () {
+    //     if($(this).parent().find('.sub-menu').first().is(':visible')){
+    //         $(this).parent().find('.sub-menu').first().slideUp();
+    //     }else{
+    //         $(this).parent().find('.sub-menu').first().slideToggle();
+    //     }
+    // });
+    //
+    // $(document).on('click','.child-item>a',function () {
+    //     if($(this).parent().find('.sub-menu').first().is(':visible')){
+    //         $(this).parent().find('.sub-menu').first().slideUp();
+    //     }else{
+    //         $(this).parent().find('.sub-menu').first().slideToggle();
+    //     }
+    // });
 
     $(document).on('click','.nav-btn',function () {
         $('.dw-navbar .dw-menu').toggleClass('opened');
@@ -124,5 +124,25 @@
     //     }
     // });
 
+
+    // if ($(window).width()< 992) {
+    //     $('.dw-navbar .dw-menu .menu ul').slideUp();
+    // }
+
+    $(document).on('click','#menu-main-menu>li.menu-item-has-children>a',function () {
+        if($(this).parent().find('.sub-menu').first().is(':visible')){
+            $(this).parent().find('.sub-menu').first().slideUp('slow');
+        }else{
+            $(this).parent().find('.sub-menu').first().slideToggle('slow');
+        }
+    });
+
+    $(document).on('click','#menu-main-menu>li.menu-item-has-children>ul>.menu-item-has-children>a',function () {
+        if($(this).parent().find('.sub-menu').is(':visible')){
+            $(this).parent().find('.sub-menu').slideUp('slow');
+        }else{
+            $(this).parent().find('.sub-menu').slideToggle('slow');
+        }
+    });
 
 })(jQuery);

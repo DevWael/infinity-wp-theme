@@ -719,11 +719,12 @@ body {
         max-width: 100%;
     }
     .single-article-slide p {
-        max-width: 100%;
+        display: none;
     }
 	.writer-info li {
-        padding-right: 10px;
+        padding-right: 5px !important;
     }
+	.writer-info li img { max-width: 10px;}
 }
 
 
@@ -971,8 +972,7 @@ body {
 		margin-bottom: 5px;
 	}
 	.main-article .text-overlay p {
-		font-size: 12px;
-		margin-bottom: 10px;
+		display: none;
 	}
 
 	.main-article.big {
