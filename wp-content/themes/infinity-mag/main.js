@@ -81,11 +81,11 @@
             },
             600: {
                 items: 2 ,
-                dotsEach: 1
+                dotsEach: 3
             },
             1000: {
                 items: 3 ,
-                dotsEach: 1
+                dotsEach: 3
             }
         }
     });
