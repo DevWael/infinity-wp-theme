@@ -580,7 +580,7 @@ body {
 	-moz-transition: all 1.3s ease-in-out;
 	-ms-transition: all 1.3s ease-in-out;
 	-o-transition: all 1.3s ease-in-out;
-	z-index: -1;
+	z-index: 1;
 }
 
 .single-article-slide:hover .transition-img {
@@ -599,6 +599,8 @@ body {
     padding: 40px 6% 60px;
     color: #fff;
     height: 100%;
+	position: relative;
+	z-index: 2;
 }
 
 .single-article-slide h3 {
@@ -752,6 +754,8 @@ body {
 	padding: 40px 15px;
 	color: #fff;
 	height: 100%;
+	position: relative;
+	z-index: 2;
 }
 
 .multi-article-slide h3 a{
@@ -872,11 +876,14 @@ body {
 	padding: 20px;
 	color: #fff;
 	height: 100%;
+	position: relative;
+	z-index: 2;
 }
 
 .main-article h3 a {
 	font-size: 19px;
 	text-transform: capitalize;
+	color: #fff;
 }
 
 .main-article h3 a:hover {
