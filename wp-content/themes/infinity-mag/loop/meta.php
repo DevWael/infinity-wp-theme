@@ -10,13 +10,17 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/calender.svg"
                  alt="icon">
             <span>
-                <?php dw_post_time(); ?>
+                <a href="<?php the_permalink() ?>">
+                    <?php dw_post_time(); ?>
+                </a>
             </span>
         </li>
         <li>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/chat.svg"
                  alt="icon"> <span>
-                <?php comments_number() ?>
+                <a href="<?php comments_link() ?>">
+                    <?php comments_number() ?>
+                </a>
             </span>
         </li>
     </ul>

@@ -30,28 +30,18 @@ if ( dw_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 </head>
 <body <?php body_class(); ?>>
 <div class="wrapper">
-
 	<?php
 	if ( dw_get_setting( 'alert_bar/control' ) == 'on' ) {
 		get_template_part( 'headers/alert-bar' );
 	}
 	?>
-
-
-
 	<?php
 	if ( dw_get_setting( 'header_types' ) ) {
 		get_template_part( 'headers/' . dw_get_setting( 'header_types' ) );
 	} else {
 		get_template_part( 'headers/header-one' );
 	}
-	get_template_part( 'hero/hero-one' );
-	get_template_part( 'hero/hero-two' );
-	get_template_part( 'hero/hero-three' );
-	get_template_part( 'hero/hero-four' );
 	?>
-
-
     <header class="main-header">
 		<?php
 		if ( 'on' == dw_get_setting( 'top_posts_switch/control' ) ) {

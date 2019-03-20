@@ -762,6 +762,11 @@ body {
 	font-size: 19px;
 	text-transform: capitalize;
 	color: #fff;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .multi-article-slide:hover h3 a {
@@ -884,6 +889,11 @@ body {
 	font-size: 19px;
 	text-transform: capitalize;
 	color: #fff;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .main-article h3 a:hover {
