@@ -8,7 +8,7 @@
 						<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry
 						</p>
-						<div class="info">
+						<div class="writer-info">
 							<ul>
 								<li> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/pen.svg" alt="icon"> <span> Hossam Hilal </span>  </li>
 								<li> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/calender.svg" alt="icon"> <span> 13 / 2 / 2019 </span> </li>
@@ -25,7 +25,7 @@
 						<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry
 						</p>
-						<div class="info">
+						<div class="writer-info">
                             <ul>
                                 <li> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/pen.svg" alt="icon"> <span> Hossam Hilal </span>  </li>
                                 <li> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/calender.svg" alt="icon"> <span> 13 / 2 / 2019 </span> </li>
@@ -42,7 +42,7 @@
 						<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry
 						</p>
-						<div class="info">
+						<div class="writer-info">
                             <ul>
                                 <li> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/pen.svg" alt="icon"> <span> Hossam Hilal </span>  </li>
                                 <li> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/calender.svg" alt="icon"> <span> 13 / 2 / 2019 </span> </li>
