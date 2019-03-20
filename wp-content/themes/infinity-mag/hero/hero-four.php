@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="owl-carousel owl-theme two-block-owl">
 			<div class="item">
-				<div class="main-article big" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/images/ui/img-1.png);">
+				<div class="main-article big">
                     <div class="transition-img" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/images/ui/img-1.png);"></div>
 					<div class="text-overlay">
 						<h3> Headline of Tobic </h3>
