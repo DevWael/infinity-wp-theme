@@ -46,7 +46,7 @@ $options = array(
 											// (optional) url for large image that will appear in tooltip
 											'large' => array(
 												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_one.png' ),
-												'height' => 300
+												'height' => 200
 											),
 										),
 										'hero-two' => array(
@@ -58,7 +58,7 @@ $options = array(
 											// (optional) url for large image that will appear in tooltip
 											'large' => array(
 												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_two.png' ),
-												'height' => 300
+												'height' => 200
 											),
 										),
 										'hero-three'   => array(
@@ -70,7 +70,7 @@ $options = array(
 											// (optional) url for large image that will appear in tooltip
 											'large' => array(
 												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_three.png' ),
-												'height' => 300
+												'height' => 200
 											),
 										),
 										'hero-four'   => array(
@@ -82,7 +82,7 @@ $options = array(
 											// (optional) url for large image that will appear in tooltip
 											'large' => array(
 												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_four.png' ),
-												'height' => 300
+												'height' => 200
 											),
 										)
 									),
