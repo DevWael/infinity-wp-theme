@@ -45,6 +45,10 @@ if ( dw_get_setting( 'site_logo/logo/retina_select/url' ) ) {
 	} else {
 		get_template_part( 'headers/header-one' );
 	}
+	get_template_part( 'hero/hero-one' );
+	get_template_part( 'hero/hero-two' );
+	get_template_part( 'hero/hero-three' );
+	get_template_part( 'hero/hero-four' );
 	?>
 
 
