@@ -627,7 +627,7 @@ body {
     display: flex;
     font-size: 25px;
     color: #fff;
-    width: 70px;
+    width: 50px;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
