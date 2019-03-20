@@ -27,6 +27,11 @@ body {
 
 }
 
+.row { padding: 0 5px; }
+.col-12 { padding: 0 10px; }
+
+
+
 .top-alert-bar .text a{
 	text-decoration: underline;
 }

@@ -34,7 +34,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="main-article small-block"  style="background: url(<?php echo get_template_directory_uri(); ?>/assets/images/ui/img-1.png);">
+				<div class="main-article small-block" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/images/ui/img-1.png);">
 					<div class="text-overlay">
 						<h3> Headline of Tobic </h3>
 						<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry
