@@ -41,14 +41,14 @@
 
     // FULL ARTICLE OWL
     $('.full-article-owl').owlCarousel({
-        rtl: true,
+        // rtl: true,
         margin: 0,
         autoplay: true,
         loop: true,
         nav: true,
         dots:true,
         autoplaySpeed: 2000,
-        navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
+        navText: ["<i class='fa fa-angle-right'></i>", "<i class='fa fa-angle-left'></i>"],
         responsive: {
             0: {
                 items: 1 ,
