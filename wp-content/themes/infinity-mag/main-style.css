@@ -662,7 +662,7 @@ body {
     .single-article-slide .text-overlay {
         padding: 20px;
     }
-    .single-article-slide img {
+    .single-article-slide  {
         height: 300px;
     }
     .single-article-slide h3 {
