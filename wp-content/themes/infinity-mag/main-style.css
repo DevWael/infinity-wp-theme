@@ -285,6 +285,10 @@ body {
 	margin-top: 0 !important;
 }
 
+.navbar-alert {
+	color: #00AD9D;
+	font-weight: 400;
+}
 
 @media screen and (max-width: 575px)
 {
@@ -437,7 +441,6 @@ body {
 	.dw-navbar .dw-menu .menu li:hover>.sub-menu {
 		visibility: visible;
 		opacity: 1;
-		left: 0;
 	}
 
 	.dw-navbar .dw-menu .menu .sub-menu .sub-menu {
@@ -958,6 +961,10 @@ body {
 
 .two-block-owl .owl-nav {
 	display: none;
+}
+
+.news-ticker .ticker-container .ticker-post .post-title a {
+	color:#444;
 }
 
 @media screen and (max-width:767px)
