@@ -123,7 +123,7 @@ if ( $query->have_posts() ):
 				<?php $n = 1;
 				while ( $query->have_posts() ):$query->the_post(); ?>
 					<?php if ( $n == 1 ) { ?>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-8">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
                             <div <?php post_class( 'main-article big' ); ?>>
 								<?php
 								$dw_image_url = get_the_post_thumbnail_url( get_the_ID(), $dw_thumbnail_size );
@@ -141,7 +141,7 @@ if ( $query->have_posts() ):
                             </div>
                         </div>
 					<?php } else { ?>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="main-article small-block">
 	                            <?php
 	                            $dw_image_url = get_the_post_thumbnail_url( get_the_ID(), $dw_thumbnail_size );
