@@ -1,12 +1,12 @@
 (function ($) {
     //every thing goes here...
 
-    $(document).on('click','.dw-search-btn',function () {
-       $('.search-big-box').addClass('show-search');
+    $(document).on('click', '.dw-search-btn', function () {
+        $('.search-big-box').addClass('show-search');
     });
 
-    $(document).on('click','.search-big-box .close-button',function () {
-       $('.search-big-box').removeClass('show-search');
+    $(document).on('click', '.search-big-box .close-button', function () {
+        $('.search-big-box').removeClass('show-search');
     });
 
     // if ($(window).width()< 992) {
@@ -29,12 +29,12 @@
     //     }
     // });
 
-    $(document).on('click','.nav-btn',function () {
+    $(document).on('click', '.nav-btn', function () {
         $('.dw-navbar .dw-menu').toggleClass('opened');
         $('.dw-navbar .overlay').show();
     });
 
-    $(document).on('click','.dw-navbar .overlay',function () {
+    $(document).on('click', '.dw-navbar .overlay', function () {
         $('.dw-navbar .dw-menu').toggleClass('opened');
         $('.dw-navbar .overlay').hide();
     });
@@ -46,20 +46,20 @@
         autoplay: true,
         loop: true,
         nav: true,
-        dots:true,
+        dots: true,
         autoplaySpeed: 2000,
         navText: ["<i class='fa fa-angle-right'></i>", "<i class='fa fa-angle-left'></i>"],
         responsive: {
             0: {
-                items: 1 ,
+                items: 1,
                 dotsEach: 1
             },
             600: {
-                items: 1 ,
+                items: 1,
                 dotsEach: 1
             },
             1000: {
-                items: 1 ,
+                items: 1,
                 dotsEach: 1
             }
         }
@@ -71,20 +71,20 @@
         autoplay: true,
         loop: true,
         nav: true,
-        dots:true,
+        dots: true,
         autoplaySpeed: 2000,
         navText: ["<i class='fa fa-angle-up'></i>", "<i class='fa fa-angle-down'></i>"],
         responsive: {
             0: {
-                items: 1 ,
+                items: 1,
                 dotsEach: 1
             },
             600: {
-                items: 2 ,
+                items: 2,
                 dotsEach: 3
             },
             1000: {
-                items: 3 ,
+                items: 3,
                 dotsEach: 3
             }
         }
@@ -96,26 +96,26 @@
         autoplay: true,
         loop: true,
         nav: false,
-        dots:true,
+        dots: true,
         autoplaySpeed: 2000,
         navText: ["<i class='fa fa-angle-up'></i>", "<i class='fa fa-angle-down'></i>"],
         responsive: {
             0: {
-                items: 1 ,
+                items: 1,
                 dotsEach: 1
             },
             600: {
-                items: 2 ,
+                items: 2,
                 dotsEach: 1
             },
             1000: {
-                items: 2 ,
+                items: 2,
                 dotsEach: 1
             }
         }
     });
 
-    // $(document).on('click','.menu-item-has-children .menu-item-has-children',function () {
+    // $(document).on('click',' ul.menu > li.menu-item-has-children .menu-item-has-children',function () {
     //     $('.dw-navbar .dw-menu .menu .sub-menu ul').hide();
     //     if($(this).find('.sub-menu').is(':visible')){
     //         $(this).find('.sub-menu').hide();
@@ -129,18 +129,20 @@
     //     $('.dw-navbar .dw-menu .menu ul').slideUp();
     // }
 
-    $(document).on('click','#menu-main-menu>li.menu-item-has-children>a',function () {
-        if($(this).parent().find('.sub-menu').first().is(':visible')){
+    $(document).on('click', '#menu-main-menu>li.menu-item-has-children>a', function (e) {
+        e.preventDefault();
+        if ($(this).parent().find('.sub-menu').first().is(':visible')) {
             $(this).parent().find('.sub-menu').first().slideUp('slow');
-        }else{
+        } else {
             $(this).parent().find('.sub-menu').first().slideToggle('slow');
         }
     });
 
-    $(document).on('click','#menu-main-menu>li.menu-item-has-children>ul>.menu-item-has-children>a',function () {
-        if($(this).parent().find('.sub-menu').is(':visible')){
+    $(document).on('click', '#menu-main-menu>li.menu-item-has-children>ul>.menu-item-has-children>a', function (e) {
+        e.preventDefault();
+        if ($(this).parent().find('.sub-menu').is(':visible')) {
             $(this).parent().find('.sub-menu').slideUp('slow');
-        }else{
+        } else {
             $(this).parent().find('.sub-menu').slideToggle('slow');
         }
     });

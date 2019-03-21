@@ -24,48 +24,48 @@ $options = array(
 							'header-one'   => array(
 								// (required) url for thumbnail
 								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'simple.png',
+									'src'    => DW_IMAGES_DIR . 'settings/header/pic_one.png',
 									'height' => 100
 								),
 								// (optional) url for large image that will appear in tooltip
 								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'simple.png',
+									'src'    => DW_IMAGES_DIR . 'settings/header/pic_one.png',
 									'height' => 200
 								)
 							),
 							'header-two'   => array(
 								// (required) url for thumbnail
 								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'modern.png',
+									'src'    => DW_IMAGES_DIR . 'settings/header/pic_two.png',
 									'height' => 100
 								),
 								// (optional) url for large image that will appear in tooltip
 								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'modern.png',
+									'src'    => DW_IMAGES_DIR . 'settings/header/pic_two.png',
 									'height' => 200
 								)
 							),
 							'header-three' => array(
 								// (required) url for thumbnail
 								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'magazine.png',
+									'src'    => DW_IMAGES_DIR . 'settings/header/pic_three.png',
 									'height' => 100
 								),
 								// (optional) url for large image that will appear in tooltip
 								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'magazine.png',
+									'src'    => DW_IMAGES_DIR . 'settings/header/pic_three.png',
 									'height' => 200
 								)
 							),
 							'header-four' => array(
 								// (required) url for thumbnail
 								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'magazine.png',
+									'src'    => DW_IMAGES_DIR . 'settings/header/pic_four.png',
 									'height' => 100
 								),
 								// (optional) url for large image that will appear in tooltip
 								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'magazine.png',
+									'src'    => DW_IMAGES_DIR . 'settings/header/pic_four.png',
 									'height' => 200
 								)
 							),
