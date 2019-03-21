@@ -560,12 +560,12 @@ body {
 }
 
 
- /*FiRST HERO FULL SLIDER*/
+/*FiRST HERO FULL SLIDER*/
 
 .single-article-slide {
-    position: relative;
+	position: relative;
 	overflow: hidden;
-    height: 550px;
+	height: 550px;
 }
 
 .transition-img {
@@ -592,19 +592,19 @@ body {
 }
 
 .single-article-slide .text-overlay {
-    background: rgba(0,0,0,.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 40px 6% 60px;
-    color: #fff;
-    height: 100%;
+	background: rgba(0,0,0,.6);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 40px 6% 60px;
+	color: #fff;
+	height: 100%;
 	position: relative;
 	z-index: 2;
 }
 
 .single-article-slide h3 {
-    max-width: 650px;
+	max-width: 650px;
 }
 
 .single-article-slide h3 a {
@@ -623,11 +623,11 @@ body {
 }
 
 .single-article-slide p {
-    max-width: 650px;
+	max-width: 650px;
 }
 
 .single-article-slide .writer-info {
-    max-width: 650px;
+	max-width: 650px;
 }
 
 .writer-info {
@@ -637,25 +637,25 @@ body {
 }
 
 .writer-info ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin-bottom: 20px;
 }
 
 .writer-info li {
-    padding-right: 20px;
-    display: flex;
-    line-height: 20px;
+	padding-right: 20px;
+	display: flex;
+	line-height: 20px;
 }
 
 .writer-info li img {
-    max-width: 16px;
-    margin-right: 5px;
+	max-width: 16px;
+	margin-right: 5px;
 }
 
 .writer-info span {
-    display: inline-block;
+	display: inline-block;
 }
 
 .writer-info  a {
@@ -668,19 +668,19 @@ body {
 }
 
 .full-article-slider .owl-nav {
-    position: absolute;
-    bottom: 15px;
-    left: 6%;
-    display: flex;
-    font-size: 25px;
-    color: #fff;
-    width: 50px;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+	position: absolute;
+	bottom: 15px;
+	left: 6%;
+	display: flex;
+	font-size: 25px;
+	color: #fff;
+	width: 50px;
+	justify-content: space-between;
+	flex-direction: row-reverse;
 }
 
 .full-article-slider .owl-nav div:hover {
-    color:  #00AD9D;
+	color:  #00AD9D;
 }
 
 .full-article-slider .owl-dots {
@@ -693,37 +693,37 @@ body {
 }
 
 .full-article-slider .owl-dot {
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    border-radius: 50%;
-    margin: 0 3px;
-    opacity: .7;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+	margin: 0 3px;
+	opacity: .7;
 }
 
 .full-article-slider .owl-dot.active {
-    background: #00AD9D;
-    opacity: 1;
+	background: #00AD9D;
+	opacity: 1;
 }
 
 @media screen and (max-width:768px)
 {
-    .single-article-slide .text-overlay {
-        padding: 20px;
-    }
-    .single-article-slide  {
-        height: 300px;
-    }
-    .single-article-slide h3 {
-        font-size: 19px;
-        max-width: 100%;
-    }
-    .single-article-slide p {
-        display: none;
-    }
+	.single-article-slide .text-overlay {
+		padding: 20px;
+	}
+	.single-article-slide  {
+		height: 300px;
+	}
+	.single-article-slide h3 {
+		font-size: 19px;
+		max-width: 100%;
+	}
+	.single-article-slide p {
+		display: none;
+	}
 	.writer-info li {
-        padding-right: 5px !important;
-    }
+		padding-right: 5px !important;
+	}
 	.writer-info li img { max-width: 10px;}
 }
 
@@ -794,13 +794,13 @@ body {
 
 .multi-article-slider .owl-prev {
 	position: absolute;
-	top: 35%;
+	top: 32%;
 	right: -23px;
 }
 
 .multi-article-slider .owl-next {
 	position: absolute;
-	bottom: 35%;
+	bottom: 32%;
 	right: -23px;
 }
 
@@ -812,7 +812,7 @@ body {
 .multi-article-slider .owl-dots {
 	display: block;
 	position: absolute;
-	top: calc( 50% - 35px );
+	top: calc( 50% - 53px );
 	right: -20px;
 	bottom: 15px;
 	height: 70px;
@@ -936,28 +936,28 @@ body {
 }
 
 .two-block-owl .owl-dots {
-    display: flex;
-    position: absolute;
-    top: 100%;
-    left: 0px;
-    margin-top: 15px;
+	display: flex;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	margin-top: 15px;
 }
 
 .two-block-owl .owl-dot {
-    width: 10px;
-    height: 10px;
-    background: #00AD9D;
-    border-radius: 50%;
-    margin: 0 10px 0 0;
-    opacity: .3;
+	width: 10px;
+	height: 10px;
+	background: #00AD9D;
+	border-radius: 50%;
+	margin: 0 10px 0 0;
+	opacity: .3;
 }
 
 .two-block-owl .owl-dot.active {
-    opacity: 1;
+	opacity: 1;
 }
 
 .two-block-owl .owl-nav {
-    display: none;
+	display: none;
 }
 
 @media screen and (max-width:767px)
