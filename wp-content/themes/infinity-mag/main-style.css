@@ -421,13 +421,6 @@ body {
 	}
 }
 
-@media (min-width:992px)  {
-    .admin-bar .dw-navbar .dw-menu {
-        top: 32px !important;
-        height: calc( 100vh - 32px ) !important;
-    }
-}
-
 @media  (min-width:1200px) {
 	.nav-btn {
 		display: none;
