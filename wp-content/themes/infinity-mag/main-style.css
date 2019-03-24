@@ -1078,7 +1078,7 @@ body {
 }
 
 .main-post .img-box img {
-	max-height: 200px;
+	/*max-height: 200px;*/
 	width: 100%;
 	transition: all 1s ease-in-out;
 	-webkit-transition: all 1s ease-in-out;
