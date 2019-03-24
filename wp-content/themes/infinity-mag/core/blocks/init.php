@@ -74,18 +74,6 @@ if ( ! function_exists( 'dw_half_width_area' ) ) {
 									'height' => 160
 								)
 							),
-							'masonry'     => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/masonry.png',
-									'height' => 70
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/masonry.png',
-									'height' => 160
-								)
-							),
 							'mini-grid'   => array(
 								// (required) url for thumbnail
 								'small' => array(
@@ -107,18 +95,6 @@ if ( ! function_exists( 'dw_half_width_area' ) ) {
 								// (optional) url for large image that will appear in tooltip
 								'large' => array(
 									'src'    => DW_IMAGES_DIR . 'blocks/big-grid.png',
-									'height' => 160
-								)
-							),
-							'slides'      => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'sliders/center.png',
-									'height' => 70
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'sliders/center.png',
 									'height' => 160
 								)
 							)

@@ -11,8 +11,8 @@ if ( 'on' === dw_get_setting( 'carousel_switch/query_type' ) ) {
 				/**
 				 * Magazine Blocks Builder
 				 */
-				if ( function_exists( 'window_mag_magazine_builder' ) ) {
-					window_mag_magazine_builder();
+				if ( function_exists( 'dw_builder_half_width' ) ) {
+					dw_builder_half_width();
 				}
 				//Normal posts
 				if ( 'yes' === dw_get_setting( 'home_recent_posts/control' ) ) {

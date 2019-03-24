@@ -15,12 +15,12 @@ require DW_CORE . 'blocks/ads.php';
 /**
  * Display home page magazine boxes
  */
-if ( ! function_exists( 'window_mag_magazine_builder' ) ) {
-	function window_mag_magazine_builder( $before = '', $after = '' ) {
+if ( ! function_exists( 'dw_builder_half_width' ) ) {
+	function dw_builder_half_width( $option_id = 'home_half_width_1', $before = '', $after = '' ) {
 		if ( ! function_exists( 'fw_get_db_settings_option' ) ) {
 			return;
 		}
-		$all_blocks = dw_get_setting( 'home_layout_popup' );
+		$all_blocks = dw_get_setting( $option_id );
 		if ( $all_blocks ) {
 			echo $before;
 			foreach ( $all_blocks as $block ) {
@@ -38,9 +38,6 @@ if ( ! function_exists( 'window_mag_magazine_builder' ) ) {
 							break;
 						case  'img-grid':
 							dw_img_grid( $cats_ds, $posts_count, $block_title );
-							break;
-						case  'masonry':
-							dw_masonry_box( $cats_ds, $posts_count, $block_title );
 							break;
 						case  'mini-grid':
 							dw_mini_grid( $cats_ds, $posts_count, $block_title );
