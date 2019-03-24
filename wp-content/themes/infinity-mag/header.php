@@ -13,10 +13,6 @@ if ( 'on' === dw_get_setting( 'sticky_nav' ) ) {
 	$dw_sticky_nav = ' sticky-nav';
 }
 
-if ( dw_get_setting( 'site_logo/logo/retina_select/url' ) ) {
-	$dw_retina = dw_get_setting( 'site_logo/logo/retina_select/url' );
-}
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?> prefix="og: http://ogp.me/ns#">

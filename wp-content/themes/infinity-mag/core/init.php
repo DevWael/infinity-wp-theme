@@ -64,6 +64,9 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 				'max_columns'     => 5,
 			),
 		) );
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
 	}
 }
 

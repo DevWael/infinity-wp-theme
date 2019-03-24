@@ -19,7 +19,6 @@ if ( 'on' === dw_get_setting( 'sticky_nav' ) ) {
         </div>
     </div>
 	<?php
-	//News Ticker Since V1.2
 	if ( 'on' == dw_get_setting( 'news_ticker_switch/control' ) ) {
 		if ( 'on' === dw_get_setting( 'news_ticker_switch/on/home_only' ) ) {
 			if ( is_front_page() ) {
