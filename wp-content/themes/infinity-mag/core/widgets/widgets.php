@@ -144,7 +144,6 @@ require_once DW_CORE . 'widgets/subscribe-widget.php'; // Newsletter subscribe w
 require_once DW_CORE . 'widgets/instagram-photos-widget.php'; // Instagram photos widget
 require_once DW_CORE . 'widgets/soundcloud-widget.php'; // Sound cloud widget
 require_once DW_CORE . 'widgets/most-viewed-posts-widget.php'; //Most viewed posts widget
-require_once DW_CORE . 'widgets/most-liked-posts-widget.php'; //Most liked posts widget
 require_once DW_CORE . 'widgets/random-posts-widget.php'; //Random posts widget
 require_once DW_CORE . 'widgets/login-widget.php'; //Login widget
 require_once DW_CORE . 'widgets/review-posts-widget.php'; //Review Posts
@@ -158,7 +157,6 @@ function dw_widgets() {
 	register_widget( 'dw_category_posts' );
 	register_widget( 'dw_facebook_box' );
 	register_widget( 'dw_google_plus_box' );
-	register_widget( 'dw_most_liked' );
 	register_widget( 'dw_random_posts' );
 	register_widget( 'dw_most_viewed' );
 	register_widget( 'dw_recent_posts' );

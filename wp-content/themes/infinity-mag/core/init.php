@@ -5,7 +5,6 @@ add_filter( 'use_block_editor_for_page', '__return_false', 10 );
 /**
  * Post and comment like system
  */
-require_once DW_CORE . 'like-system.php';
 require_once DW_CORE . 'blocks/init.php';
 
 /**
@@ -1521,7 +1520,6 @@ if ( ! function_exists( 'dw_comment' ) ) {
 								'depth'      => $depth,
 								'max_depth'  => $args['max_depth']
 							) ) );
-							echo window_mag_get_likes_button( get_comment_ID(), 1 );
 							edit_comment_link( esc_html__( 'Edit', 'dw' ) ); ?>
                         </div>
                     </div>

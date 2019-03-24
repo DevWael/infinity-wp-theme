@@ -22,9 +22,6 @@ $author_id = $post->post_author;
 			<meta itemprop="datePublished" content="<?php the_date( 'Y-m-d' ) ?>">
 			<?php dw_post_time(); ?>
 		</span>
-        <span class="like-system">
-			<?php echo window_mag_get_likes_button( get_the_ID() ); ?>
-		</span>
 	<?php } else { ?>
 		<?php if ( 'on' === dw_get_setting( 'author_name' ) && 'off' !== dw_get_meta( get_the_ID(), 'window_author_name' ) ) { ?>
             <span class="author" title="<?php esc_attr_e( 'Author', 'dw' ); ?>">
@@ -52,11 +49,6 @@ $author_id = $post->post_author;
 					<i class="fa fa-eye"></i>
 				<?php echo esc_html( dw_getPostViews( get_the_ID() ) ); ?>
 				</span>
-		<?php } ?>
-		<?php if ( 'on' === dw_get_setting( 'like_meta' ) && 'off' !== dw_get_meta( get_the_ID(), 'window_like_meta' ) ) { ?>
-            <span class="like-system">
-			<?php echo window_mag_get_likes_button( get_the_ID() ); ?>
-		</span>
 		<?php } ?>
 		<?php //do_action('sv_render_save_posts_button');
 	} ?>

@@ -10,7 +10,7 @@ if ( post_password_required() ) {
 			<?php printf( esc_html( _n( 'One Comment', '%1$s Comments', get_comments_number(), 'dw' ) ), number_format_i18n( get_comments_number() ) ); ?>
 		</h2>
 		<ol class="comments_list">
-			<?php wp_list_comments( array( 'callback' => 'window_mag_comment', 'style' => 'ol' ) ); ?>
+			<?php wp_list_comments( array( 'callback' => 'dw_comment', 'style' => 'ol' ) ); ?>
 		</ol>
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through  ?>
 			<nav id="comment-nav-below" class="navigation" role="navigation">
