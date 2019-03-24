@@ -674,7 +674,7 @@ if ( ! function_exists( 'dw_widget_area' ) ) {
  * @return int $i --> determine the count of active widget areas in footer to add bootstrap grid classes
  */
 if ( ! function_exists( 'dw_active_widgets' ) ) {
-	function dw_active_widgets( $exstra_class = null ) {
+	function dw_active_widgets( $extra_class = null ) {
 		$i = 0;
 		if ( is_active_sidebar( 'footer1' ) ) {
 			$i ++;
@@ -687,16 +687,16 @@ if ( ! function_exists( 'dw_active_widgets' ) ) {
 		}
 		switch ( $i ) {
 			case 3:
-				echo 'class="col-md-4 col-xs-12 ' . esc_attr( $exstra_class ) . '"';
+				echo 'class="col-md-4 col-xs-12 ' . esc_attr( $extra_class ) . '"';
 				break;
 			case 2:
-				echo 'class="col-md-6 col-xs-12 ' . esc_attr( $exstra_class ) . '"';
+				echo 'class="col-md-6 col-xs-12 ' . esc_attr( $extra_class ) . '"';
 				break;
 			case 1:
-				echo 'class="col-md-12 col-sm-12 col-xs-12 ' . esc_attr( $exstra_class ) . '"';
+				echo 'class="col-md-12 col-sm-12 col-xs-12 ' . esc_attr( $extra_class ) . '"';
 				break;
 			default :
-				echo 'class="col-md-4 col-xs-12 no-active-widgets ' . esc_attr( $exstra_class ) . '"';
+				echo 'class="col-md-4 col-xs-12 no-active-widgets ' . esc_attr( $extra_class ) . '"';
 		}
 	}
 }
@@ -710,7 +710,7 @@ if ( ! function_exists( 'dw_excerpt_global_length' ) ) {
 		if ( $len ) {
 			return $len;
 		} else {
-			return 40;
+			return 20;
 		}
 
 	}

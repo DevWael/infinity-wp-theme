@@ -12,7 +12,7 @@ if ( ! function_exists( 'dw_simple_grid' ) ) {
 		$posts_query = new WP_Query( $arguments );
 		if ( $posts_query->have_posts() ):
 			?>
-            <div class="posts-area">
+            <div class="posts-area simple-block">
 				<?php if ( $block_title ) :
 					$category_link = ( isset( $cat_ids[0] ) ) ? get_category_link( $cat_ids[0] ) : '';
 					?>
