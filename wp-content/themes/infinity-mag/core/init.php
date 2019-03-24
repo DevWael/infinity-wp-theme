@@ -2,9 +2,6 @@
 //disable gutenberg editor
 add_filter( 'use_block_editor_for_post', '__return_false', 10 );
 add_filter( 'use_block_editor_for_page', '__return_false', 10 );
-/**
- * Post and comment like system
- */
 require_once DW_CORE . 'blocks/init.php';
 
 /**
