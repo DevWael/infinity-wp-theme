@@ -532,7 +532,7 @@ function dw_footer_version( $html ) {
 }
 
 /**
- * Add help links to admin bar ( Online documentation and Theme settings page )
+ * Add help links to admin bar ( Theme settings page )
  */
 add_action( 'admin_bar_menu', 'dw_toolbar_links', 999 );
 function dw_toolbar_links( $wp_admin_bar ) {
@@ -545,15 +545,6 @@ function dw_toolbar_links( $wp_admin_bar ) {
 			'meta'  => array( 'class' => 'window-mag-setting-page' )
 		);
 		$wp_admin_bar->add_node( $args_1 );
-		//Documentation
-		$args_2 = array(
-			'id'     => 'window_doc',
-			'title'  => 'Online Documentation',
-			'parent' => 'window_settings',
-			'href'   => 'docs.bbioon.com/window',
-			'meta'   => array( 'class' => 'window-mag-documentation-page', 'target' => '_blank' )
-		);
-		$wp_admin_bar->add_node( $args_2 );
 	}
 }
 
