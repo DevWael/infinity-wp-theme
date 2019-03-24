@@ -149,12 +149,14 @@
 
 
     $(window).scroll(function () {
+        var nav_height = $('.top-nav-heder').height();
         console.log($(this).scrollTop());
 
         if ($(this).scrollTop() > 200 &&  $(this).scrollTop() < 300) {
             $('.sticky-nav .top-nav-heder').addClass('translatedTop');
         } else if ($(this).scrollTop() > 300) {
             $('.sticky-nav .top-nav-heder').removeClass('translatedTop').addClass("navbar_fixed_top");
+            $('.sticky-nav').css('padding-top',  nav_height );
             if ($('body').hasClass('admin-bar')) {
                 $('.navbar_fixed_top').css('top', '32px');
             } else {
