@@ -1,4 +1,10 @@
-<div class="dw-navbar header-three">
+<?php
+$dw_sticky_nav = '';
+if ( 'on' === dw_get_setting( 'sticky_nav' ) ) {
+	$dw_sticky_nav = ' sticky-nav';
+}
+?>
+<div class="dw-navbar header-three<?php echo $dw_sticky_nav; ?>">
     <div class="dw-header-three">
         <div class="container">
             <div class="dw-header-three-top">

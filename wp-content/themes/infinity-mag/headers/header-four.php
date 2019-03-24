@@ -1,4 +1,10 @@
-<div class="dw-navbar header-four">
+<?php
+$dw_sticky_nav = '';
+if ( 'on' === dw_get_setting( 'sticky_nav' ) ) {
+	$dw_sticky_nav = ' sticky-nav';
+}
+?>
+<div class="dw-navbar header-four<?php echo $dw_sticky_nav; ?>">
 	<?php
 	//News Ticker Since V1.2
 	if ( 'on' == dw_get_setting( 'news_ticker_switch/control' ) ) {

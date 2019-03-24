@@ -1,4 +1,10 @@
-<div class="dw-navbar header-two">
+<?php
+$dw_sticky_nav = '';
+if ( 'on' === dw_get_setting( 'sticky_nav' ) ) {
+	$dw_sticky_nav = ' sticky-nav';
+}
+?>
+<div class="dw-navbar header-two<?php echo $dw_sticky_nav; ?>">
     <div class="logo-wrapper">
 		<?php get_template_part( 'headers/logo' ) ?>
     </div>
