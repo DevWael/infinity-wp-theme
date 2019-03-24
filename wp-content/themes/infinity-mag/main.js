@@ -148,5 +148,23 @@
     });
 
 
+    $(window).scroll(function () {
+        console.log($(this).scrollTop());
+
+        if ($(this).scrollTop() > 200 &&  $(this).scrollTop() < 300) {
+            $('.sticky-nav .top-nav-heder').addClass('translatedTop');
+        } else if ($(this).scrollTop() > 300) {
+            $('.sticky-nav .top-nav-heder').removeClass('translatedTop').addClass("navbar_fixed_top");
+            if ($('body').hasClass('admin-bar')) {
+                $('.navbar_fixed_top').css('top', '32px');
+            } else {
+                $('.navbar_fixed_top').css('top', '0px');
+            }
+        }
+        else {
+            $('.sticky-nav .top-nav-heder').removeClass('translatedTop').removeClass("navbar_fixed_top").css('top', '0px');
+        }
+    });
+
 
 })(jQuery);

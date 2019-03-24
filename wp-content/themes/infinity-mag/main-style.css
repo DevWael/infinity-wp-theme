@@ -290,6 +290,22 @@ body {
 	font-weight: 400;
 }
 
+.sticky-nav .top-nav-heder {
+	transition: all .5s ease-in-out;
+}
+
+.translatedTop {
+	transform: translateY(-100px);
+}
+
+.sticky-nav .navbar_fixed_top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+}
+
 @media screen and (max-width: 575px)
 {
 	.dw-header-three-top {
@@ -657,9 +673,11 @@ body {
 	line-height: 20px;
 }
 
-.writer-info li img {
-	max-width: 16px;
-	margin-right: 5px;
+.writer-info img {
+    max-width: 16px;
+    margin-right: 5px;
+    max-height: 15px;
+    margin-top: 2px;
 }
 
 .writer-info span {
