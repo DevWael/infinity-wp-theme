@@ -1,6 +1,6 @@
 <?php
 $url        = dw_get_meta( get_the_ID(), 'link-box' );
-$image_size = 'window_mag_slider_center';
+$image_size = 'dw_slider_center';
 if ( $url ):
 	$url = esc_url( $url );
 	$bg     = $bg_bool = '';

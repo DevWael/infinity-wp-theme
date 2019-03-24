@@ -23,7 +23,7 @@ if ( ! function_exists( 'dw_widget_slider_loop' ) ) {
                             <div class="post-image">
                                 <a rel="bookmark" href="<?php the_permalink(); ?>"
                                    title="<?php the_title_attribute(); ?>">
-									<?php the_post_thumbnail( 'window_mag_big_post', array( 'class' => 'img-responsive' ) ); ?>
+									<?php the_post_thumbnail( 'dw_big_post', array( 'class' => 'img-responsive' ) ); ?>
                                 </a>
                             </div>
                             <div class="post-content">
@@ -68,7 +68,7 @@ if ( ! function_exists( 'dw_widget_pics_loop' ) ) {
                     <div <?php post_class( 'pic' ); ?> itemscope itemtype="http://schema.org/Article">
                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"
                            data-toggle="tooltip" data-placement="top">
-							<?php the_post_thumbnail( 'window_mag_small_pic_post', array( 'class' => 'img-responsive' ) ); ?>
+							<?php the_post_thumbnail( 'dw_small_pic_post', array( 'class' => 'img-responsive' ) ); ?>
                             <span class="overlay"></span>
                         </a>
                     </div>
@@ -96,7 +96,7 @@ if ( ! function_exists( 'dw_widget_big_list_loop' ) ) {
                         <div class="post-image">
                             <a rel="bookmark" href="<?php the_permalink(); ?>"
                                title="<?php the_title_attribute(); ?>">
-								<?php the_post_thumbnail( 'window_mag_big_post', array( 'class' => 'img-responsive' ) ); ?>
+								<?php the_post_thumbnail( 'dw_big_post', array( 'class' => 'img-responsive' ) ); ?>
                             </a>
                         </div>
                         <div class="post-content">

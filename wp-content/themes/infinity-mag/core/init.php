@@ -39,12 +39,12 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
-		add_image_size( 'window_mag_slider_center', 800, 450, true );
-		add_image_size( 'window_mag_slider_double', 600, 450, true );
-		add_image_size( 'window_mag_slider_many', 350, 450, true );
-		add_image_size( 'window_mag_big_post', 360, 240, true );
-		add_image_size( 'window_mag_pic_post', 150, 100, true );
-		add_image_size( 'window_mag_small_pic_post', 120, 80, true );
+		add_image_size( 'dw_slider_center', 800, 450, true );
+		add_image_size( 'dw_slider_double', 600, 450, true );
+		add_image_size( 'dw_slider_many', 350, 500, true );
+		add_image_size( 'dw_big_post', 360, 240, true );
+		add_image_size( 'dw_pic_post', 150, 100, true );
+		add_image_size( 'dw_small_pic_post', 120, 80, true );
 		add_theme_support( 'post-formats', array( 'quote', 'gallery', 'video', 'audio', 'link' ) );
 		load_theme_textdomain( 'dw', get_template_directory() . '/languages' );
 		register_nav_menus( array(
@@ -1388,7 +1388,7 @@ function dw_fly_box( $post_id = false ) {
         <div class="box-content">
             <div class="post-image">
                 <a href="<?php echo esc_url( get_permalink( $fly_post->ID ) ); ?>">
-					<?php echo get_the_post_thumbnail( $fly_post->ID, 'window_mag_big_post', array( 'class' => 'img-responsive' ) ); ?>
+					<?php echo get_the_post_thumbnail( $fly_post->ID, 'dw_big_post', array( 'class' => 'img-responsive' ) ); ?>
                 </a>
             </div>
             <div class="post-title">

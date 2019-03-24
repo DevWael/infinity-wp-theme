@@ -4,7 +4,7 @@
  * this file is visible in single.php only
  */
 $images     = dw_get_meta( get_the_ID(), 'gallery-box' );
-$image_size = 'window_mag_slider_center'; //thumbnail size
+$image_size = 'dw_slider_center'; //thumbnail size
 
 if ( $images or has_post_thumbnail() ):
 	?>

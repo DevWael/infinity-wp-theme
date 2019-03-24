@@ -22,11 +22,11 @@ if ( ! $dw_carousel_style ) {
 }
 //image size
 if ( 'center-slide' === $dw_carousel_style ) {
-	$dw_thumbnail_size = 'window_mag_slider_center';
+	$dw_thumbnail_size = 'dw_slider_center';
 } elseif ( 'many-slides' === $dw_carousel_style ) {
-	$dw_thumbnail_size = 'window_mag_slider_many';
+	$dw_thumbnail_size = 'dw_slider_many';
 } else {
-	$dw_thumbnail_size = 'window_mag_slider_double';
+	$dw_thumbnail_size = 'dw_slider_double';
 }
 //Query
 if ( $dw_query_type == 'likes' ) {

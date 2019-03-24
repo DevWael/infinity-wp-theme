@@ -72,6 +72,20 @@ $options = array(
 						),
 						'blank'   => false,
 					),
+					'sticky_nav'     => array(
+						'type'         => 'switch',
+						'value'        => 'off',
+						'label'        => esc_html__( 'Sticky Navbar', 'dw' ),
+						'help'         => esc_html__( 'Working on Desktop only', 'dw' ),
+						'left-choice'  => array(
+							'value' => 'off',
+							'label' => esc_html__( 'off', 'dw' ),
+						),
+						'right-choice' => array(
+							'value' => 'on',
+							'label' => esc_html__( 'on', 'dw' ),
+						),
+					),
 					'header_background' => array(
 						'type'         => 'multi-picker',
 						'label'        => false,

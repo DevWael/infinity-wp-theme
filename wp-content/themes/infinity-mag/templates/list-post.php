@@ -3,7 +3,7 @@
         <div class="post-image">
             <a rel="bookmark" href="<?php the_permalink(); ?>"
                title="<?php the_title_attribute(); ?>">
-				<?php the_post_thumbnail( 'window_mag_slider_double', array( 'class' => 'img-responsive' ) ); ?>
+				<?php the_post_thumbnail( 'dw_slider_double', array( 'class' => 'img-responsive' ) ); ?>
                 <span class="overlay"></span>
             </a>
         </div>

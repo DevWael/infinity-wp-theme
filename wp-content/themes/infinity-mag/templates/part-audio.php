@@ -5,7 +5,7 @@
  */
 $audio_control = dw_get_meta( get_the_ID(), 'audio-box/gadget' );;
 $allowed_files  = array( 'mp3', 'ogg', 'wma', 'm4a', 'wav' );
-$thumbnail_size = 'window_mag_slider_center';
+$thumbnail_size = 'dw_slider_center';
 if ( $audio_control or has_post_thumbnail() ):
 	?>
     <div class="post-feature-box">

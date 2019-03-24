@@ -100,7 +100,7 @@ if ( $the_query->have_posts() ): ?>
                             <a href="<?php echo esc_url( get_permalink() ); ?>">
                                 <div class="article" itemscope itemtype="http://schema.org/Article" role="article">
 									<?php if ( has_post_thumbnail() ): ?>
-										<?php the_post_thumbnail( 'window_mag_big_post', array( 'class' => 'img-responsive' ) ); ?>
+										<?php the_post_thumbnail( 'dw_big_post', array( 'class' => 'img-responsive' ) ); ?>
 									<?php endif; ?>
                                     <div class="listing-content">
 										<?php the_title( '<div class="post-title entry-header" itemprop="name headline">', '</div>' ); ?>

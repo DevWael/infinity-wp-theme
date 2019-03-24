@@ -169,4 +169,36 @@
     });
 
 
+
+
+    var carouselCount = 0;
+    $(".posts-carousel").each(function () {
+        $(this).addClass("carousel-" + carouselCount);
+        $('.carousel-' + carouselCount + ' .carousel-loop').owlCarousel({
+            loop: false,
+            margin: 15,
+            responsiveClass: true,
+            autoplay: true,
+            navContainer: '.carousel-' + carouselCount + ' .block-name',
+            animateIn: "fadeIn",
+            animateOut: "fadeOut",
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+
+                750: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    nav: true
+                }
+            }
+        });
+        carouselCount++;
+    });
+
 })(jQuery);

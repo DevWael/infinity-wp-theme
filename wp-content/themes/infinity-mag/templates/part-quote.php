@@ -1,7 +1,7 @@
 <?php
 $q_author   = dw_get_meta( get_the_ID(), 'quote-author' );
 $q_text     = dw_get_meta( get_the_ID(), 'quote-body' );
-$image_size = 'window_mag_slider_center';
+$image_size = 'dw_slider_center';
 if ( $q_text ):
 	$bg = $found = '';
 	if ( has_post_thumbnail() ) {

@@ -12,20 +12,6 @@ $options = array(
 				'title'   => esc_html__( 'General Settings', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(
-					'sticky_nav'     => array(
-						'type'         => 'switch',
-						'value'        => 'off',
-						'label'        => esc_html__( 'Sticky Navbar', 'dw' ),
-						'help'         => esc_html__( 'Working on Desktop only', 'dw' ),
-						'left-choice'  => array(
-							'value' => 'off',
-							'label' => esc_html__( 'off', 'dw' ),
-						),
-						'right-choice' => array(
-							'value' => 'on',
-							'label' => esc_html__( 'on', 'dw' ),
-						),
-					),
 					'sticky_sidebar' => array(
 						'type'         => 'switch',
 						'value'        => 'on',

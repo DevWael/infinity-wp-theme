@@ -3,7 +3,7 @@
  * video view from post meta
  * this file is visible in single.php only
  */
-$thumbnail_size = 'window_mag_slider_center';
+$thumbnail_size = 'dw_slider_center';
 $video_control  = dw_get_meta( get_the_ID(), 'video-box/gadget' );
 $allowed_files  = array( 'mp4', 'm4v', 'webm', 'ogv', 'wmv', 'flv' );
 if ( $video_control or has_post_thumbnail() ):

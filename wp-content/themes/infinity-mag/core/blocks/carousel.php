@@ -11,29 +11,28 @@ if ( ! function_exists( 'dw_carousel_box' ) ) {
 		$posts_query = new WP_Query( $arguments );
 		if ( $posts_query->have_posts() ):
 			?>
-			<div class="carousel-box category-box">
+            <div class="posts-carousel posts-area">
 				<?php if ( $block_title ) :
 					$category_link = ( isset( $cat_ids[0] ) ) ? get_category_link( $cat_ids[0] ) : '';
 					?>
-					<h2 class="block-name">
+                    <h2 class="post-wrapper-title">
 						<?php if ( $category_link ): ?>
-						<a href="<?php echo esc_url( $category_link ); ?>"
-						   title="<?php echo esc_attr( $block_title ); ?>">
+                        <a href="<?php echo esc_url( $category_link ); ?>"
+                           title="<?php echo esc_attr( $block_title ); ?>">
 							<?php endif; ?>
-							<span><?php echo esc_html( $block_title ); ?></span>
+							<?php echo esc_html( $block_title ); ?>
 							<?php if ( $category_link ): ?>
-						</a>
+                        </a>
 					<?php endif; ?>
-					</h2>
+                    </h2>
 				<?php endif; ?>
-				<div class="owl-carousel carousel-block">
+                <div class="owl-carousel carousel-loop">
 					<?php while ( $posts_query->have_posts() ):$posts_query->the_post(); ?>
 						<?php get_template_part( 'templates/carousel', 'post' ); ?>
 					<?php endwhile; ?>
-				</div>
-			</div>
-
-			<?php
+                </div>
+            </div>
+		<?php
 		endif;
 		wp_reset_postdata();
 	}

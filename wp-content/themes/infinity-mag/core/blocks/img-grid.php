@@ -33,7 +33,7 @@ if ( ! function_exists( 'dw_img_grid' ) ) {
 							<?php if ( function_exists( 'the_post_thumbnail' ) && has_post_thumbnail() ): ?>
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"
 								   data-toggle="tooltip" data-placement="top">
-									<?php the_post_thumbnail( 'window_mag_pic_post', array( 'class' => 'img-responsive' ) ); ?>
+									<?php the_post_thumbnail( 'dw_pic_post', array( 'class' => 'img-responsive' ) ); ?>
 									<span class="overlay"></span>
 								</a>
 							<?php endif; ?>

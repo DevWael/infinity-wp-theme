@@ -3,7 +3,7 @@
  * Default post thumbnail for standard and image post format
  * this file is visible in single.php only
  */
-$thumbnail_size = 'window_mag_slider_center';
+$thumbnail_size = 'dw_slider_center';
 if ( has_post_thumbnail() && dw_get_meta( get_the_ID(), 'post_thumb' ) !== 'off' ) { ?>
     <div class="post-feature-box gallery-box normal-thumb">
 		<?php
