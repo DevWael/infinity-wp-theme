@@ -1,0 +1,2904 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Infinity Mag\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-28 11:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.1; wp-5.1.1"
+
+#: core/widgets/author-posts.php:10
+msgid " Author posts"
+msgstr ""
+
+#: core/widgets/category-posts.php:14
+msgid " Category posts"
+msgstr ""
+
+#: core/widgets/facebook-widget.php:14
+msgid " Facebook box"
+msgstr ""
+
+#: core/widgets/googleplus-widget.php:14
+msgid " Google plus box"
+msgstr ""
+
+#: core/widgets/instagram-photos-widget.php:13
+msgid " Instagram Photos"
+msgstr ""
+
+#: core/widgets/login-widget.php:10
+msgid " Login Box"
+msgstr ""
+
+#: core/widgets/most-viewed-posts-widget.php:14
+msgid " Most viewed posts"
+msgstr ""
+
+#: core/widgets/subscribe-widget.php:14
+msgid " Newsletter"
+msgstr ""
+
+#: core/widgets/random-posts-widget.php:14
+msgid " Random posts"
+msgstr ""
+
+#: core/widgets/recent-posts-widget.php:14
+msgid " Recent posts"
+msgstr ""
+
+#: core/widgets/review-posts-widget.php:14
+msgid " Review posts"
+msgstr ""
+
+#: core/widgets/social-media-widget.php:14
+msgid " Social media icons"
+msgstr ""
+
+#: core/widgets/soundcloud-widget.php:14
+msgid " Sound cloud track"
+msgstr ""
+
+#. 1: date, 2: time
+#: core/init.php:1510
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. 1: plugin name.
+#: core/class-tgm-plugin-activation.php:3673
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#. 1: plugin name.
+#: core/class-tgm-plugin-activation.php:3681
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: core/init.php:1334 core/init.php:1338
+#, php-format
+msgid "%s Day"
+msgid_plural "%s Days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/init.php:1329
+#, php-format
+msgid "%s Hour"
+msgid_plural "%s Hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/init.php:1323
+#, php-format
+msgid "%s Min"
+msgid_plural "%s Mins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:19
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: core/init.php:1486
+msgid "(Edit)"
+msgstr ""
+
+#: core/init.php:228
+msgid "/ 10"
+msgstr ""
+
+#: core/init.php:909
+msgid "0 view"
+msgstr ""
+
+#: 404.php:27
+msgid "404!"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:192
+#: framework-customizations/theme/options/header-settings.php:200
+msgid "50"
+msgstr ""
+
+#: core/widgets/instagram-photos-widget.php:76
+msgid "6"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"<strong>A Wordpress News, Magazine, Blog theme. It's created to help you "
+"make your site easily base on the powerful customize of WordPress. Designed "
+"&amp; Developed by BbioonThemes</strong> - <a href=\"http://www.bbioon.com\">"
+"www.bbioon.com</a>."
+msgstr ""
+
+#: framework-customizations/theme/options/banners.php:126
+msgid "Above article Banner"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:249
+msgid "Above the post"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2879
+msgid "Activate"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: core/class-tgm-plugin-activation.php:2765
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2466
+msgid "Active"
+msgstr ""
+
+#: core/widgets/social-media-widget.php:69
+msgid "Active social media icons:"
+msgstr ""
+
+#: core/blocks/init.php:127 core/full-width-blocks/init.php:150
+#: framework-customizations/theme/options/banners.php:20
+#: framework-customizations/theme/options/banners.php:77
+#: framework-customizations/theme/options/banners.php:134
+#: framework-customizations/theme/options/banners.php:191
+msgid "AD Type"
+msgstr ""
+
+#: core/widgets/googleplus-widget.php:15
+msgid "add a google plus page box"
+msgstr ""
+
+#: core/widgets/soundcloud-widget.php:15
+msgid "add a sound cloud track"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:39
+#: framework-customizations/theme/options/layouts.php:88
+msgid "Add Block"
+msgstr ""
+
+#: core/widgets/facebook-widget.php:15
+msgid "add facebook page box"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:284
+msgid "Add Feature and Score"
+msgstr ""
+
+#: core/widgets/instagram-photos-widget.php:14
+msgid "add instagram photos to your sidebar"
+msgstr ""
+
+#: core/widgets/login-widget.php:11
+msgid "add login box to widgets area"
+msgstr ""
+
+#: core/widgets/most-viewed-posts-widget.php:15
+msgid "add most viewed posts widget"
+msgstr ""
+
+#: core/widgets/subscribe-widget.php:15
+msgid "add newsletter subscribe form"
+msgstr ""
+
+#: core/widgets/author-posts.php:11
+msgid "add posts from specified author"
+msgstr ""
+
+#: core/widgets/category-posts.php:15
+msgid "add posts from specified category"
+msgstr ""
+
+#: core/widgets/random-posts-widget.php:15
+msgid "add random posts widget"
+msgstr ""
+
+#: core/widgets/recent-posts-widget.php:15
+msgid "add recent posts widget"
+msgstr ""
+
+#: core/widgets/review-posts-widget.php:15
+msgid "add review posts widget"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:21
+#: framework-customizations/theme/options/layouts.php:70
+msgid "Add Section"
+msgstr ""
+
+#: framework-customizations/theme/options/social.php:40
+msgid "Add social media button"
+msgstr ""
+
+#: core/widgets/social-media-widget.php:15
+msgid "add social media urls to your sidebar"
+msgstr ""
+
+#: core/blocks/init.php:19 core/full-width-blocks/init.php:18
+msgid "Advertise Mode"
+msgstr ""
+
+#: framework-customizations/theme/options/banners.php:8
+msgid "Advertisements"
+msgstr ""
+
+#: core/init.php:1323 core/init.php:1329 core/init.php:1334 core/init.php:1338
+msgid "ago"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3674
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3682
+msgid "All installations have been completed."
+msgstr ""
+
+#. 1: dashboard link.
+#: core/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: footer.php:75 framework-customizations/theme/options/footer.php:81
+msgid "All rights reserved to"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:129
+msgid "Allowed file types : mp3, ogg, wma, m4a, wav"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:80
+msgid "Allowed file types : mp4, m4v, webm, ogv, wmv, flv"
+msgstr ""
+
+#: core/blocks/init.php:150 core/full-width-blocks/init.php:173
+#: framework-customizations/theme/options/banners.php:44
+#: framework-customizations/theme/options/banners.php:101
+#: framework-customizations/theme/options/banners.php:158
+#: framework-customizations/theme/options/banners.php:215
+msgid "Alternative Text For The image"
+msgstr ""
+
+#. 1: plugin name, 2: error message.
+#: core/class-tgm-plugin-activation.php:3665
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:151
+msgid "Apple icon : 114px X 114px"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:139
+msgid "Apple icon : 57px X 57px"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:145
+msgid "Apple icon : 72px X 72px"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:116
+msgid "Archive"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:122
+msgid "Archive Description"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:53
+msgid "Area (1) Sidebar Position"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:103
+msgid "Area (2) Sidebar Position"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2632
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:91
+msgid "Audio Options"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:100
+msgid "Audio Source"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:118
+msgid "Audio URL"
+msgstr ""
+
+#: content-slider.php:139 templates/part-meta.php:10 templates/part-meta.php:27
+#: framework-customizations/theme/options/post-formats.php:22
+#: framework-customizations/theme/options/layouts.php:368
+#: framework-customizations/theme/options/single-post.php:338
+msgid "Author"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:374
+msgid "Author Bio"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:109
+msgid "Author bio"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:187
+#: framework-customizations/theme/options/posts/page.php:163
+msgid "Author Bio Box"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:174
+#: framework-customizations/theme/options/single-post.php:96
+#: framework-customizations/theme/options/posts/page.php:150
+msgid "Author name"
+msgstr ""
+
+#: core/widgets/soundcloud-widget.php:80
+msgid "Autoplay :"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2660
+msgid "Available version:"
+msgstr ""
+
+#: core/init.php:281
+msgid "Average"
+msgstr ""
+
+#. Author of the theme
+msgid "Awamer Alshabaka"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:47
+#: framework-customizations/theme/options/post-customizations.php:308
+#: framework-customizations/theme/options/footer.php:101
+#: framework-customizations/theme/options/header-settings.php:105
+#: framework-customizations/theme/options/posts/page.php:208
+#: framework-customizations/theme/options/taxonomies/category.php:55
+#: framework-customizations/theme/options/taxonomies/post_tag.php:25
+msgid "Background"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:97
+#: framework-customizations/theme/options/post-customizations.php:349
+#: framework-customizations/theme/options/footer.php:150
+#: framework-customizations/theme/options/header-settings.php:155
+#: framework-customizations/theme/options/posts/page.php:249
+#: framework-customizations/theme/options/taxonomies/category.php:104
+#: framework-customizations/theme/options/taxonomies/post_tag.php:74
+msgid "Background Attachment"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:63
+#: framework-customizations/theme/options/post-customizations.php:316
+#: framework-customizations/theme/options/footer.php:117
+#: framework-customizations/theme/options/header-settings.php:121
+#: framework-customizations/theme/options/posts/page.php:216
+#: framework-customizations/theme/options/taxonomies/category.php:71
+#: framework-customizations/theme/options/taxonomies/post_tag.php:41
+msgid "Background Color"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:68
+#: framework-customizations/theme/options/post-customizations.php:321
+#: framework-customizations/theme/options/footer.php:122
+#: framework-customizations/theme/options/header-settings.php:126
+#: framework-customizations/theme/options/posts/page.php:221
+#: framework-customizations/theme/options/taxonomies/category.php:76
+#: framework-customizations/theme/options/taxonomies/post_tag.php:46
+msgid "Background image"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:108
+#: framework-customizations/theme/options/post-customizations.php:360
+#: framework-customizations/theme/options/footer.php:161
+#: framework-customizations/theme/options/header-settings.php:166
+#: framework-customizations/theme/options/posts/page.php:260
+#: framework-customizations/theme/options/taxonomies/category.php:115
+#: framework-customizations/theme/options/taxonomies/post_tag.php:85
+msgid "Background Position"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:74
+#: framework-customizations/theme/options/post-customizations.php:327
+#: framework-customizations/theme/options/footer.php:128
+#: framework-customizations/theme/options/header-settings.php:132
+#: framework-customizations/theme/options/posts/page.php:227
+#: framework-customizations/theme/options/taxonomies/category.php:82
+#: framework-customizations/theme/options/taxonomies/post_tag.php:52
+msgid "Background Repeat"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:86
+#: framework-customizations/theme/options/post-customizations.php:338
+#: framework-customizations/theme/options/footer.php:140
+#: framework-customizations/theme/options/header-settings.php:144
+#: framework-customizations/theme/options/posts/page.php:238
+#: framework-customizations/theme/options/taxonomies/category.php:93
+#: framework-customizations/theme/options/taxonomies/post_tag.php:63
+msgid "Background Size"
+msgstr ""
+
+#: core/blocks/init.php:146 core/full-width-blocks/init.php:169
+#: framework-customizations/theme/options/banners.php:40
+#: framework-customizations/theme/options/banners.php:97
+#: framework-customizations/theme/options/banners.php:154
+#: framework-customizations/theme/options/banners.php:211
+msgid "Banner url"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:389
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/class-tgm-plugin-activation.php:379
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/class-tgm-plugin-activation.php:384
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework-customizations/theme/options/banners.php:183
+msgid "Below Article Banner"
+msgstr ""
+
+#: core/widgets/category-posts.php:126 core/widgets/review-posts-widget.php:107
+#: core/widgets/author-posts.php:120
+#: core/widgets/most-viewed-posts-widget.php:106
+#: core/widgets/random-posts-widget.php:100
+#: core/widgets/recent-posts-widget.php:99
+msgid "Big list"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:44
+msgid "Block and widget title"
+msgstr ""
+
+#: core/blocks/init.php:27 core/full-width-blocks/init.php:26
+msgid "Block Style"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:26
+#: framework-customizations/theme/options/layouts.php:44
+#: framework-customizations/theme/options/layouts.php:75
+#: framework-customizations/theme/options/layouts.php:93
+msgid "Block Title"
+msgstr ""
+
+#: core/blocks/init.php:12 core/full-width-blocks/init.php:11
+msgid "Block type"
+msgstr ""
+
+#: core/init.php:487
+msgid "Blog Demo"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:28
+msgid "Body"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:37
+msgid "Body Background"
+msgstr ""
+
+#: framework-customizations/theme/options/posts/page.php:85
+msgid "Bottom page banner"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:83
+msgid "Bottom post banner"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:87
+msgid "Breadcrumbs"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:271
+msgid "Camera or ram or anything"
+msgstr ""
+
+#: comments.php:37
+msgid "Cancel Reply"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:38
+msgid "Carousel Style"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:337
+msgid "Categories"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:122
+#: framework-customizations/theme/options/single-post.php:44
+msgid "Categories meta"
+msgstr ""
+
+#: templates/part-meta.php:15 templates/part-meta.php:35
+#: framework-customizations/theme/options/layouts.php:200
+msgid "Category"
+msgstr ""
+
+#: framework-customizations/theme/options/taxonomies/category.php:6
+#: framework-customizations/theme/options/taxonomies/category.php:44
+msgid "Category Background"
+msgstr ""
+
+#: framework-customizations/theme/options/taxonomies/category.php:16
+msgid "Category Cover"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:206
+msgid "Category Description"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:119
+#: framework-customizations/theme/options/post-customizations.php:371
+#: framework-customizations/theme/options/footer.php:172
+#: framework-customizations/theme/options/header-settings.php:177
+#: framework-customizations/theme/options/posts/page.php:271
+#: framework-customizations/theme/options/taxonomies/category.php:126
+#: framework-customizations/theme/options/taxonomies/post_tag.php:96
+msgid "Center bottom"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:118
+#: framework-customizations/theme/options/post-customizations.php:370
+#: framework-customizations/theme/options/footer.php:171
+#: framework-customizations/theme/options/header-settings.php:176
+#: framework-customizations/theme/options/posts/page.php:270
+#: framework-customizations/theme/options/taxonomies/category.php:125
+#: framework-customizations/theme/options/taxonomies/post_tag.php:95
+msgid "Center center"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:236
+msgid "Center logo"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:243
+msgid "Center site title text"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:117
+#: framework-customizations/theme/options/post-customizations.php:369
+#: framework-customizations/theme/options/footer.php:170
+#: framework-customizations/theme/options/header-settings.php:175
+#: framework-customizations/theme/options/posts/page.php:269
+#: framework-customizations/theme/options/taxonomies/category.php:124
+#: framework-customizations/theme/options/taxonomies/post_tag.php:94
+msgid "Center top"
+msgstr ""
+
+#: core/init.php:1382
+msgid "Check Also"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:162
+msgid "Choose the style of posts for archive page"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:401
+msgid "Choose the style of posts for author posts poge"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:246
+msgid "Choose the style of posts for category page"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:485
+msgid "Choose the style of posts for search results page"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:330
+msgid "Choose the style of posts for tag page"
+msgstr ""
+
+#: comments.php:17
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:39
+msgid "Comment..."
+msgstr ""
+
+#: comments.php:25
+msgid "Comments are closed."
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:191
+msgid "Comments system"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:90
+#: framework-customizations/theme/options/post-customizations.php:342
+#: framework-customizations/theme/options/footer.php:144
+#: framework-customizations/theme/options/header-settings.php:148
+#: framework-customizations/theme/options/posts/page.php:242
+#: framework-customizations/theme/options/taxonomies/category.php:97
+#: framework-customizations/theme/options/taxonomies/post_tag.php:67
+msgid "contain"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:282
+msgid "Content"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:16
+msgid "Content pages"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:89
+#: framework-customizations/theme/options/post-customizations.php:341
+#: framework-customizations/theme/options/footer.php:143
+#: framework-customizations/theme/options/header-settings.php:147
+#: framework-customizations/theme/options/posts/page.php:241
+#: framework-customizations/theme/options/taxonomies/category.php:96
+#: framework-customizations/theme/options/taxonomies/post_tag.php:66
+msgid "Cover"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:209
+msgid "Create a disqus account and get the short name here "
+msgstr ""
+
+#: content-slider.php:143 content-meta.php:9 templates/part-meta.php:20
+#: templates/part-meta.php:41 core/blocks/slides.php:46
+msgid "Created on"
+msgstr ""
+
+#: core/blocks/init.php:166 core/full-width-blocks/init.php:189
+#: framework-customizations/theme/options/banners.php:60
+#: framework-customizations/theme/options/banners.php:117
+#: framework-customizations/theme/options/banners.php:174
+#: framework-customizations/theme/options/banners.php:231
+msgid "Custom Ad Code"
+msgstr ""
+
+#: core/blocks/init.php:131 core/full-width-blocks/init.php:154
+#: framework-customizations/theme/options/banners.php:24
+#: framework-customizations/theme/options/banners.php:81
+#: framework-customizations/theme/options/banners.php:138
+#: framework-customizations/theme/options/banners.php:195
+#: framework-customizations/theme/options/custom-code.php:8
+#: framework-customizations/theme/options/custom-code.php:12
+msgid "Custom Code"
+msgstr ""
+
+#: framework-customizations/theme/options/custom-code.php:18
+msgid "Custom css"
+msgstr ""
+
+#: framework-customizations/theme/options/custom-code.php:23
+msgid "Custom javascript"
+msgstr ""
+
+#: core/init.php:988
+msgid "Dashboard"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:109
+#: framework-customizations/theme/options/general.php:114
+#: framework-customizations/theme/options/single-post.php:31
+#: framework-customizations/theme/options/posts/page.php:111
+msgid "Date Meta"
+msgstr ""
+
+#: core/widgets/subscribe-widget.php:76
+msgid "Description Text:"
+msgstr ""
+
+#: core/init.php:1377
+msgid "Disable it"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:209
+msgid "DISQUS"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:200
+msgid "Disqus"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:208
+msgid "Disqus short name"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:48
+#: framework-customizations/theme/options/posts/page.php:50
+msgid "Do not Change"
+msgstr ""
+
+#: core/init.php:1071
+msgid "Dribbble URL"
+msgstr ""
+
+#: core/init.php:1521
+msgid "Edit"
+msgstr ""
+
+#: single.php:108 page.php:93
+msgid "Edit Post"
+msgstr ""
+
+#: comments.php:46
+msgid "Email *"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:325
+msgid "Enable or disable News Ticker"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:119
+msgid ""
+"Enter a audio url : Soundcloud, mixcloud, or Spotify. Supported services "
+"listed at <a href=\"http://codex.wordpress.org/Embeds\">http://codex."
+"wordpress.org/Embeds.</a>"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:70
+msgid ""
+"Enter a video url: Youtube, vimeo, or dailymotion. Supported services listed "
+"at <a href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress."
+"org/Embeds.</a>"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:252
+msgid "Enter numbers only, Value will be in pixels. (10 = 10px)"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:190
+#: framework-customizations/theme/options/header-settings.php:198
+msgid "Enter numbers only, Value will be in pixels. (50 = 50px)"
+msgstr ""
+
+#: core/widgets/subscribe-widget.php:79
+msgid "Enter your email address"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:117
+msgid "Error 404 logo"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:129
+msgid "Error 404 Message"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:523
+msgid "Error 404 Page"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:555
+msgid "Error logo"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:570
+msgid "Error Message"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:562
+msgid "Error text"
+msgstr ""
+
+#: core/init.php:272
+msgid "Excellent"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:445
+msgid "Exclude Pages from results"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:150
+msgid "Exclude Posts"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2439
+msgid "External Source"
+msgstr ""
+
+#: templates/part-share.php:23
+msgid "Facebook"
+msgstr ""
+
+#: core/init.php:1047
+msgid "FaceBook URL"
+msgstr ""
+
+#: core/init.php:492
+msgid "Fashion Demo"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:269
+msgid "Feature Name"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:57
+#: framework-customizations/theme/options/posts/page.php:59
+msgid "Featured image visibility"
+msgstr ""
+
+#: core/widgets/subscribe-widget.php:90
+msgid "FeedBurner ID:"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:59
+#: framework-customizations/theme/options/post-formats.php:108
+msgid "file"
+msgstr ""
+
+#: core/init.php:625
+msgid "First Half Area Sidebar"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:100
+#: framework-customizations/theme/options/post-customizations.php:352
+#: framework-customizations/theme/options/footer.php:153
+#: framework-customizations/theme/options/header-settings.php:158
+#: framework-customizations/theme/options/posts/page.php:252
+#: framework-customizations/theme/options/taxonomies/category.php:107
+#: framework-customizations/theme/options/taxonomies/post_tag.php:77
+msgid "Fixed"
+msgstr ""
+
+#: core/init.php:1111
+msgid "Flickr URL"
+msgstr ""
+
+#: templates/author-box.php:35
+msgid "Follow me"
+msgstr ""
+
+#: core/widgets/social-media-widget.php:59
+msgid "Follow us"
+msgstr ""
+
+#: core/init.php:482
+msgid "Food Demo"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:91
+msgid "Footer Background"
+msgstr ""
+
+#: framework-customizations/theme/options/banners.php:69
+msgid "Footer Banner"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:82
+msgid "Footer Copyrights"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:20
+msgid "Footer Instagram"
+msgstr ""
+
+#: core/init.php:49 framework-customizations/theme/options/footer.php:73
+msgid "Footer Menu"
+msgstr ""
+
+#: core/init.php:641
+msgid "Footer one"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:71
+msgid "Footer rights block"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:8
+#: framework-customizations/theme/options/footer.php:12
+msgid "Footer Settings"
+msgstr ""
+
+#: core/init.php:657
+msgid "Footer three"
+msgstr ""
+
+#: core/init.php:649
+msgid "Footer two"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:58
+msgid "Footer Widgets"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:93
+msgid "for any post excerpt on home page and archive pages"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:31
+msgid "Gallery Options"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:12
+#: framework-customizations/theme/options/general.php:8
+msgid "General"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:12
+msgid "General Settings"
+msgstr ""
+
+#: templates/part-notfound.php:7
+msgid "Get started here."
+msgstr ""
+
+#: core/init.php:1079
+msgid "Github URL"
+msgstr ""
+
+#: core/instagram.php:147
+msgid "Go to the post"
+msgstr ""
+
+#: core/init.php:278
+msgid "Good"
+msgstr ""
+
+#: core/init.php:1063
+msgid "Google + URL"
+msgstr ""
+
+#: templates/part-share.php:32 core/widgets/googleplus-widget.php:72
+msgid "Google plus"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:218
+msgid "H1"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:230
+msgid "H2"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:242
+msgid "H3"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:254
+msgid "H4"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:266
+msgid "H5"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:278
+msgid "H6"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:95
+msgid "Header Background"
+msgstr ""
+
+#: framework-customizations/theme/options/banners.php:12
+msgid "Header Banner"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:8
+msgid "Header Settings"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:12
+#: framework-customizations/theme/options/header-settings.php:22
+msgid "Header Style"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:8
+#: framework-customizations/theme/options/main-carousel.php:12
+msgid "Hero Section"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:24
+#: framework-customizations/theme/options/post-customizations.php:60
+#: framework-customizations/theme/options/post-customizations.php:73
+#: framework-customizations/theme/options/post-customizations.php:86
+#: framework-customizations/theme/options/post-customizations.php:103
+#: framework-customizations/theme/options/post-customizations.php:116
+#: framework-customizations/theme/options/post-customizations.php:129
+#: framework-customizations/theme/options/post-customizations.php:142
+#: framework-customizations/theme/options/post-customizations.php:155
+#: framework-customizations/theme/options/post-customizations.php:168
+#: framework-customizations/theme/options/post-customizations.php:181
+#: framework-customizations/theme/options/post-customizations.php:194
+#: framework-customizations/theme/options/post-customizations.php:207
+#: framework-customizations/theme/options/post-customizations.php:216
+#: framework-customizations/theme/options/post-customizations.php:233
+#: framework-customizations/theme/options/footer.php:65
+#: framework-customizations/theme/options/layouts.php:129
+#: framework-customizations/theme/options/layouts.php:155
+#: framework-customizations/theme/options/layouts.php:213
+#: framework-customizations/theme/options/layouts.php:226
+#: framework-customizations/theme/options/layouts.php:297
+#: framework-customizations/theme/options/layouts.php:310
+#: framework-customizations/theme/options/layouts.php:381
+#: framework-customizations/theme/options/layouts.php:465
+#: framework-customizations/theme/options/layouts.php:578
+#: framework-customizations/theme/options/general.php:91
+#: framework-customizations/theme/options/general.php:121
+#: framework-customizations/theme/options/general.php:134
+#: framework-customizations/theme/options/general.php:147
+#: framework-customizations/theme/options/general.php:160
+#: framework-customizations/theme/options/header-settings.php:274
+#: framework-customizations/theme/options/single-post.php:38
+#: framework-customizations/theme/options/single-post.php:51
+#: framework-customizations/theme/options/single-post.php:64
+#: framework-customizations/theme/options/single-post.php:77
+#: framework-customizations/theme/options/single-post.php:90
+#: framework-customizations/theme/options/single-post.php:103
+#: framework-customizations/theme/options/single-post.php:116
+#: framework-customizations/theme/options/single-post.php:129
+#: framework-customizations/theme/options/single-post.php:142
+#: framework-customizations/theme/options/single-post.php:155
+#: framework-customizations/theme/options/single-post.php:168
+#: framework-customizations/theme/options/single-post.php:181
+#: framework-customizations/theme/options/single-post.php:306
+#: framework-customizations/theme/options/posts/page.php:24
+#: framework-customizations/theme/options/posts/page.php:62
+#: framework-customizations/theme/options/posts/page.php:75
+#: framework-customizations/theme/options/posts/page.php:88
+#: framework-customizations/theme/options/posts/page.php:105
+#: framework-customizations/theme/options/posts/page.php:118
+#: framework-customizations/theme/options/posts/page.php:131
+#: framework-customizations/theme/options/posts/page.php:144
+#: framework-customizations/theme/options/posts/page.php:157
+#: framework-customizations/theme/options/posts/page.php:170
+#: framework-customizations/theme/options/posts/page.php:183
+#: framework-customizations/theme/options/taxonomies/category.php:19
+msgid "Hide"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:61
+#: framework-customizations/theme/options/single-post.php:231
+#: framework-customizations/theme/options/single-post.php:245
+#: framework-customizations/theme/options/single-post.php:259
+#: framework-customizations/theme/options/single-post.php:273
+#: framework-customizations/theme/options/single-post.php:287
+msgid "hide"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3673
+#: core/class-tgm-plugin-activation.php:3681
+msgid "Hide Details"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:248
+msgid "Hide the review"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:17
+msgid "Home Full Width Area 1"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:66
+msgid "Home Full Width Area 2"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:35
+msgid "Home Half Width Area 1"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:84
+msgid "Home Half Width Area 2"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:12
+msgid "Home Layout"
+msgstr ""
+
+#. URI of the theme
+msgid "https://goo.gl/XB61Yw"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.aait.sa"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:129
+msgid "Icons"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:192
+msgid "if DISQUS system selected the default comments system will be disabled"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:543
+msgid "Image"
+msgstr ""
+
+#: core/blocks/init.php:130 core/full-width-blocks/init.php:153
+#: framework-customizations/theme/options/banners.php:23
+#: framework-customizations/theme/options/banners.php:80
+#: framework-customizations/theme/options/banners.php:137
+#: framework-customizations/theme/options/banners.php:194
+msgid "Image AD"
+msgstr ""
+
+#: core/blocks/init.php:141 core/full-width-blocks/init.php:164
+#: framework-customizations/theme/options/banners.php:35
+#: framework-customizations/theme/options/banners.php:92
+#: framework-customizations/theme/options/banners.php:149
+#: framework-customizations/theme/options/banners.php:206
+msgid "Image banner"
+msgstr ""
+
+#. Name of the theme
+msgid "Infinity Mag"
+msgstr ""
+
+#: headers/search.php:11
+msgid "Input your search keywords and press Enter."
+msgstr ""
+
+#: core/widgets/instagram-photos-widget.php:58
+msgid "Instagram"
+msgstr ""
+
+#: core/instagram.php:25
+msgid "Instagram did not return a 200."
+msgstr ""
+
+#: core/instagram.php:117
+msgid "Instagram did not return any images."
+msgstr ""
+
+#: core/instagram.php:34 core/instagram.php:46
+msgid "Instagram has returned invalid data."
+msgstr ""
+
+#: core/instagram.php:42
+msgid "Instagram has returned invalid data. ff"
+msgstr ""
+
+#: core/instagram.php:62 core/instagram.php:87
+msgid "Instagram Image"
+msgstr ""
+
+#: core/init.php:1087
+msgid "Instagram URL"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:38
+msgid "Instagram user"
+msgstr ""
+
+#: core/widgets/instagram-photos-widget.php:67
+msgid "instagram username"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2870
+msgid "Install"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: core/class-tgm-plugin-activation.php:2754
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:337
+msgid "Install Plugins"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:336
+msgid "Install Required Plugins"
+msgstr ""
+
+#. 1: install status, 2: update status
+#: core/class-tgm-plugin-activation.php:2487
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2464
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2640
+msgid "Installed version:"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: core/class-tgm-plugin-activation.php:3676
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: core/class-tgm-plugin-activation.php:3684
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: core/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: 404.php:46 templates/part-notfound.php:14
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:306
+msgid "Italic"
+msgstr ""
+
+#: comments.php:35
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:36
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:60
+#: framework-customizations/theme/options/layouts.php:110
+#: framework-customizations/theme/options/layouts.php:142
+#: framework-customizations/theme/options/layouts.php:239
+#: framework-customizations/theme/options/layouts.php:323
+#: framework-customizations/theme/options/layouts.php:394
+#: framework-customizations/theme/options/layouts.php:478
+#: framework-customizations/theme/options/single-post.php:25
+msgid "Left"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:113
+#: framework-customizations/theme/options/post-customizations.php:365
+#: framework-customizations/theme/options/footer.php:166
+#: framework-customizations/theme/options/header-settings.php:171
+#: framework-customizations/theme/options/posts/page.php:265
+#: framework-customizations/theme/options/taxonomies/category.php:120
+#: framework-customizations/theme/options/taxonomies/post_tag.php:90
+msgid "Left bottom"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:112
+#: framework-customizations/theme/options/post-customizations.php:364
+#: framework-customizations/theme/options/footer.php:165
+#: framework-customizations/theme/options/header-settings.php:170
+#: framework-customizations/theme/options/posts/page.php:264
+#: framework-customizations/theme/options/taxonomies/category.php:119
+#: framework-customizations/theme/options/taxonomies/post_tag.php:89
+msgid "Left center"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:50
+#: framework-customizations/theme/options/posts/page.php:52
+msgid "Left Sidebar"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:111
+#: framework-customizations/theme/options/post-customizations.php:363
+#: framework-customizations/theme/options/footer.php:164
+#: framework-customizations/theme/options/header-settings.php:169
+#: framework-customizations/theme/options/posts/page.php:263
+#: framework-customizations/theme/options/taxonomies/category.php:118
+#: framework-customizations/theme/options/taxonomies/post_tag.php:88
+msgid "Left top"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:161
+#: framework-customizations/theme/options/general.php:140
+#: framework-customizations/theme/options/single-post.php:83
+#: framework-customizations/theme/options/posts/page.php:137
+msgid "Like meta"
+msgstr ""
+
+#: core/widgets/facebook-widget.php:78
+msgid "Like us on Facebook"
+msgstr ""
+
+#: templates/part-share.php:51
+msgid "Linkedin"
+msgstr ""
+
+#: core/init.php:1095
+msgid "linkedIn URL"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:102
+#: framework-customizations/theme/options/post-customizations.php:354
+#: framework-customizations/theme/options/footer.php:155
+#: framework-customizations/theme/options/header-settings.php:160
+#: framework-customizations/theme/options/posts/page.php:254
+#: framework-customizations/theme/options/taxonomies/category.php:109
+#: framework-customizations/theme/options/taxonomies/post_tag.php:79
+msgid "Local"
+msgstr ""
+
+#: core/init.php:1016
+msgid "Log in"
+msgstr ""
+
+#: comments.php:41
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:250
+msgid "Logo margin top"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:209
+msgid "Logo Settings"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:540
+msgid "Logo type"
+msgstr ""
+
+#: core/init.php:994
+msgid "Logout"
+msgstr ""
+
+#: core/init.php:1027
+msgid "Lost your password?"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:17
+msgid "Main Color"
+msgstr ""
+
+#: framework-customizations/theme/options/posts/page.php:37
+msgid "Minimum recommended size 1200px X 350px"
+msgstr ""
+
+#: framework-customizations/theme/options/taxonomies/category.php:32
+msgid "Minimum recommended size 1200px X 500px"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2648
+msgid "Minimum required version:"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:102
+#: framework-customizations/theme/options/header-settings.php:354
+msgid "Most liked posts"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:103
+#: framework-customizations/theme/options/header-settings.php:355
+msgid "Most viewed posts"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:39
+msgid "Must be entered correctly to run the instagram carousel."
+msgstr ""
+
+#: comments.php:45
+msgid "Name *"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:141
+msgid "Navbar main elements"
+msgstr ""
+
+#: comments.php:21
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: core/init.php:472
+msgid "News Demo"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:159
+#: framework-customizations/theme/options/header-settings.php:315
+msgid "News Ticker"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:104
+msgid "Next & Prev"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:122
+msgid "Next and prev posts"
+msgstr ""
+
+#: single.php:166
+msgid "Next post"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:448
+msgid "No"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:407
+#: framework-customizations/theme/options/header-settings.php:420
+msgid "no"
+msgstr ""
+
+#. 1: plugin name.
+#: core/class-tgm-plugin-activation.php:399
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: core/blocks/init.php:160 core/full-width-blocks/init.php:183
+#: framework-customizations/theme/options/banners.php:54
+#: framework-customizations/theme/options/banners.php:111
+#: framework-customizations/theme/options/banners.php:168
+#: framework-customizations/theme/options/banners.php:225
+msgid "No follow"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3087
+msgid "No plugins are available to be activated at this time."
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/class-tgm-plugin-activation.php:2953
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2955
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2683
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3061
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2910
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2912
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:77
+#: framework-customizations/theme/options/post-customizations.php:329
+#: framework-customizations/theme/options/footer.php:131
+#: framework-customizations/theme/options/header-settings.php:135
+#: framework-customizations/theme/options/posts/page.php:229
+#: framework-customizations/theme/options/taxonomies/category.php:84
+#: framework-customizations/theme/options/taxonomies/post_tag.php:54
+msgid "No Repeat"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:88
+#: framework-customizations/theme/options/styling-settings.php:99
+#: framework-customizations/theme/options/styling-settings.php:110
+#: framework-customizations/theme/options/post-customizations.php:340
+#: framework-customizations/theme/options/post-customizations.php:351
+#: framework-customizations/theme/options/post-customizations.php:362
+#: framework-customizations/theme/options/footer.php:142
+#: framework-customizations/theme/options/footer.php:152
+#: framework-customizations/theme/options/footer.php:163
+#: framework-customizations/theme/options/header-settings.php:146
+#: framework-customizations/theme/options/header-settings.php:157
+#: framework-customizations/theme/options/header-settings.php:168
+#: framework-customizations/theme/options/posts/page.php:240
+#: framework-customizations/theme/options/posts/page.php:251
+#: framework-customizations/theme/options/posts/page.php:262
+#: framework-customizations/theme/options/taxonomies/category.php:95
+#: framework-customizations/theme/options/taxonomies/category.php:106
+#: framework-customizations/theme/options/taxonomies/category.php:117
+#: framework-customizations/theme/options/taxonomies/post_tag.php:65
+#: framework-customizations/theme/options/taxonomies/post_tag.php:76
+#: framework-customizations/theme/options/taxonomies/post_tag.php:87
+msgid "None"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:302
+msgid "Normal"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2460
+msgid "Not Installed"
+msgstr ""
+
+#: core/widgets/category-posts.php:96 core/widgets/category-posts.php:115
+#: core/widgets/review-posts-widget.php:96 core/widgets/author-posts.php:109
+#: core/widgets/most-viewed-posts-widget.php:95
+#: core/widgets/random-posts-widget.php:89
+#: core/widgets/recent-posts-widget.php:88
+msgid "Not selected"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:329
+msgid "Number of posts"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:108
+msgid "Numbers (1,2,3)"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:43
+#: framework-customizations/theme/options/post-customizations.php:304
+#: framework-customizations/theme/options/banners.php:25
+#: framework-customizations/theme/options/banners.php:82
+#: framework-customizations/theme/options/banners.php:139
+#: framework-customizations/theme/options/banners.php:196
+#: framework-customizations/theme/options/footer.php:26
+#: framework-customizations/theme/options/footer.php:75
+#: framework-customizations/theme/options/footer.php:97
+#: framework-customizations/theme/options/header-settings.php:101
+#: framework-customizations/theme/options/posts/page.php:204
+#: framework-customizations/theme/options/taxonomies/category.php:51
+#: framework-customizations/theme/options/taxonomies/post_tag.php:21
+msgid "Off"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:28
+#: framework-customizations/theme/options/general.php:22
+#: framework-customizations/theme/options/general.php:35
+#: framework-customizations/theme/options/header-settings.php:82
+#: framework-customizations/theme/options/header-settings.php:329
+msgid "off"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:30
+msgid "On"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:24
+#: framework-customizations/theme/options/general.php:26
+#: framework-customizations/theme/options/general.php:39
+#: framework-customizations/theme/options/header-settings.php:86
+#: framework-customizations/theme/options/header-settings.php:333
+msgid "on"
+msgstr ""
+
+#: comments.php:10
+#, php-format
+msgid "One Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/blocks/init.php:155 core/full-width-blocks/init.php:178
+#: framework-customizations/theme/options/banners.php:49
+#: framework-customizations/theme/options/banners.php:106
+#: framework-customizations/theme/options/banners.php:163
+#: framework-customizations/theme/options/banners.php:220
+#: framework-customizations/theme/options/social.php:36
+msgid "Open url in new tab"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:197
+msgid "Padding bottom"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:189
+msgid "Padding top"
+msgstr ""
+
+#: single.php:117 page.php:100
+msgid "Page"
+msgstr ""
+
+#: framework-customizations/theme/options/posts/page.php:189
+#: framework-customizations/theme/options/posts/page.php:197
+msgid "Page Background"
+msgstr ""
+
+#: framework-customizations/theme/options/posts/page.php:21
+msgid "Page Cover"
+msgstr ""
+
+#: framework-customizations/theme/options/posts/page.php:7
+msgid "Page Customizations"
+msgstr ""
+
+#: framework-customizations/theme/options/posts/page.php:12
+msgid "Page Options"
+msgstr ""
+
+#: core/widgets/facebook-widget.php:82
+msgid "Page url :"
+msgstr ""
+
+#: core/widgets/googleplus-widget.php:76
+msgid "Page url:"
+msgstr ""
+
+#: single.php:113 page.php:96
+msgid "Pages:"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:101
+msgid "Pagination Style"
+msgstr ""
+
+#: core/init.php:1012 core/init.php:1013
+msgid "Password"
+msgstr ""
+
+#: core/widgets/instagram-photos-widget.php:73
+msgid "Photos count:"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:49
+msgid "Pictures count"
+msgstr ""
+
+#: core/init.php:1484
+msgid "Pingback:"
+msgstr ""
+
+#: templates/part-share.php:41
+msgid "Pinterest"
+msgstr ""
+
+#: core/init.php:1119
+msgid "Pinterest URL"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:406
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:1038
+#: core/class-tgm-plugin-activation.php:1044
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: core/init.php:1281
+msgid "Please select an author..."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2697
+msgid "Plugin"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:1232
+#: core/class-tgm-plugin-activation.php:3101
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:396
+#: core/class-tgm-plugin-activation.php:3318
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3317
+msgid "Plugin activation failed."
+msgstr ""
+
+#. 1: plugin name.
+#: core/class-tgm-plugin-activation.php:401
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. 1: number of plugins.
+#: core/class-tgm-plugin-activation.php:2534
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/init.php:284
+msgid "Poor"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:101
+#: framework-customizations/theme/options/header-settings.php:353
+msgid "Popular posts ( Top Commented )"
+msgstr ""
+
+#: category.php:34 archive.php:18 tag.php:18 search.php:16 core/init.php:1446
+msgid "Post "
+msgid_plural "Posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework-customizations/theme/options/post-customizations.php:290
+#: framework-customizations/theme/options/post-customizations.php:298
+msgid "Post Background"
+msgstr ""
+
+#: comments.php:38
+msgid "Post Comment"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:92
+#: framework-customizations/theme/options/typography.php:206
+msgid "Post content"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:21
+msgid "Post Cover"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:7
+msgid "Post Customizations"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:82
+msgid "Post excerpt length"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:226
+#: framework-customizations/theme/options/single-post.php:135
+msgid "Post Fly Box"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:12
+msgid "Post Options"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:8
+#: framework-customizations/theme/options/single-post.php:12
+msgid "Post Settings"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:56
+#: framework-customizations/theme/options/typography.php:182
+msgid "Post Title"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:194
+msgid "Post Title Cover mode"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:80
+msgid "Post Title in carousel block"
+msgstr ""
+
+#: core/blocks/init.php:112 core/full-width-blocks/init.php:135
+#: framework-customizations/theme/options/layouts.php:148
+#: framework-customizations/theme/options/layouts.php:219
+#: framework-customizations/theme/options/layouts.php:303
+#: framework-customizations/theme/options/layouts.php:458
+msgid "Posts Count"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:398
+msgid "Posts count"
+msgstr ""
+
+#: core/widgets/category-posts.php:132 core/widgets/review-posts-widget.php:113
+#: core/widgets/author-posts.php:126
+#: core/widgets/most-viewed-posts-widget.php:112
+#: core/widgets/random-posts-widget.php:106
+#: core/widgets/recent-posts-widget.php:105
+msgid "Posts count :"
+msgstr ""
+
+#: core/blocks/init.php:15 core/full-width-blocks/init.php:14
+msgid "Posts Mode"
+msgstr ""
+
+#: core/widgets/category-posts.php:120 core/widgets/review-posts-widget.php:101
+#: core/widgets/author-posts.php:114
+#: core/widgets/most-viewed-posts-widget.php:100
+#: core/widgets/random-posts-widget.php:94
+#: core/widgets/recent-posts-widget.php:93
+msgid "Posts Pictures"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:71
+msgid "Posts Settings"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:161
+#: framework-customizations/theme/options/layouts.php:245
+#: framework-customizations/theme/options/layouts.php:329
+#: framework-customizations/theme/options/layouts.php:400
+#: framework-customizations/theme/options/layouts.php:484
+msgid "Posts Style"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2442
+msgid "Pre-Packaged"
+msgstr ""
+
+#: single.php:163
+msgid "Previous post"
+msgstr ""
+
+#: core/init.php:48
+msgid "Primary Menu"
+msgstr ""
+
+#: core/widgets/subscribe-widget.php:42
+msgid "Put your email here..."
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:334
+msgid "Query based on"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:97
+#: framework-customizations/theme/options/header-settings.php:349
+msgid "Query Based On : "
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:17
+msgid "Quote Options"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:26
+msgid "Quote text"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:153
+msgid "Rate meta"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:265
+msgid "Rating"
+msgstr ""
+
+#: core/init.php:326
+msgid "Rating Score"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:105
+msgid "Read more button"
+msgstr ""
+
+#: templates/blog-post.php:19 templates/list-post.php:18
+msgid "Read More..."
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:96
+#: framework-customizations/theme/options/single-post.php:148
+#: framework-customizations/theme/options/posts/page.php:98
+msgid "Reading position indicator"
+msgstr ""
+
+#: templates/part-notfound.php:5
+msgid "Ready to publish your first post? "
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2419
+msgid "Recommended"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:293
+#: framework-customizations/theme/options/single-post.php:302
+#: framework-customizations/theme/options/single-post.php:318
+msgid "Related Posts"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:213
+msgid "Related posts"
+msgstr ""
+
+#: core/init.php:1020
+msgid "Remember Me"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:78
+#: framework-customizations/theme/options/post-customizations.php:330
+#: framework-customizations/theme/options/footer.php:132
+#: framework-customizations/theme/options/header-settings.php:136
+#: framework-customizations/theme/options/posts/page.php:230
+#: framework-customizations/theme/options/taxonomies/category.php:85
+#: framework-customizations/theme/options/taxonomies/post_tag.php:55
+msgid "Repeat"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:79
+#: framework-customizations/theme/options/post-customizations.php:331
+#: framework-customizations/theme/options/footer.php:133
+#: framework-customizations/theme/options/header-settings.php:137
+#: framework-customizations/theme/options/posts/page.php:231
+#: framework-customizations/theme/options/taxonomies/category.php:86
+#: framework-customizations/theme/options/taxonomies/post_tag.php:56
+msgid "Repeat X"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:80
+#: framework-customizations/theme/options/post-customizations.php:332
+#: framework-customizations/theme/options/footer.php:134
+#: framework-customizations/theme/options/header-settings.php:138
+#: framework-customizations/theme/options/posts/page.php:232
+#: framework-customizations/theme/options/taxonomies/category.php:87
+#: framework-customizations/theme/options/taxonomies/post_tag.php:57
+msgid "Repeat Y"
+msgstr ""
+
+#: core/init.php:1516
+msgid "Reply"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2416
+msgid "Required"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2472
+msgid "Required Update not Available"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2475
+msgid "Requires Update"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:394
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:395
+#: core/class-tgm-plugin-activation.php:930
+#: core/class-tgm-plugin-activation.php:2683
+#: core/class-tgm-plugin-activation.php:3744
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:261
+msgid "Review Description"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:246
+msgid "Review Position"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:240
+msgid "Review System"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:257
+msgid "Review Title"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:56
+#: framework-customizations/theme/options/layouts.php:106
+#: framework-customizations/theme/options/layouts.php:138
+#: framework-customizations/theme/options/layouts.php:235
+#: framework-customizations/theme/options/layouts.php:319
+#: framework-customizations/theme/options/layouts.php:390
+#: framework-customizations/theme/options/layouts.php:474
+#: framework-customizations/theme/options/single-post.php:21
+msgid "Right"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:116
+#: framework-customizations/theme/options/post-customizations.php:368
+#: framework-customizations/theme/options/footer.php:169
+#: framework-customizations/theme/options/header-settings.php:174
+#: framework-customizations/theme/options/posts/page.php:268
+#: framework-customizations/theme/options/taxonomies/category.php:123
+#: framework-customizations/theme/options/taxonomies/post_tag.php:93
+msgid "Right bottom"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:115
+#: framework-customizations/theme/options/post-customizations.php:367
+#: framework-customizations/theme/options/footer.php:168
+#: framework-customizations/theme/options/header-settings.php:173
+#: framework-customizations/theme/options/posts/page.php:267
+#: framework-customizations/theme/options/taxonomies/category.php:122
+#: framework-customizations/theme/options/taxonomies/post_tag.php:92
+msgid "Right center"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:49
+#: framework-customizations/theme/options/posts/page.php:51
+msgid "Right Sidebar"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:114
+#: framework-customizations/theme/options/post-customizations.php:366
+#: framework-customizations/theme/options/footer.php:167
+#: framework-customizations/theme/options/header-settings.php:172
+#: framework-customizations/theme/options/posts/page.php:266
+#: framework-customizations/theme/options/taxonomies/category.php:121
+#: framework-customizations/theme/options/taxonomies/post_tag.php:91
+msgid "Right top"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:274
+msgid "Score"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:101
+#: framework-customizations/theme/options/post-customizations.php:353
+#: framework-customizations/theme/options/footer.php:154
+#: framework-customizations/theme/options/header-settings.php:159
+#: framework-customizations/theme/options/posts/page.php:253
+#: framework-customizations/theme/options/taxonomies/category.php:108
+#: framework-customizations/theme/options/taxonomies/post_tag.php:78
+msgid "Scroll"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:58
+msgid "Scroll to top button"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:439
+msgid "Search"
+msgstr ""
+
+#: headers/search.php:7
+msgid "Search and hit enter"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:32
+msgid "Search box in Navbar"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:575
+msgid "Search form"
+msgstr ""
+
+#: searchform.php:3
+msgctxt "search placeholder"
+msgid "Type your search keyword"
+msgstr ""
+
+#: search.php:14
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:4 headers/search.php:6
+msgctxt "search text field title"
+msgid "Search"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:22
+msgid "Second color"
+msgstr ""
+
+#: core/init.php:633
+msgid "Second Half Area Sidebar"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:131
+#: framework-customizations/theme/options/header-settings.php:383
+msgid "Select author"
+msgstr ""
+
+#: core/widgets/author-posts.php:87
+msgid "Select author:"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:288
+msgid "Select background Color"
+msgstr ""
+
+#: core/blocks/init.php:116 core/full-width-blocks/init.php:139
+#: framework-customizations/theme/options/main-carousel.php:115
+#: framework-customizations/theme/options/header-settings.php:367
+msgid "Select Categories"
+msgstr ""
+
+#: core/widgets/category-posts.php:90
+msgid "Select categories :"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:152
+msgid "Select image with height: 114px and width:114px for apple devices"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:140
+msgid "Select image with height: 57px and width:57px for apple devices"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:146
+msgid "Select image with height: 72px and width:72px for apple devices"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:36
+msgid "Select Images"
+msgstr ""
+
+#: core/widgets/category-posts.php:109 core/widgets/review-posts-widget.php:90
+#: core/widgets/most-viewed-posts-widget.php:89
+#: core/widgets/random-posts-widget.php:83
+#: core/widgets/recent-posts-widget.php:82
+msgid "Select style :"
+msgstr ""
+
+#: core/widgets/author-posts.php:103
+msgid "Select style:"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:123
+#: framework-customizations/theme/options/header-settings.php:375
+msgid "Select Tags"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:294
+msgid "Select Text Color"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:106
+#: framework-customizations/theme/options/header-settings.php:358
+msgid "Selected author"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:104
+#: framework-customizations/theme/options/header-settings.php:356
+msgid "Selected categories"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:105
+#: framework-customizations/theme/options/header-settings.php:357
+msgid "Selected tags"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:200
+#: framework-customizations/theme/options/posts/page.php:176
+msgid "Share buttons"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:174
+msgid "Share buttons on pages"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:161
+msgid "Share buttons on posts"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:217
+msgid "Share icons"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:223
+msgid "Share on Facebook"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:265
+msgid "Share on Google Plus"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:279
+msgid "Share on Linked in"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:251
+msgid "Share on Pinterest"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:237
+msgid "Share on Twitter"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:28
+#: framework-customizations/theme/options/post-customizations.php:64
+#: framework-customizations/theme/options/post-customizations.php:77
+#: framework-customizations/theme/options/post-customizations.php:90
+#: framework-customizations/theme/options/post-customizations.php:99
+#: framework-customizations/theme/options/post-customizations.php:112
+#: framework-customizations/theme/options/post-customizations.php:125
+#: framework-customizations/theme/options/post-customizations.php:138
+#: framework-customizations/theme/options/post-customizations.php:151
+#: framework-customizations/theme/options/post-customizations.php:164
+#: framework-customizations/theme/options/post-customizations.php:177
+#: framework-customizations/theme/options/post-customizations.php:190
+#: framework-customizations/theme/options/post-customizations.php:203
+#: framework-customizations/theme/options/post-customizations.php:220
+#: framework-customizations/theme/options/post-customizations.php:229
+#: framework-customizations/theme/options/footer.php:61
+#: framework-customizations/theme/options/layouts.php:125
+#: framework-customizations/theme/options/layouts.php:151
+#: framework-customizations/theme/options/layouts.php:209
+#: framework-customizations/theme/options/layouts.php:222
+#: framework-customizations/theme/options/layouts.php:293
+#: framework-customizations/theme/options/layouts.php:306
+#: framework-customizations/theme/options/layouts.php:377
+#: framework-customizations/theme/options/layouts.php:461
+#: framework-customizations/theme/options/layouts.php:582
+#: framework-customizations/theme/options/general.php:95
+#: framework-customizations/theme/options/general.php:117
+#: framework-customizations/theme/options/general.php:130
+#: framework-customizations/theme/options/general.php:143
+#: framework-customizations/theme/options/general.php:156
+#: framework-customizations/theme/options/header-settings.php:270
+#: framework-customizations/theme/options/single-post.php:34
+#: framework-customizations/theme/options/single-post.php:47
+#: framework-customizations/theme/options/single-post.php:60
+#: framework-customizations/theme/options/single-post.php:73
+#: framework-customizations/theme/options/single-post.php:86
+#: framework-customizations/theme/options/single-post.php:99
+#: framework-customizations/theme/options/single-post.php:112
+#: framework-customizations/theme/options/single-post.php:125
+#: framework-customizations/theme/options/single-post.php:138
+#: framework-customizations/theme/options/single-post.php:151
+#: framework-customizations/theme/options/single-post.php:164
+#: framework-customizations/theme/options/single-post.php:177
+#: framework-customizations/theme/options/single-post.php:310
+#: framework-customizations/theme/options/posts/page.php:28
+#: framework-customizations/theme/options/posts/page.php:66
+#: framework-customizations/theme/options/posts/page.php:79
+#: framework-customizations/theme/options/posts/page.php:92
+#: framework-customizations/theme/options/posts/page.php:101
+#: framework-customizations/theme/options/posts/page.php:114
+#: framework-customizations/theme/options/posts/page.php:127
+#: framework-customizations/theme/options/posts/page.php:140
+#: framework-customizations/theme/options/posts/page.php:153
+#: framework-customizations/theme/options/posts/page.php:166
+#: framework-customizations/theme/options/posts/page.php:179
+#: framework-customizations/theme/options/taxonomies/category.php:23
+msgid "Show"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:65
+#: framework-customizations/theme/options/single-post.php:226
+#: framework-customizations/theme/options/single-post.php:240
+#: framework-customizations/theme/options/single-post.php:254
+#: framework-customizations/theme/options/single-post.php:268
+#: framework-customizations/theme/options/single-post.php:282
+msgid "show"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:20
+msgid "Show Carousel"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3673
+#: core/class-tgm-plugin-activation.php:3681
+msgid "Show Details"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:326
+msgid "Show News Ticker"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:404
+msgid "Show on home page only"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:417
+msgid "Show on Mobile Devices"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:403
+msgid "Show the carousel on home page only or show on all pages"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:45
+#: framework-customizations/theme/options/layouts.php:135
+#: framework-customizations/theme/options/layouts.php:232
+#: framework-customizations/theme/options/layouts.php:316
+#: framework-customizations/theme/options/layouts.php:387
+#: framework-customizations/theme/options/layouts.php:471
+#: framework-customizations/theme/options/single-post.php:18
+#: framework-customizations/theme/options/posts/page.php:47
+msgid "Sidebar Position"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:178
+msgid "Single post"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:32
+msgid "Site description"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:217
+msgid "Site Logo"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:8
+msgid "Site Settings"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:20
+msgid "Site Title"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:221
+msgid "Site title and tag line"
+msgstr ""
+
+#: core/widgets/category-posts.php:117 core/widgets/review-posts-widget.php:98
+#: core/widgets/author-posts.php:111
+#: core/widgets/most-viewed-posts-widget.php:97
+#: core/widgets/random-posts-widget.php:91
+#: core/widgets/recent-posts-widget.php:90
+msgid "Slider"
+msgstr ""
+
+#: framework-customizations/theme/options/main-carousel.php:146
+msgid "Slides Count"
+msgstr ""
+
+#: core/widgets/category-posts.php:123 core/widgets/review-posts-widget.php:104
+#: core/widgets/author-posts.php:117
+#: core/widgets/most-viewed-posts-widget.php:103
+#: core/widgets/random-posts-widget.php:97
+#: core/widgets/recent-posts-widget.php:96
+msgid "Small list"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:68
+msgid "Small Post Title"
+msgstr ""
+
+#: framework-customizations/theme/options/footer.php:74
+msgid "Social icons"
+msgstr ""
+
+#: framework-customizations/theme/options/social.php:8
+msgid "Social media"
+msgstr ""
+
+#: framework-customizations/theme/options/social.php:18
+msgid "Social media links"
+msgstr ""
+
+#: framework-customizations/theme/options/social.php:12
+msgid "Social media urls"
+msgstr ""
+
+#: framework-customizations/theme/options/social.php:31
+msgid "Social network icon"
+msgstr ""
+
+#: core/init.php:1044
+msgid "Social Networking"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:342
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:569
+msgid "Sorry!.. the page you are trying to reach may be deleted or moved."
+msgstr ""
+
+#: templates/part-notfound.php:11
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2698
+msgid "Source"
+msgstr ""
+
+#: core/init.php:477
+msgid "Sport Demo"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2704
+msgid "Status"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:78
+msgid "Sticky Navbar"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:18
+msgid "Sticky Sidebar"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:8
+msgid "Styling"
+msgstr ""
+
+#: core/widgets/subscribe-widget.php:47
+msgid "Subscribe"
+msgstr ""
+
+#: core/blocks/init.php:167 core/full-width-blocks/init.php:190
+#: framework-customizations/theme/options/banners.php:61
+#: framework-customizations/theme/options/banners.php:118
+#: framework-customizations/theme/options/banners.php:175
+#: framework-customizations/theme/options/banners.php:232
+msgid "Supports: HTML, Javascript, Text and Shortcodes."
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:284
+msgid "Tag"
+msgstr ""
+
+#: framework-customizations/theme/options/taxonomies/post_tag.php:6
+#: framework-customizations/theme/options/taxonomies/post_tag.php:14
+msgid "Tag Background"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:290
+msgid "Tag Description"
+msgstr ""
+
+#: framework-customizations/theme/options/single-post.php:336
+msgid "Tags"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:135
+#: framework-customizations/theme/options/single-post.php:57
+msgid "Tags meta"
+msgstr ""
+
+#: core/init.php:497
+msgid "Technology Demo"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:547
+msgid "Text"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:299
+msgid "Text Style"
+msgstr ""
+
+#. %s: version number
+#: core/class-tgm-plugin-activation.php:2119
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/class-tgm-plugin-activation.php:397
+#: core/class-tgm-plugin-activation.php:3105
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/class-tgm-plugin-activation.php:3671
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. 1: plugin name.
+#: core/class-tgm-plugin-activation.php:3667
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:3679
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:1044
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:1038
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:405
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/widgets/social-media-widget.php:64
+msgid ""
+"There is no options here any more... just go to theme options page and add "
+"social media urls to activate them"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:46
+#: framework-customizations/theme/options/posts/page.php:48
+msgid ""
+"This option will override the sidebar position selected in theme options "
+"page for this post only."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:624
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework-customizations/theme/options/general.php:52
+msgid "Time ago"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:45
+msgid "Time format"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:342
+#: framework-customizations/theme/options/single-post.php:319
+#: framework-customizations/theme/options/social.php:22
+msgid "Title"
+msgstr ""
+
+#: core/widgets/category-posts.php:83 core/widgets/review-posts-widget.php:83
+#: core/widgets/googleplus-widget.php:69 core/widgets/author-posts.php:79
+#: core/widgets/instagram-photos-widget.php:55
+#: core/widgets/facebook-widget.php:75
+#: core/widgets/most-viewed-posts-widget.php:82
+#: core/widgets/random-posts-widget.php:76
+#: core/widgets/social-media-widget.php:56
+#: core/widgets/soundcloud-widget.php:66 core/widgets/subscribe-widget.php:68
+#: core/widgets/login-widget.php:46 core/widgets/recent-posts-widget.php:75
+msgid "Title:"
+msgstr ""
+
+#. 1: number of plugins.
+#: core/class-tgm-plugin-activation.php:2546
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: number of plugins.
+#: core/class-tgm-plugin-activation.php:2538
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework-customizations/theme/options/header-settings.php:257
+#: framework-customizations/theme/options/header-settings.php:267
+msgid "Top Alert Bar"
+msgstr ""
+
+#: framework-customizations/theme/options/posts/page.php:72
+msgid "Top page banner"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:70
+msgid "Top post banner"
+msgstr ""
+
+#: core/widgets/soundcloud-widget.php:72
+msgid "Track url:"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:48
+#: framework-customizations/theme/options/single-post.php:196
+msgid "Traditional"
+msgstr ""
+
+#: core/init.php:1103
+msgid "Tumblr URL"
+msgstr ""
+
+#: templates/part-share.php:14
+msgid "Twitter"
+msgstr ""
+
+#: core/init.php:1055
+msgid "Twitter URL"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2699
+msgid "Type"
+msgstr ""
+
+#: framework-customizations/theme/options/typography.php:12
+msgid "Typography"
+msgstr ""
+
+#: core/instagram.php:22
+msgid "Unable to communicate with Instagram."
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:250
+msgid "Under the post"
+msgstr ""
+
+#: core/required-plugins.php:45
+msgid "Unyson"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2876
+msgid "Update"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: core/class-tgm-plugin-activation.php:2759
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. 1: number of plugins.
+#: core/class-tgm-plugin-activation.php:2542
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/class-tgm-plugin-activation.php:2478
+msgid "Update recommended"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:625
+msgid "Update Required"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: core/class-tgm-plugin-activation.php:3662
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: core/class-tgm-plugin-activation.php:341
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2837
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:128
+msgid "Upload a audio file"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:79
+msgid "Upload a video file"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:36
+#: framework-customizations/theme/options/posts/page.php:36
+#: framework-customizations/theme/options/taxonomies/category.php:31
+msgid "Upload Cover Photo"
+msgstr ""
+
+#: framework-customizations/theme/options/taxonomies/category.php:33
+msgid ""
+"Upload cover photo with high resolution (1200px X 350px recommended as a "
+"minimum size) to display it as a background for the post title and meta"
+msgstr ""
+
+#: framework-customizations/theme/options/posts/page.php:38
+msgid ""
+"Upload cover photo with high resolution (1200px X 500px recommended as a "
+"minimum size) to display it as a background for the post title and meta"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:222
+#: framework-customizations/theme/options/header-settings.php:230
+msgid "Upload logo"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:55
+#: framework-customizations/theme/options/post-formats.php:104
+#: framework-customizations/theme/options/social.php:26
+msgid "Url"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:7
+msgid "URL Options"
+msgstr ""
+
+#: core/init.php:970
+msgid "Use WP menu builder to build menus"
+msgstr ""
+
+#: core/init.php:1006 core/init.php:1007
+msgid "Username"
+msgstr ""
+
+#: core/widgets/instagram-photos-widget.php:64
+msgid "Username:"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2703
+msgid "Version"
+msgstr ""
+
+#: core/init.php:275
+msgid "Very Good"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:42
+msgid "Video Options"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:51
+msgid "Video Source"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:69
+msgid "Video URL"
+msgstr ""
+
+#: content-meta.php:17 templates/part-meta.php:48 core/blocks/slides.php:54
+msgid "Views"
+msgstr ""
+
+#: core/init.php:953
+msgid "Views Count"
+msgstr ""
+
+#: framework-customizations/theme/options/post-customizations.php:148
+#: framework-customizations/theme/options/general.php:127
+#: framework-customizations/theme/options/single-post.php:70
+#: framework-customizations/theme/options/posts/page.php:124
+msgid "Views meta"
+msgstr ""
+
+#: core/init.php:1127
+msgid "Vimeo URL"
+msgstr ""
+
+#: comments.php:47
+msgid "Website"
+msgstr ""
+
+#: framework-customizations/theme/options/styling-settings.php:134
+msgid "Website Favicon"
+msgstr ""
+
+#: core/init.php:985
+msgid "Welcome"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:27
+#: framework-customizations/theme/options/layouts.php:45
+#: framework-customizations/theme/options/layouts.php:76
+#: framework-customizations/theme/options/layouts.php:94
+msgid "Will be used in posts mode only"
+msgstr ""
+
+#: core/class-tgm-plugin-activation.php:2436
+msgid "WordPress Repository"
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:19
+#: framework-customizations/theme/options/header-settings.php:79
+msgid "Working on Desktop only"
+msgstr ""
+
+#: framework-customizations/theme/options/posts/page.php:200
+#: framework-customizations/theme/options/taxonomies/category.php:47
+#: framework-customizations/theme/options/taxonomies/post_tag.php:17
+msgid ""
+"Works only when you select Framed or Boxed from Theme settings -> Site "
+"settings -> Website Layout"
+msgstr ""
+
+#: framework-customizations/theme/options/post-formats.php:12
+msgid "Write a URL"
+msgstr ""
+
+#: templates/author-box.php:18
+msgid "Written by"
+msgstr ""
+
+#: framework-customizations/theme/options/layouts.php:452
+msgid "Yes"
+msgstr ""
+
+#: framework-customizations/theme/options/header-settings.php:411
+#: framework-customizations/theme/options/header-settings.php:424
+msgid "yes"
+msgstr ""
+
+#: templates/related-posts.php:59
+msgid "You may also like"
+msgstr ""
+
+#: comments.php:40
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: framework-customizations/theme/options/general.php:88
+msgid "You must install unyson breadcrumbs extension to activate breadcrumbs"
+msgstr ""
+
+#: core/widgets/social-media-widget.php:74
+msgid ""
+"You must install unyson framework plugin to get the social media urls "
+"working properly"
+msgstr ""
+
+#: core/widgets/soundcloud-widget.php:47
+msgid "You must provide a sound cloud track url"
+msgstr ""
+
+#: core/init.php:1496
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: core/init.php:991
+msgid "Your Profile"
+msgstr ""
+
+#: core/init.php:1135
+msgid "YouTube URL"
+msgstr ""

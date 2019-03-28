@@ -16,11 +16,11 @@ require DW_CORE . 'blocks/ads.php';
  * Display home page magazine boxes
  */
 if ( ! function_exists( 'dw_builder_half_width' ) ) {
-	function dw_builder_half_width( $option_id = 'home_half_width_1', $before = '', $after = '' ) {
+	function dw_builder_half_width( $option_id = 'home_half_width_', $place_number = 1, $before = '', $after = '' ) {
 		if ( ! function_exists( 'fw_get_db_settings_option' ) ) {
 			return;
 		}
-		$all_blocks = dw_get_setting( $option_id );
+		$all_blocks = dw_get_setting( $option_id . $place_number );
 		if ( $all_blocks ) {
 			echo $before;
 			foreach ( $all_blocks as $block ) {
