@@ -164,6 +164,7 @@
             }
         }
         else {
+            $('.sticky-nav').css('padding-top',  '0px' );
             $('.sticky-nav .top-nav-heder').removeClass('translatedTop').removeClass("navbar_fixed_top").css('top', '0px');
         }
     });
