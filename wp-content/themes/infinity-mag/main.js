@@ -201,4 +201,30 @@
         carouselCount++;
     });
 
+
+    // COVER POSTS OWL
+    $('.cover-posts-owl').owlCarousel({
+        margin: 0,
+        autoplay: true,
+        loop: true,
+        nav: true,
+        dots:false,
+        autoplaySpeed: 2000,
+        navText: ["<i class='fa fa-angle-right'></i>", "<i class='fa fa-angle-left'></i>"],
+        responsive: {
+            0: {
+                items: 1 ,
+                dotsEach: 1
+            },
+            600: {
+                items: 1 ,
+                dotsEach: 1
+            },
+            1000: {
+                items: 1 ,
+                dotsEach: 1
+            }
+        }
+    });
+
 })(jQuery);
