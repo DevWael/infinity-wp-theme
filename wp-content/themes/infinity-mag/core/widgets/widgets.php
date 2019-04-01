@@ -28,7 +28,7 @@ if ( ! function_exists( 'dw_widget_slider_loop' ) ) {
                             </div>
                             <div class="post-content">
 								<?php the_title( sprintf( '<h3 class="post-title h5" itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-								<?php get_template_part( 'content', 'meta' ); ?>
+								<?php get_template_part('loop/meta'); ?>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ if ( ! function_exists( 'dw_widget_big_list_loop' ) ) {
                         </div>
                         <div class="post-content">
 							<?php the_title( sprintf( '<h3 class="post-title h4" itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-							<?php get_template_part( 'content', 'meta' ); ?>
+							<?php get_template_part('loop/meta'); ?>
                         </div>
                     </div>
 					<?php

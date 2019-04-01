@@ -22,9 +22,4 @@
 	<?php if ( 'on' === dw_get_setting( 'general_rating_meta' ) ): ?>
 		<?php dw_review_system( get_the_ID(), 'small' ); ?>
 	<?php endif; ?>
-	<?php if ( 'on' === dw_get_setting( 'general_like_meta' ) or ! function_exists( 'fw_get_db_settings_option' ) ): ?>
-		<span class="like-system">
-			<?php echo window_mag_get_likes_button( get_the_ID() ); ?>
-		</span>
-	<?php endif; ?>
 </div>

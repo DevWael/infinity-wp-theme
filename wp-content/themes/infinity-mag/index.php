@@ -3,17 +3,16 @@ get_header();
 if ( 'on' === dw_get_setting( 'carousel_switch/query_type' ) ) {
 	get_template_part( 'hero/' . dw_get_setting( 'carousel_switch/on/carousel_style' ) );
 }
+
+//display first half width blocks
+dw_display_half_width_blocks( 1 );
+
 ?>
+
     <section class="home-posts">
         <div class="container">
             <div class="row">
 				<?php dw_content_area_start( 'home_sidebar' );
-				/**
-				 * Magazine Blocks Builder
-				 */
-				if ( function_exists( 'dw_builder_half_width' ) ) {
-					dw_builder_half_width();
-				}
 				//Normal posts
 				if ( 'yes' === dw_get_setting( 'home_recent_posts/control' ) ) {
 					?>

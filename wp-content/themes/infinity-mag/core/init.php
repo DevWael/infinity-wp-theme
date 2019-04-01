@@ -150,7 +150,7 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 			wp_enqueue_script( $alias, DW_JS_URI . $src, array( 'jquery' ), '1.0', true );
 		}
 
-		wp_enqueue_script( 'main-js', get_template_directory_uri() . '/main.js', array( 'jquery' ),false , true );
+		wp_enqueue_script( 'main-js', get_template_directory_uri() . '/main.js', array( 'jquery' ), false, true );
 		if ( is_singular() ) {
 			wp_enqueue_script( "comment-reply" );
 		}
@@ -170,6 +170,35 @@ function dw_remove_script_version( $src ) {
 	}
 
 	return $src;
+}
+
+function dw_display_half_width_blocks( $dw_area_id ) {
+	if ( 'hide' != dw_get_setting( 'home_half_enable_' . $dw_area_id ) ) {
+		$visibility_class    = '';
+		$computer_visibility = dw_get_setting( 'home_half_computer_' . $dw_area_id );
+		if ( $computer_visibility != 'show' ) {
+			$visibility_class .= ' ' . $computer_visibility;
+		}
+		$mobile_visibility = dw_get_setting( 'home_half_mobile_' . $dw_area_id );
+		if ( $mobile_visibility != 'show' ) {
+			$visibility_class .= ' ' . $mobile_visibility;
+		}
+		?>
+        <section class="dw-half-section dw-half-section-<?php echo $dw_area_id . $visibility_class; ?>">
+            <div class="container">
+                <div class="row">
+					<?php
+					dw_content_area_start( 'sidebar_area_' . $dw_area_id );
+					do_action( 'dw_half_width_builder', $dw_area_id );
+					dw_content_area_end();
+					dw_sidebar_start( 'sidebar_area_' . $dw_area_id );
+					get_sidebar();
+					dw_sidebar_end()
+					?>
+                </div>
+            </div>
+        </section>
+	<?php }
 }
 
 /**
@@ -525,7 +554,7 @@ function dw_demo_content( $demos ) {
 add_filter( 'update_footer', 'dw_footer_version', 12 );
 function dw_footer_version( $html ) {
 	if ( ( current_user_can( 'update_themes' ) || current_user_can( 'update_plugins' ) ) && defined( "FW" ) ) {
-		return ( empty( $html ) ? '' : $html . ' | ' ) . fw()->theme->manifest->get( 'name' ) . ' ' . fw()->theme->manifest->get( 'version' );
+		return ( empty( $html ) ? '' : $html . ' | ' ) . fw()->theme->manifest->get( 'name' ) . ' ' . fw()->theme->manifest->get( 'version' ) . ' | ' . 'By: Awamer Alshabaka';
 	} else {
 		return $html;
 	}
