@@ -5,7 +5,7 @@ if ( ! defined( 'FW' ) ) {
 
 $options = array(
 	'header_settings' => array(
-		'title'   => esc_html__( 'Header Settings', 'dw' ),
+		'title'   => esc_html__( 'Header', 'dw' ),
 		'type'    => 'tab',
 		'options' => array(
 			'style'       => array(

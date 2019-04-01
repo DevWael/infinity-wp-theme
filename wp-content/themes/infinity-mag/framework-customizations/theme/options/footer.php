@@ -5,7 +5,7 @@ if ( ! defined( 'FW' ) ) {
 
 $options = array(
 	'footer_layout' => array(
-		'title'   => esc_html__( 'Footer Settings', 'dw' ),
+		'title'   => esc_html__( 'Footer', 'dw' ),
 		'type'    => 'tab',
 		'options' => array(
 			'footer_box' => array(

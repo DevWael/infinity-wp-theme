@@ -5,7 +5,7 @@ if ( ! defined( 'FW' ) ) {
 
 $options = array(
 	'layouts' => array(
-		'title'   => esc_html__( 'Site Settings', 'dw' ),
+		'title'   => esc_html__( 'Layouts', 'dw' ),
 		'type'    => 'tab',
 		'options' => array(
 			'archive_page_layout'  => array(

@@ -5,7 +5,7 @@
 
 $options = array(
 	'social' => array(
-		'title'   => esc_html__( 'Social media', 'dw' ),
+		'title'   => esc_html__( 'Social Media', 'dw' ),
 		'type'    => 'tab',
 		'options' => array(
 			'social-box' => array(
