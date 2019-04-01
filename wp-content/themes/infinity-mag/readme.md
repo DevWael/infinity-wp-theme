@@ -1,13 +1,13 @@
-## INFINITY WORLD WORDPRESS MAGAZINE THEME ##
+## INFINITY WORLD 7 WORDPRESS MAGAZINE THEME ##
 
 
-Theme Name: Infinity World
+Theme Name: Infinity World 7
 
 Author: Awamer Alshabaka
 
-Description: Infinity World - WordPress Magazine theme
+Description: Infinity World 7 - WordPress Magazine theme
 
-Version: 10
+Version: 7
 
 Text Domain: dw
 
