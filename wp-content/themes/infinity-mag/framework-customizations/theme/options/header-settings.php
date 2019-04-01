@@ -2,13 +2,32 @@
 if ( ! defined( 'FW' ) ) {
 	die( 'Forbidden' );
 }
+$cart = [];
+if ( class_exists( 'woocommerce' ) ) {
+	$cart = [
+		'cart_icon' => array(
+			'type'         => 'switch',
+			'value'        => 'on',
+			'label'        => esc_html__( 'Show cart icon in navbar', 'dw' ),
+			'left-choice'  => array(
+				'value' => 'off',
+				'label' => esc_html__( 'No', 'dw' ),
+			),
+			'right-choice' => array(
+				'value' => 'on',
+				'label' => esc_html__( 'Yes', 'dw' ),
+			),
+		),
+	];
+}
+
 
 $options = array(
 	'header_settings' => array(
 		'title'   => esc_html__( 'Header', 'dw' ),
 		'type'    => 'tab',
 		'options' => array(
-			'style'       => array(
+			'style'         => array(
 				'title'   => esc_html__( 'Header Style', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(
@@ -57,7 +76,7 @@ $options = array(
 									'height' => 200
 								)
 							),
-							'header-four' => array(
+							'header-four'  => array(
 								// (required) url for thumbnail
 								'small' => array(
 									'src'    => DW_IMAGES_DIR . 'settings/header/pic_four.png',
@@ -72,7 +91,7 @@ $options = array(
 						),
 						'blank'   => false,
 					),
-					'sticky_nav'     => array(
+					'sticky_nav'        => array(
 						'type'         => 'switch',
 						'value'        => 'off',
 						'label'        => esc_html__( 'Sticky Navbar', 'dw' ),
@@ -86,6 +105,7 @@ $options = array(
 							'label' => esc_html__( 'on', 'dw' ),
 						),
 					),
+					$cart,
 					'header_background' => array(
 						'type'         => 'multi-picker',
 						'label'        => false,
@@ -205,7 +225,7 @@ $options = array(
 					)
 				)
 			),
-			'logo_box'    => array(
+			'logo_box'      => array(
 				'title'   => esc_html__( 'Logo Settings', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(
@@ -225,12 +245,12 @@ $options = array(
 						),
 						'choices'      => array(
 							'logo'    => array(
-								'logo_select'   => array(
+								'logo_select' => array(
 									'type'        => 'upload',
 									'label'       => esc_html__( 'Upload logo', 'dw' ),
 									'images_only' => true
 								),
-								'center_logo'   => array(
+								'center_logo' => array(
 									'type'  => 'checkbox',
 									'value' => true,
 									'label' => esc_html__( 'Center logo', 'dw' )
@@ -258,9 +278,9 @@ $options = array(
 				'type'    => 'tab',
 				'options' => array(
 					'alert_bar' => array(
-						'type'         => 'multi-picker',
-						'label'        => false,
-						'picker'       => array(
+						'type'    => 'multi-picker',
+						'label'   => false,
+						'picker'  => array(
 							'control' => array(
 								'type'         => 'switch',
 								'value'        => 'off',
@@ -275,11 +295,11 @@ $options = array(
 								)
 							)
 						),
-						'choices'      => array(
+						'choices' => array(
 							'on' => array(
 								'bar_content' => array(
-									'type'          => 'textarea',
-									'label'         => esc_html__( 'Content', 'dw' ),
+									'type'  => 'textarea',
+									'label' => esc_html__( 'Content', 'dw' ),
 								),
 								'bar_bg'      => array(
 									'type'     => 'rgba-color-picker',
@@ -287,13 +307,13 @@ $options = array(
 									'palettes' => dw_color_palettes(),
 									'label'    => esc_html__( 'Select background Color', 'dw' )
 								),
-								'bar_text'      => array(
+								'bar_text'    => array(
 									'type'     => 'rgba-color-picker',
 									'value'    => 'rgba(255,255,255,1)',
 									'palettes' => dw_color_palettes(),
 									'label'    => esc_html__( 'Select Text Color', 'dw' )
 								),
-								'text_style' => array(
+								'text_style'  => array(
 									'type'         => 'switch',
 									'value'        => 'normal_text',
 									'label'        => esc_html__( 'Text Style', 'dw' ),
@@ -311,7 +331,7 @@ $options = array(
 					),
 				)
 			),
-			'news_ticker' => array(
+			'news_ticker'   => array(
 				'title'   => esc_html__( 'News Ticker', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(

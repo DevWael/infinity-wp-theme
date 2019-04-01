@@ -1,4 +1,8 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Forbidden' );
+}
+
 if ( ! function_exists( 'dw_full_width_area' ) ) {
 	function dw_full_width_area() {
 		return array(

@@ -9,6 +9,9 @@ require_once DW_CORE . 'full-width-blocks/init.php';//full width blocks
  * Load Required Plugins
  */
 require DW_CORE . 'required-plugins.php';
+if ( class_exists( 'woocommerce' ) ) {
+	require DW_CORE . 'woocommerce.php';
+}
 require DW_CORE . 'instagram.php';
 
 /**
