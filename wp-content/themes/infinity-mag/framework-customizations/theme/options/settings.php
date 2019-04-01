@@ -3,6 +3,7 @@
 }
 $options = array(
 	fw()->theme->get_options( 'general' ),
+	fw()->theme->get_options( 'home' ),
 	fw()->theme->get_options( 'layouts' ),
 	fw()->theme->get_options( 'header-settings' ),
 	fw()->theme->get_options( 'footer' ),

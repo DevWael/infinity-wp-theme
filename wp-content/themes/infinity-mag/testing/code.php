@@ -206,8 +206,6 @@
 	</div>
 </div>
 
-
-
 <!-- NEW CODE -->
 
 <!-- INDIVIDUAL POSTS  -->
@@ -376,8 +374,6 @@
     </div>
 </div>
 
-
-
 <!-- FIRST PEODUCT   -->
 <div class="products-wrapper">
     <div class="container">
@@ -454,7 +450,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- SECOND PEODUCT   -->
 <div class="products-wrapper">
@@ -537,7 +532,7 @@
     </div>
 </div>
 
-<!-- SECOND PEODUCT   -->
+<!-- third PEODUCT   -->
 <div class="products-wrapper">
     <div class="container">
         <h2 class="post-wrapper-title-6"> <span> SECOND Products </span>  </h2>
@@ -625,5 +620,3 @@
         </div>
     </div>
 </div>
-
-
