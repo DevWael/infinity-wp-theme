@@ -3,12 +3,9 @@ get_header();
 if ( 'on' === dw_get_setting( 'carousel_switch/query_type' ) ) {
 	get_template_part( 'hero/' . dw_get_setting( 'carousel_switch/on/carousel_style' ) );
 }
-
 //display first half width blocks
 dw_display_half_width_blocks( 1 );
-
 ?>
-
     <section class="home-posts">
         <div class="container">
             <div class="row">

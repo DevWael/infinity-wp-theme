@@ -172,8 +172,9 @@ function dw_remove_script_version( $src ) {
 	return $src;
 }
 
-function dw_display_half_width_blocks( $dw_area_id ) {
+function dw_display_half_width_blocks( $dw_area_id, $sidebar_name = '' ) {
 	if ( 'hide' != dw_get_setting( 'home_half_enable_' . $dw_area_id ) ) {
+		do_action( 'before_half_section' );
 		$visibility_class    = '';
 		$computer_visibility = dw_get_setting( 'home_half_computer_' . $dw_area_id );
 		if ( $computer_visibility != 'show' ) {
@@ -192,13 +193,15 @@ function dw_display_half_width_blocks( $dw_area_id ) {
 					do_action( 'dw_half_width_builder', $dw_area_id );
 					dw_content_area_end();
 					dw_sidebar_start( 'sidebar_area_' . $dw_area_id );
-					get_sidebar();
+					get_sidebar( $sidebar_name );
 					dw_sidebar_end()
 					?>
                 </div>
             </div>
         </section>
-	<?php }
+		<?php
+		do_action( 'after_half_section' );
+	}
 }
 
 /**
