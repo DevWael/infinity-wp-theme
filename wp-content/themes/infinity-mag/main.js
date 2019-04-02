@@ -150,7 +150,7 @@
 
     $(window).scroll(function () {
         var nav_height = $('.top-nav-heder').height();
-        console.log($(this).scrollTop());
+        //console.log($(this).scrollTop());
 
         if ($(this).scrollTop() > 200 &&  $(this).scrollTop() < 300) {
             $('.sticky-nav .top-nav-heder').addClass('translatedTop');
@@ -168,8 +168,6 @@
             $('.sticky-nav .top-nav-heder').removeClass('translatedTop').removeClass("navbar_fixed_top").css('top', '0px');
         }
     });
-
-
 
 
     var carouselCount = 0;

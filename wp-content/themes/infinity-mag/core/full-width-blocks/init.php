@@ -3,6 +3,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Forbidden' );
 }
 
+include DW_CORE . 'full-width-blocks/individual-posts.php';
+
 if ( ! function_exists( 'dw_full_width_area' ) ) {
 	function dw_full_width_area() {
 		return array(
