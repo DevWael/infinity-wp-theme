@@ -226,4 +226,24 @@
         }
     });
 
+
+
+    $(".deal-request").on('change', function () {
+        console.log($(this).data('id'));
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: ajax_url,
+            data: {
+                action: "deal_check",
+                id: $(this).data('id'),
+                nonce: $('#deal_sec').val()
+            },
+            success: function (response) {
+                console.log(response);
+                dw_toast_type(response.data.type, response.data.title, response.data.message);
+            }
+        });
+    });
+
 })(jQuery);

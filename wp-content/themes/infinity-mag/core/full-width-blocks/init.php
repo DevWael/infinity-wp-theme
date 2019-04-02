@@ -6,6 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 include DW_CORE . 'full-width-blocks/individual-posts.php';
 include DW_CORE . 'full-width-blocks/individual-icon-posts.php';
 include DW_CORE . 'full-width-blocks/individual-cover.php';
+include DW_CORE . 'full-width-blocks/product-main.php';
 /**
  * Display home page magazine boxes
  */
@@ -18,7 +19,19 @@ function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
 	if ( $all_blocks ) {
 		echo $before;
 		foreach ( $all_blocks as $block ) {
-			if ( $block['layout_type']['control'] == 'posts' ) {
+			if ( $block['layout_type']['control'] == 'shop' && class_exists( 'woocommerce' ) ) {
+				$post_style  = $block['layout_type']['posts']['post_style'];
+				$posts_count = $block['layout_type']['posts']['posts_count'];
+				$cats_ds     = $block['layout_type']['posts']['cat_select'];
+				$block_title = $block['block_title'];
+				switch ( $post_style ) {
+					case  'product_main':
+						dw_product_main( $cats_ds, $posts_count, $block_title );
+						break;
+					default :
+						dw_product_main( $cats_ds, $posts_count, $block_title );
+				}
+			} elseif ( $block['layout_type']['control'] == 'posts' ) {
 				$post_style  = $block['layout_type']['posts']['post_style'];
 				$posts_count = $block['layout_type']['posts']['posts_count'];
 				$cats_ds     = $block['layout_type']['posts']['cat_select'];
@@ -32,15 +45,6 @@ function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
 						break;
 					case  'individual_icon_posts':
 						dw_individual_icon_posts( $cats_ds, $posts_count, $block_title );
-						break;
-					case  'mini-grid':
-						dw_mini_grid( $cats_ds, $posts_count, $block_title );
-						break;
-					case  'big-grid':
-						dw_big_grid( $cats_ds, $posts_count, $block_title );
-						break;
-					case  'slides':
-						dw_slides( $cats_ds, $posts_count, $block_title );
 						break;
 					default :
 						dw_list_box( $cats_ds, $posts_count, $block_title );
@@ -68,9 +72,9 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 					'label'   => esc_html__( 'Block type', 'dw' ),
 					'inline'  => true,
 					'choices' => array( // Note: Avoid bool or int keys http://bit.ly/1cQgVzk
-						'posts' => esc_html__( 'Posts Mode', 'dw' ),
-						'shop'  => esc_html__( 'Shop Mode', 'dw' ),
-						'ads'   => esc_html__( 'Advertise Mode', 'dw' ),
+						'posts' => esc_html__( 'Posts', 'dw' ),
+						'shop'  => esc_html__( 'Products', 'dw' ),
+						'ads'   => esc_html__( 'Advertise and Banners', 'dw' ),
 					),
 				)
 			),
@@ -78,7 +82,7 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 				'posts' => array(
 					'post_style'  => array(
 						'type'    => 'radio',
-						'label'   => esc_html__( 'Block Style', 'dw' ),
+						'label'   => esc_html__( 'Section Style', 'dw' ),
 						'choices' => array(
 							'individual_posts'           => esc_html__( 'individual posts', 'dw' ),
 							'individual_with_cover_post' => esc_html__( 'individual with cover post', 'dw' ),
@@ -101,7 +105,38 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 						'type'        => 'multi-select',
 						'label'       => esc_html__( 'Select Categories', 'dw' ),
 						'prepopulate' => 999,
+						'limit'       => 5,
 						'choices'     => dw_categories()
+					)
+				),
+				'shop'  => array(
+					'post_style'  => array(
+						'type'    => 'radio',
+						'value'    => 'product_main',
+						'label'   => esc_html__( 'Section Style', 'dw' ),
+						'choices' => array(
+							'product_main' => esc_html__( 'Main Style', 'dw' ),
+						),
+						//'blank'   => false,
+						//'inline' => false,
+					),
+					'posts_count' => array(
+						'type'       => 'slider',
+						'value'      => 6,
+						'properties' => array(
+							'min'  => 2,
+							'max'  => 60,
+							'step' => 1, // Set slider step. Always > 0. Could be fractional.
+						),
+						'label'      => esc_html__( 'Products Count', 'dw' )
+					),
+					'cat_select'  => array(
+						'type'        => 'multi-select',
+						'label'       => esc_html__( 'Select Product Categories', 'dw' ),
+						'prepopulate' => 20,
+						'limit'       => 5,
+						'population'  => 'taxonomy',
+						'source'      => 'product_cat',
 					)
 				),
 				'ads'   => array(

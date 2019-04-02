@@ -144,6 +144,10 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 		if ( is_singular() ) {
 			wp_enqueue_script( "comment-reply" );
 		}
+		wp_localize_script( 'main-js', 'dw_ajax_url', [
+				'ajax_url' => admin_url( 'admin-ajax.php' )
+			]
+		);
 		dw_open_graph();
 	}
 }
