@@ -2,7 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Forbidden' );
 }
-function dw_individual_posts( $cat_ids, $posts_count = 6, $block_title = '' ) {
+function dw_individual_with_cover_post( $cat_ids, $posts_count = 6, $block_title = '' ) {
 	$arguments   = array(
 		'posts_per_page'      => $posts_count,
 		'category__in'        => $cat_ids,
@@ -12,8 +12,7 @@ function dw_individual_posts( $cat_ids, $posts_count = 6, $block_title = '' ) {
 	$posts_query = new WP_Query( $arguments );
 	if ( $posts_query->have_posts() ) {
 		?>
-        <!-- INDIVIDUAL POSTS  -->
-        <div class="individual-posts full-width-section">
+        <div class="individual-cover-posts full-width-section">
             <div class="container">
                 <div class="posts-area">
 					<?php if ( $block_title ) {
@@ -33,19 +32,20 @@ function dw_individual_posts( $cat_ids, $posts_count = 6, $block_title = '' ) {
                     <div class="content-wrapper">
                         <div class="row">
 							<?php
-							$i = 1;
+							$i = 0;
 							while ( $posts_query->have_posts() ) {
 								$posts_query->the_post();
-
-								?>
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-									<?php get_template_part( 'templates/individual-post' ); ?>
-                                </div>
-								<?php
-								if($i % 3 == 0){
-?>
-                        <div class="col-md-12"></div>
-                                    <?php
+								if ( $i % 4 == 0 ) {
+									?>
+                                    <div class="col-xs-12">
+										<?php get_template_part( 'templates/cover-post' ); ?>
+                                    </div>
+								<?php } else {
+									?>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+										<?php get_template_part( 'templates/individual-post' ); ?>
+                                    </div>
+									<?php
 								}
 								$i ++;
 							} ?>

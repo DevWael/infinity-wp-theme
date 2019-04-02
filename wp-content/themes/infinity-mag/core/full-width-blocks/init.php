@@ -4,6 +4,56 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 include DW_CORE . 'full-width-blocks/individual-posts.php';
+include DW_CORE . 'full-width-blocks/individual-cover.php';
+/**
+ * Display home page magazine boxes
+ */
+add_action( 'dw_full_width_builder', 'dw_builder_full_width', 10, 3 );
+function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
+	if ( ! function_exists( 'fw_get_db_settings_option' ) ) {
+		return;
+	}
+	$all_blocks = dw_get_setting( 'home_full_width_' . $place_number );
+	if ( $all_blocks ) {
+		echo $before;
+		foreach ( $all_blocks as $block ) {
+			if ( $block['layout_type']['control'] == 'posts' ) {
+				$post_style  = $block['layout_type']['posts']['post_style'];
+				$posts_count = $block['layout_type']['posts']['posts_count'];
+				$cats_ds     = $block['layout_type']['posts']['cat_select'];
+				$block_title = $block['block_title'];
+				switch ( $post_style ) {
+					case  'individual_posts':
+						dw_individual_posts( $cats_ds, $posts_count, $block_title );
+						break;
+					case  'individual_with_cover_post':
+						dw_individual_with_cover_post( $cats_ds, $posts_count, $block_title );
+						break;
+					case  'img-grid':
+						dw_img_grid( $cats_ds, $posts_count, $block_title );
+						break;
+					case  'mini-grid':
+						dw_mini_grid( $cats_ds, $posts_count, $block_title );
+						break;
+					case  'big-grid':
+						dw_big_grid( $cats_ds, $posts_count, $block_title );
+						break;
+					case  'slides':
+						dw_slides( $cats_ds, $posts_count, $block_title );
+						break;
+					default :
+						dw_list_box( $cats_ds, $posts_count, $block_title );
+				}
+			} else {
+				$ads_type   = $block['layout_type']['ads']['ads_box']['gadget'];
+				$image_data = $block['layout_type']['ads']['ads_box']['image'];
+				$code_data  = $block['layout_type']['ads']['ads_box']['code'];
+				dw_dynamic_ads( $ads_type, $image_data, $code_data );
+			}
+		}
+		echo $after;
+	}
+}
 
 if ( ! function_exists( 'dw_full_width_area' ) ) {
 	function dw_full_width_area() {
@@ -12,123 +62,28 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 			'label'   => false,
 			'picker'  => array(
 				'control' => array(
-					'type'         => 'switch',
-					'value'        => 'hello',
-					'label'        => esc_html__( 'Block type', 'dw' ),
-					'left-choice'  => array(
-						'value' => 'posts',
-						'label' => esc_html__( 'Posts Mode', 'dw' )
-					),
-					'right-choice' => array(
-						'value' => 'ads',
-						'label' => esc_html__( 'Advertise Mode', 'dw' )
+					'type'    => 'radio',
+					'value'   => 'posts',
+					'label'   => esc_html__( 'Block type', 'dw' ),
+					'inline'  => true,
+					'choices' => array( // Note: Avoid bool or int keys http://bit.ly/1cQgVzk
+						'posts' => esc_html__( 'Posts Mode', 'dw' ),
+						'shop'  => esc_html__( 'Shop Mode', 'dw' ),
+						'ads'   => esc_html__( 'Advertise Mode', 'dw' ),
 					),
 				)
 			),
 			'choices' => array(
 				'posts' => array(
 					'post_style'  => array(
-						'type'    => 'image-picker',
+						'type'    => 'radio',
 						'label'   => esc_html__( 'Block Style', 'dw' ),
 						'choices' => array(
-							'simple-grid' => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/simple.png',
-									'height' => 70
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/simple.png',
-									'height' => 160
-								)
-							),
-							'carousel'    => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/carousel.png',
-									'height' => 70
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/carousel.png',
-									'height' => 160
-								)
-							),
-							'img-grid'    => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/img-grid.png',
-									'height' => 70
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/img-grid.png',
-									'height' => 160
-								)
-							),
-							'list'        => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/recent-list.png',
-									'height' => 70
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/recent-list.png',
-									'height' => 160
-								)
-							),
-							'masonry'     => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/masonry.png',
-									'height' => 70
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/masonry.png',
-									'height' => 160
-								)
-							),
-							'mini-grid'   => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/mini-grid.png',
-									'height' => 70
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/mini-grid.png',
-									'height' => 160
-								)
-							),
-							'big-grid'    => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/big-grid.png',
-									'height' => 70
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'blocks/big-grid.png',
-									'height' => 160
-								)
-							),
-							'slides'      => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'sliders/center.png',
-									'height' => 70
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'sliders/center.png',
-									'height' => 160
-								)
-							)
+							'individual_posts'           => __( 'individual posts', 'dw' ),
+							'individual_with_cover_post' => __( 'individual with cover post', 'dw' ),
 						),
-						'blank'   => false
+						//'blank'   => false,
+						//'inline' => false,
 					),
 					'posts_count' => array(
 						'type'       => 'slider',
@@ -201,54 +156,5 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 				)
 			)
 		);
-	}
-}
-/**
- * Display home page magazine boxes
- */
-add_action( 'dw_full_width_builder', 'dw_builder_full_width', 10, 3 );
-function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
-	if ( ! function_exists( 'fw_get_db_settings_option' ) ) {
-		return;
-	}
-	$all_blocks = dw_get_setting( 'home_full_width_' . $place_number );
-	if ( $all_blocks ) {
-		echo $before;
-		foreach ( $all_blocks as $block ) {
-			if ( $block['layout_type']['control'] == 'posts' ) {
-				$post_style  = $block['layout_type']['posts']['post_style'];
-				$posts_count = $block['layout_type']['posts']['posts_count'];
-				$cats_ds     = $block['layout_type']['posts']['cat_select'];
-				$block_title = $block['block_title'];
-				switch ( $post_style ) {
-					case  'simple-grid':
-						dw_simple_grid( $cats_ds, $posts_count, $block_title );
-						break;
-					case  'carousel':
-						dw_carousel_box( $cats_ds, $posts_count, $block_title );
-						break;
-					case  'img-grid':
-						dw_img_grid( $cats_ds, $posts_count, $block_title );
-						break;
-					case  'mini-grid':
-						dw_mini_grid( $cats_ds, $posts_count, $block_title );
-						break;
-					case  'big-grid':
-						dw_big_grid( $cats_ds, $posts_count, $block_title );
-						break;
-					case  'slides':
-						dw_slides( $cats_ds, $posts_count, $block_title );
-						break;
-					default :
-						dw_list_box( $cats_ds, $posts_count, $block_title );
-				}
-			} else {
-				$ads_type   = $block['layout_type']['ads']['ads_box']['gadget'];
-				$image_data = $block['layout_type']['ads']['ads_box']['image'];
-				$code_data  = $block['layout_type']['ads']['ads_box']['code'];
-				dw_dynamic_ads( $ads_type, $image_data, $code_data );
-			}
-		}
-		echo $after;
 	}
 }
