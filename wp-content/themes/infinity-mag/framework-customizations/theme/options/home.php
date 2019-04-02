@@ -5,7 +5,7 @@ if ( ! defined( 'FW' ) ) {
 
 $options = array(
 	'home_page' => array(
-		'title'   => esc_html__( 'Home', 'dw' ),
+		'title'   => esc_html__( 'Home Layouts', 'dw' ),
 		'type'    => 'tab',
 		'options' => array(
 			'full_width_1'   => array(

@@ -26,19 +26,6 @@ $options = array(
 							'label' => esc_html__( 'on', 'dw' ),
 						),
 					),
-					'search_nav'     => array(
-						'type'         => 'switch',
-						'value'        => 'on',
-						'label'        => esc_html__( 'Search box in Navbar', 'dw' ),
-						'left-choice'  => array(
-							'value' => 'off',
-							'label' => esc_html__( 'off', 'dw' ),
-						),
-						'right-choice' => array(
-							'value' => 'on',
-							'label' => esc_html__( 'on', 'dw' ),
-						),
-					),
 					'blog_time'      => array(
 						'type'         => 'switch',
 						'value'        => 'ago',
