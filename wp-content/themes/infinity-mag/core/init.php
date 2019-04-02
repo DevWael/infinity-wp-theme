@@ -117,6 +117,10 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 			wp_enqueue_style( $key, DW_CSS_URI . $sc );
 		}
 
+		if ( class_exists( 'woocommerce' ) ) {
+			wp_enqueue_style( 'woocommerce_styles', DW_CSS_URI . 'woocommerce.css' );
+		}
+
 		wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Ubuntu' );
 
 		//Default stylesheet file (style.css)
@@ -136,7 +140,6 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 		foreach ( $scripts as $alias => $src ) {
 			wp_enqueue_script( $alias, DW_JS_URI . $src, array( 'jquery' ), '1.0', true );
 		}
-
 		wp_enqueue_script( 'main-js', get_template_directory_uri() . '/main.js', array( 'jquery' ), false, true );
 		if ( is_singular() ) {
 			wp_enqueue_script( "comment-reply" );
