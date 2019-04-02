@@ -1,4 +1,4 @@
-<div class="cover-post">
+<div <?php post_class( 'cover-post' ); ?>>
 	<?php if ( has_post_thumbnail() ) { ?>
         <div class="transition-img" style="background: url(<?php the_post_thumbnail_url( 'full' ); ?>);"></div>
 	<?php } ?>

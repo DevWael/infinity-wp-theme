@@ -4,6 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 include DW_CORE . 'full-width-blocks/individual-posts.php';
+include DW_CORE . 'full-width-blocks/individual-icon-posts.php';
 include DW_CORE . 'full-width-blocks/individual-cover.php';
 /**
  * Display home page magazine boxes
@@ -29,8 +30,8 @@ function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
 					case  'individual_with_cover_post':
 						dw_individual_with_cover_post( $cats_ds, $posts_count, $block_title );
 						break;
-					case  'img-grid':
-						dw_img_grid( $cats_ds, $posts_count, $block_title );
+					case  'individual_icon_posts':
+						dw_individual_icon_posts( $cats_ds, $posts_count, $block_title );
 						break;
 					case  'mini-grid':
 						dw_mini_grid( $cats_ds, $posts_count, $block_title );
@@ -79,8 +80,9 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 						'type'    => 'radio',
 						'label'   => esc_html__( 'Block Style', 'dw' ),
 						'choices' => array(
-							'individual_posts'           => __( 'individual posts', 'dw' ),
-							'individual_with_cover_post' => __( 'individual with cover post', 'dw' ),
+							'individual_posts'           => esc_html__( 'individual posts', 'dw' ),
+							'individual_with_cover_post' => esc_html__( 'individual with cover post', 'dw' ),
+							'individual_icon_posts'      => esc_html__( 'individual icon posts', 'dw' ),
 						),
 						//'blank'   => false,
 						//'inline' => false,
