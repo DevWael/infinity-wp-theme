@@ -1,3 +1,21 @@
+function dw_toast_type(type, title, message) {
+    if (type === 'error') {
+        toastr.error(message, title);
+    }
+    if (type === 'warning') {
+        toastr.warning(message, title);
+    }
+    if (type === 'info') {
+        toastr.info(message, title);
+    }
+    if (type === 'success') {
+        toastr.success(message, title);
+    }
+}
+toastr.options.positionClass = 'toast-top-center';
+toastr.options.progressBar = true;
+toastr.options.toastClass = 'dw_toastr';
+
 (function ($) {
     //every thing goes here...
 
@@ -152,19 +170,18 @@
         var nav_height = $('.top-nav-heder').height();
         //console.log($(this).scrollTop());
 
-        if ($(this).scrollTop() > 200 &&  $(this).scrollTop() < 300) {
+        if ($(this).scrollTop() > 200 && $(this).scrollTop() < 300) {
             $('.sticky-nav .top-nav-heder').addClass('translatedTop');
         } else if ($(this).scrollTop() > 300) {
             $('.sticky-nav .top-nav-heder').removeClass('translatedTop').addClass("navbar_fixed_top");
-            $('.sticky-nav').css('padding-top',  nav_height );
+            $('.sticky-nav').css('padding-top', nav_height);
             if ($('body').hasClass('admin-bar')) {
                 $('.navbar_fixed_top').css('top', '32px');
             } else {
                 $('.navbar_fixed_top').css('top', '0px');
             }
-        }
-        else {
-            $('.sticky-nav').css('padding-top',  '0px' );
+        } else {
+            $('.sticky-nav').css('padding-top', '0px');
             $('.sticky-nav .top-nav-heder').removeClass('translatedTop').removeClass("navbar_fixed_top").css('top', '0px');
         }
     });
@@ -207,41 +224,57 @@
         autoplay: true,
         loop: true,
         nav: true,
-        dots:false,
+        dots: false,
         autoplaySpeed: 2000,
         navText: ["<i class='fa fa-angle-right'></i>", "<i class='fa fa-angle-left'></i>"],
         responsive: {
             0: {
-                items: 1 ,
+                items: 1,
                 dotsEach: 1
             },
             600: {
-                items: 1 ,
+                items: 1,
                 dotsEach: 1
             },
             1000: {
-                items: 1 ,
+                items: 1,
                 dotsEach: 1
             }
         }
     });
 
-
-
-    $(".deal-request").on('change', function () {
-        console.log($(this).data('id'));
+    var ajax_url = dw_ajax_url.ajax_url;
+    $(".dw-add-to-cart-ajax").on('click', function (e) {
+        e.preventDefault();
+        // console.log($(this).data('id'));
+        var cart_selector = $('#dw_cart_count_num'),
+            cart_counter = parseInt(cart_selector.html());
+        var product_id = $(this).data('product_id'),
+            product_sku = $(this).data('product_sku');
         $.ajax({
             type: "post",
             dataType: "json",
             url: ajax_url,
             data: {
-                action: "deal_check",
-                id: $(this).data('id'),
-                nonce: $('#deal_sec').val()
+                action: 'dw_ajax_add_to_cart',
+                product_id: product_id,
+                product_sku: product_sku,
+                quantity: 1,
+                nonce: dw_ajax_url.ajax_nonce,
             },
             success: function (response) {
                 console.log(response);
-                dw_toast_type(response.data.type, response.data.title, response.data.message);
+                if (response.success) {
+                    $('#dw_cart_count_num').text(cart_counter + 1);
+                    dw_toast_type(response.data.type, response.data.title, response.data.message);
+                } else {
+                    dw_toast_type(response.data.type, response.data.title, response.data.message);
+                    setTimeout(
+                        function () {
+                            window.location.href = response.data.url;
+                        }, 3000
+                    );
+                }
             }
         });
     });
