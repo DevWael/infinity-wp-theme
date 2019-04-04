@@ -12,6 +12,7 @@ function dw_toast_type(type, title, message) {
         toastr.success(message, title);
     }
 }
+
 toastr.options.positionClass = 'toast-top-center';
 toastr.options.progressBar = true;
 toastr.options.toastClass = 'dw_toastr';
@@ -265,8 +266,8 @@ toastr.options.toastClass = 'dw_toastr';
         e.preventDefault();
         // console.log($(this).data('id'));
         let cart_selector = $('#dw_cart_count_num'),
-            cart_counter = parseInt(cart_selector.html());
-        let product_id = $(this).data('product_id'),
+            cart_counter = parseInt(cart_selector.html()),
+            product_id = $(this).data('product_id'),
             product_sku = $(this).data('product_sku');
         $.ajax({
             type: "post",
@@ -280,12 +281,10 @@ toastr.options.toastClass = 'dw_toastr';
                 nonce: dw_ajax_url.ajax_nonce,
             },
             success: function (response) {
-                console.log(response);
+                dw_toast_type(response.data.type, response.data.title, response.data.message);
                 if (response.success) {
                     $('#dw_cart_count_num').text(cart_counter + 1);
-                    dw_toast_type(response.data.type, response.data.title, response.data.message);
                 } else {
-                    dw_toast_type(response.data.type, response.data.title, response.data.message);
                     setTimeout(
                         function () {
                             window.location.href = response.data.url;
