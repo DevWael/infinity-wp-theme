@@ -295,4 +295,47 @@ toastr.options.toastClass = 'dw_toastr';
         });
     });
 
+    $(".add-to-favourite").on('click', function (e) {
+        e.preventDefault();
+        // console.log($(this).data('id'));
+        let product_id = $(this).data('product_id');
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: ajax_url,
+            data: {
+                action: 'dw_ajax_add_to_fav',
+                product_id: product_id,
+                nonce: dw_ajax_url.ajax_nonce,
+            },
+            success: function (response) {
+                // console.log(response);
+                dw_toast_type(response.data.type, response.data.title, response.data.message);
+            }
+        });
+    });
+
+    $(".remove-from-favourite").on('click', function (e) {
+        e.preventDefault();
+        // console.log($(this).data('id'));
+        let product_id = $(this).data('product_id');
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: ajax_url,
+            data: {
+                action: 'dw_ajax_remove_fav',
+                product_id: product_id,
+                nonce: dw_ajax_url.ajax_nonce,
+            },
+            success: function (response) {
+                console.log(response);
+                if (response.success) {
+                    $('.post-' + product_id).parent().remove();
+                    dw_toast_type(response.data.type, response.data.title, response.data.message);
+                }
+            }
+        });
+    });
+
 })(jQuery);

@@ -27,7 +27,6 @@ function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
 				$posts_count = $block['layout_type']['shop']['posts_count'];
 				$cats_ds     = $block['layout_type']['shop']['cat_select'];
 				$block_title = $block['block_title'];
-
 				switch ( $post_style ) {
 					case  'product_second_style':
 						dw_product_second( $cats_ds, $posts_count, $block_title );

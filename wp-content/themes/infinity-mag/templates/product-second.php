@@ -47,10 +47,22 @@ global $product;
 				esc_url( DW_IMAGES_DIR . 'ui/shopping-cart.png' )
 			),
 			$product );
+		if ( is_page_template( 'page-favorites.php' ) ) {
+			?>
+            <button type="button" data-product_id="<?php echo esc_attr( $product->get_id() ); ?>"
+                    class="prod-btn remove-from-favourite">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+			<?php
+		} else {
+			?>
+            <button type="button" data-product_id="<?php echo esc_attr( $product->get_id() ); ?>"
+                    class="prod-btn add-to-favourite">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+            </button>
+			<?php
+		}
 		?>
-        <button type="button" class="prod-btn add-to-favourite">
-            <i class="fa fa-heart" aria-hidden="true"></i>
-        </button>
     </div>
 	<?php if ( $product->get_sale_price() ) { ?>
         <div class="offer"><?php esc_html_e( 'Sale', 'dw' ); ?></div>

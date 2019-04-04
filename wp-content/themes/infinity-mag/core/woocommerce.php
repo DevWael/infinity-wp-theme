@@ -81,3 +81,74 @@ function dw_ajax_add_to_cart() {
 	}
 }
 
+add_action( 'wp_ajax_dw_ajax_add_to_fav', 'dw_ajax_add_to_fav' );
+add_action( 'wp_ajax_nopriv_dw_ajax_add_to_fav', 'dw_ajax_add_to_fav' );
+function dw_ajax_add_to_fav() {
+	check_ajax_referer( 'dw_ajax_requests', 'nonce' );
+	if ( ! is_user_logged_in() ) {
+		wp_send_json_error( [
+			'type'    => 'warning',
+			'title'   => esc_html__( 'Login Check', 'dw' ),
+			'message' => esc_html__( 'You have to login to add to favorites', 'dw' ),
+		] );
+	}
+
+	if ( isset( $_POST['product_id'] ) && ! empty( $_POST['product_id'] ) ) {
+		$user_id = get_current_user_id();
+		delete_post_meta( $user_id, 'dw_favorites' );
+		$favorites = (array) get_user_meta( $user_id, 'dw_favorites', true );
+
+		if ( empty( $favorites ) ) {
+			update_user_meta( $user_id, 'dw_favorites', array( absint( $_POST['product_id'] ) ) );
+			wp_send_json_success( [
+				'type'    => 'success',
+				'title'   => esc_html__( 'Favorites111', 'dw' ),
+				'message' => esc_html__( 'The Product has been added to favorites', 'dw' )
+			] );
+		} else {
+			if ( ! in_array( absint( $_POST['product_id'] ), $favorites ) ) {
+				array_push( $favorites, absint( $_POST['product_id'] ) );
+				update_user_meta( $user_id, 'dw_favorites', $favorites );
+				wp_send_json_success( [
+					'type'    => 'success',
+					'title'   => esc_html__( 'Favorites', 'dw' ),
+					'message' => esc_html__( 'The Product has been added to favorites', 'dw' )
+				] );
+			} else {
+				wp_send_json_error( [
+					'type'    => 'warning',
+					'title'   => esc_html__( 'Favorites', 'dw' ),
+					'message' => esc_html__( 'This product is already in favorites', 'dw' ),
+				] );
+			}
+		}
+
+	}
+}
+
+add_action( 'wp_ajax_dw_ajax_remove_fav', 'dw_ajax_remove_fav' );
+add_action( 'wp_ajax_nopriv_dw_ajax_remove_fav', 'dw_ajax_remove_fav' );
+function dw_ajax_remove_fav() {
+	check_ajax_referer( 'dw_ajax_requests', 'nonce' );
+	if ( ! is_user_logged_in() ) {
+		return false;
+	}
+	if ( isset( $_POST['product_id'] ) && ! empty( $_POST['product_id'] ) ) {
+		$user_id = get_current_user_id();
+		delete_post_meta( $user_id, 'dw_favorites' );
+		$favorites = (array) get_user_meta( $user_id, 'dw_favorites', true );
+		if ( in_array( absint( $_POST['product_id'] ), $favorites ) ) {
+			foreach ( $favorites as $key => $value ) {
+				if ( $_POST['product_id'] == $value ) {
+					unset( $favorites[ $key ] );
+				}
+			}
+			update_user_meta( $user_id, 'dw_favorites', $favorites );
+			wp_send_json_success( [
+				'type'    => 'success',
+				'title'   => esc_html__( 'Favorites', 'dw' ),
+				'message' => esc_html__( 'The Product has been removed from favorites', 'dw' )
+			] );
+		}
+	}
+}
