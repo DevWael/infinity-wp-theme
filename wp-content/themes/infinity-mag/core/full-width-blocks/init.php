@@ -6,6 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 include DW_CORE . 'full-width-blocks/individual-posts.php';
 include DW_CORE . 'full-width-blocks/individual-icon-posts.php';
 include DW_CORE . 'full-width-blocks/individual-cover.php';
+include DW_CORE . 'full-width-blocks/cover-carousel.php';
 include DW_CORE . 'full-width-blocks/product-main.php';
 /**
  * Display home page magazine boxes
@@ -37,6 +38,9 @@ function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
 				$cats_ds     = $block['layout_type']['posts']['cat_select'];
 				$block_title = $block['block_title'];
 				switch ( $post_style ) {
+					case  'carousel_cover_posts':
+						dw_carousel_cover_post( $cats_ds, $posts_count, $block_title );
+						break;
 					case  'individual_posts':
 						dw_individual_posts( $cats_ds, $posts_count, $block_title );
 						break;
@@ -86,6 +90,7 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 						'choices' => array(
 							'individual_posts'           => esc_html__( 'individual posts', 'dw' ),
 							'individual_with_cover_post' => esc_html__( 'individual with cover post', 'dw' ),
+							'carousel_cover_posts'       => esc_html__( 'Carousel cover post', 'dw' ),
 							'individual_icon_posts'      => esc_html__( 'individual icon posts', 'dw' ),
 						),
 						//'blank'   => false,
@@ -112,7 +117,7 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 				'shop'  => array(
 					'post_style'  => array(
 						'type'    => 'radio',
-						'value'    => 'product_main',
+						'value'   => 'product_main',
 						'label'   => esc_html__( 'Section Style', 'dw' ),
 						'choices' => array(
 							'product_main' => esc_html__( 'Main Style', 'dw' ),

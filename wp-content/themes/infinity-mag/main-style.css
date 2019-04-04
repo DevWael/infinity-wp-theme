@@ -657,6 +657,7 @@ a:focus {
 	text-transform: capitalize;
 	font-weight: bold;
 	color: #fff;
+	text-decoration: none;
 }
 
 .single-article-slide h3 a:hover {
@@ -709,6 +710,12 @@ a:focus {
 .writer-info a {
 	display: flex;
 	color: #fff;
+	text-decoration: none;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .writer-info a:hover {
@@ -821,11 +828,11 @@ a:focus {
 	-ms-transition: 300ms;
 	-o-transition: 300ms;
 	transition: 300ms;
+	text-decoration: none;
 }
 
 .multi-article-slide:hover h3 a {
 	color: #00AD9D;
-	text-decoration: none;
 }
 
 .multi-article-slide .writer-info {
@@ -940,6 +947,7 @@ a:focus {
 	font-size: 19px;
 	text-transform: capitalize;
 	color: #fff;
+	text-decoration: none;
 	-webkit-transition: 300ms;
 	-moz-transition: 300ms;
 	-ms-transition: 300ms;
@@ -988,6 +996,7 @@ a:focus {
 .main-article.big h3 a {
 	font-size: 25px;
 	line-height: 30px;
+	text-decoration: none;
 }
 
 .two-block-owl .owl-dots {
@@ -1071,6 +1080,7 @@ a:focus {
 
 .posts-area .post-wrapper-title a {
 	color: #797979;
+	text-decoration: none;
 }
 
 .posts-area .post-wrapper-title a:hover,
@@ -1148,6 +1158,7 @@ a:focus {
 .main-post h3 a {
 	color: inherit;
 	text-transform: capitalize;
+	text-decoration: none;
 }
 
 .main-post h3 a:hover,
@@ -1261,6 +1272,7 @@ a:focus {
 	text-transform: capitalize;
 	line-height: 23px;
 	font-size: 14px;
+	text-decoration: none;
 }
 
 .side-post:hover h3 a,
@@ -1282,6 +1294,7 @@ a:focus {
 
 .side-post .writer-info li a {
 	color: #797979;
+	text-decoration: none;
 }
 
 .side-post a:hover,
@@ -1351,6 +1364,7 @@ a:focus {
 .small-post h3 a {
 	color: inherit;
 	text-transform: capitalize;
+	text-decoration: none;
 }
 
 .small-post:hover h3 a,
@@ -1389,6 +1403,7 @@ a:focus {
 .posts-carousel .carousel-post .data h3 a {
 	color: #fff;
 	line-height: 20px;
+	text-decoration: none;
 }
 
 .posts-carousel .carousel-post .data h3 a:hover {
@@ -1461,9 +1476,6 @@ a:focus {
 }
 
 .individual-post .img-box img {
-	height: 220px;
-	width: 100%;
-	display: block;
 	transition: all 1s ease-in-out;
 	-webkit-transition: all 1s ease-in-out;
 	-moz-transition: all 1s ease-in-out;
@@ -1486,6 +1498,12 @@ a:focus {
 	text-transform: capitalize;
 	font-weight: bold;
 	line-height: 1.4;
+	text-decoration: none;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .individual-post .writer-info ul {
@@ -1495,6 +1513,7 @@ a:focus {
 
 .individual-post .writer-info a {
 	color: #797979;
+	text-decoration: none;
 }
 
 .individual-post p {
@@ -1508,6 +1527,12 @@ a:focus {
 	display: block;
 	font-size: 14px;
 	color: #00AD9D;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
+	text-decoration: none;
 }
 
 .individual-post .read-more:hover {
@@ -1556,7 +1581,7 @@ a:focus {
 	position: relative;
 	width: 100%;
 	min-height: 500px;
-	background: rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .5);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1586,6 +1611,13 @@ a:focus {
 	text-transform: capitalize;
 	font-weight: bold;
 	color: #fff;
+	line-height: 1.6;
+	text-decoration: none;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .cover-post h3 a:hover {
@@ -1641,9 +1673,6 @@ a:focus {
 }
 
 .individual-icon-post .img-box img {
-	height: 220px;
-	width: 100%;
-	display: block;
 	transition: all 1s ease-in-out;
 	-webkit-transition: all 1s ease-in-out;
 	-moz-transition: all 1s ease-in-out;
@@ -1661,6 +1690,11 @@ a:focus {
 	text-transform: capitalize;
 	font-weight: bold;
 	line-height: 1.4;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
 }
 
 .individual-icon-post .writer-info ul {
@@ -1670,6 +1704,11 @@ a:focus {
 
 .individual-icon-post .writer-info a {
 	color: #797979;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
 }
 
 .individual-icon-post p {

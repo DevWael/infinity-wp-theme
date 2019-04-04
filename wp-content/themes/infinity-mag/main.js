@@ -243,6 +243,24 @@ toastr.options.toastClass = 'dw_toastr';
         }
     });
 
+
+    var coverCount = 0;
+    $(".carousel-cover-posts").each(function () {
+        $(this).addClass("cover-carousel-" + coverCount);
+        $('.cover-carousel-' + coverCount + ' .carousel-loop').owlCarousel({
+            loop: false,
+            margin: 15,
+            responsiveClass: true,
+            autoplay: true,
+            navContainer: '.cover-carousel-' + coverCount + ' .block-name',
+            animateIn: "fadeIn",
+            animateOut: "fadeOut",
+            items: 1,
+        });
+        coverCount++;
+    });
+
+
     var ajax_url = dw_ajax_url.ajax_url;
     $(".dw-add-to-cart-ajax").on('click', function (e) {
         e.preventDefault();
