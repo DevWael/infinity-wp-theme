@@ -8,6 +8,7 @@ include DW_CORE . 'full-width-blocks/individual-icon-posts.php';
 include DW_CORE . 'full-width-blocks/individual-cover.php';
 include DW_CORE . 'full-width-blocks/cover-carousel.php';
 include DW_CORE . 'full-width-blocks/product-main.php';
+include DW_CORE . 'full-width-blocks/product-second.php';
 /**
  * Display home page magazine boxes
  */
@@ -19,13 +20,18 @@ function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
 	$all_blocks = dw_get_setting( 'home_full_width_' . $place_number );
 	if ( $all_blocks ) {
 		echo $before;
+		//fw_print($all_blocks);
 		foreach ( $all_blocks as $block ) {
 			if ( $block['layout_type']['control'] == 'shop' && class_exists( 'woocommerce' ) ) {
-				$post_style  = $block['layout_type']['posts']['post_style'];
-				$posts_count = $block['layout_type']['posts']['posts_count'];
-				$cats_ds     = $block['layout_type']['posts']['cat_select'];
+				$post_style  = $block['layout_type']['shop']['post_style'];
+				$posts_count = $block['layout_type']['shop']['posts_count'];
+				$cats_ds     = $block['layout_type']['shop']['cat_select'];
 				$block_title = $block['block_title'];
+
 				switch ( $post_style ) {
+					case  'product_second_style':
+						dw_product_second( $cats_ds, $posts_count, $block_title );
+						break;
 					case  'product_main':
 						dw_product_main( $cats_ds, $posts_count, $block_title );
 						break;
@@ -79,7 +85,7 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 						'posts' => esc_html__( 'Posts', 'dw' ),
 						'shop'  => esc_html__( 'Products', 'dw' ),
 						'ads'   => esc_html__( 'Advertise and Banners', 'dw' ),
-					),
+					)
 				)
 			),
 			'choices' => array(
@@ -120,7 +126,8 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 						'value'   => 'product_main',
 						'label'   => esc_html__( 'Section Style', 'dw' ),
 						'choices' => array(
-							'product_main' => esc_html__( 'Main Style', 'dw' ),
+							'product_main'         => esc_html__( 'Main Style', 'dw' ),
+							'product_second_style' => esc_html__( 'Second Style', 'dw' ),
 						),
 						//'blank'   => false,
 						//'inline' => false,

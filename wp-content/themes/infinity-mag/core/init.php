@@ -147,8 +147,9 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 			wp_enqueue_script( "comment-reply" );
 		}
 		wp_localize_script( 'main-js', 'dw_ajax_url', [
-				'ajax_url'   => admin_url( 'admin-ajax.php' ),
-				'ajax_nonce' => wp_create_nonce( 'dw_ajax_requests' ),
+				'ajax_url'    => admin_url( 'admin-ajax.php' ),
+				'ajax_nonce'  => wp_create_nonce( 'dw_ajax_requests' ),
+				'login_state' => is_user_logged_in() ? true : false,
 			]
 		);
 		dw_open_graph();

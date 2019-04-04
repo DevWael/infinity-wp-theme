@@ -80,3 +80,4 @@ function dw_ajax_add_to_cart() {
 		] );
 	}
 }
+

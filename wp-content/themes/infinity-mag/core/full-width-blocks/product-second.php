@@ -2,7 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Forbidden' );
 }
-function dw_product_main( $cat_ids, $posts_count = 6, $block_title = '' ) {
+function dw_product_second( $cat_ids, $posts_count = 6, $block_title = '' ) {
 	$arguments   = array(
 		'post_type'           => 'product',
 		'posts_per_page'      => $posts_count,
@@ -19,7 +19,7 @@ function dw_product_main( $cat_ids, $posts_count = 6, $block_title = '' ) {
 	$posts_query = new WP_Query( $arguments );
 	if ( $posts_query->have_posts() ) {
 		?>
-        <div class="dw-products-main full-width-section">
+        <div class="dw-products-second full-width-section">
             <div class="container">
                 <div class="posts-area">
 					<?php if ( $block_title ) {
@@ -44,7 +44,7 @@ function dw_product_main( $cat_ids, $posts_count = 6, $block_title = '' ) {
 								$posts_query->the_post();
 								?>
                                 <div class="col-xs-12 col-sm-6 col-md-3">
-									<?php get_template_part( 'templates/product-main' ); ?>
+									<?php get_template_part( 'templates/product-second' ); ?>
                                 </div>
 								<?php
 								if ( $i % 4 == 0 ) {
