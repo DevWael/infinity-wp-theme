@@ -9,6 +9,7 @@ include DW_CORE . 'full-width-blocks/individual-cover.php';
 include DW_CORE . 'full-width-blocks/cover-carousel.php';
 include DW_CORE . 'full-width-blocks/product-main.php';
 include DW_CORE . 'full-width-blocks/product-second.php';
+include DW_CORE . 'full-width-blocks/product-third.php';
 /**
  * Display home page magazine boxes
  */
@@ -28,6 +29,9 @@ function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
 				$cats_ds     = $block['layout_type']['shop']['cat_select'];
 				$block_title = $block['block_title'];
 				switch ( $post_style ) {
+					case  'product_third_style':
+						dw_product_third( $cats_ds, $posts_count, $block_title );
+						break;
 					case  'product_second_style':
 						dw_product_second( $cats_ds, $posts_count, $block_title );
 						break;
@@ -127,6 +131,7 @@ if ( ! function_exists( 'dw_full_width_area' ) ) {
 						'choices' => array(
 							'product_main'         => esc_html__( 'Main Style', 'dw' ),
 							'product_second_style' => esc_html__( 'Second Style', 'dw' ),
+							'product_third_style'  => esc_html__( 'Third Style', 'dw' ),
 						),
 						//'blank'   => false,
 						//'inline' => false,
