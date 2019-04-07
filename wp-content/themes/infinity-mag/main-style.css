@@ -17,13 +17,13 @@ a:focus {
 
 }
 
-.row {
-	padding: 0 5px;
-}
+/*.row {*/
+/*	padding: 0 5px;*/
+/*}*/
 
-.col-xs-12 {
-	padding: 0 10px;
-}
+/*.col-xs-12 {*/
+/*	padding: 0 10px;*/
+/*}*/
 
 .atricels-colums .row {
 	padding: 0 10px;
@@ -720,6 +720,11 @@ a:focus {
 
 .writer-info a:hover {
 	color: #00AD9D;
+}
+
+.writer-info ul li a{
+	border: none;
+	padding: 0;
 }
 
 .full-article-slider .owl-nav {

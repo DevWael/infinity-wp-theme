@@ -652,7 +652,7 @@ if ( ! function_exists( 'dw_widget_area' ) ) {
 	function dw_widget_area() {
 		$args = array(
 			array(
-				'name'          => esc_html__( 'First Half Area Sidebar', 'dw' ),
+				'name'          => esc_html__( 'Primary Sidebar', 'dw' ),
 				'id'            => 'first_side_bar',
 				'before_widget' => '<div class="widget %2$s">',
 				'after_widget'  => '</div>',

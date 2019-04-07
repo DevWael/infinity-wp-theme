@@ -5,8 +5,9 @@ if ( 'on' === dw_get_setting( 'carousel_switch/query_type' ) ) {
 }
 //display first half width blocks
 do_action( 'dw_full_width_builder', 1 );
-
-//dw_display_half_width_blocks( 1 );
+dw_display_half_width_blocks( 1, 'first_side_bar' );
+do_action( 'dw_full_width_builder', 2 );
+dw_display_half_width_blocks( 2, 'second_side_bar' );
 ?>
     <section class="home-posts">
         <div class="container">

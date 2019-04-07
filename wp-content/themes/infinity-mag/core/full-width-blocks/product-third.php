@@ -19,7 +19,7 @@ function dw_product_third( $cat_ids, $posts_count = 6, $block_title = '' ) {
 	$posts_query = new WP_Query( $arguments );
 	if ( $posts_query->have_posts() ) {
 		?>
-        <div class="dw-products-second full-width-section">
+        <div class="dw-products-third full-width-section">
             <div class="container">
                 <div class="posts-area">
 					<?php if ( $block_title ) {
