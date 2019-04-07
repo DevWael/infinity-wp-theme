@@ -2925,7 +2925,7 @@ header .site-tagline {
 }
 
 .blocks-ads {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .read-more-button {
@@ -2964,9 +2964,6 @@ header .site-tagline {
     padding: 5px 10px;
     margin-bottom: 30px;
     color: #111;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
 }
 
 .window-class .breadcrumbs .separator {
@@ -3022,9 +3019,6 @@ header .site-tagline {
     right: 0;
     bottom: 0;
     z-index: -1;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -ms-transition: 300ms;
@@ -3034,7 +3028,7 @@ header .site-tagline {
 
 .post-cover .post-data {
     text-align: center;
-    padding: 60px 60px 30px;
+    padding: 110px 60px 80px;
 }
 
 .post-cover .post-data .post-box-title {
@@ -3312,11 +3306,11 @@ header .site-tagline {
 }
 
 .singular .post-feature-box.quote-box .link {
-    padding: 50px 30px;
+    padding: 70px 30px;
 }
 
 .singular .post-feature-box.quote-box .link i {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     text-align: center;
 }
 

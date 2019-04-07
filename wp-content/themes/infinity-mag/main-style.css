@@ -921,6 +921,7 @@ a:focus {
 .atricels-colums {
 	padding: 20px 0;
 	text-align: left;
+	margin-bottom: 30px;
 }
 
 .main-article {
@@ -952,6 +953,8 @@ a:focus {
 	font-size: 19px;
 	text-transform: capitalize;
 	color: #fff;
+	display: block;
+	line-height: 1.4;
 	text-decoration: none;
 	-webkit-transition: 300ms;
 	-moz-transition: 300ms;
@@ -998,6 +1001,10 @@ a:focus {
 	height: 530px;
 }
 
+.main-article .writer-info img{
+	filter: brightness(0) invert(1);
+}
+
 .main-article.big h3 a {
 	font-size: 25px;
 	line-height: 30px;
@@ -1031,6 +1038,7 @@ a:focus {
 
 .news-ticker .ticker-container .ticker-post .post-title a {
 	color: #444;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -1064,9 +1072,9 @@ a:focus {
 .posts-area {
 	position: relative;
 	border: 1px solid #D9D9D9;
-	padding: 30px 20px 20px;
+	padding: 30px;
 	height: 100%;
-	margin-bottom: 45px;
+	margin-bottom: 50px;
 }
 
 .posts-area .post-wrapper-title {
@@ -2031,12 +2039,15 @@ a:focus {
 }
 
 
-/* THIRS PRODUCT */
+/* THIRD PRODUCT */
+.dw-products-third .posts-area{
+	padding-bottom: 0;
+}
 .third-product {
 	border: 1px solid #D9D9D9;
 	padding: 15px;
 	justify-content: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	position: relative;
 }
 
@@ -2061,6 +2072,7 @@ a:focus {
 	text-transform: capitalize;
 	font-weight: bold;
 	color: inherit;
+	text-decoration: none;
 }
 
 .third-product .old-price {
