@@ -1040,6 +1040,7 @@ header .site-tagline {
     white-space: nowrap;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .news-ticker .ticker-container {
@@ -5176,7 +5177,7 @@ ol.children li {
 
 .widget .big-post.has-post-thumbnail {
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .widget .big-post.has-post-thumbnail:hover .post-image img {
@@ -5435,7 +5436,7 @@ ol.children li {
 }
 
 .window-instagram-photo:hover .to-insta-photo {
-    font-size: 20px;
+    font-size: 50px;
 }
 
 .window-instagram-photo:hover .window-insta-gallery {

@@ -3,7 +3,7 @@
 	    <?php if ( function_exists( 'the_post_thumbnail' ) && has_post_thumbnail() ): ?>
             <a rel="bookmark" href="<?php the_permalink(); ?>"
                title="<?php the_title_attribute(); ?>">
-			    <?php the_post_thumbnail( 'dw_small_pic_post', array( 'class' => 'img-responsive' ) ); ?>
+			    <?php the_post_thumbnail( 'dw_pic_post', array( 'class' => 'img-responsive' ) ); ?>
             </a>
 	    <?php endif; ?>
         <div class="overlay"> <i class="fa fa-microphone" aria-hidden="true"></i> </div>

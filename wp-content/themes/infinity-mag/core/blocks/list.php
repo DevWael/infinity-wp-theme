@@ -11,11 +11,11 @@ if ( ! function_exists( 'dw_list_box' ) ) {
 		$posts_query = new WP_Query( $arguments );
 		if ( $posts_query->have_posts() ):
 			?>
-			<div class="list-box category-box">
+			<div class="list-box posts-area">
 				<?php if ( $block_title ) :
 					$category_link = ( isset( $cat_ids[0] ) ) ? get_category_link( $cat_ids[0] ) : '';
 					?>
-					<h2 class="block-name">
+					<h2 class="post-wrapper-title">
 						<?php if ( $category_link ): ?>
 						<a href="<?php echo esc_url( $category_link ); ?>"
 						   title="<?php echo esc_attr( $block_title ); ?>">

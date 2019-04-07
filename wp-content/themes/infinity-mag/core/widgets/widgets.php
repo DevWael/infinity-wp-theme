@@ -28,7 +28,7 @@ if ( ! function_exists( 'dw_widget_slider_loop' ) ) {
                             </div>
                             <div class="post-content">
 								<?php the_title( sprintf( '<h3 class="post-title h5" itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-								<?php get_template_part('loop/meta'); ?>
+								<?php get_template_part( 'loop/meta' ); ?>
                             </div>
                         </div>
                     </div>
@@ -56,19 +56,14 @@ if ( ! function_exists( 'dw_widget_pics_loop' ) ) {
 		} else {
 			$query_data['meta_key'] = '_thumbnail_id';
 		}
-		//Caching Posts (Future functionality)
-//		if ( false === ( $query_args = get_transient( 'post_pics_' . $widget_id ) ) ) {
 		$query_args = new WP_Query( $query_data );
-//			set_transient( 'post_pics_' . $widget_id, $query_args, 2 * HOUR_IN_SECONDS );
-//		}
-
 		if ( $query_args->have_posts() ) { ?>
             <div class="pictures-posts">
 				<?php while ( $query_args->have_posts() ):$query_args->the_post(); ?>
                     <div <?php post_class( 'pic' ); ?> itemscope itemtype="http://schema.org/Article">
                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"
                            data-toggle="tooltip" data-placement="top">
-							<?php the_post_thumbnail( 'dw_small_pic_post', array( 'class' => 'img-responsive' ) ); ?>
+							<?php the_post_thumbnail( 'dw_pic_post', array( 'class' => 'img-responsive' ) ); ?>
                             <span class="overlay"></span>
                         </a>
                     </div>
@@ -96,12 +91,12 @@ if ( ! function_exists( 'dw_widget_big_list_loop' ) ) {
                         <div class="post-image">
                             <a rel="bookmark" href="<?php the_permalink(); ?>"
                                title="<?php the_title_attribute(); ?>">
-								<?php the_post_thumbnail( 'dw_big_post', array( 'class' => 'img-responsive' ) ); ?>
+								<?php the_post_thumbnail( 'dw_big_post', [ 'class' => 'img-responsive' ] ); ?>
                             </a>
                         </div>
                         <div class="post-content">
 							<?php the_title( sprintf( '<h3 class="post-title h4" itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-							<?php get_template_part('loop/meta'); ?>
+							<?php get_template_part( 'loop/meta' ); ?>
                         </div>
                     </div>
 					<?php
