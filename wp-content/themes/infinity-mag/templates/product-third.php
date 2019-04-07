@@ -21,6 +21,9 @@ global $product;
     </div>
     <div class="data">
 		<?php the_title( sprintf( '<h3 itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+        <p class="dw-excerpt">
+            <?php dw_excerpt() ?>
+        </p>
         <div class="price">
 			<?php if ( $product->get_sale_price() ) { ?>
                 <span class="old-price">

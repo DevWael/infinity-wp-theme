@@ -3,6 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Forbidden' );
 }
 
+include DW_CORE . 'full-width-blocks/ads.php';
 include DW_CORE . 'full-width-blocks/individual-posts.php';
 include DW_CORE . 'full-width-blocks/individual-icon-posts.php';
 include DW_CORE . 'full-width-blocks/individual-cover.php';
@@ -66,7 +67,7 @@ function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
 				$ads_type   = $block['layout_type']['ads']['ads_box']['gadget'];
 				$image_data = $block['layout_type']['ads']['ads_box']['image'];
 				$code_data  = $block['layout_type']['ads']['ads_box']['code'];
-				dw_dynamic_ads( $ads_type, $image_data, $code_data );
+				dw_dynamic_full_width_ads( $ads_type, $image_data, $code_data );
 			}
 		}
 		echo $after;

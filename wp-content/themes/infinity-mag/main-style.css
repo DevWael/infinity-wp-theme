@@ -1121,7 +1121,7 @@ a:focus {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .4);
 	visibility: hidden;
 	opacity: 0;
 	transition: all .5s ease-in-out;
@@ -1164,6 +1164,7 @@ a:focus {
 	color: inherit;
 	text-transform: capitalize;
 	text-decoration: none;
+	line-height: 1.4;
 }
 
 .main-post h3 a:hover,
@@ -1385,7 +1386,7 @@ a:focus {
 }
 
 .posts-carousel .carousel-post .data {
-	background: rgba(0, 0, 0, .5);
+	background: rgba(0, 0, 0, .4);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1409,6 +1410,10 @@ a:focus {
 	color: #fff;
 	line-height: 20px;
 	text-decoration: none;
+}
+
+.posts-carousel .carousel-post .data .writer-info img{
+	filter: brightness(0) invert(1);
 }
 
 .posts-carousel .carousel-post .data h3 a:hover {

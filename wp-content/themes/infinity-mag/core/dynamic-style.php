@@ -5,25 +5,25 @@
  * The output will be in head tag ( wp_head hook ).
  */
 
-$window_id = $window_singular_id = '';
+$dw_id = $dw_singular_id = '';
 if ( is_category() ) { //Get the current category id
-	$window_category = get_category( get_query_var( 'cat' ) );
-	$window_id       = $window_category->cat_ID;
+	$dw_category = get_category( get_query_var( 'cat' ) );
+	$dw_id       = $dw_category->cat_ID;
 
 } elseif ( is_tag() ) { //Get the current tag id
-	$window_tag = get_queried_object();
-	$window_id  = $window_tag->term_id;
+	$dw_tag = get_queried_object();
+	$dw_id  = $dw_tag->term_id;
 }
 
 if ( is_singular() ) { //Get the current post or page id
-	$window_singular_id = get_the_ID();
+	$dw_singular_id = get_the_ID();
 }
 
-$window_mag_accent_color             = dw_get_setting( 'accent_color' );
-$window_mag_second_color             = dw_get_setting( 'second_color' );
-$window_mag_navbar_links_color       = dw_get_setting( 'navbar_links_color' );
-$window_mag_navbar_links_color_hover = dw_get_setting( 'navbar_links_color_hover' );
-$window_mag_body_style               = dw_get_setting( 'body_style' );
+$dw_accent_color             = dw_get_setting( 'accent_color' );
+$dw_second_color             = dw_get_setting( 'second_color' );
+$dw_navbar_links_color       = dw_get_setting( 'navbar_links_color' );
+$dw_navbar_links_color_hover = dw_get_setting( 'navbar_links_color_hover' );
+$dw_body_style               = dw_get_setting( 'body_style' );
 ?>
     .header-block {
 <?php if ( dw_get_setting( 'header_spacing/padding_top' ) ) { ?>
@@ -54,26 +54,26 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
 <?php } ?>
     }
 
-<?php if ( $window_id ) { //Term Meta ?>
-	<?php if ( dw_get_term_setting( $window_id, 'body_background/control' ) != 'off' ) {
+<?php if ( $dw_id ) { //Term Meta ?>
+	<?php if ( dw_get_term_setting( $dw_id, 'body_background/control' ) != 'off' ) {
 		?>
         body {
-		<?php if ( dw_get_term_setting( $window_id, 'body_background/background/color_select' ) ) { ?>
-            background-color: <?php echo sanitize_hex_color( dw_get_term_setting( $window_id, 'body_background/background/color_select' ) ); ?>;
+		<?php if ( dw_get_term_setting( $dw_id, 'body_background/background/color_select' ) ) { ?>
+            background-color: <?php echo sanitize_hex_color( dw_get_term_setting( $dw_id, 'body_background/background/color_select' ) ); ?>;
 		<?php } ?>
-		<?php if ( dw_get_term_setting( $window_id, 'body_background/background/image_select/url' ) ) { ?>
-            background-image: url('<?php echo esc_url( dw_get_term_setting( $window_id, 'body_background/background/image_select/url' ) ); ?>');
-			<?php if ( dw_get_term_setting( $window_id, 'body_background/background/bg_repeat' ) ) { ?>
-                background-repeat: <?php echo esc_html( dw_get_term_setting( $window_id, 'body_background/background/bg_repeat' ) ); ?>;
+		<?php if ( dw_get_term_setting( $dw_id, 'body_background/background/image_select/url' ) ) { ?>
+            background-image: url('<?php echo esc_url( dw_get_term_setting( $dw_id, 'body_background/background/image_select/url' ) ); ?>');
+			<?php if ( dw_get_term_setting( $dw_id, 'body_background/background/bg_repeat' ) ) { ?>
+                background-repeat: <?php echo esc_html( dw_get_term_setting( $dw_id, 'body_background/background/bg_repeat' ) ); ?>;
 			<?php } ?>
-			<?php if ( dw_get_term_setting( $window_id, 'body_background/background/bg_size' ) ) { ?>
-                background-size: <?php echo esc_html( dw_get_term_setting( $window_id, 'body_background/background/bg_size' ) ); ?>;
+			<?php if ( dw_get_term_setting( $dw_id, 'body_background/background/bg_size' ) ) { ?>
+                background-size: <?php echo esc_html( dw_get_term_setting( $dw_id, 'body_background/background/bg_size' ) ); ?>;
 			<?php } ?>
-			<?php if ( dw_get_term_setting( $window_id, 'body_background/background/bg_attach' ) ) { ?>
-                background-attachment: <?php echo esc_html( dw_get_term_setting( $window_id, 'body_background/background/bg_attach' ) ); ?>;
+			<?php if ( dw_get_term_setting( $dw_id, 'body_background/background/bg_attach' ) ) { ?>
+                background-attachment: <?php echo esc_html( dw_get_term_setting( $dw_id, 'body_background/background/bg_attach' ) ); ?>;
 			<?php } ?>
-			<?php if ( dw_get_term_setting( $window_id, 'body_background/background/bg_position' ) ) { ?>
-                background-position: <?php echo esc_html( dw_get_term_setting( $window_id, 'body_background/background/bg_position' ) ); ?>;
+			<?php if ( dw_get_term_setting( $dw_id, 'body_background/background/bg_position' ) ) { ?>
+                background-position: <?php echo esc_html( dw_get_term_setting( $dw_id, 'body_background/background/bg_position' ) ); ?>;
 			<?php }
 		} ?>
         }
@@ -102,25 +102,25 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
             }
 		<?php }
 	}
-} elseif ( $window_singular_id ) {
-	if ( dw_get_meta( $window_singular_id, 'body_background/control' ) != 'off' ) { ?>
+} elseif ( $dw_singular_id ) {
+	if ( dw_get_meta( $dw_singular_id, 'body_background/control' ) != 'off' ) { ?>
         body {
-		<?php if ( dw_get_meta( $window_singular_id, 'body_background/background/color_select' ) ) { ?>
-            background-color: <?php echo sanitize_hex_color( dw_get_meta( $window_singular_id, 'body_background/background/color_select' ) ); ?>;
+		<?php if ( dw_get_meta( $dw_singular_id, 'body_background/background/color_select' ) ) { ?>
+            background-color: <?php echo sanitize_hex_color( dw_get_meta( $dw_singular_id, 'body_background/background/color_select' ) ); ?>;
 		<?php } ?>
-		<?php if ( dw_get_meta( $window_singular_id, 'body_background/background/image_select/url' ) ) { ?>
-            background-image: url('<?php echo esc_url( dw_get_meta( $window_singular_id, 'body_background/background/image_select/url' ) ); ?>');
-			<?php if ( dw_get_meta( $window_singular_id, 'body_background/background/bg_repeat' ) ) { ?>
-                background-repeat: <?php echo esc_html( dw_get_meta( $window_singular_id, 'body_background/background/bg_repeat' ) ); ?>;
+		<?php if ( dw_get_meta( $dw_singular_id, 'body_background/background/image_select/url' ) ) { ?>
+            background-image: url('<?php echo esc_url( dw_get_meta( $dw_singular_id, 'body_background/background/image_select/url' ) ); ?>');
+			<?php if ( dw_get_meta( $dw_singular_id, 'body_background/background/bg_repeat' ) ) { ?>
+                background-repeat: <?php echo esc_html( dw_get_meta( $dw_singular_id, 'body_background/background/bg_repeat' ) ); ?>;
 			<?php } ?>
-			<?php if ( dw_get_meta( $window_singular_id, 'body_background/background/bg_size' ) ) { ?>
-                background-size: <?php echo esc_html( dw_get_meta( $window_singular_id, 'body_background/background/bg_size' ) ); ?>;
+			<?php if ( dw_get_meta( $dw_singular_id, 'body_background/background/bg_size' ) ) { ?>
+                background-size: <?php echo esc_html( dw_get_meta( $dw_singular_id, 'body_background/background/bg_size' ) ); ?>;
 			<?php } ?>
-			<?php if ( dw_get_meta( $window_singular_id, 'body_background/background/bg_attach' ) ) { ?>
-                background-attachment: <?php echo esc_html( dw_get_meta( $window_singular_id, 'body_background/background/bg_attach' ) ); ?>;
+			<?php if ( dw_get_meta( $dw_singular_id, 'body_background/background/bg_attach' ) ) { ?>
+                background-attachment: <?php echo esc_html( dw_get_meta( $dw_singular_id, 'body_background/background/bg_attach' ) ); ?>;
 			<?php } ?>
-			<?php if ( dw_get_meta( $window_singular_id, 'body_background/background/bg_position' ) ) { ?>
-                background-position: <?php echo esc_html( dw_get_meta( $window_singular_id, 'body_background/background/bg_position' ) ); ?>;
+			<?php if ( dw_get_meta( $dw_singular_id, 'body_background/background/bg_position' ) ) { ?>
+                background-position: <?php echo esc_html( dw_get_meta( $dw_singular_id, 'body_background/background/bg_position' ) ); ?>;
 			<?php }
 		} ?>
         }
@@ -208,29 +208,23 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
     }
 <?php } ?>
 
-<?php if ( $window_mag_accent_color ): //Main website color ?>
+<?php if ( $dw_accent_color ): //Main website color ?>
     #navbar .menu .current_page_item a,
     #navbar .menu > li:before,
     #navbar ul.menu ul a:hover,
     #navbar .menu ul ul a:hover{
-    background: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    background: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
 
     .main-menu,
     #navbar > ul > li > .sub-menu,
     #navbar > ul > li > .sub-menu li > .sub-menu{
-    border-color: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    border-color: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
 <?php endif; ?>
 
-<?php if ( $window_mag_second_color ): //Navbar background color ?>
-    .main-menu,
-    #navbar > ul > li > .sub-menu,
-    #navbar > ul > li > .sub-menu li > .sub-menu,
-    .carousel-box.category-box,
-    .img-grid.category-box{
-    background: <?php echo sanitize_hex_color( $window_mag_second_color ); ?>;
-    }
+<?php if ( $dw_second_color ): //Navbar background color ?>
+
 
     .top-header-posts,
     .main-menu .search-box input,
@@ -238,10 +232,10 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
     .read-more-button:hover,
     .read-more-button:focus,
     .read-more-button:active{
-    background-color: <?php echo sanitize_hex_color( $window_mag_second_color ); ?>;
+    background-color: <?php echo sanitize_hex_color( $dw_second_color ); ?>;
     }
 <?php endif; ?>
-<?php if ( $window_mag_navbar_links_color ): //Navbar links color ?>
+<?php if ( $dw_navbar_links_color ): //Navbar links color ?>
     #navbar .menu li a,
     #navbar ul.menu ul a,
     #navbar .menu ul ul a,
@@ -249,17 +243,17 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
     .slicknav_nav li .fall-back,
     #navbar .menu ul > .menu-item-has-children > a:after,
     #navbar .menu > .menu-item-has-children > a:after{
-    color: <?php echo sanitize_hex_color( $window_mag_navbar_links_color ); ?>;
+    color: <?php echo sanitize_hex_color( $dw_navbar_links_color ); ?>;
     }
 <?php endif; ?>
-<?php if ( $window_mag_navbar_links_color_hover ): //Navbar links color on hover?>
+<?php if ( $dw_navbar_links_color_hover ): //Navbar links color on hover?>
     #navbar .menu > li > a:hover,
     #navbar .menu > li:hover > a:after,
     #navbar ul.menu ul a:hover,
     #navbar .menu ul ul a:hover,
     #navbar ul.menu ul a:hover:after,
     #navbar .menu ul ul a:hover:after{
-    color: <?php echo sanitize_hex_color( $window_mag_navbar_links_color_hover ); ?>;
+    color: <?php echo sanitize_hex_color( $dw_navbar_links_color_hover ); ?>;
     }
 <?php endif; ?>
 
@@ -300,25 +294,25 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
     .wpcf7-form input[type=date]:focus,
     .wpcf7-form input[type=password]:focus,
     .wpcf7-form textarea:focus{
-    border-color: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    border-color: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
 
     /*Background Color*/
     .nanobar .bar{
-    background: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
-    box-shadow: 3px 0 2px <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    background: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
+    box-shadow: 3px 0 2px <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
 
     ::selection {
-    background: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    background: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
     ::-moz-selection {
-    background: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    background: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
 
     .review-system .review-footer .review-score,
     .top-post .article .listing-content{
-    background-color: rgba(<?php echo dw_hex2rgb( $window_mag_accent_color ); ?>, 0.7);
+    background-color: rgba(<?php echo dw_hex2rgb( $dw_accent_color ); ?>, 0.7);
     }
 
     /*Background*/
@@ -366,12 +360,12 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
     .singular .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current,
     .reading-indicator,
     .post-cover .count{
-    background: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    background: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
 
     .mejs-controls .mejs-time-rail .mejs-time-current,
     .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{
-    background: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?> !important;
+    background: <?php echo sanitize_hex_color( $dw_accent_color ); ?> !important;
     }
 
     /*background-color*/
@@ -396,7 +390,7 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
     .news-ticker .ticker-title .title,
     .news-ticker .ticker-container .owl-nav .owl-prev:after,
     .news-ticker .ticker-container .owl-nav .owl-next:after{
-    background-color: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    background-color: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
 
     /*color*/
@@ -458,31 +452,31 @@ $window_mag_body_style               = dw_get_setting( 'body_style' );
     .news-ticker .ticker-container .ticker-post .post-title a:hover,
     .news-ticker .ticker-container .ticker-post .post-title a:focus,
     .news-ticker .ticker-container .ticker-post .post-title a:active{
-    color: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    color: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
 
     .footer-widgets .small-post .post-content .post-title a:hover,
     .footer-widgets .small-post .post-content .post-title a:focus,
     .footer-widgets .small-post .post-content .post-title a:active{
-    color: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?> !important;
+    color: <?php echo sanitize_hex_color( $dw_accent_color ); ?> !important;
     }
 
     .windowmag-preset1 .block-name,
     .windowmag-preset1 .sidebar .widget .widget-title{
-    border-bottom-color: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    border-bottom-color: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
     .windowmag-preset1 .block-name span:before,
     .windowmag-preset1 .sidebar .widget .widget-title span:before{
-    border-left-color: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
+    border-left-color: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
     }
 
 
     .windowmag-preset2 .block-name span,
     .windowmag-preset2 .sidebar .widget .widget-title span{
-    background: <?php echo sanitize_hex_color( $window_mag_accent_color ); ?>;
-    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0) 8%, <?php echo sanitize_hex_color( $window_mag_accent_color ); ?> 8%, <?php echo sanitize_hex_color( $window_mag_accent_color ); ?> 92%, rgba(255, 255, 255, 0) 92%);
-    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 8%, <?php echo sanitize_hex_color( $window_mag_accent_color ); ?> 8%, <?php echo sanitize_hex_color( $window_mag_accent_color ); ?> 92%, rgba(255, 255, 255, 0) 92%);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 8%, <?php echo sanitize_hex_color( $window_mag_accent_color ); ?> 8%, <?php echo sanitize_hex_color( $window_mag_accent_color ); ?> 92%, rgba(255, 255, 255, 0) 92%);
+    background: <?php echo sanitize_hex_color( $dw_accent_color ); ?>;
+    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0) 8%, <?php echo sanitize_hex_color( $dw_accent_color ); ?> 8%, <?php echo sanitize_hex_color( $dw_accent_color ); ?> 92%, rgba(255, 255, 255, 0) 92%);
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 8%, <?php echo sanitize_hex_color( $dw_accent_color ); ?> 8%, <?php echo sanitize_hex_color( $dw_accent_color ); ?> 92%, rgba(255, 255, 255, 0) 92%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 8%, <?php echo sanitize_hex_color( $dw_accent_color ); ?> 8%, <?php echo sanitize_hex_color( $dw_accent_color ); ?> 92%, rgba(255, 255, 255, 0) 92%);
     }
 
 <?php

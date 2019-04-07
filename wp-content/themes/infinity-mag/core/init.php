@@ -44,7 +44,7 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 		add_image_size( 'dw_slider_many', 350, 500, true );
 		add_image_size( 'dw_big_post', 360, 310, true );
 		add_image_size( 'dw_pic_post', 150, 100, true );
-		add_image_size( 'dw_small_pic_post', 120, 80, true );
+		add_image_size( 'dw_small_pic_post', 120, 120, true );
 		add_theme_support( 'post-formats', array( 'quote', 'gallery', 'video', 'audio', 'link' ) );
 		load_theme_textdomain( 'dw', get_template_directory() . '/languages' );
 		register_nav_menus( array(
@@ -654,18 +654,18 @@ if ( ! function_exists( 'dw_widget_area' ) ) {
 			array(
 				'name'          => esc_html__( 'Primary Sidebar', 'dw' ),
 				'id'            => 'first_side_bar',
-				'before_widget' => '<div class="widget %2$s">',
+				'before_widget' => '<div class="posts-area widget %2$s">',
 				'after_widget'  => '</div>',
-				'before_title'  => '<h4 class="widget-title"><span>',
-				'after_title'   => '</span></h4>'
+				'before_title'  => '<h2 class="post-wrapper-title">',
+				'after_title'   => '</h2>'
 			),
 			array(
 				'name'          => esc_html__( 'Second Half Area Sidebar', 'dw' ),
 				'id'            => 'second_side_bar',
-				'before_widget' => '<div class="widget %2$s">',
+				'before_widget' => '<div class="posts-area widget %2$s">',
 				'after_widget'  => '</div>',
-				'before_title'  => '<h4 class="widget-title"><span>',
-				'after_title'   => '</span></h4>'
+				'before_title'  => '<h2 class="post-wrapper-title">',
+				'after_title'   => '</h2>'
 			),
 			array(
 				'name'          => esc_html__( 'Footer one', 'dw' ),
