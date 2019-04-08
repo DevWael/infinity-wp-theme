@@ -111,7 +111,7 @@ $options = array(
 						'label'   => false,
 						'desc'    => false,
 						'value'   => array(
-							'yes' => array(
+							'no' => array(
 								'home_posts_style' => 'list'
 							)
 						),
