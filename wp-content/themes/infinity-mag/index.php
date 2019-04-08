@@ -8,59 +8,26 @@ do_action( 'dw_full_width_builder', 1 );
 dw_display_half_width_blocks( 1, 'first_side_bar' );
 do_action( 'dw_full_width_builder', 2 );
 dw_display_half_width_blocks( 2, 'second_side_bar' );
-?>
+if ( ! function_exists( 'fw_get_db_settings_option' ) ) {
+	?>
     <section class="home-posts">
         <div class="container">
             <div class="row">
 				<?php dw_content_area_start( 'home_sidebar' );
-				//Normal posts
-				if ( 'yes' === dw_get_setting( 'home_recent_posts/control' ) ) {
-					?>
-                    <div class="blog-wrap category-box">
-						<?php
-						if ( have_posts() ) {
-							if ( dw_get_setting( 'home_recent_posts/yes/title' ) ) {
-								?>
-                                <h2 class="block-name">
-                                    <span><?php echo esc_html( dw_get_setting( 'home_recent_posts/yes/title' ) ); ?></span>
-                                </h2>
-							<?php }
-							if ( 'list' === dw_get_setting( 'home_recent_posts/yes/home_posts_style' ) ) {
-								get_template_part( 'recent', 'list' );
-							} elseif ( 'masonry' === dw_get_setting( 'home_recent_posts/yes/home_posts_style' ) ) {
-								get_template_part( 'recent', 'masonry' );
-							} else {
-								get_template_part( 'recent', 'blog' );
-							}
-							if ( $wp_query->max_num_pages > 1 ) {
-								if ( 'text' === dw_get_setting( 'pagination_style' ) ) {
-									the_posts_navigation();
-								} else {
-									dw_pagination();
-								}
-							}
-						} else {
-							get_template_part( 'templates/part', 'notfound' );
-						}
-						?>
-                    </div>
+				?>
+                <div class="blog-wrap posts-area">
 					<?php
-				} elseif ( ! function_exists( 'fw_get_db_settings_option' ) ) {
-					?>
-                    <div class="blog-wrap category-box">
-						<?php
-						if ( have_posts() ) {
-							get_template_part( 'recent', 'blog' );
-							if ( $wp_query->max_num_pages > 1 ) {
-								dw_pagination();
-							}
-						} else {
-							get_template_part( 'templates/part', 'notfound' );
+					if ( have_posts() ) {
+						get_template_part( 'recent', 'blog' );
+						if ( $wp_query->max_num_pages > 1 ) {
+							dw_pagination();
 						}
-						?>
-                    </div>
-					<?php
-				}
+					} else {
+						get_template_part( 'templates/part', 'notfound' );
+					}
+					?>
+                </div>
+				<?php
 				dw_content_area_end();
 				dw_sidebar_start( 'home_sidebar' );
 				get_sidebar();
@@ -69,4 +36,5 @@ dw_display_half_width_blocks( 2, 'second_side_bar' );
             </div>
         </div>
     </section>
-<?php get_footer(); ?>
+<?php }
+get_footer(); ?>

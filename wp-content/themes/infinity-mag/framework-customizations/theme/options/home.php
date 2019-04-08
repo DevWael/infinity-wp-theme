@@ -106,6 +106,53 @@ $options = array(
 							'layout_type' => dw_half_width_area()
 						)
 					),
+					'home_recent_posts_1' => array(
+						'type'    => 'multi-picker',
+						'label'   => false,
+						'desc'    => false,
+						'value'   => array(
+							'yes' => array(
+								'home_posts_style' => 'list'
+							)
+						),
+						'picker'  => array(
+							'control' => array(
+								'type'         => 'switch',
+								'value'        => 'yes',
+								'label'        => esc_html__( 'Show recent posts', 'window-mag' ),
+								'desc'         => esc_html__( 'Show or hide recent posts on home page', 'window-mag' ),
+								'left-choice'  => array(
+									'value' => 'no',
+									'label' => esc_html__( 'No', 'window-mag' ),
+								),
+								'right-choice' => array(
+									'value' => 'yes',
+									'label' => esc_html__( 'Yes', 'window-mag' ),
+								),
+							)
+						),
+						'choices' => array(
+							'yes' => array(
+								'title'            => array(
+									'type'  => 'text',
+									'attr'  => array( 'placeholder' => esc_html__( 'Recent Posts', 'window-mag' ) ),
+									'label' => esc_html__( 'Recent Posts Title', 'window-mag' ),
+								),
+								'home_posts_style' => array(
+									'type'    => 'radio',
+									'value'   => 'blog',
+									'label'   => esc_html__( 'Posts Style', 'window-mag' ),
+									'desc'    => esc_html__( 'Choose the style of posts for home and all archive pages', 'window-mag' ),
+									'choices' => array(
+										'blog'    => esc_html__( 'Blog', 'window-mag' ),
+										'list'    => esc_html__( 'List Style', 'window-mag' ),
+										'masonry' => esc_html__( 'Masonry Style', 'window-mag' ),
+									),
+									'blank'   => false
+								),
+							)
+						)
+					),
 					'sidebar_area_1'       => array(
 						'type'         => 'switch',
 						'value'        => 'right_sidebar',
@@ -243,6 +290,53 @@ $options = array(
 								'desc'  => esc_html__( 'Will be used in posts mode only', 'dw' )
 							),
 							'layout_type' => dw_half_width_area()
+						)
+					),
+					'home_recent_posts_2' => array(
+						'type'    => 'multi-picker',
+						'label'   => false,
+						'desc'    => false,
+						'value'   => array(
+							'yes' => array(
+								'home_posts_style' => 'list'
+							)
+						),
+						'picker'  => array(
+							'control' => array(
+								'type'         => 'switch',
+								'value'        => 'yes',
+								'label'        => esc_html__( 'Show recent posts', 'window-mag' ),
+								'desc'         => esc_html__( 'Show or hide recent posts on home page', 'window-mag' ),
+								'left-choice'  => array(
+									'value' => 'no',
+									'label' => esc_html__( 'No', 'window-mag' ),
+								),
+								'right-choice' => array(
+									'value' => 'yes',
+									'label' => esc_html__( 'Yes', 'window-mag' ),
+								),
+							)
+						),
+						'choices' => array(
+							'yes' => array(
+								'title'            => array(
+									'type'  => 'text',
+									'attr'  => array( 'placeholder' => esc_html__( 'Recent Posts', 'window-mag' ) ),
+									'label' => esc_html__( 'Recent Posts Title', 'window-mag' ),
+								),
+								'home_posts_style' => array(
+									'type'    => 'radio',
+									'value'   => 'blog',
+									'label'   => esc_html__( 'Posts Style', 'window-mag' ),
+									'desc'    => esc_html__( 'Choose the style of posts for home and all archive pages', 'window-mag' ),
+									'choices' => array(
+										'blog'    => esc_html__( 'Blog', 'window-mag' ),
+										'list'    => esc_html__( 'List Style', 'window-mag' ),
+										'masonry' => esc_html__( 'Masonry Style', 'window-mag' ),
+									),
+									'blank'   => false
+								),
+							)
 						)
 					),
 					'sidebar_area_2'       => array(
