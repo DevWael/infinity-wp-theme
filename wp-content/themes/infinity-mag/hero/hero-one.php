@@ -21,14 +21,8 @@ if ( ! $dw_carousel_style ) {
 	$dw_carousel_style = 'center-slide';
 }
 //image size
-//todo set the optimal image size
-if ( 'center-slide' === $dw_carousel_style ) {
-	$dw_thumbnail_size = 'dw_slider_center';
-} elseif ( 'many-slides' === $dw_carousel_style ) {
-	$dw_thumbnail_size = 'dw_slider_many';
-} else {
-	$dw_thumbnail_size = 'dw_slider_double';
-}
+$dw_thumbnail_size = 'full_width_slider';
+
 //Query
 if ( $dw_query_type == 'likes' ) {
 	//Query based on Likes
@@ -129,14 +123,14 @@ if ( $query->have_posts() ):
 						?>
                         <div class="single-article-slide">
                             <div class="transition-img" <?php if ( $dw_image_url ) {
-	                            echo 'style="background-image: url(' . esc_url( $dw_image_url ) . ');"';
-                            } ?>></div>
+								echo 'style="background-image: url(' . esc_url( $dw_image_url ) . ');"';
+							} ?>></div>
                             <div class="text-overlay">
 								<?php the_title( sprintf( '<h3 class="post-title"><a href = "%s" rel = "bookmark" > ', esc_url( get_permalink() ) ), '</a ></h3>' ); ?>
                                 <p>
 									<?php dw_excerpt(); ?>
                                 </p>
-                                <?php get_template_part('loop/meta'); ?>
+								<?php get_template_part( 'loop/meta' ); ?>
                             </div>
                         </div>
                     </div>

@@ -39,8 +39,8 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
+		add_image_size( 'full_width_slider', 1140, 550, true );
 		add_image_size( 'dw_slider_center', 800, 450, true );
-		add_image_size( 'dw_slider_double', 600, 450, true );
 		add_image_size( 'dw_slider_many', 350, 500, true );
 		add_image_size( 'dw_list_post', 300, 250, true );
 		add_image_size( 'dw_big_post', 360, 310, true );

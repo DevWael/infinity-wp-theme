@@ -119,7 +119,7 @@ if ( $query->have_posts() ):
 	?>
 
 
-    <div class="atricels-colums two-column">
+    <div class="atricels-colums dw-double-slides-once two-column">
         <div class="container">
             <div class="owl-carousel owl-theme two-block-owl">
 				<?php while ( $query->have_posts() ):$query->the_post(); ?>
