@@ -111,9 +111,7 @@ $options = array(
 						'label'   => false,
 						'desc'    => false,
 						'value'   => array(
-							'no' => array(
-								'home_posts_style' => 'list'
-							)
+							'no' => array()
 						),
 						'picker'  => array(
 							'control' => array(
