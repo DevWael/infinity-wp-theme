@@ -110,7 +110,9 @@ $options = array(
 						'type'    => 'multi-picker',
 						'label'   => false,
 						'desc'    => false,
-						'value'   => 'no',
+						'value'   => array(
+							'control' => 'no'
+						),
 						'picker'  => array(
 							'control' => array(
 								'type'         => 'switch',
