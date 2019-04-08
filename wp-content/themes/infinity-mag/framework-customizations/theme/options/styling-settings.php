@@ -15,7 +15,7 @@ $options = array(
 					'accent_color'             => array(
 						'type'  => 'color-picker',
 						'label' => esc_html__( 'Main Color', 'dw' ),
-						'value' => '#E74C3C'
+						'value' => '#00ad9d'
 					),
 					'second_color'             => array(
 						'type'  => 'color-picker',
