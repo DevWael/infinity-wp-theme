@@ -42,6 +42,7 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 		add_image_size( 'dw_slider_center', 800, 450, true );
 		add_image_size( 'dw_slider_double', 600, 450, true );
 		add_image_size( 'dw_slider_many', 350, 500, true );
+		add_image_size( 'dw_list_post', 300, 250, true );
 		add_image_size( 'dw_big_post', 360, 310, true );
 		add_image_size( 'dw_pic_post', 140, 140, true );
 		add_theme_support( 'post-formats', array( 'quote', 'gallery', 'video', 'audio', 'link' ) );
@@ -642,7 +643,6 @@ if ( ! function_exists( 'dw_sidebar_end' ) ) {
 	}
 }
 
-
 /**
  * Register our sidebars and widgetized areas.
  */
@@ -653,7 +653,7 @@ if ( ! function_exists( 'dw_widget_area' ) ) {
 			array(
 				'name'          => esc_html__( 'Primary Sidebar', 'dw' ),
 				'id'            => 'first_side_bar',
-				'before_widget' => '<div class="posts-area widget %2$s">',
+				'before_widget' => '<div class="posts-area side-widget-box widget %2$s">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h2 class="post-wrapper-title">',
 				'after_title'   => '</h2>'
@@ -661,7 +661,7 @@ if ( ! function_exists( 'dw_widget_area' ) ) {
 			array(
 				'name'          => esc_html__( 'Second Half Area Sidebar', 'dw' ),
 				'id'            => 'second_side_bar',
-				'before_widget' => '<div class="posts-area widget %2$s">',
+				'before_widget' => '<div class="posts-area side-widget-box widget %2$s">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h2 class="post-wrapper-title">',
 				'after_title'   => '</h2>'
@@ -669,7 +669,7 @@ if ( ! function_exists( 'dw_widget_area' ) ) {
 			array(
 				'name'          => esc_html__( 'Footer one', 'dw' ),
 				'id'            => 'footer1',
-				'before_widget' => '<div class="widget %2$s">',
+				'before_widget' => '<div class="widget footer-widget-box %2$s">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h4 class="widget-title"><span>',
 				'after_title'   => '</span></h4>'
@@ -677,7 +677,7 @@ if ( ! function_exists( 'dw_widget_area' ) ) {
 			array(
 				'name'          => esc_html__( 'Footer two', 'dw' ),
 				'id'            => 'footer2',
-				'before_widget' => '<div class="widget %2$s">',
+				'before_widget' => '<div class="widget footer-widget-box %2$s">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h4 class="widget-title"><span>',
 				'after_title'   => '</span></h4>'
@@ -685,7 +685,7 @@ if ( ! function_exists( 'dw_widget_area' ) ) {
 			array(
 				'name'          => esc_html__( 'Footer three', 'dw' ),
 				'id'            => 'footer3',
-				'before_widget' => '<div class="widget %2$s">',
+				'before_widget' => '<div class="widget footer-widget-box %2$s">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h4 class="widget-title"><span>',
 				'after_title'   => '</span></h4>'
@@ -696,7 +696,6 @@ if ( ! function_exists( 'dw_widget_area' ) ) {
 		}
 	}
 }
-
 
 /**
  * @param $exstra_class
@@ -941,7 +940,6 @@ function dw_getPostViews( $postID ) {
 	}
 }
 
-
 function dw_setPostViews( $postID ) {
 	$count_key = 'bbioon_post_views';
 	$count     = get_post_meta( $postID, $count_key, true );
@@ -974,7 +972,6 @@ function dw_count_popular_posts( $post_id ) {
 		dw_setPostViews( $post_id );
 	}
 }
-
 
 // Add it to a column in WP-Admin
 add_filter( 'manage_posts_columns', 'dw_posts_column_views' );
@@ -1173,7 +1170,6 @@ if ( ! function_exists( 'dw_show_extra_profile_fields' ) ) {
 	}
 }
 
-
 /**
  * Save user's social accounts
  * */
@@ -1198,7 +1194,6 @@ if ( ! function_exists( 'dw_save_extra_profile_fields' ) ) {
 		update_user_meta( $user_id, 'youtube', $_POST['youtube'] );
 	}
 }
-
 
 /**
  * print social urls for current user
@@ -1247,7 +1242,6 @@ if ( ! function_exists( 'dw_author_socials' ) ) {
 	}
 }
 
-
 /**
  * remove parentheses from category list and add span class to post count
  */
@@ -1289,7 +1283,6 @@ function dw_search_filter( $query ) {
 
 	return $query;
 }
-
 
 /**
  * Get all users data to select it in theme options and custom widgets
