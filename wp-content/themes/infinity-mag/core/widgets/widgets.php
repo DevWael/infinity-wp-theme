@@ -134,13 +134,10 @@ require_once DW_CORE . 'widgets/author-posts.php'; //Author posts widget
 require_once DW_CORE . 'widgets/category-posts.php'; //Category posts widget
 require_once DW_CORE . 'widgets/recent-posts-widget.php'; //Recent posts widget
 require_once DW_CORE . 'widgets/facebook-widget.php'; // Facebook box widget
-require_once DW_CORE . 'widgets/googleplus-widget.php'; // Google plus widget
-require_once DW_CORE . 'widgets/subscribe-widget.php'; // Newsletter subscribe widget
 require_once DW_CORE . 'widgets/instagram-photos-widget.php'; // Instagram photos widget
 require_once DW_CORE . 'widgets/soundcloud-widget.php'; // Sound cloud widget
 require_once DW_CORE . 'widgets/most-viewed-posts-widget.php'; //Most viewed posts widget
 require_once DW_CORE . 'widgets/random-posts-widget.php'; //Random posts widget
-require_once DW_CORE . 'widgets/login-widget.php'; //Login widget
 require_once DW_CORE . 'widgets/review-posts-widget.php'; //Review Posts
 
 /**
@@ -151,14 +148,11 @@ function dw_widgets() {
 	register_widget( 'dw_author_posts' );
 	register_widget( 'dw_category_posts' );
 	register_widget( 'dw_facebook_box' );
-	register_widget( 'dw_google_plus_box' );
 	register_widget( 'dw_random_posts' );
 	register_widget( 'dw_most_viewed' );
 	register_widget( 'dw_recent_posts' );
 	register_widget( 'dw_social_media' );
 	register_widget( 'dw_soundcloud_box' );
-	register_widget( 'dw_subscribe_box' );
 	register_widget( 'dw_instagram_photos' );
-	register_widget( 'dw_login_box' );
 	register_widget( 'dw_review_posts' );
 }
