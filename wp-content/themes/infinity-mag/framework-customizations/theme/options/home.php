@@ -106,13 +106,11 @@ $options = array(
 							'layout_type' => dw_half_width_area()
 						)
 					),
-					'home_recent_posts_1' => array(
+					'home_recent_posts_1'  => array(
 						'type'    => 'multi-picker',
 						'label'   => false,
 						'desc'    => false,
-						'value'   => array(
-							'no' => array()
-						),
+						'value'   => 'no',
 						'picker'  => array(
 							'control' => array(
 								'type'         => 'switch',
@@ -120,7 +118,7 @@ $options = array(
 								'label'        => esc_html__( 'Show recent posts', 'window-mag' ),
 								'desc'         => esc_html__( 'Show or hide recent posts on home page', 'window-mag' ),
 								'left-choice'  => array(
-									'value' => 'no',
+									'value' => 'control',
 									'label' => esc_html__( 'No', 'window-mag' ),
 								),
 								'right-choice' => array(
@@ -290,7 +288,7 @@ $options = array(
 							'layout_type' => dw_half_width_area()
 						)
 					),
-					'home_recent_posts_2' => array(
+					'home_recent_posts_2'  => array(
 						'type'    => 'multi-picker',
 						'label'   => false,
 						'desc'    => false,
