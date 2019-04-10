@@ -5231,6 +5231,7 @@ ol.children li {
 }
 
 .widget .big-post.has-post-thumbnail .post-content .post-title a {
+    display: block;
     color: #fff;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;

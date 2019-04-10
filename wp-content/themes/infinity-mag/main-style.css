@@ -1185,6 +1185,7 @@ body.archive .sticky-sidebar {
 	text-transform: capitalize;
 	text-decoration: none;
 	line-height: 1.4;
+	display: block;
 }
 
 .main-post h3 a:hover,
@@ -1299,6 +1300,7 @@ body.archive .sticky-sidebar {
 	line-height: 23px;
 	font-size: 14px;
 	text-decoration: none;
+	display: block;
 }
 
 .side-post:hover h3 a,
@@ -1430,6 +1432,7 @@ body.archive .sticky-sidebar {
 	color: #fff;
 	line-height: 20px;
 	text-decoration: none;
+	display: block;
 }
 
 .posts-carousel .carousel-post .data .writer-info img {
@@ -1638,6 +1641,7 @@ body.archive .sticky-sidebar {
 }
 
 .cover-post h3 a {
+	display: block;
 	text-transform: capitalize;
 	font-weight: bold;
 	color: #fff;
