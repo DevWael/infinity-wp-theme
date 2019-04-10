@@ -349,7 +349,6 @@ $dw_body_style               = dw_get_setting( 'body_style' );
     .wpcf7-form input[type=submit],
     .windowmag-preset1 .block-name span,
     .windowmag-preset1 .sidebar .widget .widget-title span,
-    .bbioon-fly-box .box-title,
     .singular .post-box-content .wpcf7-form button,
     .singular .post-box-content .wpcf7-form html input[type=button],
     .singular .post-box-content .wpcf7-form input[type=reset],

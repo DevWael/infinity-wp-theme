@@ -192,11 +192,9 @@ jQuery(document).ready(function ($) {
     var margin_top = '';
     if ($('body').hasClass('admin-bar') && $('.main-menu').hasClass('sticky-nav')) {
         margin_top = 100;
-    }
-    else if (!$('body').hasClass('admin-bar') && $('.main-menu').hasClass('sticky-nav')) {
+    } else if (!$('body').hasClass('admin-bar') && $('.main-menu').hasClass('sticky-nav')) {
         margin_top = 70;
-    }
-    else {
+    } else {
         margin_top = 30;
     }
     $('.sticky-sidebar').theiaStickySidebar({
@@ -349,7 +347,7 @@ jQuery(document).ready(function ($) {
      * @param key
      * @param value
      */
-    function bbioon_setCookie(key, value) {
+    function dw_setCookie(key, value) {
         var expires = new Date();
         expires.setTime(expires.getTime() + ("1" * 24 * 60 * 60 * 1000));
         document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
@@ -360,7 +358,7 @@ jQuery(document).ready(function ($) {
      * @param key
      * @returns string Cookie value
      */
-    function bbioon_getCookie(key) {
+    function dw_getCookie(key) {
         var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
         return keyValue ? keyValue[2] : null;
     }
@@ -380,11 +378,11 @@ jQuery(document).ready(function ($) {
                 $('.reading-indicator').css('width', percent + '%');
 
                 //Post Fly Box
-                if ((bbioon_getCookie('bbioon_fly_box') !== '1')) {
+                if ((dw_getCookie('bbioon_fly_box') !== '1')) {
                     if (percent >= 80) {
-                        $('.bbioon-fly-box').stop().animate({right: "0px"}, 600);
+                        $('.bbioon-fly-box').addClass('show-fly');
                     } else {
-                        $('.bbioon-fly-box').stop().animate({right: '-' + '360', easing: "linear"}, 600);
+                        $('.bbioon-fly-box').removeClass('show-fly');
                     }
                 }
             });
@@ -392,17 +390,17 @@ jQuery(document).ready(function ($) {
     }
 
     //Fly box will not be visible to current user any more...
-    if (bbioon_getCookie('bbioon_fly_box') === '1') {
+    if (dw_getCookie('bbioon_fly_box') === '1') {
         $('.bbioon-fly-box').css('display', 'none');
     }
-    $('.delete-fly-box').click(function () {
-        $('.bbioon-fly-box').stop().animate({right: '-' + '360', easing: "linear"}, 300);
-        bbioon_setCookie('bbioon_fly_box', '1');
+    $('.delete-fly-box').on('click', function () {
+        $('.bbioon-fly-box').removeClass('show-fly');
+        dw_setCookie('bbioon_fly_box', '1');
     });
 
     //Close Fly box temporarily
-    $('.close-fly-box').click(function () {
-        $('.bbioon-fly-box').stop().animate({right: '-' + '360', easing: "linear"}, 300).css('display', 'none');
+    $('.close-fly-box').on('click', function () {
+        $('.bbioon-fly-box').removeClass('show-fly').css('display', 'none');
     });
 
 });
