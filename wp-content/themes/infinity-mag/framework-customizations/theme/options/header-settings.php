@@ -384,7 +384,6 @@ $options = array(
 											'value'   => 'trend',
 											'choices' => array(
 												'trend'    => esc_html__( 'Popular posts ( Top Commented )', 'dw' ),
-												'likes'    => esc_html__( 'Most liked posts', 'dw' ),
 												'views'    => esc_html__( 'Most viewed posts', 'dw' ),
 												'category' => esc_html__( 'Selected categories', 'dw' ),
 												'tag'      => esc_html__( 'Selected tags', 'dw' ),

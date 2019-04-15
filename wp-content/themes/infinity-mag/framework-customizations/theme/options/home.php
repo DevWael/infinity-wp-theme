@@ -117,15 +117,15 @@ $options = array(
 							'control' => array(
 								'type'         => 'switch',
 								'value'        => 'yes',
-								'label'        => esc_html__( 'Show recent posts', 'window-mag' ),
-								'desc'         => esc_html__( 'Show or hide recent posts on home page', 'window-mag' ),
+								'label'        => esc_html__( 'Show recent posts', 'dw' ),
+								'desc'         => esc_html__( 'Show or hide recent posts on home page', 'dw' ),
 								'left-choice'  => array(
 									'value' => 'control',
-									'label' => esc_html__( 'No', 'window-mag' ),
+									'label' => esc_html__( 'No', 'dw' ),
 								),
 								'right-choice' => array(
 									'value' => 'yes',
-									'label' => esc_html__( 'Yes', 'window-mag' ),
+									'label' => esc_html__( 'Yes', 'dw' ),
 								),
 							)
 						),
@@ -133,18 +133,18 @@ $options = array(
 							'yes' => array(
 								'title'            => array(
 									'type'  => 'text',
-									'attr'  => array( 'placeholder' => esc_html__( 'Recent Posts', 'window-mag' ) ),
-									'label' => esc_html__( 'Recent Posts Title', 'window-mag' ),
+									'attr'  => array( 'placeholder' => esc_html__( 'Recent Posts', 'dw' ) ),
+									'label' => esc_html__( 'Recent Posts Title', 'dw' ),
 								),
 								'home_posts_style' => array(
 									'type'    => 'radio',
 									'value'   => 'blog',
-									'label'   => esc_html__( 'Posts Style', 'window-mag' ),
-									'desc'    => esc_html__( 'Choose the style of posts for home and all archive pages', 'window-mag' ),
+									'label'   => esc_html__( 'Posts Style', 'dw' ),
+									'desc'    => esc_html__( 'Choose the style of posts for home and all archive pages', 'dw' ),
 									'choices' => array(
-										'blog'    => esc_html__( 'Blog', 'window-mag' ),
-										'list'    => esc_html__( 'List Style', 'window-mag' ),
-										'masonry' => esc_html__( 'Masonry Style', 'window-mag' ),
+										'blog'    => esc_html__( 'Blog', 'dw' ),
+										'list'    => esc_html__( 'List Style', 'dw' ),
+										'masonry' => esc_html__( 'Masonry Style', 'dw' ),
 									),
 									'blank'   => false
 								),
@@ -301,15 +301,15 @@ $options = array(
 							'control' => array(
 								'type'         => 'switch',
 								'value'        => 'yes',
-								'label'        => esc_html__( 'Show recent posts', 'window-mag' ),
-								'desc'         => esc_html__( 'Show or hide recent posts on home page', 'window-mag' ),
+								'label'        => esc_html__( 'Show recent posts', 'dw' ),
+								'desc'         => esc_html__( 'Show or hide recent posts on home page', 'dw' ),
 								'left-choice'  => array(
 									'value' => 'no',
-									'label' => esc_html__( 'No', 'window-mag' ),
+									'label' => esc_html__( 'No', 'dw' ),
 								),
 								'right-choice' => array(
 									'value' => 'yes',
-									'label' => esc_html__( 'Yes', 'window-mag' ),
+									'label' => esc_html__( 'Yes', 'dw' ),
 								),
 							)
 						),
@@ -317,18 +317,18 @@ $options = array(
 							'yes' => array(
 								'title'            => array(
 									'type'  => 'text',
-									'attr'  => array( 'placeholder' => esc_html__( 'Recent Posts', 'window-mag' ) ),
-									'label' => esc_html__( 'Recent Posts Title', 'window-mag' ),
+									'attr'  => array( 'placeholder' => esc_html__( 'Recent Posts', 'dw' ) ),
+									'label' => esc_html__( 'Recent Posts Title', 'dw' ),
 								),
 								'home_posts_style' => array(
 									'type'    => 'radio',
 									'value'   => 'blog',
-									'label'   => esc_html__( 'Posts Style', 'window-mag' ),
-									'desc'    => esc_html__( 'Choose the style of posts for home and all archive pages', 'window-mag' ),
+									'label'   => esc_html__( 'Posts Style', 'dw' ),
+									'desc'    => esc_html__( 'Choose the style of posts for home and all archive pages', 'dw' ),
 									'choices' => array(
-										'blog'    => esc_html__( 'Blog', 'window-mag' ),
-										'list'    => esc_html__( 'List Style', 'window-mag' ),
-										'masonry' => esc_html__( 'Masonry Style', 'window-mag' ),
+										'blog'    => esc_html__( 'Blog', 'dw' ),
+										'list'    => esc_html__( 'List Style', 'dw' ),
+										'masonry' => esc_html__( 'Masonry Style', 'dw' ),
 									),
 									'blank'   => false
 								),

@@ -121,19 +121,6 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						)
 					),
-					'general_like_meta'   => array(
-						'type'         => 'switch',
-						'value'        => 'on',
-						'label'        => esc_html__( 'Like meta', 'dw' ),
-						'right-choice' => array(
-							'value' => 'on',
-							'label' => esc_html__( 'Show', 'dw' )
-						),
-						'left-choice'  => array(
-							'value' => 'off',
-							'label' => esc_html__( 'Hide', 'dw' )
-						)
-					),
 					'general_rating_meta' => array(
 						'type'         => 'switch',
 						'value'        => 'on',

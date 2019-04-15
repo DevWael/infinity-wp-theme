@@ -1948,7 +1948,7 @@ header .site-tagline {
 	-o-transition: 300ms;
 	transition: 300ms;
 	width: 100px;
-	height: 70px;
+	height: 100px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -2010,6 +2010,7 @@ header .site-tagline {
 	text-decoration: none;
 	font-weight: bold;
 	line-height: 1.5em;
+	font-size: 14px;
 	-webkit-transition: 300ms;
 	-moz-transition: 300ms;
 	-ms-transition: 300ms;
@@ -2035,6 +2036,14 @@ header .site-tagline {
 
 .small-post .post-content .post-meta span {
 	margin-right: 5px;
+}
+
+.small-post .post-content .writer-info .dw-comments-meta{
+	display: none;
+}
+
+.small-post .post-content .writer-info a{
+	color: #797979;
 }
 
 .big-post {
@@ -5607,11 +5616,15 @@ ol.children li {
 	filter: brightness(0) invert(1);
 }
 
+.widget-carousel .carousel-post .writer-info .dw-comments-meta{
+	display: none;
+}
+
 .widget-carousel .carousel-post .post-content {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	padding: 15px;
+	padding: 15px 15px 0;
 	background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 	/* FF3.6-15 */
 	background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
