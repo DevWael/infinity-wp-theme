@@ -102,7 +102,7 @@ function dw_ajax_add_to_fav() {
 			update_user_meta( $user_id, 'dw_favorites', array( absint( $_POST['product_id'] ) ) );
 			wp_send_json_success( [
 				'type'    => 'success',
-				'title'   => esc_html__( 'Favorites111', 'dw' ),
+				'title'   => esc_html__( 'Favorites', 'dw' ),
 				'message' => esc_html__( 'The Product has been added to favorites', 'dw' )
 			] );
 		} else {

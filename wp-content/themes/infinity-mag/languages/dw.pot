@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Infinity Mag\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-14 09:45+0000\n"
+"POT-Creation-Date: 2019-04-15 10:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.1; wp-5.1.1"
 
-#: category.php:34 archive.php:18 tag.php:18 search.php:16 core/init.php:1515
+#: category.php:34 archive.php:18 tag.php:18 search.php:16 core/init.php:1516
 msgid "Post "
 msgid_plural "Posts"
 msgstr[0] ""
@@ -140,7 +140,7 @@ msgstr ""
 #: content-slider.php:139 templates/part-meta.php:10 templates/part-meta.php:27
 #: framework-customizations/theme/options/post-formats.php:22
 #: framework-customizations/theme/options/layouts.php:264
-#: framework-customizations/theme/options/single-post.php:338
+#: framework-customizations/theme/options/single-post.php:325
 msgid "Author"
 msgstr ""
 
@@ -223,186 +223,190 @@ msgstr ""
 msgid "Technology Demo"
 msgstr ""
 
-#: core/init.php:701
+#: core/init.php:606
+msgid "By: Awamer Alshabaka"
+msgstr ""
+
+#: core/init.php:702
 msgid "Primary Sidebar"
 msgstr ""
 
-#: core/init.php:709
+#: core/init.php:710
 msgid "Second Half Area Sidebar"
 msgstr ""
 
-#: core/init.php:717
+#: core/init.php:718
 msgid "Footer one"
 msgstr ""
 
-#: core/init.php:725
+#: core/init.php:726
 msgid "Footer two"
 msgstr ""
 
-#: core/init.php:733
+#: core/init.php:734
 msgid "Footer three"
 msgstr ""
 
-#: core/init.php:984
+#: core/init.php:985
 msgid "0 view"
 msgstr ""
 
-#: core/init.php:1026
+#: core/init.php:1027
 msgid "Views Count"
 msgstr ""
 
-#: core/init.php:1043
+#: core/init.php:1044
 msgid "Use WP menu builder to build menus"
 msgstr ""
 
-#: core/init.php:1058
+#: core/init.php:1059
 msgid "Welcome"
 msgstr ""
 
-#: core/init.php:1061
+#: core/init.php:1062
 msgid "Dashboard"
 msgstr ""
 
-#: core/init.php:1064
+#: core/init.php:1065
 msgid "Your Profile"
 msgstr ""
 
-#: core/init.php:1067
+#: core/init.php:1068
 msgid "Logout"
 msgstr ""
 
-#: core/init.php:1079 core/init.php:1080
+#: core/init.php:1080 core/init.php:1081
 msgid "Username"
 msgstr ""
 
-#: core/init.php:1085 core/init.php:1086
+#: core/init.php:1086 core/init.php:1087
 msgid "Password"
 msgstr ""
 
-#: core/init.php:1089
+#: core/init.php:1090
 msgid "Log in"
 msgstr ""
 
-#: core/init.php:1093
+#: core/init.php:1094
 msgid "Remember Me"
 msgstr ""
 
-#: core/init.php:1100
+#: core/init.php:1101
 msgid "Lost your password?"
 msgstr ""
 
-#: core/init.php:1117
+#: core/init.php:1118
 msgid "Social Networking"
 msgstr ""
 
-#: core/init.php:1120
+#: core/init.php:1121
 msgid "FaceBook URL"
 msgstr ""
 
-#: core/init.php:1128
+#: core/init.php:1129
 msgid "Twitter URL"
 msgstr ""
 
-#: core/init.php:1136
+#: core/init.php:1137
 msgid "Google + URL"
 msgstr ""
 
-#: core/init.php:1144
+#: core/init.php:1145
 msgid "Dribbble URL"
 msgstr ""
 
-#: core/init.php:1152
+#: core/init.php:1153
 msgid "Github URL"
 msgstr ""
 
-#: core/init.php:1160
+#: core/init.php:1161
 msgid "Instagram URL"
 msgstr ""
 
-#: core/init.php:1168
+#: core/init.php:1169
 msgid "linkedIn URL"
 msgstr ""
 
-#: core/init.php:1176
+#: core/init.php:1177
 msgid "Tumblr URL"
 msgstr ""
 
-#: core/init.php:1184
+#: core/init.php:1185
 msgid "Flickr URL"
 msgstr ""
 
-#: core/init.php:1192
+#: core/init.php:1193
 msgid "Pinterest URL"
 msgstr ""
 
-#: core/init.php:1200
+#: core/init.php:1201
 msgid "Vimeo URL"
 msgstr ""
 
-#: core/init.php:1208
+#: core/init.php:1209
 msgid "YouTube URL"
 msgstr ""
 
-#: core/init.php:1350
+#: core/init.php:1351
 msgid "Please select an author..."
 msgstr ""
 
-#: core/init.php:1392
+#: core/init.php:1393
 #, php-format
 msgid "%s Min"
 msgid_plural "%s Mins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/init.php:1392 core/init.php:1398 core/init.php:1403 core/init.php:1407
+#: core/init.php:1393 core/init.php:1399 core/init.php:1404 core/init.php:1408
 msgid "ago"
 msgstr ""
 
-#: core/init.php:1398
+#: core/init.php:1399
 #, php-format
 msgid "%s Hour"
 msgid_plural "%s Hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/init.php:1403 core/init.php:1407
+#: core/init.php:1404 core/init.php:1408
 #, php-format
 msgid "%s Day"
 msgid_plural "%s Days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/init.php:1446
+#: core/init.php:1447
 msgid "Disable it"
 msgstr ""
 
-#: core/init.php:1451
+#: core/init.php:1452
 msgid "Check Also"
 msgstr ""
 
-#: core/init.php:1553
+#: core/init.php:1554
 msgid "Pingback:"
 msgstr ""
 
-#: core/init.php:1555
+#: core/init.php:1556
 msgid "(Edit)"
 msgstr ""
 
-#: core/init.php:1565
+#: core/init.php:1566
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #. 1: date, 2: time
-#: core/init.php:1579
+#: core/init.php:1580
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: core/init.php:1585
+#: core/init.php:1586
 msgid "Reply"
 msgstr ""
 
-#: core/init.php:1590
+#: core/init.php:1591
 msgid "Edit"
 msgstr ""
 
@@ -1030,8 +1034,8 @@ msgid "Posts Count"
 msgstr ""
 
 #: core/blocks/init.php:116 core/full-width-blocks/init.php:121
-#: framework-customizations/theme/options/main-carousel.php:115
-#: framework-customizations/theme/options/header-settings.php:400
+#: framework-customizations/theme/options/main-carousel.php:114
+#: framework-customizations/theme/options/header-settings.php:399
 msgid "Select Categories"
 msgstr ""
 
@@ -1415,7 +1419,7 @@ msgid "Body Background"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:43
-#: framework-customizations/theme/options/post-customizations.php:304
+#: framework-customizations/theme/options/post-customizations.php:291
 #: framework-customizations/theme/options/banners.php:25
 #: framework-customizations/theme/options/banners.php:82
 #: framework-customizations/theme/options/banners.php:139
@@ -1424,97 +1428,97 @@ msgstr ""
 #: framework-customizations/theme/options/footer.php:75
 #: framework-customizations/theme/options/footer.php:97
 #: framework-customizations/theme/options/header-settings.php:134
-#: framework-customizations/theme/options/posts/page.php:204
+#: framework-customizations/theme/options/posts/page.php:191
 #: framework-customizations/theme/options/taxonomies/category.php:51
 #: framework-customizations/theme/options/taxonomies/post_tag.php:21
 msgid "Off"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:47
-#: framework-customizations/theme/options/post-customizations.php:308
+#: framework-customizations/theme/options/post-customizations.php:295
 #: framework-customizations/theme/options/footer.php:101
 #: framework-customizations/theme/options/header-settings.php:138
-#: framework-customizations/theme/options/posts/page.php:208
+#: framework-customizations/theme/options/posts/page.php:195
 #: framework-customizations/theme/options/taxonomies/category.php:55
 #: framework-customizations/theme/options/taxonomies/post_tag.php:25
 msgid "Background"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:63
-#: framework-customizations/theme/options/post-customizations.php:316
+#: framework-customizations/theme/options/post-customizations.php:303
 #: framework-customizations/theme/options/footer.php:117
 #: framework-customizations/theme/options/header-settings.php:154
-#: framework-customizations/theme/options/posts/page.php:216
+#: framework-customizations/theme/options/posts/page.php:203
 #: framework-customizations/theme/options/taxonomies/category.php:71
 #: framework-customizations/theme/options/taxonomies/post_tag.php:41
 msgid "Background Color"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:68
-#: framework-customizations/theme/options/post-customizations.php:321
+#: framework-customizations/theme/options/post-customizations.php:308
 #: framework-customizations/theme/options/footer.php:122
 #: framework-customizations/theme/options/header-settings.php:159
-#: framework-customizations/theme/options/posts/page.php:221
+#: framework-customizations/theme/options/posts/page.php:208
 #: framework-customizations/theme/options/taxonomies/category.php:76
 #: framework-customizations/theme/options/taxonomies/post_tag.php:46
 msgid "Background image"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:74
-#: framework-customizations/theme/options/post-customizations.php:327
+#: framework-customizations/theme/options/post-customizations.php:314
 #: framework-customizations/theme/options/footer.php:128
 #: framework-customizations/theme/options/header-settings.php:165
-#: framework-customizations/theme/options/posts/page.php:227
+#: framework-customizations/theme/options/posts/page.php:214
 #: framework-customizations/theme/options/taxonomies/category.php:82
 #: framework-customizations/theme/options/taxonomies/post_tag.php:52
 msgid "Background Repeat"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:77
-#: framework-customizations/theme/options/post-customizations.php:329
+#: framework-customizations/theme/options/post-customizations.php:316
 #: framework-customizations/theme/options/footer.php:131
 #: framework-customizations/theme/options/header-settings.php:168
-#: framework-customizations/theme/options/posts/page.php:229
+#: framework-customizations/theme/options/posts/page.php:216
 #: framework-customizations/theme/options/taxonomies/category.php:84
 #: framework-customizations/theme/options/taxonomies/post_tag.php:54
 msgid "No Repeat"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:78
-#: framework-customizations/theme/options/post-customizations.php:330
+#: framework-customizations/theme/options/post-customizations.php:317
 #: framework-customizations/theme/options/footer.php:132
 #: framework-customizations/theme/options/header-settings.php:169
-#: framework-customizations/theme/options/posts/page.php:230
+#: framework-customizations/theme/options/posts/page.php:217
 #: framework-customizations/theme/options/taxonomies/category.php:85
 #: framework-customizations/theme/options/taxonomies/post_tag.php:55
 msgid "Repeat"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:79
-#: framework-customizations/theme/options/post-customizations.php:331
+#: framework-customizations/theme/options/post-customizations.php:318
 #: framework-customizations/theme/options/footer.php:133
 #: framework-customizations/theme/options/header-settings.php:170
-#: framework-customizations/theme/options/posts/page.php:231
+#: framework-customizations/theme/options/posts/page.php:218
 #: framework-customizations/theme/options/taxonomies/category.php:86
 #: framework-customizations/theme/options/taxonomies/post_tag.php:56
 msgid "Repeat X"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:80
-#: framework-customizations/theme/options/post-customizations.php:332
+#: framework-customizations/theme/options/post-customizations.php:319
 #: framework-customizations/theme/options/footer.php:134
 #: framework-customizations/theme/options/header-settings.php:171
-#: framework-customizations/theme/options/posts/page.php:232
+#: framework-customizations/theme/options/posts/page.php:219
 #: framework-customizations/theme/options/taxonomies/category.php:87
 #: framework-customizations/theme/options/taxonomies/post_tag.php:57
 msgid "Repeat Y"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:86
-#: framework-customizations/theme/options/post-customizations.php:338
+#: framework-customizations/theme/options/post-customizations.php:325
 #: framework-customizations/theme/options/footer.php:140
 #: framework-customizations/theme/options/header-settings.php:177
-#: framework-customizations/theme/options/posts/page.php:238
+#: framework-customizations/theme/options/posts/page.php:225
 #: framework-customizations/theme/options/taxonomies/category.php:93
 #: framework-customizations/theme/options/taxonomies/post_tag.php:63
 msgid "Background Size"
@@ -1523,18 +1527,18 @@ msgstr ""
 #: framework-customizations/theme/options/styling-settings.php:88
 #: framework-customizations/theme/options/styling-settings.php:99
 #: framework-customizations/theme/options/styling-settings.php:110
-#: framework-customizations/theme/options/post-customizations.php:340
-#: framework-customizations/theme/options/post-customizations.php:351
-#: framework-customizations/theme/options/post-customizations.php:362
+#: framework-customizations/theme/options/post-customizations.php:327
+#: framework-customizations/theme/options/post-customizations.php:338
+#: framework-customizations/theme/options/post-customizations.php:349
 #: framework-customizations/theme/options/footer.php:142
 #: framework-customizations/theme/options/footer.php:152
 #: framework-customizations/theme/options/footer.php:163
 #: framework-customizations/theme/options/header-settings.php:179
 #: framework-customizations/theme/options/header-settings.php:190
 #: framework-customizations/theme/options/header-settings.php:201
-#: framework-customizations/theme/options/posts/page.php:240
-#: framework-customizations/theme/options/posts/page.php:251
-#: framework-customizations/theme/options/posts/page.php:262
+#: framework-customizations/theme/options/posts/page.php:227
+#: framework-customizations/theme/options/posts/page.php:238
+#: framework-customizations/theme/options/posts/page.php:249
 #: framework-customizations/theme/options/taxonomies/category.php:95
 #: framework-customizations/theme/options/taxonomies/category.php:106
 #: framework-customizations/theme/options/taxonomies/category.php:117
@@ -1545,160 +1549,160 @@ msgid "None"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:89
-#: framework-customizations/theme/options/post-customizations.php:341
+#: framework-customizations/theme/options/post-customizations.php:328
 #: framework-customizations/theme/options/footer.php:143
 #: framework-customizations/theme/options/header-settings.php:180
-#: framework-customizations/theme/options/posts/page.php:241
+#: framework-customizations/theme/options/posts/page.php:228
 #: framework-customizations/theme/options/taxonomies/category.php:96
 #: framework-customizations/theme/options/taxonomies/post_tag.php:66
 msgid "Cover"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:90
-#: framework-customizations/theme/options/post-customizations.php:342
+#: framework-customizations/theme/options/post-customizations.php:329
 #: framework-customizations/theme/options/footer.php:144
 #: framework-customizations/theme/options/header-settings.php:181
-#: framework-customizations/theme/options/posts/page.php:242
+#: framework-customizations/theme/options/posts/page.php:229
 #: framework-customizations/theme/options/taxonomies/category.php:97
 #: framework-customizations/theme/options/taxonomies/post_tag.php:67
 msgid "contain"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:97
-#: framework-customizations/theme/options/post-customizations.php:349
+#: framework-customizations/theme/options/post-customizations.php:336
 #: framework-customizations/theme/options/footer.php:150
 #: framework-customizations/theme/options/header-settings.php:188
-#: framework-customizations/theme/options/posts/page.php:249
+#: framework-customizations/theme/options/posts/page.php:236
 #: framework-customizations/theme/options/taxonomies/category.php:104
 #: framework-customizations/theme/options/taxonomies/post_tag.php:74
 msgid "Background Attachment"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:100
-#: framework-customizations/theme/options/post-customizations.php:352
+#: framework-customizations/theme/options/post-customizations.php:339
 #: framework-customizations/theme/options/footer.php:153
 #: framework-customizations/theme/options/header-settings.php:191
-#: framework-customizations/theme/options/posts/page.php:252
+#: framework-customizations/theme/options/posts/page.php:239
 #: framework-customizations/theme/options/taxonomies/category.php:107
 #: framework-customizations/theme/options/taxonomies/post_tag.php:77
 msgid "Fixed"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:101
-#: framework-customizations/theme/options/post-customizations.php:353
+#: framework-customizations/theme/options/post-customizations.php:340
 #: framework-customizations/theme/options/footer.php:154
 #: framework-customizations/theme/options/header-settings.php:192
-#: framework-customizations/theme/options/posts/page.php:253
+#: framework-customizations/theme/options/posts/page.php:240
 #: framework-customizations/theme/options/taxonomies/category.php:108
 #: framework-customizations/theme/options/taxonomies/post_tag.php:78
 msgid "Scroll"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:102
-#: framework-customizations/theme/options/post-customizations.php:354
+#: framework-customizations/theme/options/post-customizations.php:341
 #: framework-customizations/theme/options/footer.php:155
 #: framework-customizations/theme/options/header-settings.php:193
-#: framework-customizations/theme/options/posts/page.php:254
+#: framework-customizations/theme/options/posts/page.php:241
 #: framework-customizations/theme/options/taxonomies/category.php:109
 #: framework-customizations/theme/options/taxonomies/post_tag.php:79
 msgid "Local"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:108
-#: framework-customizations/theme/options/post-customizations.php:360
+#: framework-customizations/theme/options/post-customizations.php:347
 #: framework-customizations/theme/options/footer.php:161
 #: framework-customizations/theme/options/header-settings.php:199
-#: framework-customizations/theme/options/posts/page.php:260
+#: framework-customizations/theme/options/posts/page.php:247
 #: framework-customizations/theme/options/taxonomies/category.php:115
 #: framework-customizations/theme/options/taxonomies/post_tag.php:85
 msgid "Background Position"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:111
-#: framework-customizations/theme/options/post-customizations.php:363
+#: framework-customizations/theme/options/post-customizations.php:350
 #: framework-customizations/theme/options/footer.php:164
 #: framework-customizations/theme/options/header-settings.php:202
-#: framework-customizations/theme/options/posts/page.php:263
+#: framework-customizations/theme/options/posts/page.php:250
 #: framework-customizations/theme/options/taxonomies/category.php:118
 #: framework-customizations/theme/options/taxonomies/post_tag.php:88
 msgid "Left top"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:112
-#: framework-customizations/theme/options/post-customizations.php:364
+#: framework-customizations/theme/options/post-customizations.php:351
 #: framework-customizations/theme/options/footer.php:165
 #: framework-customizations/theme/options/header-settings.php:203
-#: framework-customizations/theme/options/posts/page.php:264
+#: framework-customizations/theme/options/posts/page.php:251
 #: framework-customizations/theme/options/taxonomies/category.php:119
 #: framework-customizations/theme/options/taxonomies/post_tag.php:89
 msgid "Left center"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:113
-#: framework-customizations/theme/options/post-customizations.php:365
+#: framework-customizations/theme/options/post-customizations.php:352
 #: framework-customizations/theme/options/footer.php:166
 #: framework-customizations/theme/options/header-settings.php:204
-#: framework-customizations/theme/options/posts/page.php:265
+#: framework-customizations/theme/options/posts/page.php:252
 #: framework-customizations/theme/options/taxonomies/category.php:120
 #: framework-customizations/theme/options/taxonomies/post_tag.php:90
 msgid "Left bottom"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:114
-#: framework-customizations/theme/options/post-customizations.php:366
+#: framework-customizations/theme/options/post-customizations.php:353
 #: framework-customizations/theme/options/footer.php:167
 #: framework-customizations/theme/options/header-settings.php:205
-#: framework-customizations/theme/options/posts/page.php:266
+#: framework-customizations/theme/options/posts/page.php:253
 #: framework-customizations/theme/options/taxonomies/category.php:121
 #: framework-customizations/theme/options/taxonomies/post_tag.php:91
 msgid "Right top"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:115
-#: framework-customizations/theme/options/post-customizations.php:367
+#: framework-customizations/theme/options/post-customizations.php:354
 #: framework-customizations/theme/options/footer.php:168
 #: framework-customizations/theme/options/header-settings.php:206
-#: framework-customizations/theme/options/posts/page.php:267
+#: framework-customizations/theme/options/posts/page.php:254
 #: framework-customizations/theme/options/taxonomies/category.php:122
 #: framework-customizations/theme/options/taxonomies/post_tag.php:92
 msgid "Right center"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:116
-#: framework-customizations/theme/options/post-customizations.php:368
+#: framework-customizations/theme/options/post-customizations.php:355
 #: framework-customizations/theme/options/footer.php:169
 #: framework-customizations/theme/options/header-settings.php:207
-#: framework-customizations/theme/options/posts/page.php:268
+#: framework-customizations/theme/options/posts/page.php:255
 #: framework-customizations/theme/options/taxonomies/category.php:123
 #: framework-customizations/theme/options/taxonomies/post_tag.php:93
 msgid "Right bottom"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:117
-#: framework-customizations/theme/options/post-customizations.php:369
+#: framework-customizations/theme/options/post-customizations.php:356
 #: framework-customizations/theme/options/footer.php:170
 #: framework-customizations/theme/options/header-settings.php:208
-#: framework-customizations/theme/options/posts/page.php:269
+#: framework-customizations/theme/options/posts/page.php:256
 #: framework-customizations/theme/options/taxonomies/category.php:124
 #: framework-customizations/theme/options/taxonomies/post_tag.php:94
 msgid "Center top"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:118
-#: framework-customizations/theme/options/post-customizations.php:370
+#: framework-customizations/theme/options/post-customizations.php:357
 #: framework-customizations/theme/options/footer.php:171
 #: framework-customizations/theme/options/header-settings.php:209
-#: framework-customizations/theme/options/posts/page.php:270
+#: framework-customizations/theme/options/posts/page.php:257
 #: framework-customizations/theme/options/taxonomies/category.php:125
 #: framework-customizations/theme/options/taxonomies/post_tag.php:95
 msgid "Center center"
 msgstr ""
 
 #: framework-customizations/theme/options/styling-settings.php:119
-#: framework-customizations/theme/options/post-customizations.php:371
+#: framework-customizations/theme/options/post-customizations.php:358
 #: framework-customizations/theme/options/footer.php:172
 #: framework-customizations/theme/options/header-settings.php:210
-#: framework-customizations/theme/options/posts/page.php:271
+#: framework-customizations/theme/options/posts/page.php:258
 #: framework-customizations/theme/options/taxonomies/category.php:126
 #: framework-customizations/theme/options/taxonomies/post_tag.php:96
 msgid "Center bottom"
@@ -1760,9 +1764,8 @@ msgstr ""
 #: framework-customizations/theme/options/post-customizations.php:168
 #: framework-customizations/theme/options/post-customizations.php:181
 #: framework-customizations/theme/options/post-customizations.php:194
-#: framework-customizations/theme/options/post-customizations.php:207
-#: framework-customizations/theme/options/post-customizations.php:216
-#: framework-customizations/theme/options/post-customizations.php:233
+#: framework-customizations/theme/options/post-customizations.php:203
+#: framework-customizations/theme/options/post-customizations.php:220
 #: framework-customizations/theme/options/home.php:56
 #: framework-customizations/theme/options/home.php:69
 #: framework-customizations/theme/options/home.php:177
@@ -1785,7 +1788,6 @@ msgstr ""
 #: framework-customizations/theme/options/general.php:108
 #: framework-customizations/theme/options/general.php:121
 #: framework-customizations/theme/options/general.php:134
-#: framework-customizations/theme/options/general.php:147
 #: framework-customizations/theme/options/header-settings.php:307
 #: framework-customizations/theme/options/single-post.php:38
 #: framework-customizations/theme/options/single-post.php:51
@@ -1798,8 +1800,7 @@ msgstr ""
 #: framework-customizations/theme/options/single-post.php:142
 #: framework-customizations/theme/options/single-post.php:155
 #: framework-customizations/theme/options/single-post.php:168
-#: framework-customizations/theme/options/single-post.php:181
-#: framework-customizations/theme/options/single-post.php:306
+#: framework-customizations/theme/options/single-post.php:293
 #: framework-customizations/theme/options/posts/page.php:24
 #: framework-customizations/theme/options/posts/page.php:62
 #: framework-customizations/theme/options/posts/page.php:75
@@ -1810,7 +1811,6 @@ msgstr ""
 #: framework-customizations/theme/options/posts/page.php:144
 #: framework-customizations/theme/options/posts/page.php:157
 #: framework-customizations/theme/options/posts/page.php:170
-#: framework-customizations/theme/options/posts/page.php:183
 #: framework-customizations/theme/options/taxonomies/category.php:19
 msgid "Hide"
 msgstr ""
@@ -1827,9 +1827,8 @@ msgstr ""
 #: framework-customizations/theme/options/post-customizations.php:164
 #: framework-customizations/theme/options/post-customizations.php:177
 #: framework-customizations/theme/options/post-customizations.php:190
-#: framework-customizations/theme/options/post-customizations.php:203
-#: framework-customizations/theme/options/post-customizations.php:220
-#: framework-customizations/theme/options/post-customizations.php:229
+#: framework-customizations/theme/options/post-customizations.php:207
+#: framework-customizations/theme/options/post-customizations.php:216
 #: framework-customizations/theme/options/home.php:52
 #: framework-customizations/theme/options/home.php:65
 #: framework-customizations/theme/options/home.php:173
@@ -1852,7 +1851,6 @@ msgstr ""
 #: framework-customizations/theme/options/general.php:104
 #: framework-customizations/theme/options/general.php:117
 #: framework-customizations/theme/options/general.php:130
-#: framework-customizations/theme/options/general.php:143
 #: framework-customizations/theme/options/header-settings.php:303
 #: framework-customizations/theme/options/single-post.php:34
 #: framework-customizations/theme/options/single-post.php:47
@@ -1865,8 +1863,7 @@ msgstr ""
 #: framework-customizations/theme/options/single-post.php:138
 #: framework-customizations/theme/options/single-post.php:151
 #: framework-customizations/theme/options/single-post.php:164
-#: framework-customizations/theme/options/single-post.php:177
-#: framework-customizations/theme/options/single-post.php:310
+#: framework-customizations/theme/options/single-post.php:297
 #: framework-customizations/theme/options/posts/page.php:28
 #: framework-customizations/theme/options/posts/page.php:66
 #: framework-customizations/theme/options/posts/page.php:79
@@ -1877,7 +1874,6 @@ msgstr ""
 #: framework-customizations/theme/options/posts/page.php:140
 #: framework-customizations/theme/options/posts/page.php:153
 #: framework-customizations/theme/options/posts/page.php:166
-#: framework-customizations/theme/options/posts/page.php:179
 #: framework-customizations/theme/options/taxonomies/category.php:23
 msgid "Show"
 msgstr ""
@@ -1935,7 +1931,7 @@ msgid "Bottom post banner"
 msgstr ""
 
 #: framework-customizations/theme/options/post-customizations.php:96
-#: framework-customizations/theme/options/single-post.php:148
+#: framework-customizations/theme/options/single-post.php:135
 #: framework-customizations/theme/options/posts/page.php:98
 msgid "Reading position indicator"
 msgstr ""
@@ -1965,87 +1961,80 @@ msgid "Views meta"
 msgstr ""
 
 #: framework-customizations/theme/options/post-customizations.php:161
-#: framework-customizations/theme/options/general.php:127
 #: framework-customizations/theme/options/single-post.php:83
 #: framework-customizations/theme/options/posts/page.php:137
-msgid "Like meta"
+msgid "Author name"
 msgstr ""
 
 #: framework-customizations/theme/options/post-customizations.php:174
-#: framework-customizations/theme/options/single-post.php:96
 #: framework-customizations/theme/options/posts/page.php:150
-msgid "Author name"
+msgid "Author Bio Box"
 msgstr ""
 
 #: framework-customizations/theme/options/post-customizations.php:187
 #: framework-customizations/theme/options/posts/page.php:163
-msgid "Author Bio Box"
-msgstr ""
-
-#: framework-customizations/theme/options/post-customizations.php:200
-#: framework-customizations/theme/options/posts/page.php:176
 msgid "Share buttons"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:213
+#: framework-customizations/theme/options/post-customizations.php:200
 msgid "Related posts"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:226
-#: framework-customizations/theme/options/single-post.php:135
+#: framework-customizations/theme/options/post-customizations.php:213
+#: framework-customizations/theme/options/single-post.php:122
 msgid "Post Fly Box"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:240
+#: framework-customizations/theme/options/post-customizations.php:227
 msgid "Review System"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:246
+#: framework-customizations/theme/options/post-customizations.php:233
 msgid "Review Position"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:248
+#: framework-customizations/theme/options/post-customizations.php:235
 msgid "Hide the review"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:249
+#: framework-customizations/theme/options/post-customizations.php:236
 msgid "Above the post"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:250
+#: framework-customizations/theme/options/post-customizations.php:237
 msgid "Under the post"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:257
+#: framework-customizations/theme/options/post-customizations.php:244
 msgid "Review Title"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:261
+#: framework-customizations/theme/options/post-customizations.php:248
 msgid "Review Description"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:265
+#: framework-customizations/theme/options/post-customizations.php:252
 msgid "Rating"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:269
+#: framework-customizations/theme/options/post-customizations.php:256
 msgid "Feature Name"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:271
+#: framework-customizations/theme/options/post-customizations.php:258
 msgid "Camera or ram or anything"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:274
+#: framework-customizations/theme/options/post-customizations.php:261
 msgid "Score"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:284
+#: framework-customizations/theme/options/post-customizations.php:271
 msgid "Add Feature and Score"
 msgstr ""
 
-#: framework-customizations/theme/options/post-customizations.php:290
-#: framework-customizations/theme/options/post-customizations.php:298
+#: framework-customizations/theme/options/post-customizations.php:277
+#: framework-customizations/theme/options/post-customizations.php:285
 msgid "Post Background"
 msgstr ""
 
@@ -2090,44 +2079,39 @@ msgstr ""
 
 #: framework-customizations/theme/options/main-carousel.php:102
 #: framework-customizations/theme/options/header-settings.php:387
-msgid "Most liked posts"
+msgid "Most viewed posts"
 msgstr ""
 
 #: framework-customizations/theme/options/main-carousel.php:103
 #: framework-customizations/theme/options/header-settings.php:388
-msgid "Most viewed posts"
+msgid "Selected categories"
 msgstr ""
 
 #: framework-customizations/theme/options/main-carousel.php:104
 #: framework-customizations/theme/options/header-settings.php:389
-msgid "Selected categories"
+msgid "Selected tags"
 msgstr ""
 
 #: framework-customizations/theme/options/main-carousel.php:105
 #: framework-customizations/theme/options/header-settings.php:390
-msgid "Selected tags"
-msgstr ""
-
-#: framework-customizations/theme/options/main-carousel.php:106
-#: framework-customizations/theme/options/header-settings.php:391
 msgid "Selected author"
 msgstr ""
 
-#: framework-customizations/theme/options/main-carousel.php:123
-#: framework-customizations/theme/options/header-settings.php:408
+#: framework-customizations/theme/options/main-carousel.php:122
+#: framework-customizations/theme/options/header-settings.php:407
 msgid "Select Tags"
 msgstr ""
 
-#: framework-customizations/theme/options/main-carousel.php:131
-#: framework-customizations/theme/options/header-settings.php:416
+#: framework-customizations/theme/options/main-carousel.php:130
+#: framework-customizations/theme/options/header-settings.php:415
 msgid "Select author"
 msgstr ""
 
-#: framework-customizations/theme/options/main-carousel.php:146
+#: framework-customizations/theme/options/main-carousel.php:145
 msgid "Slides Count"
 msgstr ""
 
-#: framework-customizations/theme/options/main-carousel.php:150
+#: framework-customizations/theme/options/main-carousel.php:149
 msgid "Exclude Posts"
 msgstr ""
 
@@ -2176,8 +2160,10 @@ msgstr ""
 
 #: framework-customizations/theme/options/home.php:22
 #: framework-customizations/theme/options/home.php:85
+#: framework-customizations/theme/options/home.php:128
 #: framework-customizations/theme/options/home.php:206
 #: framework-customizations/theme/options/home.php:269
+#: framework-customizations/theme/options/home.php:312
 #: framework-customizations/theme/options/layouts.php:348
 #: framework-customizations/theme/options/header-settings.php:18
 msgid "Yes"
@@ -2185,8 +2171,10 @@ msgstr ""
 
 #: framework-customizations/theme/options/home.php:26
 #: framework-customizations/theme/options/home.php:89
+#: framework-customizations/theme/options/home.php:124
 #: framework-customizations/theme/options/home.php:210
 #: framework-customizations/theme/options/home.php:273
+#: framework-customizations/theme/options/home.php:308
 #: framework-customizations/theme/options/layouts.php:344
 #: framework-customizations/theme/options/header-settings.php:14
 msgid "No"
@@ -2240,6 +2228,56 @@ msgstr ""
 #: framework-customizations/theme/options/home.php:98
 #: framework-customizations/theme/options/home.php:282
 msgid "Add Block"
+msgstr ""
+
+#: framework-customizations/theme/options/home.php:120
+#: framework-customizations/theme/options/home.php:304
+msgid "Show recent posts"
+msgstr ""
+
+#: framework-customizations/theme/options/home.php:121
+#: framework-customizations/theme/options/home.php:305
+msgid "Show or hide recent posts on home page"
+msgstr ""
+
+#: framework-customizations/theme/options/home.php:136
+#: framework-customizations/theme/options/home.php:320
+msgid "Recent Posts"
+msgstr ""
+
+#: framework-customizations/theme/options/home.php:137
+#: framework-customizations/theme/options/home.php:321
+msgid "Recent Posts Title"
+msgstr ""
+
+#: framework-customizations/theme/options/home.php:142
+#: framework-customizations/theme/options/home.php:326
+#: framework-customizations/theme/options/layouts.php:57
+#: framework-customizations/theme/options/layouts.php:141
+#: framework-customizations/theme/options/layouts.php:225
+#: framework-customizations/theme/options/layouts.php:296
+#: framework-customizations/theme/options/layouts.php:380
+msgid "Posts Style"
+msgstr ""
+
+#: framework-customizations/theme/options/home.php:143
+#: framework-customizations/theme/options/home.php:327
+msgid "Choose the style of posts for home and all archive pages"
+msgstr ""
+
+#: framework-customizations/theme/options/home.php:145
+#: framework-customizations/theme/options/home.php:329
+msgid "Blog"
+msgstr ""
+
+#: framework-customizations/theme/options/home.php:146
+#: framework-customizations/theme/options/home.php:330
+msgid "List Style"
+msgstr ""
+
+#: framework-customizations/theme/options/home.php:147
+#: framework-customizations/theme/options/home.php:331
+msgid "Masonry Style"
 msgstr ""
 
 #: framework-customizations/theme/options/home.php:157
@@ -2437,14 +2475,6 @@ msgstr ""
 msgid "Archive Description"
 msgstr ""
 
-#: framework-customizations/theme/options/layouts.php:57
-#: framework-customizations/theme/options/layouts.php:141
-#: framework-customizations/theme/options/layouts.php:225
-#: framework-customizations/theme/options/layouts.php:296
-#: framework-customizations/theme/options/layouts.php:380
-msgid "Posts Style"
-msgstr ""
-
 #: framework-customizations/theme/options/layouts.php:58
 msgid "Choose the style of posts for archive page"
 msgstr ""
@@ -2539,7 +2569,7 @@ msgid "Time format"
 msgstr ""
 
 #: framework-customizations/theme/options/general.php:35
-#: framework-customizations/theme/options/single-post.php:196
+#: framework-customizations/theme/options/single-post.php:183
 msgid "Traditional"
 msgstr ""
 
@@ -2552,20 +2582,20 @@ msgid "Scroll to top button"
 msgstr ""
 
 #: framework-customizations/theme/options/general.php:48
-#: framework-customizations/theme/options/single-post.php:231
-#: framework-customizations/theme/options/single-post.php:245
-#: framework-customizations/theme/options/single-post.php:259
-#: framework-customizations/theme/options/single-post.php:273
-#: framework-customizations/theme/options/single-post.php:287
+#: framework-customizations/theme/options/single-post.php:218
+#: framework-customizations/theme/options/single-post.php:232
+#: framework-customizations/theme/options/single-post.php:246
+#: framework-customizations/theme/options/single-post.php:260
+#: framework-customizations/theme/options/single-post.php:274
 msgid "hide"
 msgstr ""
 
 #: framework-customizations/theme/options/general.php:52
-#: framework-customizations/theme/options/single-post.php:226
-#: framework-customizations/theme/options/single-post.php:240
-#: framework-customizations/theme/options/single-post.php:254
-#: framework-customizations/theme/options/single-post.php:268
-#: framework-customizations/theme/options/single-post.php:282
+#: framework-customizations/theme/options/single-post.php:213
+#: framework-customizations/theme/options/single-post.php:227
+#: framework-customizations/theme/options/single-post.php:241
+#: framework-customizations/theme/options/single-post.php:255
+#: framework-customizations/theme/options/single-post.php:269
 msgid "show"
 msgstr ""
 
@@ -2597,7 +2627,7 @@ msgstr ""
 msgid "Numbers (1,2,3)"
 msgstr ""
 
-#: framework-customizations/theme/options/general.php:140
+#: framework-customizations/theme/options/general.php:127
 msgid "Rate meta"
 msgstr ""
 
@@ -2719,34 +2749,34 @@ msgid "Show News Ticker"
 msgstr ""
 
 #: framework-customizations/theme/options/header-settings.php:375
-#: framework-customizations/theme/options/single-post.php:319
+#: framework-customizations/theme/options/single-post.php:306
 #: framework-customizations/theme/options/social.php:22
 msgid "Title"
 msgstr ""
 
-#: framework-customizations/theme/options/header-settings.php:431
+#: framework-customizations/theme/options/header-settings.php:430
 msgid "Posts count"
 msgstr ""
 
-#: framework-customizations/theme/options/header-settings.php:436
+#: framework-customizations/theme/options/header-settings.php:435
 msgid "Show the carousel on home page only or show on all pages"
 msgstr ""
 
-#: framework-customizations/theme/options/header-settings.php:437
+#: framework-customizations/theme/options/header-settings.php:436
 msgid "Show on home page only"
 msgstr ""
 
-#: framework-customizations/theme/options/header-settings.php:440
-#: framework-customizations/theme/options/header-settings.php:453
+#: framework-customizations/theme/options/header-settings.php:439
+#: framework-customizations/theme/options/header-settings.php:452
 msgid "no"
 msgstr ""
 
-#: framework-customizations/theme/options/header-settings.php:444
-#: framework-customizations/theme/options/header-settings.php:457
+#: framework-customizations/theme/options/header-settings.php:443
+#: framework-customizations/theme/options/header-settings.php:456
 msgid "yes"
 msgstr ""
 
-#: framework-customizations/theme/options/header-settings.php:450
+#: framework-customizations/theme/options/header-settings.php:449
 msgid "Show on Mobile Devices"
 msgstr ""
 
@@ -2755,89 +2785,89 @@ msgstr ""
 msgid "Post Settings"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:109
+#: framework-customizations/theme/options/single-post.php:96
 msgid "Author bio"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:122
+#: framework-customizations/theme/options/single-post.php:109
 msgid "Next and prev posts"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:161
+#: framework-customizations/theme/options/single-post.php:148
 msgid "Share buttons on posts"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:174
+#: framework-customizations/theme/options/single-post.php:161
 msgid "Share buttons on pages"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:191
+#: framework-customizations/theme/options/single-post.php:178
 msgid "Comments system"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:192
+#: framework-customizations/theme/options/single-post.php:179
 msgid "if DISQUS system selected the default comments system will be disabled"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:200
+#: framework-customizations/theme/options/single-post.php:187
 msgid "Disqus"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:208
+#: framework-customizations/theme/options/single-post.php:195
 msgid "Disqus short name"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:209
+#: framework-customizations/theme/options/single-post.php:196
 msgid "Create a disqus account and get the short name here "
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:209
+#: framework-customizations/theme/options/single-post.php:196
 msgid "DISQUS"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:217
+#: framework-customizations/theme/options/single-post.php:204
 msgid "Share icons"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:223
+#: framework-customizations/theme/options/single-post.php:210
 msgid "Share on Facebook"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:237
+#: framework-customizations/theme/options/single-post.php:224
 msgid "Share on Twitter"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:251
+#: framework-customizations/theme/options/single-post.php:238
 msgid "Share on Pinterest"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:265
+#: framework-customizations/theme/options/single-post.php:252
 msgid "Share on Google Plus"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:279
+#: framework-customizations/theme/options/single-post.php:266
 msgid "Share on Linked in"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:293
-#: framework-customizations/theme/options/single-post.php:302
-#: framework-customizations/theme/options/single-post.php:318
+#: framework-customizations/theme/options/single-post.php:280
+#: framework-customizations/theme/options/single-post.php:289
+#: framework-customizations/theme/options/single-post.php:305
 msgid "Related Posts"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:329
+#: framework-customizations/theme/options/single-post.php:316
 msgid "Number of posts"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:334
+#: framework-customizations/theme/options/single-post.php:321
 msgid "Query based on"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:336
+#: framework-customizations/theme/options/single-post.php:323
 msgid "Tags"
 msgstr ""
 
-#: framework-customizations/theme/options/single-post.php:337
+#: framework-customizations/theme/options/single-post.php:324
 msgid "Categories"
 msgstr ""
 
@@ -2891,12 +2921,12 @@ msgstr ""
 msgid "Bottom page banner"
 msgstr ""
 
-#: framework-customizations/theme/options/posts/page.php:189
-#: framework-customizations/theme/options/posts/page.php:197
+#: framework-customizations/theme/options/posts/page.php:176
+#: framework-customizations/theme/options/posts/page.php:184
 msgid "Page Background"
 msgstr ""
 
-#: framework-customizations/theme/options/posts/page.php:200
+#: framework-customizations/theme/options/posts/page.php:187
 #: framework-customizations/theme/options/taxonomies/category.php:47
 #: framework-customizations/theme/options/taxonomies/post_tag.php:17
 msgid ""
@@ -2934,14 +2964,10 @@ msgstr ""
 
 #. Description of the theme
 msgid ""
-"<strong>A Wordpress News, Magazine, Blog theme. It's created to help you "
-"make your site easily base on the powerful customize of WordPress. Designed "
-"&amp; Developed by BbioonThemes</strong> - <a href=\"http://www.bbioon.com\">"
-"www.bbioon.com</a>."
-msgstr ""
-
-#. URI of the theme
-msgid "https://goo.gl/XB61Yw"
+"<strong>A Wordpress News, Magazine, Blog, and Shop theme. It's created to "
+"help you make your site easily base on the powerful customize of WordPress. "
+"Designed &amp; Developed by BbioonThemes</strong> - <a href=\"https://aait."
+"sa\">www.aait.sa</a>."
 msgstr ""
 
 #. Author of the theme

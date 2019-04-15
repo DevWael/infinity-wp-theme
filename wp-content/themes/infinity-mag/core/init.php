@@ -121,7 +121,11 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 			wp_enqueue_style( 'woocommerce_styles', DW_CSS_URI . 'woocommerce.css' );
 		}
 
-		wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Ubuntu' );
+		if ( is_rtl() ) {
+			wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Tajawal' );
+		} else {
+			wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Ubuntu' );
+		}
 
 		//Default stylesheet file (style.css)
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
@@ -602,7 +606,9 @@ function dw_demo_content( $demos ) {
 add_filter( 'update_footer', 'dw_footer_version', 12 );
 function dw_footer_version( $html ) {
 	if ( ( current_user_can( 'update_themes' ) || current_user_can( 'update_plugins' ) ) && defined( "FW" ) ) {
-		return ( empty( $html ) ? '' : $html . ' | ' ) . fw()->theme->manifest->get( 'name' ) . ' ' . fw()->theme->manifest->get( 'version' ) . ' | ' . 'By: Awamer Alshabaka';
+		return ( empty( $html ) ? '' : $html . ' | ' ) .
+		       fw()->theme->manifest->get( 'name' ) . ' | ' .
+		       esc_html__( 'By: Awamer Alshabaka', 'dw' );
 	} else {
 		return $html;
 	}

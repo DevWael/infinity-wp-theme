@@ -1084,7 +1084,7 @@ body.archive .sticky-sidebar {
 .posts-area {
 	position: relative;
 	border: 1px solid #D9D9D9;
-	padding: 15px;
+	padding: 30px 15px 15px;
 	height: 100%;
 	margin-bottom: 50px;
 }
