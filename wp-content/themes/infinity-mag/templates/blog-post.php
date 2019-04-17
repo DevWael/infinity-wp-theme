@@ -1,4 +1,4 @@
-<div <?php post_class( 'big-post' ); ?> itemscope itemtype="http://schema.org/Article">
+<div <?php post_class( 'big-post dw-big-blog' ); ?> itemscope itemtype="http://schema.org/Article">
 	<?php if ( function_exists( 'the_post_thumbnail' ) && has_post_thumbnail() ): ?>
         <div class="post-image">
             <a rel="bookmark" href="<?php the_permalink(); ?>"
@@ -10,7 +10,7 @@
 	<?php endif; ?>
     <div class="post-content">
 		<?php the_title( sprintf( '<h3 class="post-title h4" itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-		<?php get_template_part( 'content', 'meta' ); ?>
+		<?php get_template_part( 'loop/meta' ); ?>
     </div>
     <div class="post-text">
         <p><?php dw_excerpt(); ?></p>

@@ -85,7 +85,9 @@ if ( dw_get_setting( 'footer_widgets' ) === 'on' and ( is_active_sidebar( 'foote
 		<?php } ?>
     </div>
 </footer>
-</div>
+<?php if ( window_mag_get_setting( 'website_layout' ) == 'boxed' or window_mag_get_setting( 'website_layout' ) == 'wide' ) { ?>
+    </div>
+<?php } ?>
 <?php wp_footer(); ?>
 </body>
 </html>

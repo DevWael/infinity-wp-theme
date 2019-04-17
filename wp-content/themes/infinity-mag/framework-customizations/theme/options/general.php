@@ -12,6 +12,16 @@ $options = array(
 				'title'   => esc_html__( 'General', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(
+					'website_layout' => array(
+						'type'    => 'radio',
+						'value'   => 'boxed',
+						'label'   => esc_html__( 'Website Layout', 'dw' ),
+						'choices' => array(
+							'boxed'  => esc_html__( 'Boxed', 'dw' ),
+							'wide'   => esc_html__( 'Wide', 'dw' ),
+						),
+						'inline'  => true,
+					),
 					'sticky_sidebar' => array(
 						'type'         => 'switch',
 						'value'        => 'on',

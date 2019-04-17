@@ -25,18 +25,26 @@ if ( 'on' === dw_get_setting( 'sticky_nav' ) ) {
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+
+<?php if ( dw_get_setting( 'website_layout' ) == 'boxed' ) { ?>
 <div class="wrapper">
-	<?php
-	if ( dw_get_setting( 'alert_bar/control' ) == 'on' ) {
-		get_template_part( 'headers/alert-bar' );
-	}
-	?>
-	<?php
-	if ( dw_get_setting( 'header_types' ) ) {
-		get_template_part( 'headers/' . dw_get_setting( 'header_types' ) );
-	} else {
-		get_template_part( 'headers/header-one' );
-	}
-	?>
+	<?php } elseif ( dw_get_setting( 'website_layout' ) == 'wide' ) { ?>
+    <div class="wrapper wide">
+		<?php } ?>
+
+
+        <div class="wrapper">
+			<?php
+			if ( dw_get_setting( 'alert_bar/control' ) == 'on' ) {
+				get_template_part( 'headers/alert-bar' );
+			}
+			?>
+			<?php
+			if ( dw_get_setting( 'header_types' ) ) {
+				get_template_part( 'headers/' . dw_get_setting( 'header_types' ) );
+			} else {
+				get_template_part( 'headers/header-one' );
+			}
+			?>
 
 
