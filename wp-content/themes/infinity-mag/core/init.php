@@ -1,8 +1,12 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 //disable gutenberg editor
 add_filter( 'use_block_editor_for_post', '__return_false', 10 );
 add_filter( 'use_block_editor_for_page', '__return_false', 10 );
 require_once DW_CORE . 'blocks/init.php';//half width blocks
+require_once DW_CORE . 'suggestions/init.php';//suggestions system
 require_once DW_CORE . 'full-width-blocks/init.php';//full width blocks
 
 /**
