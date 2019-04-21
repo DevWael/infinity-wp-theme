@@ -5,10 +5,10 @@
 if ( ! function_exists( 'dw_widget_slider_loop' ) ) {
 	function dw_widget_slider_loop( $query_data, $widget_id = false ) {
 		if ( isset( $query_data['meta_query'] ) ) {
-			$featured_image = array(
-				'key' => '_thumbnail_id'
+			$query_data['meta_query']['post_thumb'] = array(
+				'key'     => '_thumbnail_id',
+				'compare' => 'EXISTS'
 			);
-			array_push( $query_data['meta_query'], $featured_image );
 		} else {
 			$query_data['meta_key'] = '_thumbnail_id';
 		}
@@ -46,13 +46,12 @@ if ( ! function_exists( 'dw_widget_slider_loop' ) ) {
  */
 if ( ! function_exists( 'dw_widget_pics_loop' ) ) {
 	function dw_widget_pics_loop( $query_data, $widget_id = false ) {
-		$i = 1;
-		//fw_print( $query_data );
+		$i              = 1;
 		if ( isset( $query_data['meta_query'] ) ) {
-			$featured_image = array(
-				'key' => '_thumbnail_id'
+			$query_data['meta_query']['post_thumb'] = array(
+				'key'     => '_thumbnail_id',
+				'compare' => 'EXISTS'
 			);
-			array_push( $query_data['meta_query'], $featured_image );
 		} else {
 			$query_data['meta_key'] = '_thumbnail_id';
 		}

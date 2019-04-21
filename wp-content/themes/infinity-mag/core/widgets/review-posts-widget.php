@@ -19,10 +19,11 @@ class dw_review_posts extends WP_Widget {
 	/**
 	 * Front-end display of widget.
 	 *
-	 * @see WP_Widget::widget()
-	 *
 	 * @param array $args Widget arguments.
 	 * @param array $instance Saved values from database.
+	 *
+	 * @see WP_Widget::widget()
+	 *
 	 */
 	public function widget( $args, $instance ) {
 		echo $args['before_widget'];
@@ -36,11 +37,12 @@ class dw_review_posts extends WP_Widget {
 		endif;
 		$query_args = array(
 			'meta_query'          => array(
-				'review_posts' => array(
+				'relation'     => 'AND',
+				'top_reviews' => array(
 					'key'     => 'fw_option:window_review_position',
-					'value'   => 'off',
-					'compare' => '!='
-				)
+					'value'   => array( 'top', 'bottom' ),
+					'compare' => 'IN'
+				),
 			),
 			'posts_per_page'      => absint( $count_popular ),
 			'ignore_sticky_posts' => 1,
@@ -69,9 +71,10 @@ class dw_review_posts extends WP_Widget {
 	/**
 	 * Back-end widget form.
 	 *
+	 * @param array $instance Previously saved values from database.
+	 *
 	 * @see WP_Widget::form()
 	 *
-	 * @param array $instance Previously saved values from database.
 	 */
 	public function form( $instance ) {
 		$title          = ! empty( $instance['title'] ) ? $instance['title'] : '';
@@ -122,12 +125,12 @@ class dw_review_posts extends WP_Widget {
 	/**
 	 * Sanitize widget form values as they are saved.
 	 *
-	 * @see WP_Widget::update()
-	 *
 	 * @param array $new_instance Values just sent to be saved.
 	 * @param array $old_instance Previously saved values from database.
 	 *
 	 * @return array Updated safe values to be saved.
+	 * @see WP_Widget::update()
+	 *
 	 */
 	public function update( $new_instance, $old_instance ) {
 		$instance                   = array();

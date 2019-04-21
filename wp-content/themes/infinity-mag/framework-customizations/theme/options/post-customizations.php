@@ -227,17 +227,20 @@ $options = array(
 				'title'   => esc_html__( 'Review System', 'dw' ),
 				'options' => array(
 					$prefix . 'review_position' => array(
-						'type'                  => 'radio',
-						'value'                 => 'off',
-						'save-in-separate-meta' => true,
-						'label'                 => esc_html__( 'Review Position', 'dw' ),
-						'choices'               => array( // Note: Avoid bool or int keys http://bit.ly/1cQgVzk
+						'type'       => 'radio',
+						'value'      => 'off',
+						'fw-storage'            => array(
+							'type'      => 'post-meta',
+							'post-meta' => 'fw_option:' . $prefix . 'review_position',
+						 ),
+						'label'      => esc_html__( 'Review Position', 'dw' ),
+						'choices'    => array( // Note: Avoid bool or int keys http://bit.ly/1cQgVzk
 							'off'    => esc_html__( 'Hide the review', 'dw' ),
 							'top'    => esc_html__( 'Above the post', 'dw' ),
 							'bottom' => esc_html__( 'Under the post', 'dw' )
 						),
 						// Display choices inline instead of list
-						'inline'                => true
+						'inline'     => true
 					),
 					$prefix . 'review-title'    => array(
 						'type'  => 'text',
@@ -250,7 +253,10 @@ $options = array(
 					$prefix . 'review-rating'   => array(
 						'type'                  => 'addable-box',
 						'label'                 => esc_html__( 'Rating', 'dw' ),
-						'save-in-separate-meta' => true,
+						'fw-storage'            => array(
+							'type'      => 'post-meta',
+							'post-meta' => 'fw_option:' . $prefix . 'review-rating',
+						),
 						'box-options'           => array(
 							'feature_name' => array(
 								'label' => esc_html__( 'Feature Name', 'dw' ),
