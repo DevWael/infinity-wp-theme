@@ -67,7 +67,7 @@ toastr.options.toastClass = 'dw_toastr';
         nav: true,
         dots: true,
         autoplaySpeed: 2000,
-        navText: ["<i class='fa fa-angle-right'></i>", "<i class='fa fa-angle-left'></i>"],
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         responsive: {
             0: {
                 items: 1,

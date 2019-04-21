@@ -33,7 +33,7 @@ if ( 'on' === dw_get_setting( 'sticky_nav' ) ) {
 		<?php } ?>
 
 
-        <div class="wrapper">
+
 			<?php
 			if ( dw_get_setting( 'alert_bar/control' ) == 'on' ) {
 				get_template_part( 'headers/alert-bar' );

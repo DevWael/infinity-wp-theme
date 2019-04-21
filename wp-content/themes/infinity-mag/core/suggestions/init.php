@@ -4,10 +4,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'DW_REMOTE_SITE_URL', 'https://wp.4hoste.com/wael/magazine' );
-
 //Registering plugin admin setting page template
-add_action( 'admin_menu', 'dw_shipping_cities_pagea', 99 );
-function dw_shipping_cities_pagea() {
+add_action( 'admin_menu', 'dw_suggestions_options_page', 99 );
+function dw_suggestions_options_page() {
 	add_theme_page(
 		esc_html__( 'Suggestions', 'dw' ),
 		esc_html__( 'Suggestions', 'dw' ),

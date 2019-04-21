@@ -12,5 +12,4 @@
 	    <?php get_template_part( 'loop/meta' ); ?>
         <p><?php dw_excerpt(); ?></p>
     </div>
-    <div class="post-icon"><i class="fa fa-microphone" aria-hidden="true"></i></div>
 </div>

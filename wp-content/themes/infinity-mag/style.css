@@ -1879,7 +1879,12 @@ header .site-tagline {
 /*Magazine Posts blocks*/
 /*-----------------------------------------------*/
 .small-post {
-	margin-bottom: 15px;
+	margin-bottom: 20px;
+	padding-bottom: 1px;
+}
+
+.small-post .writer-info ul {
+	margin-bottom: 0;
 }
 
 .small-post.format-standard .post-image a:before {
@@ -2036,11 +2041,11 @@ header .site-tagline {
 	margin-right: 5px;
 }
 
-.small-post .post-content .writer-info .dw-comments-meta{
+.small-post .post-content .writer-info .dw-comments-meta {
 	display: none;
 }
 
-.small-post .post-content .writer-info a{
+.small-post .post-content .writer-info a {
 	color: #797979;
 }
 
@@ -3551,7 +3556,7 @@ header .site-tagline {
 	text-decoration: none;
 }
 
-.singular .share-box .share-icons li:last-of-type a{
+.singular .share-box .share-icons li:last-of-type a {
 	border: none;
 }
 
@@ -4537,6 +4542,7 @@ div#comments,
 
 div#comments a {
 	text-decoration: none;
+	color: #0C7E73;
 }
 
 div#comments h3.comment-reply-title,
@@ -4814,7 +4820,7 @@ ol.comments_list .commentHead .CommentHeadDetails span a {
 	border-radius: 3px;
 }
 
-.CommentHeadLinks a:hover {
+div#comments .CommentHeadLinks a:hover {
 	background: #00AD9D;
 	color: #fff;
 	border-color: transparent;
@@ -5615,7 +5621,7 @@ ol.children li {
 	filter: brightness(0) invert(1);
 }
 
-.widget-carousel .carousel-post .writer-info .dw-comments-meta{
+.widget-carousel .carousel-post .writer-info .dw-comments-meta {
 	display: none;
 }
 
