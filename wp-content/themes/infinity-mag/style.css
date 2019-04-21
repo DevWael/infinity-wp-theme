@@ -2990,7 +2990,7 @@ header .site-tagline {
 	padding: 15px 15px;
 	position: relative;
 	z-index: 1;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	background-color: #252525;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -3025,7 +3025,7 @@ header .site-tagline {
 
 .post-cover .post-data {
 	text-align: center;
-	padding: 110px 60px 80px;
+	padding: 250px 60px 180px;
 }
 
 .post-cover .post-data .post-box-title {

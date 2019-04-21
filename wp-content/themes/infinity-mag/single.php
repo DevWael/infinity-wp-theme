@@ -39,31 +39,33 @@ if ( $dw_post_layout_meta ) {
 }
 ?>
     <section class="singular-post">
+        <?php
+        /**
+         * Post Cover block
+         */
+        if ( 'on' === dw_get_meta( get_the_ID(), 'window_post_cover/control' ) ):
+	        //Post cover image url
+	        $dw_cover_image = dw_get_meta( get_the_ID(), 'window_post_cover/on/photo/url' );
+	        ?>
+            <div class="post-cover"<?php if ( $dw_cover_image ) { ?>
+                style="background-image: url('<?php echo esc_url( $dw_cover_image ); ?>')" <?php } ?>>
+                <div class="dark-bg"></div>
+                <div class="post-data">
+			        <?php the_title( '<h1 class="post-box-title h3">', '</h1>' ); ?>
+			        <?php get_template_part( 'templates/part', 'meta' ); ?>
+                </div>
+		        <?php if ( $dw_cover_image ) { ?>
+                    <a href="<?php echo esc_url( $dw_cover_image ); ?>" class="magnific-gallery zoom-in">
+                        <i class="fa fa-arrows-alt"></i>
+                    </a>
+		        <?php } ?>
+            </div>
+        <?php endif; ?>
         <div class="container">
 			<?php if ( function_exists( 'fw_ext_breadcrumbs' ) && 'on' === dw_get_setting( 'breadcrumbs_switch' ) ) {
 				fw_ext_breadcrumbs( '/' );
 			}
-			/**
-			 * Post Cover block
-			 */
-			if ( 'on' === dw_get_meta( get_the_ID(), 'window_post_cover/control' ) ):
-				//Post cover image url
-				$dw_cover_image = dw_get_meta( get_the_ID(), 'window_post_cover/on/photo/url' );
-				?>
-                <div class="post-cover"<?php if ( $dw_cover_image ) { ?>
-                    style="background-image: url('<?php echo esc_url( $dw_cover_image ); ?>')" <?php } ?>>
-                    <div class="dark-bg"></div>
-                    <div class="post-data">
-						<?php the_title( '<h1 class="post-box-title h3">', '</h1>' ); ?>
-						<?php get_template_part( 'templates/part', 'meta' ); ?>
-                    </div>
-					<?php if ( $dw_cover_image ) { ?>
-                        <a href="<?php echo esc_url( $dw_cover_image ); ?>" class="magnific-gallery zoom-in">
-                            <i class="fa fa-arrows-alt"></i>
-                        </a>
-					<?php } ?>
-                </div>
-			<?php endif; ?>
+			?>
             <div class="row">
                 <div class="<?php echo esc_attr( $dw_content_class ); ?>">
 					<?php
