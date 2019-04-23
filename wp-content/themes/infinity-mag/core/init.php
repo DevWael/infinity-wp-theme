@@ -1384,6 +1384,25 @@ if ( ! function_exists( 'dw_categories' ) ) {
 }
 
 /**
+ * Get all tags data to select it in theme options and custom widgets
+ * the output is array key->term_id, Value->tag_name
+ */
+if ( ! function_exists( 'dw_get_all_tags' ) ) {
+	function dw_get_all_tags() {
+		$arr   = [];
+		$terms = get_terms( array(
+			'taxonomy'   => 'post_tag',
+			'hide_empty' => false,
+		) );
+		foreach ( $terms as $term ) {
+			$arr[ $term->term_id ] = $term->name;
+		}
+
+		return $arr;
+	}
+}
+
+/**
  * Get Time
  * @return string time format with the selected style in theme options
  */

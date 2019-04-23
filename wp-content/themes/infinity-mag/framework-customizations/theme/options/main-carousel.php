@@ -37,7 +37,7 @@ $options = array(
 									'value'   => 'center-slide',
 									'label'   => esc_html__( 'Carousel Style', 'dw' ),
 									'choices' => array(
-										'hero-one'  => array(
+										'hero-one'   => array(
 											// (required) url for thumbnail
 											'small' => array(
 												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_one.png' ),
@@ -49,7 +49,7 @@ $options = array(
 												'height' => 200
 											),
 										),
-										'hero-two' => array(
+										'hero-two'   => array(
 											// (required) url for thumbnail
 											'small' => array(
 												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_two.png' ),
@@ -61,7 +61,7 @@ $options = array(
 												'height' => 200
 											),
 										),
-										'hero-three'   => array(
+										'hero-three' => array(
 											// (required) url for thumbnail
 											'small' => array(
 												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_three.png' ),
@@ -73,7 +73,7 @@ $options = array(
 												'height' => 200
 											),
 										),
-										'hero-four'   => array(
+										'hero-four'  => array(
 											// (required) url for thumbnail
 											'small' => array(
 												'src'    => esc_url( DW_IMAGES_DIR . 'settings/hero/hero_four.png' ),
@@ -118,10 +118,10 @@ $options = array(
 										),
 										'tag'      => array(
 											'tag_select' => array(
-												'type'       => 'multi-select',
-												'label'      => esc_html__( 'Select Tags', 'dw' ),
-												'population' => 'taxonomy',
-												'source'     => 'post_tag'
+												'type'        => 'multi-select',
+												'label'       => esc_html__( 'Select Tags', 'dw' ),
+												'prepopulate' => 999,
+												'choices'     => dw_get_all_tags()
 											)
 										),
 										'author'   => array(

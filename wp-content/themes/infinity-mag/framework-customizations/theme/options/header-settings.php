@@ -106,7 +106,7 @@ $options = array(
 						),
 					),
 					$cart,
-					'search_nav'     => array(
+					'search_nav'        => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Search box in Navbar', 'dw' ),
@@ -119,123 +119,30 @@ $options = array(
 							'label' => esc_html__( 'on', 'dw' ),
 						),
 					),
-					'header_background' => array(
-						'type'         => 'multi-picker',
-						'label'        => false,
-						'picker'       => array(
-							// '<custom-key>' => option
-							'control' => array(
-								'label'        => esc_html__( 'Header Background', 'dw' ),
-								'type'         => 'switch', // or 'short-select'
-								'inline'       => true,
-								'value'        => 'off',
-								'left-choice'  => array(
-									'value' => 'off',
-									'label' => esc_html__( 'Off', 'dw' ),
-								),
-								'right-choice' => array(
-									'value' => 'background',
-									'label' => esc_html__( 'Background', 'dw' ),
-								),
-							)
-						),
-						'choices'      => array(
-							'background' => array(
-								'color_select' => array(
-									'type'     => 'color-picker',
-									'palettes' => array(
-										'#ba4e4e',
-										'#0ce9ed',
-										'#1082bb',
-										'#9610bb',
-										'#ebbb2d',
-										'#941940'
-									),
-									'label'    => esc_html__( 'Background Color', 'dw' ),
-									'value'    => '#f5f5f5'
-								),
-								'image_select' => array(
-									'type'        => 'upload',
-									'label'       => esc_html__( 'Background image', 'dw' ),
-									'images_only' => true
-								),
-								'bg_repeat'    => array(
-									'type'    => 'select',
-									'value'   => 'choice-3',
-									'label'   => esc_html__( 'Background Repeat', 'dw' ),
-									'choices' => array(
-										''          => '',
-										'no-repeat' => esc_html__( 'No Repeat', 'dw' ),
-										'repeat'    => esc_html__( 'Repeat', 'dw' ),
-										'repeat-x'  => esc_html__( 'Repeat X', 'dw' ),
-										'repeat-y'  => esc_html__( 'Repeat Y', 'dw' )
-									)
-								),
-								'bg_size'      => array(
-									'type'    => 'select',
-									'value'   => 'choice-3',
-									'label'   => esc_html__( 'Background Size', 'dw' ),
-									'choices' => array(
-										''        => esc_html__( 'None', 'dw' ),
-										'cover'   => esc_html__( 'Cover', 'dw' ),
-										'contain' => esc_html__( 'contain', 'dw' )
-
-									)
-								),
-								'bg_attach'    => array(
-									'type'    => 'select',
-									'value'   => 'choice-3',
-									'label'   => esc_html__( 'Background Attachment', 'dw' ),
-									'choices' => array(
-										''       => esc_html__( 'None', 'dw' ),
-										'fixed'  => esc_html__( 'Fixed', 'dw' ),
-										'scroll' => esc_html__( 'Scroll', 'dw' ),
-										'local'  => esc_html__( 'Local', 'dw' )
-									)
-								),
-								'bg_position'  => array(
-									'type'    => 'select',
-									'value'   => 'choice-3',
-									'label'   => esc_html__( 'Background Position', 'dw' ),
-									'choices' => array(
-										''              => esc_html__( 'None', 'dw' ),
-										'left top'      => esc_html__( 'Left top', 'dw' ),
-										'left center'   => esc_html__( 'Left center', 'dw' ),
-										'left bottom'   => esc_html__( 'Left bottom', 'dw' ),
-										'right top'     => esc_html__( 'Right top', 'dw' ),
-										'right center'  => esc_html__( 'Right center', 'dw' ),
-										'right bottom'  => esc_html__( 'Right bottom', 'dw' ),
-										'center top'    => esc_html__( 'Center top', 'dw' ),
-										'center center' => esc_html__( 'Center center', 'dw' ),
-										'center bottom' => esc_html__( 'Center bottom', 'dw' )
-									)
-								)
-							)
-						),
-						'show_borders' => false
-					),
-					'header_spacing'    => array(
-						'type'          => 'multi',
-						'label'         => false,
-						'inner-options' => array(
-							'padding_top'    => array(
-								'label' => esc_html__( 'Padding top', 'dw' ),
-								'desc'  => esc_html__( 'Enter numbers only, Value will be in pixels. (50 = 50px)', 'dw' ),
-								'attr'  => array(
-									'placeholder' => esc_html__( '50', 'dw' ),
-								),
-								'type'  => 'text'
-							),
-							'padding_bottom' => array(
-								'label' => esc_html__( 'Padding bottom', 'dw' ),
-								'desc'  => esc_html__( 'Enter numbers only, Value will be in pixels. (50 = 50px)', 'dw' ),
-								'attr'  => array(
-									'placeholder' => esc_html__( '50', 'dw' ),
-								),
-								'type'  => 'text'
-							)
-						)
-					)
+//					'header_spacing'    => array(
+//						'type'          => 'multi',
+//						'label'         => false,
+//						'inner-options' => array(
+//							'padding_top'    => array(
+//								'label'      => esc_html__( 'Padding top', 'dw' ),
+//								'properties' => array(
+//									'min'  => 0,
+//									'max'  => 100,
+//									'step' => 1, // Set slider step. Always > 0. Could be fractional.
+//								),
+//								'type'       => 'slider'
+//							),
+//							'padding_bottom' => array(
+//								'label' => esc_html__( 'Padding bottom', 'dw' ),
+//								'properties' => array(
+//									'min'  => 0,
+//									'max'  => 100,
+//									'step' => 1, // Set slider step. Always > 0. Could be fractional.
+//								),
+//								'type'       => 'slider'
+//							)
+//						)
+//					)
 				)
 			),
 			'logo_box'      => array(
@@ -405,8 +312,8 @@ $options = array(
 											'tag_select' => array(
 												'type'       => 'multi-select',
 												'label'      => esc_html__( 'Select Tags', 'dw' ),
-												'population' => 'taxonomy',
-												'source'     => 'post_tag'
+												'prepopulate' => 999,
+												'choices'     => dw_get_all_tags()
 											)
 										),
 										'author'   => array(
