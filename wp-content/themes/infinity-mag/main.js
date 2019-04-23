@@ -49,13 +49,22 @@ toastr.options.toastClass = 'dw_toastr';
     // });
 
     $(document).on('click', '.nav-btn', function () {
-        $('.dw-navbar .dw-menu').toggleClass('opened');
-        $('.dw-navbar .overlay').show();
+        $(document).trigger('dw_menu_trigger');
     });
 
     $(document).on('click', '.dw-navbar .overlay', function () {
-        $('.dw-navbar .dw-menu').toggleClass('opened');
+        $(document).trigger('dw_menu_trigger');
         $('.dw-navbar .overlay').hide();
+    });
+
+    $(document).on('click', '.dw_menu_trigger', function (e) {
+        e.preventDefault();
+        $(document).trigger('dw_menu_trigger');
+    });
+
+    $(document).on('dw_menu_trigger', function () {
+        $('.dw-navbar .dw-menu').toggleClass('opened');
+        $('.dw-navbar .overlay').show();
     });
 
     // FULL ARTICLE OWL

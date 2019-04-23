@@ -65,6 +65,19 @@ $options = array(
 							'label' => esc_html__( 'Hide', 'dw' )
 						),
 					),
+					'footer_mobile_bar'      => array(
+						'type'         => 'switch',
+						'value'        => 'off',
+						'label'        => esc_html__( 'Footer Mobile Navigation', 'dw' ),
+						'right-choice' => array(
+							'value' => 'on',
+							'label' => esc_html__( 'Show', 'dw' )
+						),
+						'left-choice'  => array(
+							'value' => 'off',
+							'label' => esc_html__( 'Hide', 'dw' )
+						),
+					),
 					'footer_rights_block' => array(
 						'type'    => 'radio',
 						'value'   => 'social',

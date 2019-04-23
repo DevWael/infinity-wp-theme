@@ -25,8 +25,9 @@ if ( 'on' === dw_get_setting( 'sticky_nav' ) ) {
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
-<?php if ( dw_get_setting( 'website_layout' ) == 'boxed' ) { ?>
+<?php
+do_action('dw_before_header');
+if ( dw_get_setting( 'website_layout' ) == 'boxed' ) { ?>
 <div class="wrapper">
 	<?php } elseif ( dw_get_setting( 'website_layout' ) == 'wide' ) { ?>
     <div class="wrapper wide">

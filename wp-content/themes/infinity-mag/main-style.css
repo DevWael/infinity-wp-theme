@@ -105,7 +105,7 @@ a:focus {
 	display: block;
 }
 
-.header-four-nav .menu > li > a{
+.header-four-nav .menu > li > a {
 	padding: 15px 25px;
 	position: relative;
 }
@@ -345,6 +345,45 @@ a:focus {
 	transition: all .5s ease-in-out;
 }
 
+.dw-mobile-navigation {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #f5f5f5;
+	border-top: 1px solid #d5d5d5;
+	z-index: 12;
+}
+
+.dw-mobile-navigation .item {
+	flex-basis: 100%;
+	text-align: center;
+}
+
+.dw-mobile-navigation .item a {
+	color: #8e8e8e;
+	display: block;
+	padding: 5px 0;
+}
+
+.dw-mobile-navigation .item.active a {
+	color: #141414;
+}
+
+.dw-mobile-navigation .item .icon {
+	display: block;
+	text-align: center;
+	font-size: 25px;
+}
+
+.dw-mobile-navigation .item .text {
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+}
+
 @media screen and (max-width: 575px) {
 	.dw-header-three-top {
 		flex-direction: column;
@@ -352,6 +391,10 @@ a:focus {
 }
 
 @media screen and (max-width: 768px) {
+	body.footer-mobile-bar {
+		padding-bottom: 62px;
+	}
+
 	.search-big-box .search-query-text,
 	.search-big-box .search-form label {
 		height: 35px;
@@ -362,6 +405,10 @@ a:focus {
 	.admin-bar .dw-navbar .dw-menu {
 		top: 46px !important;
 		height: calc(100vh - 46px) !important;
+	}
+
+	.dw-mobile-navigation {
+		display: flex;
 	}
 }
 
@@ -1599,7 +1646,7 @@ body.archive .sticky-sidebar {
 	justify-content: center;
 }
 
-.individual-post .writer-info ul li{
+.individual-post .writer-info ul li {
 	padding-left: 10px;
 	padding-right: 10px;
 }
