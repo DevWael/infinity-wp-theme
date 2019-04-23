@@ -17,17 +17,6 @@ $options = array(
 						'label' => esc_html__( 'Main Color', 'dw' ),
 						'value' => '#00ad9d'
 					),
-					'second_color'             => array(
-						'type'  => 'color-picker',
-						'label' => esc_html__( 'Second color', 'dw' ),
-						'value' => '#181818'
-					),
-				)
-			),
-			'body_box'   => array(
-				'title'   => esc_html__( 'Body', 'dw' ),
-				'type'    => 'tab',
-				'options' => array(
 					'body_background' => array(
 						'type'         => 'multi-picker',
 						'label'        => false,
