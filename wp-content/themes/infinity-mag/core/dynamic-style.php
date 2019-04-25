@@ -25,34 +25,15 @@ $dw_navbar_links_color       = dw_get_setting( 'navbar_links_color' );
 $dw_navbar_links_color_hover = dw_get_setting( 'navbar_links_color_hover' );
 $dw_body_style               = dw_get_setting( 'body_style' );
 ?>
-    .header-block {
-<?php if ( dw_get_setting( 'header_spacing/padding_top' ) ) { ?>
-    padding-top: <?php echo absint( dw_get_setting( 'header_spacing/padding_top' ) ); ?>px;
-<?php } ?>
-<?php if ( dw_get_setting( 'header_spacing/padding_bottom' ) ) { ?>
-    padding-bottom: <?php echo absint( dw_get_setting( 'header_spacing/padding_bottom' ) ); ?>px;
-<?php } ?>
-<?php if ( dw_get_setting( 'header_background/control' ) != 'off' ) { ?>
-	<?php if ( dw_get_setting( 'header_background/background/color_select' ) ) { ?>
-        background-color: <?php echo sanitize_hex_color( dw_get_setting( 'header_background/background/color_select' ) ); ?>;
-	<?php } ?>
-	<?php if ( dw_get_setting( 'header_background/background/image_select/url' ) ) { ?>
-        background-image: url('<?php echo esc_url( dw_get_setting( 'header_background/background/image_select/url' ) ); ?>');
-		<?php if ( dw_get_setting( 'header_background/background/bg_repeat' ) ) { ?>
-            background-repeat: <?php echo esc_html( dw_get_setting( 'header_background/background/bg_repeat' ) ); ?>;
-		<?php } ?>
-		<?php if ( dw_get_setting( 'header_background/background/bg_size' ) ) { ?>
-            background-size: <?php echo esc_html( dw_get_setting( 'header_background/background/bg_size' ) ); ?>;
-		<?php } ?>
-		<?php if ( dw_get_setting( 'header_background/background/bg_attach' ) ) { ?>
-            background-attachment: <?php echo esc_html( dw_get_setting( 'header_background/background/bg_attach' ) ); ?>;
-		<?php } ?>
-		<?php if ( dw_get_setting( 'header_background/background/bg_position' ) ) { ?>
-            background-position: <?php echo esc_html( dw_get_setting( 'header_background/background/bg_position' ) ); ?>;
-		<?php } ?>
-	<?php } ?>
-<?php } ?>
+<?php if ( dw_get_setting( 'nav_color' ) ) { ?>
+    .dw-navbar .top-nav-heder{
+        background-color: <?php echo sanitize_hex_color( dw_get_setting( 'nav_color' ) ); ?>;
     }
+    .dw-navbar .dw-menu .menu .sub-menu,
+    .dw-navbar .dw-menu{
+    background: <?php echo sanitize_hex_color( dw_get_setting( 'nav_color' ) ); ?>;
+    }
+<?php } ?>
 
 <?php if ( $dw_id ) { //Term Meta ?>
 	<?php if ( dw_get_term_setting( $dw_id, 'body_background/control' ) != 'off' ) {
@@ -446,7 +427,6 @@ $dw_body_style               = dw_get_setting( 'body_style' );
     .navbar-alert,
     .search-big-box .search-query-text,
     .search-big-box .search-form label,
-    .single-article-slide h3 a:hover,
     .writer-info a:hover,
     .full-article-slider .owl-nav div:hover,
     .multi-article-slide:hover h3 a,

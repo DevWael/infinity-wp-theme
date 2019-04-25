@@ -119,6 +119,11 @@ $options = array(
 							'label' => esc_html__( 'on', 'dw' ),
 						),
 					),
+					'nav_color'             => array(
+						'type'  => 'color-picker',
+						'label' => esc_html__( 'Navbar Background Color', 'dw' ),
+						'value' => '#3E3E3E'
+					),
 //					'header_spacing'    => array(
 //						'type'          => 'multi',
 //						'label'         => false,

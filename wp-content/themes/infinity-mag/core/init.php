@@ -126,7 +126,7 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 		}
 
 		if ( is_rtl() ) {
-			wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Tajawal' );
+			wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=El+Messiri' );
 		} else {
 			wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Ubuntu' );
 		}
@@ -163,7 +163,20 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 		dw_open_graph();
 	}
 }
-
+/**
+ * add scripts and styles to admin screen
+ */
+add_action( 'admin_enqueue_scripts', 'dw_admin_scripts' );
+if ( ! function_exists( 'dw_admin_scripts' ) ) {
+	function dw_admin_scripts() {
+		wp_enqueue_style( 'admin_fontawesome', DW_CSS_URI . 'font-awesome.css' );
+		wp_enqueue_style( 'admin_style', DW_CORE_URI . 'scripts/admin-stylesheet.css' );
+		wp_enqueue_script( 'post_format', DW_CORE_URI . 'scripts/post-formats.js' );
+		if ( defined( 'FW' ) ) {
+			wp_enqueue_script( 'wp-color-picker' );
+		}
+	}
+}
 /**
  * For improving page loading speed
  * Removing Query String From The Static Resources
@@ -639,20 +652,7 @@ function dw_toolbar_links( $wp_admin_bar ) {
 	}
 }
 
-/**
- * add scripts and styles to admin screen
- */
-add_action( 'admin_enqueue_scripts', 'dw_admin_scripts' );
-if ( ! function_exists( 'dw_admin_scripts' ) ) {
-	function dw_admin_scripts() {
-		wp_enqueue_style( 'admin_fontawesome', DW_CSS_URI . 'font-awesome.css' );
-		wp_enqueue_style( 'admin_style', DW_CORE_URI . 'scripts/admin-stylesheet.css' );
-		wp_enqueue_script( 'post_format', DW_CORE_URI . 'scripts/post-formats.js' );
-		if ( defined( 'FW' ) ) {
-			wp_enqueue_script( 'wp-color-picker' );
-		}
-	}
-}
+
 
 /**
  * Content area layout

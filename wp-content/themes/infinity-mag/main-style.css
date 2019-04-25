@@ -89,6 +89,11 @@ a:focus {
 .dw-navbar a {
 	color: #fff;
 	text-decoration: none;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .dw-navbar .current-menu-item a {
@@ -122,6 +127,11 @@ a:focus {
 	top: 50%;
 	transform: translateY(-50%);
 	right: 4px;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .dw-navbar .dw-menu .menu > li > a {
@@ -145,6 +155,11 @@ a:focus {
 	position: absolute;
 	top: 15px;
 	right: 10px;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .dw-navbar .sub-menu .menu-item-has-children > a:hover::after {
@@ -744,11 +759,6 @@ a:focus {
 	transition: 300ms;
 }
 
-.single-article-slide h3 a:hover {
-	color: #00AD9D;
-	text-decoration: none;
-}
-
 /*.single-article-slide:hover h3 a {*/
 /*	color: #00AD9D;*/
 /*}*/
@@ -1289,6 +1299,11 @@ body.archive .sticky-sidebar {
 	text-decoration: none;
 	line-height: 1.4;
 	display: block;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .main-post h3 a:hover,
@@ -1536,6 +1551,11 @@ body.archive .sticky-sidebar {
 	line-height: 20px;
 	text-decoration: none;
 	display: block;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .posts-carousel .carousel-post .data .writer-info img {

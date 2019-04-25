@@ -1,11 +1,12 @@
 /*
  * window admin stylesheet for added elements into admin panel.
  */
-@import url('https://fonts.googleapis.com/css?family=Tajawal');
+@import url('https://fonts.googleapis.com/css?family=El+Messiri');
 body.rtl,
 .rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6{
-    font-family: 'Tajawal', sans-serif !important;
+    font-family: 'El Messiri', sans-serif !important;
 }
+
 .window-icons a {
     text-decoration: none;
     height: 30px;
@@ -29,6 +30,11 @@ body.rtl,
     content: '\f085';
     font-weight: normal;
     margin-right: 10px;
+}
+
+.color-alpha{
+    right: 0 !important;
+    left: auto !important;
 }
 
 .box-width {
