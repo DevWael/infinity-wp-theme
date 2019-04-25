@@ -46,7 +46,6 @@ if ( ! function_exists( 'dw_widget_slider_loop' ) ) {
  */
 if ( ! function_exists( 'dw_widget_pics_loop' ) ) {
 	function dw_widget_pics_loop( $query_data, $widget_id = false ) {
-		$i = 1;
 		if ( isset( $query_data['meta_query'] ) ) {
 			$query_data['meta_query']['post_thumb'] = array(
 				'key'     => '_thumbnail_id',
@@ -66,7 +65,7 @@ if ( ! function_exists( 'dw_widget_pics_loop' ) ) {
                             <span class="overlay"></span>
                         </a>
                     </div>
-					<?php $i ++; endwhile; ?>
+					<?php endwhile; ?>
             </div>
 			<?php
 		}

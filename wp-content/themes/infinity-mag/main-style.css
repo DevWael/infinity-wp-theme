@@ -14,7 +14,7 @@ a:focus {
 	padding: 15px 0;
 	font-weight: bold;
 	text-transform: capitalize;
-
+	background-color: #7a7a7a;
 }
 
 .extra-margin-bottom {

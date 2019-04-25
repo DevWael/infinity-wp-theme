@@ -648,6 +648,9 @@ if ( ! function_exists( 'dw_admin_scripts' ) ) {
 		wp_enqueue_style( 'admin_fontawesome', DW_CSS_URI . 'font-awesome.css' );
 		wp_enqueue_style( 'admin_style', DW_CORE_URI . 'scripts/admin-stylesheet.css' );
 		wp_enqueue_script( 'post_format', DW_CORE_URI . 'scripts/post-formats.js' );
+		if ( defined( 'FW' ) ) {
+			wp_enqueue_script( 'wp-color-picker' );
+		}
 	}
 }
 
