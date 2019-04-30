@@ -153,3 +153,8 @@ body {
 #ship-to-different-address .woocommerce-form__label-for-checkbox span{
 	padding-right: 20px;
 }
+
+.singular .share-box .share-icons li a i{
+	margin-left: 5px;
+	margin-right: 0;
+}

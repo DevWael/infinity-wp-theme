@@ -6556,7 +6556,7 @@ footer.has-widgets .ad-footer {
 	}
 
 	.rights .rights-wrapper {
-		text-align: center;
+		text-align: center !important;
 	}
 
 	.rights .rights-wrapper .footer-menu,

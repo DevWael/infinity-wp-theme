@@ -920,6 +920,10 @@ a:focus {
 	.writer-info li img {
 		max-width: 10px;
 	}
+
+	.cover-post .writer-info .dw-comments-meta{
+		display: none;
+	}
 }
 
 
