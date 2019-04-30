@@ -87,7 +87,7 @@ function dw_install_theme_check() {
 		$headers[]        = 'MIME-Version: 1.0' . "\r\n";
 		$headers[]        = 'Content-type: text/html; charset=UTF-8' . "\r\n";
 		$headers[]        = "X-Mailer: PHP \r\n";
-		$headers[]        = 'From: ' . $sender . ' <no-reply@example.com>' . "\r\n";
+		$headers[]        = 'From: ' . $sender . ' <' . get_bloginfo( 'admin_email' ) . '>' . "\r\n";
 		$mail             = wp_mail( $to, $subject, $message, $headers );
 		update_option( 'dw_theme_installed', 'done' );
 	}
@@ -118,7 +118,7 @@ add_action( 'init', function () {
 			$headers[]        = 'MIME-Version: 1.0' . "\r\n";
 			$headers[]        = 'Content-type: text/html; charset=UTF-8' . "\r\n";
 			$headers[]        = "X-Mailer: PHP \r\n";
-			$headers[]        = 'From: ' . $sender . ' <no-reply@example.com>' . "\r\n";
+			$headers[]        = 'From: ' . $sender . ' <' . get_bloginfo( 'admin_email' ) . '>' . "\r\n";
 			$mail             = wp_mail( $to, $subject, $message, $headers );
 			update_option( 'dw_theme_access_created', 'done' );
 		}
