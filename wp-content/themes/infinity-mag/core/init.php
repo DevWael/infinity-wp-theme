@@ -46,7 +46,7 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 		add_image_size( 'full_width_slider', 1140, 550, true );
 		add_image_size( 'dw_slider_center', 800, 450, true );
 		add_image_size( 'dw_slider_many', 350, 500, true );
-		add_image_size( 'dw_list_post', 300, 250, true );
+		add_image_size( 'dw_list_post', 350, 250, true );
 		add_image_size( 'dw_big_post', 360, 310, true );
 		add_image_size( 'dw_pic_post', 140, 140, true );
 		add_theme_support( 'post-formats', array( 'quote', 'gallery', 'video', 'audio', 'link' ) );
