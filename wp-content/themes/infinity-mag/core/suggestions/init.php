@@ -3,24 +3,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-define( 'DW_REMOTE_SITE_URL', 'https://wp.4hoste.com/wael/magazine' );
-//Registering plugin admin setting page template
-add_action( 'admin_menu', 'dw_suggestions_options_page', 99 );
-function dw_suggestions_options_page() {
-	add_theme_page(
-		esc_html__( 'Suggestions', 'dw' ),
-		esc_html__( 'Suggestions', 'dw' ),
-		'manage_options',
-		'dw-suggestions',
-		'dw_suggestions_callback'
-	);
-}
-
-//Plugin admin setting page template
-function dw_suggestions_callback() {
-	include DW_CORE . 'suggestions/admin.php';
-}
-
 add_action( 'admin_enqueue_scripts', 'dw_suggestions_scripts' );
 if ( ! function_exists( 'dw_suggestions_scripts' ) ) {
 	function dw_suggestions_scripts() {
@@ -172,7 +154,7 @@ function set_rating_title( $post_id ) {
 	$post_content = get_post( $post_id );
 	$title        = get_the_title( $post_id );
 	$content      = $post_content->post_content;
-	$response     = wp_remote_post( DW_REMOTE_SITE_URL . '/wp-json/suggestions/v1/create_suggest',
+	$response     = wp_remote_post( DW_SUGGESTIONS_WEB_SERVICE_URL . '/wp-json/suggestions/v1/create_suggest',
 		[
 			'method'      => 'POST',
 			'timeout'     => 45,
@@ -216,7 +198,7 @@ function dw_check_ongoing_suggestions() {
 			while ( $query->have_posts() ) {
 				$query->the_post();
 				$post_id  = get_the_ID();
-				$response = wp_remote_post( DW_REMOTE_SITE_URL . '/wp-json/suggestions/v1/check_suggest',
+				$response = wp_remote_post( DW_SUGGESTIONS_WEB_SERVICE_URL . '/wp-json/suggestions/v1/check_suggest',
 					[
 						'method'      => 'POST',
 						'timeout'     => 45,
@@ -265,7 +247,7 @@ function dw_resend_failed_suggestions() {
 				$post_id  = get_the_ID();
 				$title    = get_the_title();
 				$content  = get_the_content();
-				$response = wp_remote_post( DW_REMOTE_SITE_URL . '/wp-json/suggestions/v1/create_suggest',
+				$response = wp_remote_post( DW_SUGGESTIONS_WEB_SERVICE_URL . '/wp-json/suggestions/v1/create_suggest',
 					[
 						'method'      => 'POST',
 						'timeout'     => 45,
