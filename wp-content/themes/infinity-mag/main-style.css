@@ -562,6 +562,7 @@ a:focus {
 
 	.dw-navbar .dw-menu .menu > li > a {
 		height: 100%;
+		display: inline;
 	}
 
 	.dw-navbar .dw-menu .menu .sub-menu {
