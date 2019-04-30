@@ -20,7 +20,8 @@ toastr.options.toastClass = 'dw_toastr';
 (function ($) {
     //every thing goes here...
 
-    $(document).on('click', '.dw-search-btn', function () {
+    $(document).on('click', '.dw-search-btn,.dw_search_trigger', function (e) {
+        e.preventDefault();
         $('.search-big-box').addClass('show-search');
     });
 

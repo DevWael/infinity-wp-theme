@@ -32,6 +32,11 @@ body.rtl,
     margin-right: 10px;
 }
 
+.rtl .fw-backend-side-tabs .fw-settings-form-header h2:before{
+    display: inline-block;
+    margin-left: 5px;
+}
+
 .color-alpha{
     right: 0 !important;
     left: auto !important;
@@ -43,4 +48,40 @@ body.rtl,
 
 #fw-backend-option-fw-option-social_icon .fw-inner.fw-pull-left {
     float: none !important;
+}
+
+body.rtl textarea.code{
+    direction: rtl;
+}
+
+.rtl .fw-option-type-addable-popup .clone-item{
+    left: 25px;
+    right: auto;
+}
+
+.rtl .fw-option-type-image-picker ul.thumbnails.image_picker_selector li{
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+.rtl .fw-option-type-addable-box > .fw-option-boxes > .fw-option-box .hndle .fw-html-after-title{
+    left: 35px;
+    right: auto;
+}
+.rtl .fw-backend-option-design-default > .fw-backend-option-input > .fw-inner,
+.rtl .fw-backend-option-design-customizer > .fw-backend-option-input > .fw-inner{
+    width: 100%;
+}
+
+.rtl .postbox{
+    box-shadow: 0 0px 0px rgba(0,0,0,.04);
+}
+
+body.rtl .fw-postbox .handlediv:before{
+    left: 0 !important;
+}
+
+.rtl .fw-option-type-checkboxes.fw-option-type-checkboxes-inline > div,
+.rtl .fw-option-type-radio.fw-option-type-radio-inline > div{
+    float: none;
 }

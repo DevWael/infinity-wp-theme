@@ -1,7 +1,7 @@
 /* 
 Theme Name: Infinity Mag 7
 Version: 7
-Description: <strong>A Wordpress News, Magazine, Blog, and Shop theme. It's created to help you make your site easily base on the powerful customize of WordPress. Designed & Developed by BbioonThemes</strong> - <a href="https://aait.sa">www.aait.sa</a>.
+Description: <strong>A Wordpress News, Magazine, Blog, and Shop theme. It's created to help you make your site easily base on the powerful customize of WordPress. Developed by Ahmad wael</strong> - <a href="https://aait.sa">www.aait.sa</a>.
 Author: Awamer Alshabaka
 Author URI: https://www.aait.sa
 Tags: two-columns, left-sidebar, right-sidebar, custom-menu, featured-images, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
@@ -6153,6 +6153,10 @@ footer.has-widgets .ad-footer {
 
 .footer-widgets .widget_window_mag_login_box .user-login ul li a {
 	border: none;
+}
+
+.footer-widgets .small-post .writer-info li img{
+	filter: brightness(0) invert(1);
 }
 
 /*-----------------------------------------------*/

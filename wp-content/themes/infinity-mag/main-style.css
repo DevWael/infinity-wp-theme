@@ -418,8 +418,9 @@ a:focus {
 	}
 
 	.admin-bar .dw-navbar .dw-menu {
-		top: 46px !important;
-		height: calc(100vh - 46px) !important;
+		z-index: 100000;
+		top: 0 !important;
+		height: 100vh !important;
 	}
 
 	.dw-mobile-navigation {
@@ -450,6 +451,11 @@ a:focus {
 		z-index: 9999;
 		transform: translateX(-100%);
 		transition: all .5s ease-in-out;
+	}
+
+	.admin-bar .dw-navbar .dw-menu{
+		top: 32px;
+		height: calc(100vh - 32px);
 	}
 
 	.dw-navbar .dw-menu.opened {
@@ -511,8 +517,9 @@ a:focus {
 
 	.dw-navbar .dw-nav-social a {
 		height: 25px;
-		line-height: 25px;
+		line-height: 26px;
 		width: 25px;
+		font-size: 13px;
 	}
 
 	.dw-navbar .overlay {
@@ -886,6 +893,9 @@ a:focus {
 }
 
 @media screen and (max-width: 768px) {
+	.header-three .logo-wrapper{
+		margin: 0;
+	}
 	.single-article-slide .text-overlay {
 		padding: 20px;
 	}

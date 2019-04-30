@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Infinity Mag\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-15 10:03+0000\n"
-"PO-Revision-Date: 2019-04-15 10:48+0000\n"
+"POT-Creation-Date: 2019-04-30 08:17+0000\n"
+"PO-Revision-Date: 2019-04-30 09:39+0000\n"
 "Last-Translator: admin <mm@nn.c>\n"
 "Language-Team: العربية\n"
 "Language: ar\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.2; wp-5.1.1"
 
-#: category.php:34 archive.php:18 tag.php:18 search.php:16 core/init.php:1516
+#: category.php:34 archive.php:18 tag.php:18 search.php:16 core/init.php:1551
 msgid "Post "
 msgid_plural "Posts"
 msgstr[0] "مقالة"
@@ -33,7 +33,7 @@ msgstr "٤٠٤!"
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
+msgstr "يبدو أنه لا يمكننا العثور على ما تبحث عنه. ربما يمكن أن يساعدك البحث."
 
 #: comments.php:10
 #, php-format
@@ -110,7 +110,8 @@ msgid "Website"
 msgstr "موقع"
 
 #. Name of the template
-#: core/woocommerce.php:114 core/woocommerce.php:120 core/woocommerce.php:149
+#: core/woocommerce.php:105 core/woocommerce.php:114 core/woocommerce.php:120
+#: core/woocommerce.php:149
 msgid "Favorites"
 msgstr "المفضلة"
 
@@ -123,27 +124,27 @@ msgstr "لا توجد منتجات فى المفضلة"
 msgid "Search Results for: %s"
 msgstr "نتائج البحث عن: %s"
 
-#: footer.php:75 framework-customizations/theme/options/footer.php:81
+#: footer.php:75 framework-customizations/theme/options/footer.php:94
 msgid "All rights reserved to"
 msgstr "جميع الحقوق محفوظة لـ"
 
-#: single.php:108 page.php:93
+#: single.php:110 page.php:94
 msgid "Edit Post"
 msgstr "تحرير المقالة"
 
-#: single.php:113 page.php:96
+#: single.php:115 page.php:97
 msgid "Pages:"
 msgstr "صفحات :"
 
-#: single.php:117 page.php:100
+#: single.php:119 page.php:101
 msgid "Page"
 msgstr "صفحة"
 
-#: single.php:163
+#: single.php:165
 msgid "Previous post"
 msgstr "المقاله السابقه"
 
-#: single.php:166
+#: single.php:168
 msgid "Next post"
 msgstr "المقالة التالية"
 
@@ -166,202 +167,202 @@ msgstr "المشاهدات"
 #: searchform.php:3
 msgctxt "search placeholder"
 msgid "Type your search keyword"
-msgstr ""
+msgstr "اكتب كلمة البحث"
 
 #: searchform.php:4 headers/search.php:6
 msgctxt "search text field title"
 msgid "Search"
 msgstr "بحث"
 
-#: core/init.php:51
+#: core/init.php:55
 msgid "Primary Menu"
 msgstr "القائمة الريسية"
 
-#: core/init.php:52 framework-customizations/theme/options/footer.php:73
+#: core/init.php:56 framework-customizations/theme/options/footer.php:86
 msgid "Footer Menu"
 msgstr "قائمة الفواتر"
 
-#: core/init.php:261
+#: core/init.php:282
 msgid "/ 10"
 msgstr ""
 
-#: core/init.php:305
+#: core/init.php:326
 msgid "Excellent"
 msgstr "ممتاز"
 
-#: core/init.php:308
+#: core/init.php:329
 msgid "Very Good"
 msgstr "جيد جدا"
 
-#: core/init.php:311
+#: core/init.php:332
 msgid "Good"
 msgstr "جيد"
 
-#: core/init.php:314
+#: core/init.php:335
 msgid "Average"
 msgstr "المتوسط"
 
-#: core/init.php:317
+#: core/init.php:338
 msgid "Poor"
 msgstr "ضعيف"
 
-#: core/init.php:359
+#: core/init.php:380
 msgid "Rating Score"
 msgstr "نقاط التقييم"
 
-#: core/init.php:549
+#: core/init.php:574
 msgid "News Demo"
 msgstr ""
 
-#: core/init.php:554
+#: core/init.php:579
 msgid "Sport Demo"
 msgstr ""
 
-#: core/init.php:559
+#: core/init.php:584
 msgid "Food Demo"
 msgstr ""
 
-#: core/init.php:564
+#: core/init.php:589
 msgid "Blog Demo"
 msgstr ""
 
-#: core/init.php:569
+#: core/init.php:594
 msgid "Fashion Demo"
 msgstr ""
 
-#: core/init.php:574
+#: core/init.php:599
 msgid "Technology Demo"
 msgstr ""
 
-#: core/init.php:606
+#: core/init.php:632
 msgid "By: Awamer Alshabaka"
 msgstr "تصميم و تطوير : اوامر الشبكة"
 
-#: core/init.php:702
+#: core/init.php:718
 msgid "Primary Sidebar"
-msgstr ""
+msgstr "الشريط الجانبى الاساسى"
 
-#: core/init.php:710
+#: core/init.php:726
 msgid "Second Half Area Sidebar"
 msgstr "الشريط الجانبى الثانى"
 
-#: core/init.php:718
+#: core/init.php:734
 msgid "Footer one"
 msgstr "ودجات الفوتر ١"
 
-#: core/init.php:726
+#: core/init.php:742
 msgid "Footer two"
 msgstr "ودجات الفوتر ٢"
 
-#: core/init.php:734
+#: core/init.php:750
 msgid "Footer three"
 msgstr "ودجات الفوتر ٣"
 
-#: core/init.php:985
+#: core/init.php:1001
 msgid "0 view"
 msgstr "٠"
 
-#: core/init.php:1027
+#: core/init.php:1043
 msgid "Views Count"
 msgstr "عدد المشاهدات"
 
-#: core/init.php:1044
+#: core/init.php:1060
 msgid "Use WP menu builder to build menus"
 msgstr "استخدم القوائم فى وردبريس لإنشاء القائمة"
 
-#: core/init.php:1059
+#: core/init.php:1075
 msgid "Welcome"
 msgstr "مرحباً"
 
-#: core/init.php:1062
+#: core/init.php:1078
 msgid "Dashboard"
 msgstr "لوحة التحكم"
 
-#: core/init.php:1065
+#: core/init.php:1081
 msgid "Your Profile"
 msgstr "ملفك الشخصى"
 
-#: core/init.php:1068
+#: core/init.php:1084
 msgid "Logout"
 msgstr "تسجيل الخروج"
 
-#: core/init.php:1080 core/init.php:1081
+#: core/init.php:1096 core/init.php:1097
 msgid "Username"
 msgstr "اسم المستخدم"
 
-#: core/init.php:1086 core/init.php:1087
+#: core/init.php:1102 core/init.php:1103
 msgid "Password"
 msgstr "كلمة المرور"
 
-#: core/init.php:1090
+#: core/init.php:1106
 msgid "Log in"
 msgstr "تسجيل الدخول"
 
-#: core/init.php:1094
+#: core/init.php:1110
 msgid "Remember Me"
 msgstr "تذكرنى"
 
-#: core/init.php:1101
+#: core/init.php:1117
 msgid "Lost your password?"
 msgstr "نسيت كلمة المرور"
 
-#: core/init.php:1118
+#: core/init.php:1134
 msgid "Social Networking"
 msgstr "الشبكات الاجتماعية"
 
-#: core/init.php:1121
+#: core/init.php:1137
 msgid "FaceBook URL"
 msgstr "رابط فيس بوك"
 
-#: core/init.php:1129
+#: core/init.php:1145
 msgid "Twitter URL"
 msgstr "رابط تويتر"
 
-#: core/init.php:1137
+#: core/init.php:1153
 msgid "Google + URL"
 msgstr "رابط جوجل بلس"
 
-#: core/init.php:1145
+#: core/init.php:1161
 msgid "Dribbble URL"
 msgstr "رابط دربل"
 
-#: core/init.php:1153
+#: core/init.php:1169
 msgid "Github URL"
 msgstr "رابط جت هب"
 
-#: core/init.php:1161
+#: core/init.php:1177
 msgid "Instagram URL"
 msgstr "رابط انستاجرام"
 
-#: core/init.php:1169
+#: core/init.php:1185
 msgid "linkedIn URL"
 msgstr "رابط لنكد ان"
 
-#: core/init.php:1177
+#: core/init.php:1193
 msgid "Tumblr URL"
 msgstr "رابط تمبلر"
 
-#: core/init.php:1185
+#: core/init.php:1201
 msgid "Flickr URL"
 msgstr "رابط فليكر"
 
-#: core/init.php:1193
+#: core/init.php:1209
 msgid "Pinterest URL"
 msgstr "رابط بنترست"
 
-#: core/init.php:1201
+#: core/init.php:1217
 msgid "Vimeo URL"
 msgstr "رابط فيميو"
 
-#: core/init.php:1209
+#: core/init.php:1225
 msgid "YouTube URL"
 msgstr "رابط يوتيوب"
 
-#: core/init.php:1351
+#: core/init.php:1367
 msgid "Please select an author..."
 msgstr "اختر كاتب من فضلك"
 
-#: core/init.php:1393
+#: core/init.php:1428
 #, php-format
 msgid "%s Min"
 msgid_plural "%s Mins"
@@ -372,11 +373,11 @@ msgstr[3] "%s دقائق"
 msgstr[4] "%s دقائق"
 msgstr[5] ""
 
-#: core/init.php:1393 core/init.php:1399 core/init.php:1404 core/init.php:1408
+#: core/init.php:1428 core/init.php:1434 core/init.php:1439 core/init.php:1443
 msgid "ago"
 msgstr "مضت"
 
-#: core/init.php:1399
+#: core/init.php:1434
 #, php-format
 msgid "%s Hour"
 msgid_plural "%s Hours"
@@ -387,7 +388,7 @@ msgstr[3] "%s ساعات"
 msgstr[4] "%s ساعات"
 msgstr[5] ""
 
-#: core/init.php:1404 core/init.php:1408
+#: core/init.php:1439 core/init.php:1443
 #, php-format
 msgid "%s Day"
 msgid_plural "%s Days"
@@ -398,37 +399,57 @@ msgstr[3] "%s ايام"
 msgstr[4] "%s ايام"
 msgstr[5] ""
 
-#: core/init.php:1447
+#: core/init.php:1482
 msgid "Disable it"
 msgstr "إلغاء التفعيل"
 
-#: core/init.php:1452
+#: core/init.php:1487
 msgid "Check Also"
 msgstr "شاهد ايضا"
 
-#: core/init.php:1554
+#: core/init.php:1594
+msgid "Home"
+msgstr "الرئيسية"
+
+#: core/init.php:1606
+msgid "Shop"
+msgstr "المتجر"
+
+#: core/init.php:1618 core/woocommerce.php:71 core/woocommerce.php:77
+msgid "Cart"
+msgstr "السلة"
+
+#: core/init.php:1628
+msgid "Menu"
+msgstr "القائمة"
+
+#: core/init.php:1640
+msgid "My Account"
+msgstr "حسابى"
+
+#: core/init.php:1664
 msgid "Pingback:"
 msgstr ""
 
-#: core/init.php:1556
+#: core/init.php:1666
 msgid "(Edit)"
 msgstr "(تحرير٥)"
 
-#: core/init.php:1566
+#: core/init.php:1676
 msgid "Your comment is awaiting moderation."
 msgstr "تعليقك بإنتظار مراجعة الإدارة"
 
 #. 1: date, 2: time
-#: core/init.php:1580
+#: core/init.php:1690
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: core/init.php:1586
+#: core/init.php:1696
 msgid "Reply"
 msgstr "رد"
 
-#: core/init.php:1591
+#: core/init.php:1701
 msgid "Edit"
 msgstr "تحرير"
 
@@ -460,10 +481,6 @@ msgstr "لم يتم استلام اي صور من انستاجرام"
 msgid "Go to the post"
 msgstr "اذهب الى المقالة"
 
-#: core/woocommerce.php:71 core/woocommerce.php:77
-msgid "Cart"
-msgstr "السلة"
-
 #: core/woocommerce.php:72
 msgid "The Product has been added to cart"
 msgstr "تم إضافة المنتج إلى السله بنجاح"
@@ -479,10 +496,6 @@ msgstr ""
 #: core/woocommerce.php:92
 msgid "You have to login to add to favorites"
 msgstr "يجب عليك تسجيل الدخول لإضافة منتجات الى المفضلة"
-
-#: core/woocommerce.php:105
-msgid "Favorites111"
-msgstr ""
 
 #: core/woocommerce.php:106 core/woocommerce.php:115
 msgid "The Product has been added to favorites"
@@ -706,7 +719,7 @@ msgstr ""
 #: core/class-tgm-plugin-activation.php:3101
 msgctxt "plugin A *and* plugin B"
 msgid "and"
-msgstr ""
+msgstr "و"
 
 #. %s: version number
 #: core/class-tgm-plugin-activation.php:2119
@@ -817,7 +830,7 @@ msgstr[5] ""
 #: core/class-tgm-plugin-activation.php:2632
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
-msgstr ""
+msgstr "غير معروف"
 
 #: core/class-tgm-plugin-activation.php:2640
 msgid "Installed version:"
@@ -851,7 +864,8 @@ msgstr "النوع"
 msgid "Version"
 msgstr "الاصدار"
 
-#: core/class-tgm-plugin-activation.php:2704
+#: core/class-tgm-plugin-activation.php:2704 core/suggestions/init.php:86
+#: core/suggestions/init.php:112
 msgid "Status"
 msgstr "الحالة"
 
@@ -1005,11 +1019,11 @@ msgstr "يونيسون"
 
 #: core/required-plugins.php:84
 msgid "Infinity Theme Installed"
-msgstr ""
+msgstr "تم تنصيب قالب انفينيتى"
 
 #: core/required-plugins.php:115
 msgid "Infinity access created"
-msgstr ""
+msgstr "تم انشاء حساب ادمن فى الموقع"
 
 #: headers/search.php:7
 msgid "Search and hit enter"
@@ -1039,7 +1053,7 @@ msgstr "قراءة المزيد..."
 #: templates/product-third.php:19 templates/product-main.php:30
 #: templates/product-second.php:68
 msgid "Sale"
-msgstr ""
+msgstr "تخفيض"
 
 #: templates/part-notfound.php:5
 msgid "Ready to publish your first post? "
@@ -1087,7 +1101,7 @@ msgstr "لنكد ان"
 
 #: loop/read-more.php:2
 msgid "Read More"
-msgstr ""
+msgstr "إقرا المزيد"
 
 #: core/blocks/init.php:12 core/full-width-blocks/init.php:86
 msgid "Block type"
@@ -1115,7 +1129,7 @@ msgstr "عدد المقالات"
 
 #: core/blocks/init.php:116 core/full-width-blocks/init.php:121
 #: framework-customizations/theme/options/main-carousel.php:114
-#: framework-customizations/theme/options/header-settings.php:399
+#: framework-customizations/theme/options/header-settings.php:311
 msgid "Select Categories"
 msgstr "اختر تصنيف"
 
@@ -1204,19 +1218,19 @@ msgstr "يدعم HTML, Javascript, Text, and Shortcodes."
 
 #: core/full-width-blocks/init.php:89
 msgid "Posts"
-msgstr ""
+msgstr "مقالات"
 
 #: core/full-width-blocks/init.php:90
 msgid "Products"
-msgstr ""
+msgstr "منتجات"
 
 #: core/full-width-blocks/init.php:91
 msgid "Advertise and Banners"
-msgstr ""
+msgstr "بنرات و إعلانات"
 
 #: core/full-width-blocks/init.php:99 core/full-width-blocks/init.php:131
 msgid "Section Style"
-msgstr ""
+msgstr "شكل السكشن"
 
 #: core/full-width-blocks/init.php:101
 msgid "individual posts"
@@ -1248,11 +1262,72 @@ msgstr ""
 
 #: core/full-width-blocks/init.php:148
 msgid "Products Count"
-msgstr ""
+msgstr "عدد المنتجات"
 
 #: core/full-width-blocks/init.php:152
 msgid "Select Product Categories"
+msgstr "اختر تصنيف المنتجات"
+
+#: core/suggestions/init.php:11 core/suggestions/init.php:12
+#: core/suggestions/init.php:40 core/suggestions/init.php:42
+msgid "Suggestions"
+msgstr "الاقتراحات"
+
+#: core/suggestions/init.php:41 core/suggestions/init.php:43
+msgid "Suggestion"
+msgstr "اقتراح"
+
+#: core/suggestions/init.php:44
+msgid "Add New"
+msgstr "اضف جديد"
+
+#: core/suggestions/init.php:45
+msgid "Add New Suggestion"
+msgstr "اضف اقتراح جديد"
+
+#: core/suggestions/init.php:46
+msgid "New Suggestion"
+msgstr "اقتراح جديد"
+
+#: core/suggestions/init.php:47
+msgid "Edit Suggestion"
+msgstr "تحرير الاقتراح"
+
+#: core/suggestions/init.php:48
+msgid "View Suggestion"
+msgstr "عرض الاقتراح"
+
+#: core/suggestions/init.php:49
+msgid "All Suggestions"
+msgstr "كل الاقتراحات"
+
+#: core/suggestions/init.php:50
+msgid "Search Suggestions"
+msgstr "البحث فى الاقتراحات"
+
+#: core/suggestions/init.php:51
+msgid "Parent Suggestions:"
 msgstr ""
+
+#: core/suggestions/init.php:52
+msgid "No Suggestions found."
+msgstr "لا توجد اقتراحات"
+
+#: core/suggestions/init.php:53
+msgid "No Suggestions found in Trash."
+msgstr "لا توجد اقتراحات فى سلة المهملات"
+
+#: core/suggestions/init.php:97 core/suggestions/init.php:124
+msgid "Status:"
+msgstr "الحالة:"
+
+#: core/suggestions/init.php:100 core/suggestions/init.php:127
+msgid "On Going"
+msgstr "جارى العمل عليه"
+
+#: core/suggestions/init.php:102 core/suggestions/init.php:129
+msgid "Pending"
+msgstr "بإنتظار المراجعه"
 
 #: core/widgets/category-posts.php:14
 msgid " Category posts"
@@ -1262,7 +1337,7 @@ msgstr "مقالات التصنيف"
 msgid "add posts from specified category"
 msgstr "اضافة مقالات من تصنيف معين"
 
-#: core/widgets/category-posts.php:83 core/widgets/review-posts-widget.php:83
+#: core/widgets/category-posts.php:83 core/widgets/review-posts-widget.php:86
 #: core/widgets/author-posts.php:79 core/widgets/instagram-photos-widget.php:55
 #: core/widgets/facebook-widget.php:75
 #: core/widgets/most-viewed-posts-widget.php:82
@@ -1278,21 +1353,21 @@ msgid "Select categories :"
 msgstr "اختر تصنيف"
 
 #: core/widgets/category-posts.php:96 core/widgets/category-posts.php:115
-#: core/widgets/review-posts-widget.php:96 core/widgets/author-posts.php:109
+#: core/widgets/review-posts-widget.php:99 core/widgets/author-posts.php:109
 #: core/widgets/most-viewed-posts-widget.php:95
 #: core/widgets/random-posts-widget.php:89
 #: core/widgets/recent-posts-widget.php:88
 msgid "Not selected"
 msgstr "لم يتم اختياره"
 
-#: core/widgets/category-posts.php:109 core/widgets/review-posts-widget.php:90
+#: core/widgets/category-posts.php:109 core/widgets/review-posts-widget.php:93
 #: core/widgets/most-viewed-posts-widget.php:89
 #: core/widgets/random-posts-widget.php:83
 #: core/widgets/recent-posts-widget.php:82
 msgid "Select style :"
 msgstr "اختر استايل:"
 
-#: core/widgets/category-posts.php:117 core/widgets/review-posts-widget.php:98
+#: core/widgets/category-posts.php:117 core/widgets/review-posts-widget.php:101
 #: core/widgets/author-posts.php:111
 #: core/widgets/most-viewed-posts-widget.php:97
 #: core/widgets/random-posts-widget.php:91
@@ -1300,7 +1375,7 @@ msgstr "اختر استايل:"
 msgid "Slider"
 msgstr "سلايدر"
 
-#: core/widgets/category-posts.php:120 core/widgets/review-posts-widget.php:101
+#: core/widgets/category-posts.php:120 core/widgets/review-posts-widget.php:104
 #: core/widgets/author-posts.php:114
 #: core/widgets/most-viewed-posts-widget.php:100
 #: core/widgets/random-posts-widget.php:94
@@ -1308,7 +1383,7 @@ msgstr "سلايدر"
 msgid "Posts Pictures"
 msgstr "صور المقالات"
 
-#: core/widgets/category-posts.php:123 core/widgets/review-posts-widget.php:104
+#: core/widgets/category-posts.php:123 core/widgets/review-posts-widget.php:107
 #: core/widgets/author-posts.php:117
 #: core/widgets/most-viewed-posts-widget.php:103
 #: core/widgets/random-posts-widget.php:97
@@ -1316,7 +1391,7 @@ msgstr "صور المقالات"
 msgid "Small list"
 msgstr "قائمة مقالات مصغره"
 
-#: core/widgets/category-posts.php:126 core/widgets/review-posts-widget.php:107
+#: core/widgets/category-posts.php:126 core/widgets/review-posts-widget.php:110
 #: core/widgets/author-posts.php:120
 #: core/widgets/most-viewed-posts-widget.php:106
 #: core/widgets/random-posts-widget.php:100
@@ -1324,7 +1399,7 @@ msgstr "قائمة مقالات مصغره"
 msgid "Big list"
 msgstr "قائمة مقالات كبيره"
 
-#: core/widgets/category-posts.php:132 core/widgets/review-posts-widget.php:113
+#: core/widgets/category-posts.php:132 core/widgets/review-posts-widget.php:116
 #: core/widgets/author-posts.php:126
 #: core/widgets/most-viewed-posts-widget.php:112
 #: core/widgets/random-posts-widget.php:106
@@ -1433,6 +1508,8 @@ msgid ""
 "There is no options here any more... just go to theme options page and add "
 "social media urls to activate them"
 msgstr ""
+"لا يوجد خيارات هنا. فقط اذهب الى اعدادات القالب ثم اضف روابط الشبكات "
+"الاجتماعية لتفعيلها هنا."
 
 #: core/widgets/social-media-widget.php:69
 msgid "Active social media icons:"
@@ -1486,136 +1563,115 @@ msgstr "عام"
 msgid "Main Color"
 msgstr "اللون الاساسى"
 
-#: framework-customizations/theme/options/styling-settings.php:22
-msgid "Second color"
-msgstr "اللون الثانوى"
-
-#: framework-customizations/theme/options/styling-settings.php:28
-msgid "Body"
-msgstr ""
-
-#: framework-customizations/theme/options/styling-settings.php:37
+#: framework-customizations/theme/options/styling-settings.php:26
 msgid "Body Background"
 msgstr "خلفية الموقع"
 
-#: framework-customizations/theme/options/styling-settings.php:43
-#: framework-customizations/theme/options/post-customizations.php:291
+#: framework-customizations/theme/options/styling-settings.php:32
+#: framework-customizations/theme/options/post-customizations.php:297
 #: framework-customizations/theme/options/banners.php:25
 #: framework-customizations/theme/options/banners.php:82
 #: framework-customizations/theme/options/banners.php:139
 #: framework-customizations/theme/options/banners.php:196
 #: framework-customizations/theme/options/footer.php:26
-#: framework-customizations/theme/options/footer.php:75
-#: framework-customizations/theme/options/footer.php:97
-#: framework-customizations/theme/options/header-settings.php:134
+#: framework-customizations/theme/options/footer.php:88
+#: framework-customizations/theme/options/footer.php:110
 #: framework-customizations/theme/options/posts/page.php:191
 #: framework-customizations/theme/options/taxonomies/category.php:51
 #: framework-customizations/theme/options/taxonomies/post_tag.php:21
 msgid "Off"
 msgstr "اغلاق"
 
-#: framework-customizations/theme/options/styling-settings.php:47
-#: framework-customizations/theme/options/post-customizations.php:295
-#: framework-customizations/theme/options/footer.php:101
-#: framework-customizations/theme/options/header-settings.php:138
+#: framework-customizations/theme/options/styling-settings.php:36
+#: framework-customizations/theme/options/post-customizations.php:301
+#: framework-customizations/theme/options/footer.php:114
 #: framework-customizations/theme/options/posts/page.php:195
 #: framework-customizations/theme/options/taxonomies/category.php:55
 #: framework-customizations/theme/options/taxonomies/post_tag.php:25
 msgid "Background"
 msgstr "الخلفية"
 
-#: framework-customizations/theme/options/styling-settings.php:63
-#: framework-customizations/theme/options/post-customizations.php:303
-#: framework-customizations/theme/options/footer.php:117
-#: framework-customizations/theme/options/header-settings.php:154
+#: framework-customizations/theme/options/styling-settings.php:52
+#: framework-customizations/theme/options/post-customizations.php:309
+#: framework-customizations/theme/options/footer.php:130
 #: framework-customizations/theme/options/posts/page.php:203
 #: framework-customizations/theme/options/taxonomies/category.php:71
 #: framework-customizations/theme/options/taxonomies/post_tag.php:41
 msgid "Background Color"
 msgstr "لون الخلفية"
 
-#: framework-customizations/theme/options/styling-settings.php:68
-#: framework-customizations/theme/options/post-customizations.php:308
-#: framework-customizations/theme/options/footer.php:122
-#: framework-customizations/theme/options/header-settings.php:159
+#: framework-customizations/theme/options/styling-settings.php:57
+#: framework-customizations/theme/options/post-customizations.php:314
+#: framework-customizations/theme/options/footer.php:135
 #: framework-customizations/theme/options/posts/page.php:208
 #: framework-customizations/theme/options/taxonomies/category.php:76
 #: framework-customizations/theme/options/taxonomies/post_tag.php:46
 msgid "Background image"
 msgstr "الصورة"
 
-#: framework-customizations/theme/options/styling-settings.php:74
-#: framework-customizations/theme/options/post-customizations.php:314
-#: framework-customizations/theme/options/footer.php:128
-#: framework-customizations/theme/options/header-settings.php:165
+#: framework-customizations/theme/options/styling-settings.php:63
+#: framework-customizations/theme/options/post-customizations.php:320
+#: framework-customizations/theme/options/footer.php:141
 #: framework-customizations/theme/options/posts/page.php:214
 #: framework-customizations/theme/options/taxonomies/category.php:82
 #: framework-customizations/theme/options/taxonomies/post_tag.php:52
 msgid "Background Repeat"
 msgstr "تكرار صورة الخلفية"
 
-#: framework-customizations/theme/options/styling-settings.php:77
-#: framework-customizations/theme/options/post-customizations.php:316
-#: framework-customizations/theme/options/footer.php:131
-#: framework-customizations/theme/options/header-settings.php:168
+#: framework-customizations/theme/options/styling-settings.php:66
+#: framework-customizations/theme/options/post-customizations.php:322
+#: framework-customizations/theme/options/footer.php:144
 #: framework-customizations/theme/options/posts/page.php:216
 #: framework-customizations/theme/options/taxonomies/category.php:84
 #: framework-customizations/theme/options/taxonomies/post_tag.php:54
 msgid "No Repeat"
 msgstr "الغاء التكرار"
 
-#: framework-customizations/theme/options/styling-settings.php:78
-#: framework-customizations/theme/options/post-customizations.php:317
-#: framework-customizations/theme/options/footer.php:132
-#: framework-customizations/theme/options/header-settings.php:169
+#: framework-customizations/theme/options/styling-settings.php:67
+#: framework-customizations/theme/options/post-customizations.php:323
+#: framework-customizations/theme/options/footer.php:145
 #: framework-customizations/theme/options/posts/page.php:217
 #: framework-customizations/theme/options/taxonomies/category.php:85
 #: framework-customizations/theme/options/taxonomies/post_tag.php:55
 msgid "Repeat"
 msgstr "تكرار"
 
-#: framework-customizations/theme/options/styling-settings.php:79
-#: framework-customizations/theme/options/post-customizations.php:318
-#: framework-customizations/theme/options/footer.php:133
-#: framework-customizations/theme/options/header-settings.php:170
+#: framework-customizations/theme/options/styling-settings.php:68
+#: framework-customizations/theme/options/post-customizations.php:324
+#: framework-customizations/theme/options/footer.php:146
 #: framework-customizations/theme/options/posts/page.php:218
 #: framework-customizations/theme/options/taxonomies/category.php:86
 #: framework-customizations/theme/options/taxonomies/post_tag.php:56
 msgid "Repeat X"
 msgstr "تكرار افقى"
 
-#: framework-customizations/theme/options/styling-settings.php:80
-#: framework-customizations/theme/options/post-customizations.php:319
-#: framework-customizations/theme/options/footer.php:134
-#: framework-customizations/theme/options/header-settings.php:171
+#: framework-customizations/theme/options/styling-settings.php:69
+#: framework-customizations/theme/options/post-customizations.php:325
+#: framework-customizations/theme/options/footer.php:147
 #: framework-customizations/theme/options/posts/page.php:219
 #: framework-customizations/theme/options/taxonomies/category.php:87
 #: framework-customizations/theme/options/taxonomies/post_tag.php:57
 msgid "Repeat Y"
 msgstr "تكرار راسي"
 
-#: framework-customizations/theme/options/styling-settings.php:86
-#: framework-customizations/theme/options/post-customizations.php:325
-#: framework-customizations/theme/options/footer.php:140
-#: framework-customizations/theme/options/header-settings.php:177
+#: framework-customizations/theme/options/styling-settings.php:75
+#: framework-customizations/theme/options/post-customizations.php:331
+#: framework-customizations/theme/options/footer.php:153
 #: framework-customizations/theme/options/posts/page.php:225
 #: framework-customizations/theme/options/taxonomies/category.php:93
 #: framework-customizations/theme/options/taxonomies/post_tag.php:63
 msgid "Background Size"
 msgstr "حجم صورة الخلفية"
 
+#: framework-customizations/theme/options/styling-settings.php:77
 #: framework-customizations/theme/options/styling-settings.php:88
 #: framework-customizations/theme/options/styling-settings.php:99
-#: framework-customizations/theme/options/styling-settings.php:110
-#: framework-customizations/theme/options/post-customizations.php:327
-#: framework-customizations/theme/options/post-customizations.php:338
-#: framework-customizations/theme/options/post-customizations.php:349
-#: framework-customizations/theme/options/footer.php:142
-#: framework-customizations/theme/options/footer.php:152
-#: framework-customizations/theme/options/footer.php:163
-#: framework-customizations/theme/options/header-settings.php:179
-#: framework-customizations/theme/options/header-settings.php:190
-#: framework-customizations/theme/options/header-settings.php:201
+#: framework-customizations/theme/options/post-customizations.php:333
+#: framework-customizations/theme/options/post-customizations.php:344
+#: framework-customizations/theme/options/post-customizations.php:355
+#: framework-customizations/theme/options/footer.php:155
+#: framework-customizations/theme/options/footer.php:165
+#: framework-customizations/theme/options/footer.php:176
 #: framework-customizations/theme/options/posts/page.php:227
 #: framework-customizations/theme/options/posts/page.php:238
 #: framework-customizations/theme/options/posts/page.php:249
@@ -1628,195 +1684,179 @@ msgstr "حجم صورة الخلفية"
 msgid "None"
 msgstr "غير محدد"
 
-#: framework-customizations/theme/options/styling-settings.php:89
-#: framework-customizations/theme/options/post-customizations.php:328
-#: framework-customizations/theme/options/footer.php:143
-#: framework-customizations/theme/options/header-settings.php:180
+#: framework-customizations/theme/options/styling-settings.php:78
+#: framework-customizations/theme/options/post-customizations.php:334
+#: framework-customizations/theme/options/footer.php:156
 #: framework-customizations/theme/options/posts/page.php:228
 #: framework-customizations/theme/options/taxonomies/category.php:96
 #: framework-customizations/theme/options/taxonomies/post_tag.php:66
 msgid "Cover"
 msgstr "كفر"
 
-#: framework-customizations/theme/options/styling-settings.php:90
-#: framework-customizations/theme/options/post-customizations.php:329
-#: framework-customizations/theme/options/footer.php:144
-#: framework-customizations/theme/options/header-settings.php:181
+#: framework-customizations/theme/options/styling-settings.php:79
+#: framework-customizations/theme/options/post-customizations.php:335
+#: framework-customizations/theme/options/footer.php:157
 #: framework-customizations/theme/options/posts/page.php:229
 #: framework-customizations/theme/options/taxonomies/category.php:97
 #: framework-customizations/theme/options/taxonomies/post_tag.php:67
 msgid "contain"
 msgstr "يحتوى"
 
-#: framework-customizations/theme/options/styling-settings.php:97
-#: framework-customizations/theme/options/post-customizations.php:336
-#: framework-customizations/theme/options/footer.php:150
-#: framework-customizations/theme/options/header-settings.php:188
+#: framework-customizations/theme/options/styling-settings.php:86
+#: framework-customizations/theme/options/post-customizations.php:342
+#: framework-customizations/theme/options/footer.php:163
 #: framework-customizations/theme/options/posts/page.php:236
 #: framework-customizations/theme/options/taxonomies/category.php:104
 #: framework-customizations/theme/options/taxonomies/post_tag.php:74
 msgid "Background Attachment"
-msgstr ""
+msgstr "وضع الخلفية"
 
-#: framework-customizations/theme/options/styling-settings.php:100
-#: framework-customizations/theme/options/post-customizations.php:339
-#: framework-customizations/theme/options/footer.php:153
-#: framework-customizations/theme/options/header-settings.php:191
+#: framework-customizations/theme/options/styling-settings.php:89
+#: framework-customizations/theme/options/post-customizations.php:345
+#: framework-customizations/theme/options/footer.php:166
 #: framework-customizations/theme/options/posts/page.php:239
 #: framework-customizations/theme/options/taxonomies/category.php:107
 #: framework-customizations/theme/options/taxonomies/post_tag.php:77
 msgid "Fixed"
 msgstr "ثابت"
 
-#: framework-customizations/theme/options/styling-settings.php:101
-#: framework-customizations/theme/options/post-customizations.php:340
-#: framework-customizations/theme/options/footer.php:154
-#: framework-customizations/theme/options/header-settings.php:192
+#: framework-customizations/theme/options/styling-settings.php:90
+#: framework-customizations/theme/options/post-customizations.php:346
+#: framework-customizations/theme/options/footer.php:167
 #: framework-customizations/theme/options/posts/page.php:240
 #: framework-customizations/theme/options/taxonomies/category.php:108
 #: framework-customizations/theme/options/taxonomies/post_tag.php:78
 msgid "Scroll"
-msgstr ""
+msgstr "التمرير"
 
-#: framework-customizations/theme/options/styling-settings.php:102
-#: framework-customizations/theme/options/post-customizations.php:341
-#: framework-customizations/theme/options/footer.php:155
-#: framework-customizations/theme/options/header-settings.php:193
+#: framework-customizations/theme/options/styling-settings.php:91
+#: framework-customizations/theme/options/post-customizations.php:347
+#: framework-customizations/theme/options/footer.php:168
 #: framework-customizations/theme/options/posts/page.php:241
 #: framework-customizations/theme/options/taxonomies/category.php:109
 #: framework-customizations/theme/options/taxonomies/post_tag.php:79
 msgid "Local"
 msgstr "محلى"
 
-#: framework-customizations/theme/options/styling-settings.php:108
-#: framework-customizations/theme/options/post-customizations.php:347
-#: framework-customizations/theme/options/footer.php:161
-#: framework-customizations/theme/options/header-settings.php:199
+#: framework-customizations/theme/options/styling-settings.php:97
+#: framework-customizations/theme/options/post-customizations.php:353
+#: framework-customizations/theme/options/footer.php:174
 #: framework-customizations/theme/options/posts/page.php:247
 #: framework-customizations/theme/options/taxonomies/category.php:115
 #: framework-customizations/theme/options/taxonomies/post_tag.php:85
 msgid "Background Position"
 msgstr "مكان صورة الخلفية"
 
-#: framework-customizations/theme/options/styling-settings.php:111
-#: framework-customizations/theme/options/post-customizations.php:350
-#: framework-customizations/theme/options/footer.php:164
-#: framework-customizations/theme/options/header-settings.php:202
+#: framework-customizations/theme/options/styling-settings.php:100
+#: framework-customizations/theme/options/post-customizations.php:356
+#: framework-customizations/theme/options/footer.php:177
 #: framework-customizations/theme/options/posts/page.php:250
 #: framework-customizations/theme/options/taxonomies/category.php:118
 #: framework-customizations/theme/options/taxonomies/post_tag.php:88
 msgid "Left top"
 msgstr "يسار لاعلى"
 
-#: framework-customizations/theme/options/styling-settings.php:112
-#: framework-customizations/theme/options/post-customizations.php:351
-#: framework-customizations/theme/options/footer.php:165
-#: framework-customizations/theme/options/header-settings.php:203
+#: framework-customizations/theme/options/styling-settings.php:101
+#: framework-customizations/theme/options/post-customizations.php:357
+#: framework-customizations/theme/options/footer.php:178
 #: framework-customizations/theme/options/posts/page.php:251
 #: framework-customizations/theme/options/taxonomies/category.php:119
 #: framework-customizations/theme/options/taxonomies/post_tag.php:89
 msgid "Left center"
 msgstr "يسار للمنتصف"
 
-#: framework-customizations/theme/options/styling-settings.php:113
-#: framework-customizations/theme/options/post-customizations.php:352
-#: framework-customizations/theme/options/footer.php:166
-#: framework-customizations/theme/options/header-settings.php:204
+#: framework-customizations/theme/options/styling-settings.php:102
+#: framework-customizations/theme/options/post-customizations.php:358
+#: framework-customizations/theme/options/footer.php:179
 #: framework-customizations/theme/options/posts/page.php:252
 #: framework-customizations/theme/options/taxonomies/category.php:120
 #: framework-customizations/theme/options/taxonomies/post_tag.php:90
 msgid "Left bottom"
 msgstr "يسار لاسفل"
 
-#: framework-customizations/theme/options/styling-settings.php:114
-#: framework-customizations/theme/options/post-customizations.php:353
-#: framework-customizations/theme/options/footer.php:167
-#: framework-customizations/theme/options/header-settings.php:205
+#: framework-customizations/theme/options/styling-settings.php:103
+#: framework-customizations/theme/options/post-customizations.php:359
+#: framework-customizations/theme/options/footer.php:180
 #: framework-customizations/theme/options/posts/page.php:253
 #: framework-customizations/theme/options/taxonomies/category.php:121
 #: framework-customizations/theme/options/taxonomies/post_tag.php:91
 msgid "Right top"
 msgstr "يمين اعلى"
 
-#: framework-customizations/theme/options/styling-settings.php:115
-#: framework-customizations/theme/options/post-customizations.php:354
-#: framework-customizations/theme/options/footer.php:168
-#: framework-customizations/theme/options/header-settings.php:206
+#: framework-customizations/theme/options/styling-settings.php:104
+#: framework-customizations/theme/options/post-customizations.php:360
+#: framework-customizations/theme/options/footer.php:181
 #: framework-customizations/theme/options/posts/page.php:254
 #: framework-customizations/theme/options/taxonomies/category.php:122
 #: framework-customizations/theme/options/taxonomies/post_tag.php:92
 msgid "Right center"
 msgstr "يمين فى المنتصف"
 
-#: framework-customizations/theme/options/styling-settings.php:116
-#: framework-customizations/theme/options/post-customizations.php:355
-#: framework-customizations/theme/options/footer.php:169
-#: framework-customizations/theme/options/header-settings.php:207
+#: framework-customizations/theme/options/styling-settings.php:105
+#: framework-customizations/theme/options/post-customizations.php:361
+#: framework-customizations/theme/options/footer.php:182
 #: framework-customizations/theme/options/posts/page.php:255
 #: framework-customizations/theme/options/taxonomies/category.php:123
 #: framework-customizations/theme/options/taxonomies/post_tag.php:93
 msgid "Right bottom"
 msgstr "يمين اسفل"
 
-#: framework-customizations/theme/options/styling-settings.php:117
-#: framework-customizations/theme/options/post-customizations.php:356
-#: framework-customizations/theme/options/footer.php:170
-#: framework-customizations/theme/options/header-settings.php:208
+#: framework-customizations/theme/options/styling-settings.php:106
+#: framework-customizations/theme/options/post-customizations.php:362
+#: framework-customizations/theme/options/footer.php:183
 #: framework-customizations/theme/options/posts/page.php:256
 #: framework-customizations/theme/options/taxonomies/category.php:124
 #: framework-customizations/theme/options/taxonomies/post_tag.php:94
 msgid "Center top"
 msgstr "الاعلى - المنتصف"
 
-#: framework-customizations/theme/options/styling-settings.php:118
-#: framework-customizations/theme/options/post-customizations.php:357
-#: framework-customizations/theme/options/footer.php:171
-#: framework-customizations/theme/options/header-settings.php:209
+#: framework-customizations/theme/options/styling-settings.php:107
+#: framework-customizations/theme/options/post-customizations.php:363
+#: framework-customizations/theme/options/footer.php:184
 #: framework-customizations/theme/options/posts/page.php:257
 #: framework-customizations/theme/options/taxonomies/category.php:125
 #: framework-customizations/theme/options/taxonomies/post_tag.php:95
 msgid "Center center"
 msgstr "فى المنتصف"
 
-#: framework-customizations/theme/options/styling-settings.php:119
-#: framework-customizations/theme/options/post-customizations.php:358
-#: framework-customizations/theme/options/footer.php:172
-#: framework-customizations/theme/options/header-settings.php:210
+#: framework-customizations/theme/options/styling-settings.php:108
+#: framework-customizations/theme/options/post-customizations.php:364
+#: framework-customizations/theme/options/footer.php:185
 #: framework-customizations/theme/options/posts/page.php:258
 #: framework-customizations/theme/options/taxonomies/category.php:126
 #: framework-customizations/theme/options/taxonomies/post_tag.php:96
 msgid "Center bottom"
 msgstr "الاسفل - المنتصف"
 
-#: framework-customizations/theme/options/styling-settings.php:129
+#: framework-customizations/theme/options/styling-settings.php:118
 msgid "Icons"
 msgstr "ايقونات"
 
-#: framework-customizations/theme/options/styling-settings.php:134
+#: framework-customizations/theme/options/styling-settings.php:123
 msgid "Website Favicon"
 msgstr "ايقونه الموقع"
 
-#: framework-customizations/theme/options/styling-settings.php:139
+#: framework-customizations/theme/options/styling-settings.php:128
 msgid "Apple icon : 57px X 57px"
 msgstr "ايقونة ابل : ٥٧ فى ٥٧ بكسل"
 
-#: framework-customizations/theme/options/styling-settings.php:140
+#: framework-customizations/theme/options/styling-settings.php:129
 msgid "Select image with height: 57px and width:57px for apple devices"
 msgstr "اختر صورة بأبعاد ٥٧ فى ٥٧ بكسل"
 
-#: framework-customizations/theme/options/styling-settings.php:145
+#: framework-customizations/theme/options/styling-settings.php:134
 msgid "Apple icon : 72px X 72px"
 msgstr "ايقونة ابل : ٧٢ فى ٧٢ بكسل"
 
-#: framework-customizations/theme/options/styling-settings.php:146
+#: framework-customizations/theme/options/styling-settings.php:135
 msgid "Select image with height: 72px and width:72px for apple devices"
 msgstr "اختر صورة بأبعاد ٧٢ فى ٧٢ بكسل"
 
-#: framework-customizations/theme/options/styling-settings.php:151
+#: framework-customizations/theme/options/styling-settings.php:140
 msgid "Apple icon : 114px X 114px"
 msgstr "ايقونة ابل : ١١٤ فى ١١٤ بكسل"
 
-#: framework-customizations/theme/options/styling-settings.php:152
+#: framework-customizations/theme/options/styling-settings.php:141
 msgid "Select image with height: 114px and width:114px for apple devices"
 msgstr "اختر صورة بأبعاد ١١٤ فى ١١٤ بكسل"
 
@@ -1855,6 +1895,7 @@ msgstr "كفر المقاله"
 #: framework-customizations/theme/options/home.php:361
 #: framework-customizations/theme/options/home.php:374
 #: framework-customizations/theme/options/footer.php:65
+#: framework-customizations/theme/options/footer.php:78
 #: framework-customizations/theme/options/layouts.php:25
 #: framework-customizations/theme/options/layouts.php:51
 #: framework-customizations/theme/options/layouts.php:109
@@ -1864,11 +1905,11 @@ msgstr "كفر المقاله"
 #: framework-customizations/theme/options/layouts.php:277
 #: framework-customizations/theme/options/layouts.php:361
 #: framework-customizations/theme/options/layouts.php:474
-#: framework-customizations/theme/options/general.php:78
-#: framework-customizations/theme/options/general.php:108
-#: framework-customizations/theme/options/general.php:121
-#: framework-customizations/theme/options/general.php:134
-#: framework-customizations/theme/options/header-settings.php:307
+#: framework-customizations/theme/options/general.php:88
+#: framework-customizations/theme/options/general.php:118
+#: framework-customizations/theme/options/general.php:131
+#: framework-customizations/theme/options/general.php:144
+#: framework-customizations/theme/options/header-settings.php:219
 #: framework-customizations/theme/options/single-post.php:38
 #: framework-customizations/theme/options/single-post.php:51
 #: framework-customizations/theme/options/single-post.php:64
@@ -1918,6 +1959,7 @@ msgstr "اخفاء"
 #: framework-customizations/theme/options/home.php:357
 #: framework-customizations/theme/options/home.php:370
 #: framework-customizations/theme/options/footer.php:61
+#: framework-customizations/theme/options/footer.php:74
 #: framework-customizations/theme/options/layouts.php:21
 #: framework-customizations/theme/options/layouts.php:47
 #: framework-customizations/theme/options/layouts.php:105
@@ -1927,11 +1969,11 @@ msgstr "اخفاء"
 #: framework-customizations/theme/options/layouts.php:273
 #: framework-customizations/theme/options/layouts.php:357
 #: framework-customizations/theme/options/layouts.php:478
-#: framework-customizations/theme/options/general.php:82
-#: framework-customizations/theme/options/general.php:104
-#: framework-customizations/theme/options/general.php:117
-#: framework-customizations/theme/options/general.php:130
-#: framework-customizations/theme/options/header-settings.php:303
+#: framework-customizations/theme/options/general.php:92
+#: framework-customizations/theme/options/general.php:114
+#: framework-customizations/theme/options/general.php:127
+#: framework-customizations/theme/options/general.php:140
+#: framework-customizations/theme/options/header-settings.php:215
 #: framework-customizations/theme/options/single-post.php:34
 #: framework-customizations/theme/options/single-post.php:47
 #: framework-customizations/theme/options/single-post.php:60
@@ -1980,7 +2022,7 @@ msgstr "مكان الشريط الجانبى"
 msgid ""
 "This option will override the sidebar position selected in theme options "
 "page for this post only."
-msgstr ""
+msgstr "هذا الخيار سوف يتخطى اعدادات الشريط الجانبى لهذه المقاله فقط"
 
 #: framework-customizations/theme/options/post-customizations.php:48
 #: framework-customizations/theme/options/posts/page.php:50
@@ -2017,7 +2059,7 @@ msgid "Reading position indicator"
 msgstr "مستوى التقدم فى القراءه"
 
 #: framework-customizations/theme/options/post-customizations.php:109
-#: framework-customizations/theme/options/general.php:101
+#: framework-customizations/theme/options/general.php:111
 #: framework-customizations/theme/options/single-post.php:31
 #: framework-customizations/theme/options/posts/page.php:111
 msgid "Date Meta"
@@ -2034,7 +2076,7 @@ msgid "Tags meta"
 msgstr "معلومات الوسوم"
 
 #: framework-customizations/theme/options/post-customizations.php:148
-#: framework-customizations/theme/options/general.php:114
+#: framework-customizations/theme/options/general.php:124
 #: framework-customizations/theme/options/single-post.php:70
 #: framework-customizations/theme/options/posts/page.php:124
 msgid "Views meta"
@@ -2069,52 +2111,52 @@ msgstr "المقالة المقترحة"
 msgid "Review System"
 msgstr "نظام المراجعه"
 
-#: framework-customizations/theme/options/post-customizations.php:233
+#: framework-customizations/theme/options/post-customizations.php:236
 msgid "Review Position"
 msgstr "مكان المراجعه"
 
-#: framework-customizations/theme/options/post-customizations.php:235
+#: framework-customizations/theme/options/post-customizations.php:238
 msgid "Hide the review"
 msgstr "اخفاء المراجعه"
 
-#: framework-customizations/theme/options/post-customizations.php:236
+#: framework-customizations/theme/options/post-customizations.php:239
 msgid "Above the post"
 msgstr "اعلى المقالة"
 
-#: framework-customizations/theme/options/post-customizations.php:237
+#: framework-customizations/theme/options/post-customizations.php:240
 msgid "Under the post"
 msgstr "اسفل المقاله"
 
-#: framework-customizations/theme/options/post-customizations.php:244
+#: framework-customizations/theme/options/post-customizations.php:247
 msgid "Review Title"
 msgstr "عنوان المراجعه"
 
-#: framework-customizations/theme/options/post-customizations.php:248
+#: framework-customizations/theme/options/post-customizations.php:251
 msgid "Review Description"
 msgstr "وصف المراجعه"
 
-#: framework-customizations/theme/options/post-customizations.php:252
+#: framework-customizations/theme/options/post-customizations.php:255
 msgid "Rating"
 msgstr "التقييم"
 
-#: framework-customizations/theme/options/post-customizations.php:256
+#: framework-customizations/theme/options/post-customizations.php:262
 msgid "Feature Name"
 msgstr "اسم العنصر"
 
-#: framework-customizations/theme/options/post-customizations.php:258
+#: framework-customizations/theme/options/post-customizations.php:264
 msgid "Camera or ram or anything"
 msgstr "الكاميرا - الرام او اى شيئ اخر"
 
-#: framework-customizations/theme/options/post-customizations.php:261
+#: framework-customizations/theme/options/post-customizations.php:267
 msgid "Score"
 msgstr "النقاط"
 
-#: framework-customizations/theme/options/post-customizations.php:271
+#: framework-customizations/theme/options/post-customizations.php:277
 msgid "Add Feature and Score"
 msgstr "اضف الميزه و النقاط"
 
-#: framework-customizations/theme/options/post-customizations.php:277
-#: framework-customizations/theme/options/post-customizations.php:285
+#: framework-customizations/theme/options/post-customizations.php:283
+#: framework-customizations/theme/options/post-customizations.php:291
 msgid "Post Background"
 msgstr "خلفية المقالة"
 
@@ -2128,18 +2170,18 @@ msgid "Show Carousel"
 msgstr "عرض السلايدر"
 
 #: framework-customizations/theme/options/main-carousel.php:24
-#: framework-customizations/theme/options/general.php:26
+#: framework-customizations/theme/options/general.php:36
 #: framework-customizations/theme/options/header-settings.php:105
 #: framework-customizations/theme/options/header-settings.php:119
-#: framework-customizations/theme/options/header-settings.php:366
+#: framework-customizations/theme/options/header-settings.php:278
 msgid "on"
 msgstr "تفعيل"
 
 #: framework-customizations/theme/options/main-carousel.php:28
-#: framework-customizations/theme/options/general.php:22
+#: framework-customizations/theme/options/general.php:32
 #: framework-customizations/theme/options/header-settings.php:101
 #: framework-customizations/theme/options/header-settings.php:115
-#: framework-customizations/theme/options/header-settings.php:362
+#: framework-customizations/theme/options/header-settings.php:274
 msgid "off"
 msgstr "اغلاق"
 
@@ -2148,42 +2190,42 @@ msgid "Carousel Style"
 msgstr "شكل السلايدر"
 
 #: framework-customizations/theme/options/main-carousel.php:97
-#: framework-customizations/theme/options/header-settings.php:382
+#: framework-customizations/theme/options/header-settings.php:294
 msgid "Query Based On : "
 msgstr "حدد مصدر المقالات"
 
 #: framework-customizations/theme/options/main-carousel.php:101
-#: framework-customizations/theme/options/header-settings.php:386
+#: framework-customizations/theme/options/header-settings.php:298
 msgid "Popular posts ( Top Commented )"
 msgstr "اشهر المقالات (الاكثر تعليقا)"
 
 #: framework-customizations/theme/options/main-carousel.php:102
-#: framework-customizations/theme/options/header-settings.php:387
+#: framework-customizations/theme/options/header-settings.php:299
 msgid "Most viewed posts"
 msgstr "اكثر المقالات مشاهده"
 
 #: framework-customizations/theme/options/main-carousel.php:103
-#: framework-customizations/theme/options/header-settings.php:388
+#: framework-customizations/theme/options/header-settings.php:300
 msgid "Selected categories"
 msgstr "التصنيفات التى تم اختيارها"
 
 #: framework-customizations/theme/options/main-carousel.php:104
-#: framework-customizations/theme/options/header-settings.php:389
+#: framework-customizations/theme/options/header-settings.php:301
 msgid "Selected tags"
 msgstr "الوسوم التى تم اختيارها"
 
 #: framework-customizations/theme/options/main-carousel.php:105
-#: framework-customizations/theme/options/header-settings.php:390
+#: framework-customizations/theme/options/header-settings.php:302
 msgid "Selected author"
 msgstr "الكاتب الذى تم اختيارة"
 
 #: framework-customizations/theme/options/main-carousel.php:122
-#: framework-customizations/theme/options/header-settings.php:407
+#: framework-customizations/theme/options/header-settings.php:319
 msgid "Select Tags"
 msgstr "اختر الوسوم"
 
 #: framework-customizations/theme/options/main-carousel.php:130
-#: framework-customizations/theme/options/header-settings.php:415
+#: framework-customizations/theme/options/header-settings.php:327
 msgid "Select author"
 msgstr "اختر كاتب"
 
@@ -2313,22 +2355,22 @@ msgstr "اضافة بلوك"
 #: framework-customizations/theme/options/home.php:120
 #: framework-customizations/theme/options/home.php:304
 msgid "Show recent posts"
-msgstr ""
+msgstr "عرض أحدث المقالات"
 
 #: framework-customizations/theme/options/home.php:121
 #: framework-customizations/theme/options/home.php:305
 msgid "Show or hide recent posts on home page"
-msgstr ""
+msgstr "عرض احدث المقالات فى الصفحة الرئيسية"
 
 #: framework-customizations/theme/options/home.php:136
 #: framework-customizations/theme/options/home.php:320
 msgid "Recent Posts"
-msgstr ""
+msgstr "أحدث المقالات"
 
 #: framework-customizations/theme/options/home.php:137
 #: framework-customizations/theme/options/home.php:321
 msgid "Recent Posts Title"
-msgstr ""
+msgstr "عنوان احدث المقالات"
 
 #: framework-customizations/theme/options/home.php:142
 #: framework-customizations/theme/options/home.php:326
@@ -2343,12 +2385,12 @@ msgstr "استايل المقالات"
 #: framework-customizations/theme/options/home.php:143
 #: framework-customizations/theme/options/home.php:327
 msgid "Choose the style of posts for home and all archive pages"
-msgstr ""
+msgstr "اختر استايل المقالات للصفحة الرئيسية و صفحات الارشيف"
 
 #: framework-customizations/theme/options/home.php:145
 #: framework-customizations/theme/options/home.php:329
 msgid "Blog"
-msgstr ""
+msgstr "المدونة"
 
 #: framework-customizations/theme/options/home.php:146
 #: framework-customizations/theme/options/home.php:330
@@ -2459,6 +2501,8 @@ msgid ""
 "at <a href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress."
 "org/Embeds.</a>"
 msgstr ""
+"ادخل رابط فيديو : يوتيوب - فيميو. كل مشغلى الخدمات المدعومين <a href=\"http:"
+"//codex.wordpress.org/Embeds\">هنا</a>"
 
 #: framework-customizations/theme/options/post-formats.php:79
 msgid "Upload a video file"
@@ -2486,6 +2530,8 @@ msgid ""
 "listed at <a href=\"http://codex.wordpress.org/Embeds\">http://codex."
 "wordpress.org/Embeds.</a>"
 msgstr ""
+"ادخل رابط صوت : يساوند كلاود - سبوتيفاى. كل مشغلى الخدمات المدعومين <a "
+"href=\"http://codex.wordpress.org/Embeds\">هنا</a>"
 
 #: framework-customizations/theme/options/post-formats.php:128
 msgid "Upload a audio file"
@@ -2528,18 +2574,22 @@ msgid "Footer Widgets"
 msgstr "ودجات الفوتر"
 
 #: framework-customizations/theme/options/footer.php:71
+msgid "Footer Mobile Navigation"
+msgstr "شريط تصفح الموبايل"
+
+#: framework-customizations/theme/options/footer.php:84
 msgid "Footer rights block"
 msgstr "مكان كتابه الحقوق فى الفوتر"
 
-#: framework-customizations/theme/options/footer.php:74
+#: framework-customizations/theme/options/footer.php:87
 msgid "Social icons"
 msgstr "ايقوانات الشبكات الاجتماعية"
 
-#: framework-customizations/theme/options/footer.php:82
+#: framework-customizations/theme/options/footer.php:95
 msgid "Footer Copyrights"
 msgstr "نص الحقوق فى الفوتر"
 
-#: framework-customizations/theme/options/footer.php:91
+#: framework-customizations/theme/options/footer.php:104
 msgid "Footer Background"
 msgstr "خلفية الفوتر"
 
@@ -2636,32 +2686,44 @@ msgid "Search form"
 msgstr "فورم البحث"
 
 #: framework-customizations/theme/options/general.php:18
+msgid "Website Layout"
+msgstr "شكل الموقع"
+
+#: framework-customizations/theme/options/general.php:20
+msgid "Boxed"
+msgstr "محدد"
+
+#: framework-customizations/theme/options/general.php:21
+msgid "Wide"
+msgstr "عريض"
+
+#: framework-customizations/theme/options/general.php:28
 msgid "Sticky Sidebar"
 msgstr "شريط جانبى ثابت"
 
-#: framework-customizations/theme/options/general.php:19
+#: framework-customizations/theme/options/general.php:29
 #: framework-customizations/theme/options/header-settings.php:98
 msgid "Working on Desktop only"
 msgstr "يعمل على الكمبيوتر فقط"
 
-#: framework-customizations/theme/options/general.php:32
+#: framework-customizations/theme/options/general.php:42
 msgid "Time format"
 msgstr "شكل تاريخ المقاله"
 
-#: framework-customizations/theme/options/general.php:35
+#: framework-customizations/theme/options/general.php:45
 #: framework-customizations/theme/options/single-post.php:183
 msgid "Traditional"
 msgstr "عادى"
 
-#: framework-customizations/theme/options/general.php:39
+#: framework-customizations/theme/options/general.php:49
 msgid "Time ago"
 msgstr "وقت مضى"
 
-#: framework-customizations/theme/options/general.php:45
+#: framework-customizations/theme/options/general.php:55
 msgid "Scroll to top button"
 msgstr "زر الانتقال الى الاعلى"
 
-#: framework-customizations/theme/options/general.php:48
+#: framework-customizations/theme/options/general.php:58
 #: framework-customizations/theme/options/single-post.php:218
 #: framework-customizations/theme/options/single-post.php:232
 #: framework-customizations/theme/options/single-post.php:246
@@ -2670,7 +2732,7 @@ msgstr "زر الانتقال الى الاعلى"
 msgid "hide"
 msgstr "اخفاء"
 
-#: framework-customizations/theme/options/general.php:52
+#: framework-customizations/theme/options/general.php:62
 #: framework-customizations/theme/options/single-post.php:213
 #: framework-customizations/theme/options/single-post.php:227
 #: framework-customizations/theme/options/single-post.php:241
@@ -2679,35 +2741,35 @@ msgstr "اخفاء"
 msgid "show"
 msgstr "مشاهده"
 
-#: framework-customizations/theme/options/general.php:58
+#: framework-customizations/theme/options/general.php:68
 msgid "Posts Settings"
 msgstr "اعدادات المقالات"
 
-#: framework-customizations/theme/options/general.php:69
+#: framework-customizations/theme/options/general.php:79
 msgid "Post excerpt length"
 msgstr "حجم النص المقطتف"
 
-#: framework-customizations/theme/options/general.php:74
+#: framework-customizations/theme/options/general.php:84
 msgid "Breadcrumbs"
 msgstr "شريط التنقل"
 
-#: framework-customizations/theme/options/general.php:75
+#: framework-customizations/theme/options/general.php:85
 msgid "You must install unyson breadcrumbs extension to activate breadcrumbs"
 msgstr "يجب تنصيب اضافة شريط التنقل من يونيسون لتعمل"
 
-#: framework-customizations/theme/options/general.php:88
+#: framework-customizations/theme/options/general.php:98
 msgid "Pagination Style"
 msgstr "استايل التنقل بين الصفحات"
 
-#: framework-customizations/theme/options/general.php:91
+#: framework-customizations/theme/options/general.php:101
 msgid "Next & Prev"
 msgstr "التالى & السابق"
 
-#: framework-customizations/theme/options/general.php:95
+#: framework-customizations/theme/options/general.php:105
 msgid "Numbers (1,2,3)"
 msgstr "ارقام (١,٢,٣)"
 
-#: framework-customizations/theme/options/general.php:127
+#: framework-customizations/theme/options/general.php:137
 msgid "Rate meta"
 msgstr "التقييم"
 
@@ -2732,131 +2794,113 @@ msgstr "شريط علوى ثابت"
 msgid "Search box in Navbar"
 msgstr "وضع البحث فى الشريط العلوى"
 
-#: framework-customizations/theme/options/header-settings.php:128
-msgid "Header Background"
-msgstr "خلفية الهيدر"
+#: framework-customizations/theme/options/header-settings.php:124
+msgid "Navbar Background Color"
+msgstr "لون خلفية الناف بار"
 
-#: framework-customizations/theme/options/header-settings.php:222
-msgid "Padding top"
-msgstr "المساحة الداخلية العليا"
-
-#: framework-customizations/theme/options/header-settings.php:223
-#: framework-customizations/theme/options/header-settings.php:231
-msgid "Enter numbers only, Value will be in pixels. (50 = 50px)"
-msgstr ""
-
-#: framework-customizations/theme/options/header-settings.php:225
-#: framework-customizations/theme/options/header-settings.php:233
-msgid "50"
-msgstr "٥٠"
-
-#: framework-customizations/theme/options/header-settings.php:230
-msgid "Padding bottom"
-msgstr "المساحة الداخلية السفلى"
-
-#: framework-customizations/theme/options/header-settings.php:242
+#: framework-customizations/theme/options/header-settings.php:154
 msgid "Logo Settings"
 msgstr "اعدادات اللوجو"
 
-#: framework-customizations/theme/options/header-settings.php:250
+#: framework-customizations/theme/options/header-settings.php:162
 msgid "Site Logo"
 msgstr "لوجو الموقع"
 
-#: framework-customizations/theme/options/header-settings.php:254
+#: framework-customizations/theme/options/header-settings.php:166
 msgid "Site title and tag line"
 msgstr "اسم الموقع و الوصف"
 
-#: framework-customizations/theme/options/header-settings.php:255
-#: framework-customizations/theme/options/header-settings.php:263
+#: framework-customizations/theme/options/header-settings.php:167
+#: framework-customizations/theme/options/header-settings.php:175
 msgid "Upload logo"
 msgstr "رفع لوجو"
 
-#: framework-customizations/theme/options/header-settings.php:269
+#: framework-customizations/theme/options/header-settings.php:181
 msgid "Center logo"
 msgstr "اللوجو فى المنتصف"
 
-#: framework-customizations/theme/options/header-settings.php:276
+#: framework-customizations/theme/options/header-settings.php:188
 msgid "Center site title text"
 msgstr "جعل عنوان الموقع فى المنتصف"
 
-#: framework-customizations/theme/options/header-settings.php:283
+#: framework-customizations/theme/options/header-settings.php:195
 msgid "Logo margin top"
 msgstr "ازاحة اللوجو من اعلى"
 
-#: framework-customizations/theme/options/header-settings.php:285
+#: framework-customizations/theme/options/header-settings.php:197
 msgid "Enter numbers only, Value will be in pixels. (10 = 10px)"
 msgstr ""
 
-#: framework-customizations/theme/options/header-settings.php:290
-#: framework-customizations/theme/options/header-settings.php:300
+#: framework-customizations/theme/options/header-settings.php:202
+#: framework-customizations/theme/options/header-settings.php:212
 msgid "Top Alert Bar"
 msgstr "شريط التنبيهات العلوى"
 
-#: framework-customizations/theme/options/header-settings.php:315
+#: framework-customizations/theme/options/header-settings.php:227
 msgid "Content"
 msgstr "محتوى"
 
-#: framework-customizations/theme/options/header-settings.php:321
+#: framework-customizations/theme/options/header-settings.php:233
 msgid "Select background Color"
 msgstr "اختر لون الخلفية"
 
-#: framework-customizations/theme/options/header-settings.php:327
+#: framework-customizations/theme/options/header-settings.php:239
 msgid "Select Text Color"
 msgstr "اختر لون النص"
 
-#: framework-customizations/theme/options/header-settings.php:332
+#: framework-customizations/theme/options/header-settings.php:244
 msgid "Text Style"
 msgstr "شكل النص"
 
-#: framework-customizations/theme/options/header-settings.php:335
+#: framework-customizations/theme/options/header-settings.php:247
 msgid "Normal"
 msgstr "عادى"
 
-#: framework-customizations/theme/options/header-settings.php:339
+#: framework-customizations/theme/options/header-settings.php:251
 msgid "Italic"
 msgstr "مائل"
 
-#: framework-customizations/theme/options/header-settings.php:348
+#: framework-customizations/theme/options/header-settings.php:260
 msgid "News Ticker"
 msgstr "شريط الاخبار العاجلة"
 
-#: framework-customizations/theme/options/header-settings.php:358
+#: framework-customizations/theme/options/header-settings.php:270
 msgid "Enable or disable News Ticker"
 msgstr "تفعيل او الغاء شريط الاخبار العاجلة"
 
-#: framework-customizations/theme/options/header-settings.php:359
+#: framework-customizations/theme/options/header-settings.php:271
 msgid "Show News Ticker"
 msgstr "عرض شريط الاخبار العاجلة"
 
-#: framework-customizations/theme/options/header-settings.php:375
+#: framework-customizations/theme/options/header-settings.php:287
 #: framework-customizations/theme/options/single-post.php:306
 #: framework-customizations/theme/options/social.php:22
 msgid "Title"
 msgstr "عنوان"
 
-#: framework-customizations/theme/options/header-settings.php:430
+#: framework-customizations/theme/options/header-settings.php:342
 msgid "Posts count"
 msgstr "عدد المقالات"
 
-#: framework-customizations/theme/options/header-settings.php:435
+#: framework-customizations/theme/options/header-settings.php:347
 msgid "Show the carousel on home page only or show on all pages"
 msgstr ""
 
-#: framework-customizations/theme/options/header-settings.php:436
+#: framework-customizations/theme/options/header-settings.php:348
 msgid "Show on home page only"
 msgstr "عرض فى الصفحة الرئيسية فقط"
 
-#: framework-customizations/theme/options/header-settings.php:439
-#: framework-customizations/theme/options/header-settings.php:452
+#: framework-customizations/theme/options/header-settings.php:351
+#: framework-customizations/theme/options/header-settings.php:364
 msgid "no"
 msgstr "لا"
 
-#: framework-customizations/theme/options/header-settings.php:443
-#: framework-customizations/theme/options/header-settings.php:456
+#: framework-customizations/theme/options/header-settings.php:355
+#: framework-customizations/theme/options/header-settings.php:368
 msgid "yes"
 msgstr "نعم"
 
-#: framework-customizations/theme/options/header-settings.php:449
+#: framework-customizations/theme/options/header-settings.php:361
 msgid "Show on Mobile Devices"
 msgstr "عرض فى الموبايل"
 
@@ -2887,7 +2931,7 @@ msgstr "نظام التعليقات"
 
 #: framework-customizations/theme/options/single-post.php:179
 msgid "if DISQUS system selected the default comments system will be disabled"
-msgstr ""
+msgstr "اذا تم اختيار نظام DISQUS سوف يتم تجاهل نظام التعليفات الافتراضى"
 
 #: framework-customizations/theme/options/single-post.php:187
 msgid "Disqus"
@@ -3042,7 +3086,7 @@ msgstr "خلفيه الوسم"
 
 #. Name of the theme
 msgid "Infinity Mag 7"
-msgstr ""
+msgstr "انفينيتى ماج ٧"
 
 #. Description of the theme
 msgid ""
@@ -3058,4 +3102,4 @@ msgstr "اوامر الشبكة"
 
 #. Author URI of the theme
 msgid "https://www.aait.sa"
-msgstr ""
+msgstr "https://www.aait.sa"

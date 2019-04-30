@@ -653,7 +653,6 @@ function dw_toolbar_links( $wp_admin_bar ) {
 }
 
 
-
 /**
  * Content area layout
  *
@@ -1580,7 +1579,7 @@ function dw_mobile_navigation_bar() {
 	if ( dw_get_setting( 'footer_mobile_bar' ) != 'on' ) {
 		return;
 	}
-	if ( class_exists( 'woocommerce' ) ) {
+	if ( !class_exists( 'woocommerce' ) ) {
 		?>
         <div class="dw-mobile-navigation">
             <div class="item<?php if ( is_home() ) {
@@ -1608,8 +1607,8 @@ function dw_mobile_navigation_bar() {
                 </a>
             </div>
             <div class="item<?php if ( is_cart() ) {
-		        echo " active";
-	        } ?>">
+				echo " active";
+			} ?>">
                 <a href="<?php echo wc_get_cart_url(); ?>">
                     <span class="icon">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -1632,7 +1631,7 @@ function dw_mobile_navigation_bar() {
             <div class="item<?php if ( is_account_page() ) {
 				echo " active";
 			} ?>">
-                <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
+                <a href="<?php echo get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ); ?>">
                     <span class="icon">
                         <i class="fa fa-user" aria-hidden="true"></i>
                     </span>
@@ -1645,7 +1644,45 @@ function dw_mobile_navigation_bar() {
 		<?php
 	} else {
 		?>
+        <div class="dw-mobile-navigation">
+            <div class="item<?php if ( is_home() ) {
+				echo " active";
+			} ?>">
+                <a href="<?php echo home_url( '/' ); ?>">
+                    <span class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">
+                        <?php esc_html_e( 'Home', 'dw' ); ?>
+                    </span>
+                </a>
+            </div>
 
+
+            <div class="item">
+                <a href="#" class="dw_search_trigger">
+                    <span class="icon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">
+                        <?php esc_html_e( 'Search', 'dw' ); ?>
+                    </span>
+                </a>
+            </div>
+
+
+            <div class="item">
+                <a href="#" class="dw_menu_trigger">
+                    <span class="icon">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">
+                        <?php esc_html_e( 'Menu', 'dw' ); ?>
+                    </span>
+                </a>
+            </div>
+
+        </div>
 		<?php
 	}
 }

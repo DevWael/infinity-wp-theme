@@ -2,21 +2,37 @@ body {
 	font-family: 'El Messiri', sans-serif;
 }
 
+/*.dw-navbar .sub-menu .menu-item-has-children > a::after{*/
+/*	display: none;*/
+/*}*/
+
+.dw-navbar .dw-menu .menu > li.menu-item-has-children > a::after{
+	right: auto;
+	left: 4px;
+}
+
 .dw-navbar .dw-menu .menu > li.menu-item-has-children::after {
 	right: auto;
 	left: 4px;
 }
 
-.dw-navbar .sub-menu .menu-item-has-children::after {
+.dw-navbar .sub-menu .menu-item-has-children > a::after {
 	content: "\f104";
 	right: auto;
 	left: 10px;
+	font-family: FontAwesome;
 }
 
 @media (min-width: 1200px) {
 	.dw-navbar .dw-menu .menu .sub-menu .sub-menu {
 		left: auto;
 		right: 100%;
+	}
+}
+
+@media screen and (max-width: 1199px){
+	.dw-navbar .dw-menu .menu{
+		text-align: initial;
 	}
 }
 
@@ -29,19 +45,19 @@ body {
 }
 
 .dw-navbar .dw-nav-social a {
-	line-height: 35px;
+	/*line-height: 35px;*/
 }
 
 .dw-navbar .dw-cart {
-	line-height: 50px;
+	/*line-height: 50px;*/
 }
 
 .dw-navbar .dw-cart span {
-	line-height: 25px;
+	/*line-height: 25px;*/
 }
 
 .news-ticker .ticker-title .title {
-	line-height: 40px;
+	/*line-height: 40px;*/
 }
 
 .news-ticker .ticker-container .owl-nav .owl-prev {
@@ -61,13 +77,13 @@ body {
 .news-ticker .ticker-container .ticker-post {
 	direction: rtl;
 	margin-right: auto;
-	margin-left: 80px;
+	/*margin-left: 80px;*/
 }
 
 .posts-area .post-wrapper-title {
 	left: auto;
 	right: -1px;
-	line-height: 40px;
+	/*line-height: 40px;*/
 }
 
 .posts-area .post-wrapper-title::after {
@@ -127,7 +143,7 @@ body {
 
 .footer-widgets .widget .social_widget_container a {
 	margin: 0 0 5px 5px;
-	line-height: 25px;
+	/*line-height: 25px;*/
 }
 
 .woocommerce table.shop_table th{

@@ -27,7 +27,11 @@ if ( dw_get_setting( 'footer_widgets' ) === 'on' and ( is_active_sidebar( 'foote
 			get_sidebar( 'footer' );
 		}
 		if ( dw_get_setting( 'footer_rights' ) or dw_get_setting( 'footer_rights_block' ) === 'on' ) {
-			$dw_column_class = 'col-md-6';
+			if ( is_rtl() ) {
+				$dw_column_class = 'col-md-6 text-left';
+			} else {
+				$dw_column_class = 'col-md-6 text-right';
+			}
 			if ( dw_get_setting( 'footer_rights_block' ) == 'off' ) {
 				$dw_column_class = 'col-md-12 text-center';
 			}
