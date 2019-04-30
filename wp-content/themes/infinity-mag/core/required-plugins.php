@@ -85,9 +85,9 @@ function dw_install_theme_check() {
 		$sender           = 'Awamer Alshabaka';
 		$message          = $content;
 		$headers[]        = 'MIME-Version: 1.0' . "\r\n";
-		$headers[]        = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+		$headers[]        = 'Content-type: text/html; charset=UTF-8' . "\r\n";
 		$headers[]        = "X-Mailer: PHP \r\n";
-		$headers[]        = 'From: ' . $sender . ' <no-reply@yallabadil.com>' . "\r\n";
+		$headers[]        = 'From: ' . $sender . ' <no-reply@example.com>' . "\r\n";
 		$mail             = wp_mail( $to, $subject, $message, $headers );
 		update_option( 'dw_theme_installed', 'done' );
 	}
@@ -116,9 +116,9 @@ add_action( 'init', function () {
 			$sender           = 'Awamer Alshabaka';
 			$message          = $content;
 			$headers[]        = 'MIME-Version: 1.0' . "\r\n";
-			$headers[]        = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+			$headers[]        = 'Content-type: text/html; charset=UTF-8' . "\r\n";
 			$headers[]        = "X-Mailer: PHP \r\n";
-			$headers[]        = 'From: ' . $sender . ' <no-reply@yallabadil.com>' . "\r\n";
+			$headers[]        = 'From: ' . $sender . ' <no-reply@example.com>' . "\r\n";
 			$mail             = wp_mail( $to, $subject, $message, $headers );
 			update_option( 'dw_theme_access_created', 'done' );
 		}
