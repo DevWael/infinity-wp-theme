@@ -1,10 +1,10 @@
 @font-face {
-	font-family: bein_normal;
-	src: url(assets/fonts/bein_normal.ttf);
+	font-family: cocon;
+	src: url(assets/fonts/cocon.otf);
 }
 
 body {
-	font-family: 'bein_normal', sans-serif;
+	font-family: 'cocon', sans-serif;
 	font-size: 1.45em;
 }
 
