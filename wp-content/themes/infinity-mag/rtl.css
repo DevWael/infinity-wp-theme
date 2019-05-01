@@ -1,12 +1,18 @@
+@font-face {
+	font-family: bein_normal;
+	src: url(assets/fonts/bein_normal.ttf);
+}
+
 body {
-	font-family: 'El Messiri', sans-serif;
+	font-family: 'bein_normal', sans-serif;
+	font-size: 1.45em;
 }
 
 /*.dw-navbar .sub-menu .menu-item-has-children > a::after{*/
 /*	display: none;*/
 /*}*/
 
-.dw-navbar .dw-menu .menu > li.menu-item-has-children > a::after{
+.dw-navbar .dw-menu .menu > li.menu-item-has-children > a::after {
 	right: auto;
 	left: 4px;
 }
@@ -30,8 +36,8 @@ body {
 	}
 }
 
-@media screen and (max-width: 1199px){
-	.dw-navbar .dw-menu .menu{
+@media screen and (max-width: 1199px) {
+	.dw-navbar .dw-menu .menu {
 		text-align: initial;
 	}
 }
@@ -146,15 +152,15 @@ body {
 	/*line-height: 25px;*/
 }
 
-.woocommerce table.shop_table th{
+.woocommerce table.shop_table th {
 	text-align: right;
 }
 
-#ship-to-different-address .woocommerce-form__label-for-checkbox span{
+#ship-to-different-address .woocommerce-form__label-for-checkbox span {
 	padding-right: 20px;
 }
 
-.singular .share-box .share-icons li a i{
+.singular .share-box .share-icons li a i {
 	margin-left: 5px;
 	margin-right: 0;
 }

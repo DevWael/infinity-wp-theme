@@ -125,9 +125,7 @@ if ( ! function_exists( 'dw_enqueue_scripts' ) ) {
 			wp_enqueue_style( 'woocommerce_styles', DW_CSS_URI . 'woocommerce.css' );
 		}
 
-		if ( is_rtl() ) {
-			wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=El+Messiri' );
-		} else {
+		if ( ! is_rtl() ) {
 			wp_enqueue_style( 'default-font', 'https://fonts.googleapis.com/css?family=Ubuntu' );
 		}
 
@@ -1579,7 +1577,7 @@ function dw_mobile_navigation_bar() {
 	if ( dw_get_setting( 'footer_mobile_bar' ) != 'on' ) {
 		return;
 	}
-	if ( !class_exists( 'woocommerce' ) ) {
+	if ( ! class_exists( 'woocommerce' ) ) {
 		?>
         <div class="dw-mobile-navigation">
             <div class="item<?php if ( is_home() ) {
