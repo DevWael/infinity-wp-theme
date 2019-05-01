@@ -1,87 +1,92 @@
 /*
  * window admin stylesheet for added elements into admin panel.
  */
-@import url('https://fonts.googleapis.com/css?family=El+Messiri');
+@font-face {
+	font-family: cocon;
+	src: url(../../assets/fonts/cocon.otf);
+}
+
 body.rtl,
-.rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6{
-    font-family: 'El Messiri', sans-serif !important;
+.rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6 {
+	font-family: 'cocon', sans-serif !important;
 }
 
 .window-icons a {
-    text-decoration: none;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    text-align: center;
-    font-size: 18px;
+	text-decoration: none;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
 }
 
 .fw-option-type-number {
-    width: 100%;
-    max-width: 100%;
+	width: 100%;
+	max-width: 100%;
 }
 
 .fw-backend-side-tabs .fw-settings-form-header h2 {
-    font-weight: bold !important;
+	font-weight: bold !important;
 }
 
 .fw-backend-side-tabs .fw-settings-form-header h2:before {
-    font-family: FontAwesome;
-    content: '\f085';
-    font-weight: normal;
-    margin-right: 10px;
+	font-family: FontAwesome;
+	content: '\f085';
+	font-weight: normal;
+	margin-right: 10px;
 }
 
-.rtl .fw-backend-side-tabs .fw-settings-form-header h2:before{
-    display: inline-block;
-    margin-left: 5px;
+.rtl .fw-backend-side-tabs .fw-settings-form-header h2:before {
+	display: inline-block;
+	margin-left: 5px;
 }
 
-.color-alpha{
-    right: 0 !important;
-    left: auto !important;
+.color-alpha {
+	right: 0 !important;
+	left: auto !important;
 }
 
 .box-width {
-    width: 100% !important;
+	width: 100% !important;
 }
 
 #fw-backend-option-fw-option-social_icon .fw-inner.fw-pull-left {
-    float: none !important;
+	float: none !important;
 }
 
-body.rtl textarea.code{
-    direction: rtl;
+body.rtl textarea.code {
+	direction: rtl;
 }
 
-.rtl .fw-option-type-addable-popup .clone-item{
-    left: 25px;
-    right: auto;
+.rtl .fw-option-type-addable-popup .clone-item {
+	left: 25px;
+	right: auto;
 }
 
-.rtl .fw-option-type-image-picker ul.thumbnails.image_picker_selector li{
-    float: right;
-    margin: 0 0 5px 5px;
+.rtl .fw-option-type-image-picker ul.thumbnails.image_picker_selector li {
+	float: right;
+	margin: 0 0 5px 5px;
 }
 
-.rtl .fw-option-type-addable-box > .fw-option-boxes > .fw-option-box .hndle .fw-html-after-title{
-    left: 35px;
-    right: auto;
+.rtl .fw-option-type-addable-box > .fw-option-boxes > .fw-option-box .hndle .fw-html-after-title {
+	left: 35px;
+	right: auto;
 }
+
 .rtl .fw-backend-option-design-default > .fw-backend-option-input > .fw-inner,
-.rtl .fw-backend-option-design-customizer > .fw-backend-option-input > .fw-inner{
-    width: 100%;
+.rtl .fw-backend-option-design-customizer > .fw-backend-option-input > .fw-inner {
+	width: 100%;
 }
 
-.rtl .postbox{
-    box-shadow: 0 0px 0px rgba(0,0,0,.04);
+.rtl .postbox {
+	box-shadow: 0 0px 0px rgba(0, 0, 0, .04);
 }
 
-body.rtl .fw-postbox .handlediv:before{
-    left: 0 !important;
+body.rtl .fw-postbox .handlediv:before {
+	left: 0 !important;
 }
 
 .rtl .fw-option-type-checkboxes.fw-option-type-checkboxes-inline > div,
-.rtl .fw-option-type-radio.fw-option-type-radio-inline > div{
-    float: none;
+.rtl .fw-option-type-radio.fw-option-type-radio-inline > div {
+	float: none;
 }
