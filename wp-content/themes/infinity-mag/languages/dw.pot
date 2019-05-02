@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Infinity Mag\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-30 08:17+0000\n"
+"POT-Creation-Date: 2019-05-02 08:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.1; wp-5.1.1"
 
-#: category.php:34 archive.php:18 tag.php:18 search.php:16 core/init.php:1551
+#: category.php:34 archive.php:18 tag.php:18 search.php:16 core/init.php:1548
 msgid "Post "
 msgid_plural "Posts"
 msgstr[0] ""
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: footer.php:75 framework-customizations/theme/options/footer.php:94
+#: footer.php:79 framework-customizations/theme/options/footer.php:94
 msgid "All rights reserved to"
 msgstr ""
 
@@ -172,262 +172,266 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: core/init.php:282
+#: core/init.php:280
 msgid "/ 10"
 msgstr ""
 
-#: core/init.php:326
+#: core/init.php:324
 msgid "Excellent"
 msgstr ""
 
-#: core/init.php:329
+#: core/init.php:327
 msgid "Very Good"
 msgstr ""
 
-#: core/init.php:332
+#: core/init.php:330
 msgid "Good"
 msgstr ""
 
-#: core/init.php:335
+#: core/init.php:333
 msgid "Average"
 msgstr ""
 
-#: core/init.php:338
+#: core/init.php:336
 msgid "Poor"
 msgstr ""
 
-#: core/init.php:380
+#: core/init.php:378
 msgid "Rating Score"
 msgstr ""
 
-#: core/init.php:574
+#: core/init.php:572
 msgid "News Demo"
 msgstr ""
 
-#: core/init.php:579
+#: core/init.php:577
 msgid "Sport Demo"
 msgstr ""
 
-#: core/init.php:584
+#: core/init.php:582
 msgid "Food Demo"
 msgstr ""
 
-#: core/init.php:589
+#: core/init.php:587
 msgid "Blog Demo"
 msgstr ""
 
-#: core/init.php:594
+#: core/init.php:592
 msgid "Fashion Demo"
 msgstr ""
 
-#: core/init.php:599
+#: core/init.php:597
 msgid "Technology Demo"
 msgstr ""
 
-#: core/init.php:632
+#: core/init.php:630
 msgid "By: Awamer Alshabaka"
 msgstr ""
 
-#: core/init.php:718
+#: core/init.php:715
 msgid "Primary Sidebar"
 msgstr ""
 
-#: core/init.php:726
+#: core/init.php:723
 msgid "Second Half Area Sidebar"
 msgstr ""
 
-#: core/init.php:734
+#: core/init.php:731
 msgid "Footer one"
 msgstr ""
 
-#: core/init.php:742
+#: core/init.php:739
 msgid "Footer two"
 msgstr ""
 
-#: core/init.php:750
+#: core/init.php:747
 msgid "Footer three"
 msgstr ""
 
-#: core/init.php:1001
+#: core/init.php:998
 msgid "0 view"
 msgstr ""
 
-#: core/init.php:1043
+#: core/init.php:1040
 msgid "Views Count"
 msgstr ""
 
-#: core/init.php:1060
+#: core/init.php:1057
 msgid "Use WP menu builder to build menus"
 msgstr ""
 
-#: core/init.php:1075
+#: core/init.php:1072
 msgid "Welcome"
 msgstr ""
 
-#: core/init.php:1078
+#: core/init.php:1075
 msgid "Dashboard"
 msgstr ""
 
-#: core/init.php:1081
+#: core/init.php:1078
 msgid "Your Profile"
 msgstr ""
 
-#: core/init.php:1084
+#: core/init.php:1081
 msgid "Logout"
 msgstr ""
 
-#: core/init.php:1096 core/init.php:1097
+#: core/init.php:1093 core/init.php:1094
 msgid "Username"
 msgstr ""
 
-#: core/init.php:1102 core/init.php:1103
+#: core/init.php:1099 core/init.php:1100
 msgid "Password"
 msgstr ""
 
-#: core/init.php:1106
+#: core/init.php:1103
 msgid "Log in"
 msgstr ""
 
-#: core/init.php:1110
+#: core/init.php:1107
 msgid "Remember Me"
 msgstr ""
 
-#: core/init.php:1117
+#: core/init.php:1114
 msgid "Lost your password?"
 msgstr ""
 
-#: core/init.php:1134
+#: core/init.php:1131
 msgid "Social Networking"
 msgstr ""
 
-#: core/init.php:1137
+#: core/init.php:1134
 msgid "FaceBook URL"
 msgstr ""
 
-#: core/init.php:1145
+#: core/init.php:1142
 msgid "Twitter URL"
 msgstr ""
 
-#: core/init.php:1153
+#: core/init.php:1150
 msgid "Google + URL"
 msgstr ""
 
-#: core/init.php:1161
+#: core/init.php:1158
 msgid "Dribbble URL"
 msgstr ""
 
-#: core/init.php:1169
+#: core/init.php:1166
 msgid "Github URL"
 msgstr ""
 
-#: core/init.php:1177
+#: core/init.php:1174
 msgid "Instagram URL"
 msgstr ""
 
-#: core/init.php:1185
+#: core/init.php:1182
 msgid "linkedIn URL"
 msgstr ""
 
-#: core/init.php:1193
+#: core/init.php:1190
 msgid "Tumblr URL"
 msgstr ""
 
-#: core/init.php:1201
+#: core/init.php:1198
 msgid "Flickr URL"
 msgstr ""
 
-#: core/init.php:1209
+#: core/init.php:1206
 msgid "Pinterest URL"
 msgstr ""
 
-#: core/init.php:1217
+#: core/init.php:1214
 msgid "Vimeo URL"
 msgstr ""
 
-#: core/init.php:1225
+#: core/init.php:1222
 msgid "YouTube URL"
 msgstr ""
 
-#: core/init.php:1367
+#: core/init.php:1364
 msgid "Please select an author..."
 msgstr ""
 
-#: core/init.php:1428
+#: core/init.php:1425
 #, php-format
 msgid "%s Min"
 msgid_plural "%s Mins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/init.php:1428 core/init.php:1434 core/init.php:1439 core/init.php:1443
+#: core/init.php:1425 core/init.php:1431 core/init.php:1436 core/init.php:1440
 msgid "ago"
 msgstr ""
 
-#: core/init.php:1434
+#: core/init.php:1431
 #, php-format
 msgid "%s Hour"
 msgid_plural "%s Hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/init.php:1439 core/init.php:1443
+#: core/init.php:1436 core/init.php:1440
 #, php-format
 msgid "%s Day"
 msgid_plural "%s Days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/init.php:1482
+#: core/init.php:1479
 msgid "Disable it"
 msgstr ""
 
-#: core/init.php:1487
+#: core/init.php:1484
 msgid "Check Also"
 msgstr ""
 
-#: core/init.php:1594
+#: core/init.php:1591 core/init.php:1654
 msgid "Home"
 msgstr ""
 
-#: core/init.php:1606
+#: core/init.php:1603
 msgid "Shop"
 msgstr ""
 
-#: core/init.php:1618 core/woocommerce.php:71 core/woocommerce.php:77
+#: core/init.php:1615 core/woocommerce.php:71 core/woocommerce.php:77
 msgid "Cart"
 msgstr ""
 
-#: core/init.php:1628
+#: core/init.php:1625 core/init.php:1678
 msgid "Menu"
 msgstr ""
 
-#: core/init.php:1640
+#: core/init.php:1637
 msgid "My Account"
 msgstr ""
 
-#: core/init.php:1664
+#: core/init.php:1666 framework-customizations/theme/options/layouts.php:335
+msgid "Search"
+msgstr ""
+
+#: core/init.php:1699
 msgid "Pingback:"
 msgstr ""
 
-#: core/init.php:1666
+#: core/init.php:1701
 msgid "(Edit)"
 msgstr ""
 
-#: core/init.php:1676
+#: core/init.php:1711
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #. 1: date, 2: time
-#: core/init.php:1690
+#: core/init.php:1725
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: core/init.php:1696
+#: core/init.php:1731
 msgid "Reply"
 msgstr ""
 
-#: core/init.php:1701
+#: core/init.php:1736
 msgid "Edit"
 msgstr ""
 
@@ -790,8 +794,8 @@ msgstr ""
 msgid "Version"
 msgstr ""
 
-#: core/class-tgm-plugin-activation.php:2704 core/suggestions/init.php:86
-#: core/suggestions/init.php:112
+#: core/class-tgm-plugin-activation.php:2704 core/suggestions/init.php:68
+#: core/suggestions/init.php:94
 msgid "Status"
 msgstr ""
 
@@ -1188,64 +1192,63 @@ msgstr ""
 msgid "Select Product Categories"
 msgstr ""
 
-#: core/suggestions/init.php:11 core/suggestions/init.php:12
-#: core/suggestions/init.php:40 core/suggestions/init.php:42
+#: core/suggestions/init.php:22 core/suggestions/init.php:24
 msgid "Suggestions"
 msgstr ""
 
-#: core/suggestions/init.php:41 core/suggestions/init.php:43
+#: core/suggestions/init.php:23 core/suggestions/init.php:25
 msgid "Suggestion"
 msgstr ""
 
-#: core/suggestions/init.php:44
+#: core/suggestions/init.php:26
 msgid "Add New"
 msgstr ""
 
-#: core/suggestions/init.php:45
+#: core/suggestions/init.php:27
 msgid "Add New Suggestion"
 msgstr ""
 
-#: core/suggestions/init.php:46
+#: core/suggestions/init.php:28
 msgid "New Suggestion"
 msgstr ""
 
-#: core/suggestions/init.php:47
+#: core/suggestions/init.php:29
 msgid "Edit Suggestion"
 msgstr ""
 
-#: core/suggestions/init.php:48
+#: core/suggestions/init.php:30
 msgid "View Suggestion"
 msgstr ""
 
-#: core/suggestions/init.php:49
+#: core/suggestions/init.php:31
 msgid "All Suggestions"
 msgstr ""
 
-#: core/suggestions/init.php:50
+#: core/suggestions/init.php:32
 msgid "Search Suggestions"
 msgstr ""
 
-#: core/suggestions/init.php:51
+#: core/suggestions/init.php:33
 msgid "Parent Suggestions:"
 msgstr ""
 
-#: core/suggestions/init.php:52
+#: core/suggestions/init.php:34
 msgid "No Suggestions found."
 msgstr ""
 
-#: core/suggestions/init.php:53
+#: core/suggestions/init.php:35
 msgid "No Suggestions found in Trash."
 msgstr ""
 
-#: core/suggestions/init.php:97 core/suggestions/init.php:124
+#: core/suggestions/init.php:79 core/suggestions/init.php:106
 msgid "Status:"
 msgstr ""
 
-#: core/suggestions/init.php:100 core/suggestions/init.php:127
+#: core/suggestions/init.php:82 core/suggestions/init.php:109
 msgid "On Going"
 msgstr ""
 
-#: core/suggestions/init.php:102 core/suggestions/init.php:129
+#: core/suggestions/init.php:84 core/suggestions/init.php:111
 msgid "Pending"
 msgstr ""
 
@@ -2551,10 +2554,6 @@ msgstr ""
 msgid "Choose the style of posts for author posts poge"
 msgstr ""
 
-#: framework-customizations/theme/options/layouts.php:335
-msgid "Search"
-msgstr ""
-
 #: framework-customizations/theme/options/layouts.php:341
 msgid "Exclude Pages from results"
 msgstr ""
@@ -3004,8 +3003,8 @@ msgstr ""
 msgid ""
 "<strong>A Wordpress News, Magazine, Blog, and Shop theme. It's created to "
 "help you make your site easily base on the powerful customize of WordPress. "
-"Designed &amp; Developed by BbioonThemes</strong> - <a href=\"https://aait."
-"sa\">www.aait.sa</a>."
+"Developed by Ahmad wael</strong> - <a href=\"https://aait.sa\">www.aait."
+"sa</a>."
 msgstr ""
 
 #. Author of the theme
