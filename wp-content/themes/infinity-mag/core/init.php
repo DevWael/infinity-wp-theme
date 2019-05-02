@@ -1476,9 +1476,7 @@ function dw_fly_box( $post_id = false ) {
 	?>
     <div class="bbioon-fly-box">
         <div class="box-title">
-            <div class="delete-fly-box" title="<?php esc_attr_e( 'Disable it', 'dw' ); ?>">
-                <i class="fa fa-trash-o"></i>
-            </div>
+            <div class="delete-fly-box"><i class="fa fa-trash-o"></i></div>
             <div class="close-fly-box"><i class="fa fa-times"></i></div>
             <span>
                 <?php esc_attr_e( 'Check Also', 'dw' ) ?>
