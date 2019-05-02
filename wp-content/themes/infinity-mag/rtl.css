@@ -164,3 +164,25 @@ body {
 	margin-left: 5px;
 	margin-right: 0;
 }
+
+.bbioon-fly-box .box-title span{
+	margin-right: 0;
+	margin-left: 25px;
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+.bbioon-fly-box .box-title span:before {
+	left: auto;
+	right: 0;
+}
+
+.bbioon-fly-box .box-title .close-fly-box{
+	right: auto;
+	left: 0;
+}
+
+.bbioon-fly-box .box-title .delete-fly-box{
+	right: auto;
+	left: 25px;
+}

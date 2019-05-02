@@ -337,6 +337,7 @@ $dw_body_style               = dw_get_setting( 'body_style' );
     .main-menu .search-toggle,
     .main-menu .search-box,
     .read-more-button,
+    .bbioon-fly-box .box-title span:before,
     .posts-area .post-wrapper-title::before,
     .singular .post-box-content form input[type=submit],
     .singular .gallery-box .owl-prev:hover,
