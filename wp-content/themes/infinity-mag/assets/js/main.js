@@ -97,7 +97,7 @@ jQuery(document).ready(function ($) {
         touchDrag: false,
         pullDrag: false,
         animateIn: 'fadeInDown',
-        animateOut: 'fadeOutRight',
+        animateOut: $('body').hasClass('rtl') ? 'fadeOutLeft' : 'fadeOutRight',
         items: 1,
         autoplayHoverPause: !0
     });
