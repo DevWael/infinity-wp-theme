@@ -3541,6 +3541,7 @@ header .site-tagline {
 	font-size: 13px;
 	margin-top: 30px;
 	text-transform: capitalize;
+	margin-bottom: 30px;
 }
 
 .singular .tags:before {
@@ -3557,7 +3558,7 @@ header .site-tagline {
 }
 
 .singular .tags a {
-	display: inline-block;
+	display: inline;
 	margin: 0 5px 5px 0;
 	padding: 6px 12px;
 	font-size: 12px;
