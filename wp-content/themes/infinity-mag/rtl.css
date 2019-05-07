@@ -108,7 +108,7 @@ body {
 }
 
 .writer-info li {
-	padding-right: 0;
+	padding-right: 0 !important;
 	padding-left: 20px;
 }
 
