@@ -4629,6 +4629,15 @@ div#comments h2.single-title:after {
 	margin-top: 15px;
 }
 
+div#comments #wp-comment-cookies-consent{
+	display: inline-block;
+	width: 20px !important;
+}
+
+div#comments .comment-form-cookies-consent label{
+	display: inline-block;
+}
+
 .comments-area .navigation {
 	margin-bottom: 30px;
 }
