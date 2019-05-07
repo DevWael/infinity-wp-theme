@@ -3621,7 +3621,7 @@ header .site-tagline {
 }
 
 .singular .share-box .share-icons li:last-of-type a {
-	border: none;
+	border-left: 1px solid #fff;
 }
 
 .singular .share-box .share-icons li a:hover i,

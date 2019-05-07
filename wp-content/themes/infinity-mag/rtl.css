@@ -210,3 +210,7 @@ body {
 	font-family: fontawesome;
 	margin-right: 5px;
 }
+
+.singular .tags a{
+	letter-spacing: 0;
+}

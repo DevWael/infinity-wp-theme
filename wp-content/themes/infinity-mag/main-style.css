@@ -1234,6 +1234,11 @@ body.archive .sticky-sidebar {
 .posts-area .post-wrapper-title a {
 	color: #797979;
 	text-decoration: none;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
 }
 
 .posts-area .post-wrapper-title a:hover,
