@@ -165,7 +165,7 @@ body {
 	margin-right: 0;
 }
 
-.bbioon-fly-box .box-title span{
+.bbioon-fly-box .box-title span {
 	margin-right: 0;
 	margin-left: 25px;
 	padding-left: 0;
@@ -177,16 +177,36 @@ body {
 	right: 0;
 }
 
-.bbioon-fly-box .box-title .close-fly-box{
+.bbioon-fly-box .box-title .close-fly-box {
 	right: auto;
 	left: 0;
 }
 
-.bbioon-fly-box .box-title .delete-fly-box{
+.bbioon-fly-box .box-title .delete-fly-box {
 	right: auto;
 	left: 25px;
 }
 
-.atricels-colums{
+.atricels-colums {
 	text-align: right;
+}
+
+.post-navigation .post-next span:after {
+	display: none;
+}
+
+.post-navigation .post-previous span:before {
+	display: none;
+}
+
+.post-navigation .post-next span:before {
+	content: '\f061';
+	font-family: FontAwesome;
+	margin-left: 5px;
+}
+
+.post-navigation .post-previous span:after {
+	content: '\f060';
+	font-family: fontawesome;
+	margin-right: 5px;
 }

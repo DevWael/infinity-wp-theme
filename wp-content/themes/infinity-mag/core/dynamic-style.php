@@ -345,6 +345,7 @@ $dw_body_style               = dw_get_setting( 'body_style' );
     .post-navigation span:hover,
     .error-page .error-content form button,
     div#comments h3:after,
+    div#comments a,
     div#comments h2:after,
     div#comments input#submit-comment:hover,
     .CommentHeadLinks a:hover,
