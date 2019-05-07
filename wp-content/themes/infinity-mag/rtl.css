@@ -126,7 +126,6 @@ body {
 .read-more-button {
 	letter-spacing: 0;
 	font-size: 13px;
-	padding: 8px 15px 4px;
 }
 
 .small-post .post-image {
@@ -136,10 +135,6 @@ body {
 .small-post.has-post-thumbnail .post-content {
 	margin-left: 0;
 	margin-right: 115px;
-}
-
-.pagePagination ul li a {
-	padding: 12px 15px 5px;
 }
 
 .widget ul li span.post-count {
