@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Infinity Mag\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-02 08:52+0000\n"
-"PO-Revision-Date: 2019-05-02 08:52+0000\n"
+"POT-Creation-Date: 2019-05-08 11:37+0000\n"
+"PO-Revision-Date: 2019-05-08 11:42+0000\n"
 "Last-Translator: الادمن <mm@nn.c>\n"
 "Language-Team: العربية\n"
 "Language: ar\n"
@@ -13,9 +13,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.2.2; wp-5.1.1"
+"X-Loco-Version: 2.2.2; wp-5.2"
 
-#: category.php:34 archive.php:18 tag.php:18 search.php:16 core/init.php:1548
+#: category.php:34 archive.php:18 tag.php:18 search.php:16 core/init.php:1546
 msgid "Post "
 msgid_plural "Posts"
 msgstr[0] "مقالة"
@@ -399,61 +399,57 @@ msgstr[3] "منذ %s ايام"
 msgstr[4] "منذ %s ايام"
 msgstr[5] "منذ %s ايام"
 
-#: core/init.php:1479
-msgid "Disable it"
-msgstr "إلغاء التفعيل"
-
-#: core/init.php:1484
+#: core/init.php:1482
 msgid "Check Also"
 msgstr "شاهد ايضا"
 
-#: core/init.php:1591 core/init.php:1654
+#: core/init.php:1589 core/init.php:1652
 msgid "Home"
 msgstr "الرئيسية"
 
-#: core/init.php:1603
+#: core/init.php:1601
 msgid "Shop"
 msgstr "المتجر"
 
-#: core/init.php:1615 core/woocommerce.php:71 core/woocommerce.php:77
+#: core/init.php:1613 core/woocommerce.php:71 core/woocommerce.php:77
 msgid "Cart"
 msgstr "السلة"
 
-#: core/init.php:1625 core/init.php:1678
+#: core/init.php:1623 core/init.php:1676
 msgid "Menu"
 msgstr "القائمة"
 
-#: core/init.php:1637
+#: core/init.php:1635
 msgid "My Account"
 msgstr "حسابى"
 
-#: core/init.php:1666 framework-customizations/theme/options/layouts.php:335
+#: core/init.php:1664 framework-customizations/theme/options/layouts.php:335
 msgid "Search"
 msgstr "البحث"
 
-#: core/init.php:1699
+#: core/init.php:1697
 msgid "Pingback:"
 msgstr ""
 
-#: core/init.php:1701
+#: core/init.php:1699
 msgid "(Edit)"
 msgstr "(تحرير٥)"
 
-#: core/init.php:1711
+#: core/init.php:1709
 msgid "Your comment is awaiting moderation."
 msgstr "تعليقك بإنتظار مراجعة الإدارة"
 
 #. 1: date, 2: time
-#: core/init.php:1725
+#: core/init.php:1723
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: core/init.php:1731
+#: core/init.php:1729
 msgid "Reply"
 msgstr "رد"
 
-#: core/init.php:1736
+#: core/init.php:1734
 msgid "Edit"
 msgstr "تحرير"
 
@@ -1133,7 +1129,7 @@ msgstr "عدد المقالات"
 
 #: core/blocks/init.php:116 core/full-width-blocks/init.php:121
 #: framework-customizations/theme/options/main-carousel.php:114
-#: framework-customizations/theme/options/header-settings.php:311
+#: framework-customizations/theme/options/header-settings.php:263
 msgid "Select Categories"
 msgstr "اختر تصنيف"
 
@@ -1912,7 +1908,7 @@ msgstr "كفر المقاله"
 #: framework-customizations/theme/options/general.php:118
 #: framework-customizations/theme/options/general.php:131
 #: framework-customizations/theme/options/general.php:144
-#: framework-customizations/theme/options/header-settings.php:219
+#: framework-customizations/theme/options/header-settings.php:171
 #: framework-customizations/theme/options/single-post.php:38
 #: framework-customizations/theme/options/single-post.php:51
 #: framework-customizations/theme/options/single-post.php:64
@@ -1976,7 +1972,7 @@ msgstr "اخفاء"
 #: framework-customizations/theme/options/general.php:114
 #: framework-customizations/theme/options/general.php:127
 #: framework-customizations/theme/options/general.php:140
-#: framework-customizations/theme/options/header-settings.php:215
+#: framework-customizations/theme/options/header-settings.php:167
 #: framework-customizations/theme/options/single-post.php:34
 #: framework-customizations/theme/options/single-post.php:47
 #: framework-customizations/theme/options/single-post.php:60
@@ -2174,17 +2170,17 @@ msgstr "عرض السلايدر"
 
 #: framework-customizations/theme/options/main-carousel.php:24
 #: framework-customizations/theme/options/general.php:36
-#: framework-customizations/theme/options/header-settings.php:105
-#: framework-customizations/theme/options/header-settings.php:119
-#: framework-customizations/theme/options/header-settings.php:278
+#: framework-customizations/theme/options/header-settings.php:57
+#: framework-customizations/theme/options/header-settings.php:71
+#: framework-customizations/theme/options/header-settings.php:230
 msgid "on"
 msgstr "تفعيل"
 
 #: framework-customizations/theme/options/main-carousel.php:28
 #: framework-customizations/theme/options/general.php:32
-#: framework-customizations/theme/options/header-settings.php:101
-#: framework-customizations/theme/options/header-settings.php:115
-#: framework-customizations/theme/options/header-settings.php:274
+#: framework-customizations/theme/options/header-settings.php:53
+#: framework-customizations/theme/options/header-settings.php:67
+#: framework-customizations/theme/options/header-settings.php:226
 msgid "off"
 msgstr "اغلاق"
 
@@ -2193,42 +2189,42 @@ msgid "Carousel Style"
 msgstr "شكل السلايدر"
 
 #: framework-customizations/theme/options/main-carousel.php:97
-#: framework-customizations/theme/options/header-settings.php:294
+#: framework-customizations/theme/options/header-settings.php:246
 msgid "Query Based On : "
 msgstr "حدد مصدر المقالات"
 
 #: framework-customizations/theme/options/main-carousel.php:101
-#: framework-customizations/theme/options/header-settings.php:298
+#: framework-customizations/theme/options/header-settings.php:250
 msgid "Popular posts ( Top Commented )"
 msgstr "اشهر المقالات (الاكثر تعليقا)"
 
 #: framework-customizations/theme/options/main-carousel.php:102
-#: framework-customizations/theme/options/header-settings.php:299
+#: framework-customizations/theme/options/header-settings.php:251
 msgid "Most viewed posts"
 msgstr "اكثر المقالات مشاهده"
 
 #: framework-customizations/theme/options/main-carousel.php:103
-#: framework-customizations/theme/options/header-settings.php:300
+#: framework-customizations/theme/options/header-settings.php:252
 msgid "Selected categories"
 msgstr "التصنيفات التى تم اختيارها"
 
 #: framework-customizations/theme/options/main-carousel.php:104
-#: framework-customizations/theme/options/header-settings.php:301
+#: framework-customizations/theme/options/header-settings.php:253
 msgid "Selected tags"
 msgstr "الوسوم التى تم اختيارها"
 
 #: framework-customizations/theme/options/main-carousel.php:105
-#: framework-customizations/theme/options/header-settings.php:302
+#: framework-customizations/theme/options/header-settings.php:254
 msgid "Selected author"
 msgstr "الكاتب الذى تم اختيارة"
 
 #: framework-customizations/theme/options/main-carousel.php:122
-#: framework-customizations/theme/options/header-settings.php:319
+#: framework-customizations/theme/options/header-settings.php:271
 msgid "Select Tags"
 msgstr "اختر الوسوم"
 
 #: framework-customizations/theme/options/main-carousel.php:130
-#: framework-customizations/theme/options/header-settings.php:327
+#: framework-customizations/theme/options/header-settings.php:279
 msgid "Select author"
 msgstr "اختر كاتب"
 
@@ -2701,7 +2697,7 @@ msgid "Sticky Sidebar"
 msgstr "شريط جانبى ثابت"
 
 #: framework-customizations/theme/options/general.php:29
-#: framework-customizations/theme/options/header-settings.php:98
+#: framework-customizations/theme/options/header-settings.php:50
 msgid "Working on Desktop only"
 msgstr "يعمل على الكمبيوتر فقط"
 
@@ -2781,125 +2777,141 @@ msgid "Header"
 msgstr "الهيدر"
 
 #: framework-customizations/theme/options/header-settings.php:31
-#: framework-customizations/theme/options/header-settings.php:41
+#: framework-customizations/theme/options/header-settings.php:37
 msgid "Header Style"
 msgstr "شكل الهيدر"
 
-#: framework-customizations/theme/options/header-settings.php:97
+#: framework-customizations/theme/options/header-settings.php:39
+msgid "Header style 1"
+msgstr "شكل الهيدر الاول"
+
+#: framework-customizations/theme/options/header-settings.php:40
+msgid "Header style 2"
+msgstr "شكل الهيدر الثانى"
+
+#: framework-customizations/theme/options/header-settings.php:41
+msgid "Header style 3"
+msgstr "شكل الهيدر الثالث"
+
+#: framework-customizations/theme/options/header-settings.php:42
+msgid "Header style 4"
+msgstr "شكل الهيدر الرابع"
+
+#: framework-customizations/theme/options/header-settings.php:49
 msgid "Sticky Navbar"
 msgstr "شريط علوى ثابت"
 
-#: framework-customizations/theme/options/header-settings.php:112
+#: framework-customizations/theme/options/header-settings.php:64
 msgid "Search box in Navbar"
 msgstr "وضع البحث فى الشريط العلوى"
 
-#: framework-customizations/theme/options/header-settings.php:124
+#: framework-customizations/theme/options/header-settings.php:76
 msgid "Navbar Background Color"
 msgstr "لون خلفية الناف بار"
 
-#: framework-customizations/theme/options/header-settings.php:154
+#: framework-customizations/theme/options/header-settings.php:106
 msgid "Logo Settings"
 msgstr "اعدادات اللوجو"
 
-#: framework-customizations/theme/options/header-settings.php:162
+#: framework-customizations/theme/options/header-settings.php:114
 msgid "Site Logo"
 msgstr "لوجو الموقع"
 
-#: framework-customizations/theme/options/header-settings.php:166
+#: framework-customizations/theme/options/header-settings.php:118
 msgid "Site title and tag line"
 msgstr "اسم الموقع و الوصف"
 
-#: framework-customizations/theme/options/header-settings.php:167
-#: framework-customizations/theme/options/header-settings.php:175
+#: framework-customizations/theme/options/header-settings.php:119
+#: framework-customizations/theme/options/header-settings.php:127
 msgid "Upload logo"
 msgstr "رفع لوجو"
 
-#: framework-customizations/theme/options/header-settings.php:181
+#: framework-customizations/theme/options/header-settings.php:133
 msgid "Center logo"
 msgstr "اللوجو فى المنتصف"
 
-#: framework-customizations/theme/options/header-settings.php:188
+#: framework-customizations/theme/options/header-settings.php:140
 msgid "Center site title text"
 msgstr "جعل عنوان الموقع فى المنتصف"
 
-#: framework-customizations/theme/options/header-settings.php:195
+#: framework-customizations/theme/options/header-settings.php:147
 msgid "Logo margin top"
 msgstr "ازاحة اللوجو من اعلى"
 
-#: framework-customizations/theme/options/header-settings.php:197
+#: framework-customizations/theme/options/header-settings.php:149
 msgid "Enter numbers only, Value will be in pixels. (10 = 10px)"
-msgstr ""
+msgstr "ادخل ارقام فقط"
 
-#: framework-customizations/theme/options/header-settings.php:202
-#: framework-customizations/theme/options/header-settings.php:212
+#: framework-customizations/theme/options/header-settings.php:154
+#: framework-customizations/theme/options/header-settings.php:164
 msgid "Top Alert Bar"
 msgstr "شريط التنبيهات العلوى"
 
-#: framework-customizations/theme/options/header-settings.php:227
+#: framework-customizations/theme/options/header-settings.php:179
 msgid "Content"
 msgstr "محتوى"
 
-#: framework-customizations/theme/options/header-settings.php:233
+#: framework-customizations/theme/options/header-settings.php:185
 msgid "Select background Color"
 msgstr "اختر لون الخلفية"
 
-#: framework-customizations/theme/options/header-settings.php:239
+#: framework-customizations/theme/options/header-settings.php:191
 msgid "Select Text Color"
 msgstr "اختر لون النص"
 
-#: framework-customizations/theme/options/header-settings.php:244
+#: framework-customizations/theme/options/header-settings.php:196
 msgid "Text Style"
 msgstr "شكل النص"
 
-#: framework-customizations/theme/options/header-settings.php:247
+#: framework-customizations/theme/options/header-settings.php:199
 msgid "Normal"
 msgstr "عادى"
 
-#: framework-customizations/theme/options/header-settings.php:251
+#: framework-customizations/theme/options/header-settings.php:203
 msgid "Italic"
 msgstr "مائل"
 
-#: framework-customizations/theme/options/header-settings.php:260
+#: framework-customizations/theme/options/header-settings.php:212
 msgid "News Ticker"
 msgstr "شريط الاخبار العاجلة"
 
-#: framework-customizations/theme/options/header-settings.php:270
+#: framework-customizations/theme/options/header-settings.php:222
 msgid "Enable or disable News Ticker"
 msgstr "تفعيل او الغاء شريط الاخبار العاجلة"
 
-#: framework-customizations/theme/options/header-settings.php:271
+#: framework-customizations/theme/options/header-settings.php:223
 msgid "Show News Ticker"
 msgstr "عرض شريط الاخبار العاجلة"
 
-#: framework-customizations/theme/options/header-settings.php:287
+#: framework-customizations/theme/options/header-settings.php:239
 #: framework-customizations/theme/options/single-post.php:306
 #: framework-customizations/theme/options/social.php:22
 msgid "Title"
 msgstr "عنوان"
 
-#: framework-customizations/theme/options/header-settings.php:342
+#: framework-customizations/theme/options/header-settings.php:294
 msgid "Posts count"
 msgstr "عدد المقالات"
 
-#: framework-customizations/theme/options/header-settings.php:347
+#: framework-customizations/theme/options/header-settings.php:299
 msgid "Show the carousel on home page only or show on all pages"
-msgstr ""
+msgstr "عرض فى الصفحة الرئيسية فقط او الصفحات كلها"
 
-#: framework-customizations/theme/options/header-settings.php:348
+#: framework-customizations/theme/options/header-settings.php:300
 msgid "Show on home page only"
 msgstr "عرض فى الصفحة الرئيسية فقط"
 
-#: framework-customizations/theme/options/header-settings.php:351
-#: framework-customizations/theme/options/header-settings.php:364
+#: framework-customizations/theme/options/header-settings.php:303
+#: framework-customizations/theme/options/header-settings.php:316
 msgid "no"
 msgstr "لا"
 
-#: framework-customizations/theme/options/header-settings.php:355
-#: framework-customizations/theme/options/header-settings.php:368
+#: framework-customizations/theme/options/header-settings.php:307
+#: framework-customizations/theme/options/header-settings.php:320
 msgid "yes"
 msgstr "نعم"
 
-#: framework-customizations/theme/options/header-settings.php:361
+#: framework-customizations/theme/options/header-settings.php:313
 msgid "Show on Mobile Devices"
 msgstr "عرض فى الموبايل"
 
@@ -2946,7 +2958,7 @@ msgstr "انشئ حساب DISQUS و ضع اسم المستخدم هنا"
 
 #: framework-customizations/theme/options/single-post.php:196
 msgid "DISQUS"
-msgstr ""
+msgstr "Disqus"
 
 #: framework-customizations/theme/options/single-post.php:204
 msgid "Share icons"
@@ -3094,6 +3106,11 @@ msgid ""
 "Developed by Ahmad wael</strong> - <a href=\"https://aait.sa\">www.aait."
 "sa</a>."
 msgstr ""
+"<strong>\n"
+"قالب ورد بريس يصلح لمجلة, موقع اخبارى, مدونة او متجر. تم بناءه للمساعده على "
+"بناء موقعك بسهوله و بقوه باستخدام قدره التخصيص العاليه لوردبريس. تم تطويره "
+"بواسطه أحمد وائل\n"
+"</strong> - <a href=\"https://aait.sa\">اوامر الشبكه</a>."
 
 #. Author of the theme
 msgid "Awamer Alshabaka"
