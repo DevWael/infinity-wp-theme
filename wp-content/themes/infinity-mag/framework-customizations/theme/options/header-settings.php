@@ -31,67 +31,19 @@ $options = array(
 				'title'   => esc_html__( 'Header Style', 'dw' ),
 				'type'    => 'tab',
 				'options' => array(
-					'header_types'      => array(
-						'type'    => 'image-picker',
-						'value'   => 'image-2',
-						'attr'    => array(
-							'class'    => 'custom-class',
-							'data-foo' => 'bar',
-						),
+					'header_types' => array(
+						'type'    => 'radio',
+						'value'   => 'header-three',
 						'label'   => esc_html__( 'Header Style', 'dw' ),
 						'choices' => array(
-							'header-one'   => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'settings/header/pic_one.png',
-									'height' => 100
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'settings/header/pic_one.png',
-									'height' => 200
-								)
-							),
-							'header-two'   => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'settings/header/pic_two.png',
-									'height' => 100
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'settings/header/pic_two.png',
-									'height' => 200
-								)
-							),
-							'header-three' => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'settings/header/pic_three.png',
-									'height' => 100
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'settings/header/pic_three.png',
-									'height' => 200
-								)
-							),
-							'header-four'  => array(
-								// (required) url for thumbnail
-								'small' => array(
-									'src'    => DW_IMAGES_DIR . 'settings/header/pic_four.png',
-									'height' => 100
-								),
-								// (optional) url for large image that will appear in tooltip
-								'large' => array(
-									'src'    => DW_IMAGES_DIR . 'settings/header/pic_four.png',
-									'height' => 200
-								)
-							),
+							'header-one'   => esc_html__( 'Header 1', 'dw' ),
+							'header-two'   => esc_html__( 'Header 2', 'dw' ),
+							'header-three' => esc_html__( 'Header 3', 'dw' ),
+							'header-four'  => esc_html__( 'Header 4', 'dw' ),
 						),
-						'blank'   => false,
+						'inline' => true,
 					),
-					'sticky_nav'        => array(
+					'sticky_nav'   => array(
 						'type'         => 'switch',
 						'value'        => 'off',
 						'label'        => esc_html__( 'Sticky Navbar', 'dw' ),
@@ -106,7 +58,7 @@ $options = array(
 						),
 					),
 					$cart,
-					'search_nav'        => array(
+					'search_nav'   => array(
 						'type'         => 'switch',
 						'value'        => 'on',
 						'label'        => esc_html__( 'Search box in Navbar', 'dw' ),
@@ -119,7 +71,7 @@ $options = array(
 							'label' => esc_html__( 'on', 'dw' ),
 						),
 					),
-					'nav_color'             => array(
+					'nav_color'    => array(
 						'type'  => 'color-picker',
 						'label' => esc_html__( 'Navbar Background Color', 'dw' ),
 						'value' => '#3E3E3E'
@@ -315,8 +267,8 @@ $options = array(
 										),
 										'tag'      => array(
 											'tag_select' => array(
-												'type'       => 'multi-select',
-												'label'      => esc_html__( 'Select Tags', 'dw' ),
+												'type'        => 'multi-select',
+												'label'       => esc_html__( 'Select Tags', 'dw' ),
 												'prepopulate' => 999,
 												'choices'     => dw_get_all_tags()
 											)
