@@ -158,7 +158,7 @@ toastr.options.toastClass = 'dw_toastr';
     //     $('.dw-navbar .dw-menu .menu ul').slideUp();
     // }
 
-    $(document).on('click', '#menu-main-menu>li.menu-item-has-children>a', function (e) {
+    $(document).on('click', '#dw_navigation .menu>li.menu-item-has-children>a', function (e) {
         e.preventDefault();
         if ($(this).parent().find('.sub-menu').first().is(':visible')) {
             $(this).parent().find('.sub-menu').first().slideUp('slow');
@@ -167,7 +167,7 @@ toastr.options.toastClass = 'dw_toastr';
         }
     });
 
-    $(document).on('click', '#menu-main-menu>li.menu-item-has-children>ul>.menu-item-has-children>a', function (e) {
+    $(document).on('click', '#dw_navigation .menu>li.menu-item-has-children>ul>.menu-item-has-children>a', function (e) {
         e.preventDefault();
         if ($(this).parent().find('.sub-menu').is(':visible')) {
             $(this).parent().find('.sub-menu').slideUp('slow');
