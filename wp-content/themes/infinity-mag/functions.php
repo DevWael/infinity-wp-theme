@@ -8,5 +8,5 @@ define( 'DW_JS_URI', DW_URI . '/assets/js/' );
 define( 'DW_IMAGES_DIR', DW_URI . '/assets/images/' );
 define( 'DW_CORE', DW_DIR . '/core/' );
 define( 'DW_CORE_URI', DW_URI . '/core/' );
-define( 'DW_SUGGESTIONS_WEB_SERVICE_URL', 'https://wp.4hoste.com/wael/magazine' );
+define( 'DW_SUGGESTIONS_WEB_SERVICE_URL', 'https://infinity.4hoste.com/suggestions' );
 require_once DW_CORE . 'init.php'; //Theme Core functions
