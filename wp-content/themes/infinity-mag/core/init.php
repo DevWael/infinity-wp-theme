@@ -8,6 +8,7 @@ add_filter( 'use_block_editor_for_page', '__return_false', 10 );
 require_once DW_CORE . 'blocks/init.php';//half width blocks
 require_once DW_CORE . 'suggestions/init.php';//suggestions system
 require_once DW_CORE . 'full-width-blocks/init.php';//full width blocks
+require_once DW_CORE . 'demo-service.php';//demo contents
 
 /**
  * Load Required Plugins
@@ -560,63 +561,6 @@ if ( ! function_exists( 'dw_class_name' ) ) {
 
 		return $classes;
 	}
-}
-
-/**
- * Window Demo content
- */
-add_filter( 'fw:ext:backups-demo:demos', 'dw_demo_content' );
-function dw_demo_content( $demos ) {
-	$demos_array = array(
-		'news-demo'   => array(
-			'title'        => esc_html__( 'News Demo', 'dw' ),
-			'screenshot'   => 'http://bbioon.com/window/demo_content/content/news.png',
-			'preview_link' => 'http://bbioon.com/window/news'
-		),
-		'sport-demo'  => array(
-			'title'        => esc_html__( 'Sport Demo', 'dw' ),
-			'screenshot'   => 'http://bbioon.com/window/demo_content/content/sport.png',
-			'preview_link' => 'http://bbioon.com/window/sport'
-		),
-		'food-demo'   => array(
-			'title'        => esc_html__( 'Food Demo', 'dw' ),
-			'screenshot'   => 'http://bbioon.com/window/demo_content/content/food.png',
-			'preview_link' => 'http://bbioon.com/window/food'
-		),
-		'blog-demo'   => array(
-			'title'        => esc_html__( 'Blog Demo', 'dw' ),
-			'screenshot'   => 'http://bbioon.com/window/demo_content/content/blog.png',
-			'preview_link' => 'http://bbioon.com/window/blog'
-		),
-		'styles-demo' => array(
-			'title'        => esc_html__( 'Fashion Demo', 'dw' ),
-			'screenshot'   => 'http://bbioon.com/window/demo_content/content/styles.png',
-			'preview_link' => 'http://bbioon.com/window/styles'
-		),
-		'tech-demo'   => array(
-			'title'        => esc_html__( 'Technology Demo', 'dw' ),
-			'screenshot'   => 'http://bbioon.com/window/demo_content/content/techno.png',
-			'preview_link' => 'http://www.bbioon.com/window/techno/'
-		)
-	);
-
-	$download_url = 'http://www.bbioon.com/window/demo_content/index.php';
-
-	foreach ( $demos_array as $id => $data ) {
-		$demo = new FW_Ext_Backups_Demo( $id, 'piecemeal', array(
-			'url'     => $download_url,
-			'file_id' => $id,
-		) );
-		$demo->set_title( $data['title'] );
-		$demo->set_screenshot( $data['screenshot'] );
-		$demo->set_preview_link( $data['preview_link'] );
-
-		$demos[ $demo->get_id() ] = $demo;
-
-		unset( $demo );
-	}
-
-	return $demos;
 }
 
 /*
