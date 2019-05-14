@@ -1,0 +1,3142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Unyson\n"
+"POT-Creation-Date: 2019-04-15 09:11+0000\n"
+"PO-Revision-Date: 2019-05-14 13:11+0000\n"
+"Last-Translator: الادمن <mm@nn.c>\n"
+"Language-Team: العربية\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
+"&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.2.2; wp-5.2"
+
+#: framework/manifest.php:5
+msgid "Unyson"
+msgstr "يونيسون"
+
+#: framework/core/Fw.php:61
+msgid "Framework requirements not met:"
+msgstr ""
+
+#: framework/core/class-fw-manifest.php:333
+msgid "minimum required version is"
+msgstr ""
+
+#: framework/core/class-fw-manifest.php:336
+msgid "maximum required version is"
+msgstr ""
+
+#: framework/core/class-fw-manifest.php:341
+msgid "and"
+msgstr "و"
+
+#: framework/core/class-fw-manifest.php:350
+#, php-format
+msgid "Current PHP version is %s, %s"
+msgstr ""
+
+#: framework/core/class-fw-manifest.php:358
+#, php-format
+msgid "Current WordPress version is %s, %s"
+msgstr ""
+
+#: framework/core/class-fw-manifest.php:364
+#, php-format
+msgid "Current Framework version is %s, %s"
+msgstr ""
+
+#: framework/core/class-fw-manifest.php:373
+#, php-format
+msgid "Current version of the %s extension is %s, %s"
+msgstr ""
+
+#: framework/core/class-fw-manifest.php:379
+#, php-format
+msgid "%s extension is required"
+msgstr ""
+
+#: framework/core/class-fw-manifest.php:384
+#, php-format
+msgid "%s extension is required (%s)"
+msgstr ""
+
+#: framework/core/class-fw-manifest.php:403
+#: framework/extensions/update/class-fw-extension-update.php:746
+#: framework/extensions/update/views/updates-list.php:6
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:355
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:368
+msgid "Framework"
+msgstr "اطار عمل"
+
+#: framework/includes/hooks.php:104
+msgid "Please register option-types on 'fw_option_types_init' action"
+msgstr ""
+
+#: framework/includes/hooks.php:112
+msgid "Please register container-types on 'fw_container_types_init' action"
+msgstr ""
+
+#: framework/views/backend-settings-form.php:179
+msgid "Resetting"
+msgstr "جارى إعادة الضبط"
+
+#: framework/views/backend-settings-form.php:181
+msgid "We are currently resetting your settings."
+msgstr ""
+
+#: framework/views/backend-settings-form.php:183
+#: framework/views/backend-settings-form.php:189
+msgid "This may take a few moments."
+msgstr ""
+
+#: framework/views/backend-settings-form.php:185
+msgid "Saving"
+msgstr "جارى الحفظ"
+
+#: framework/views/backend-settings-form.php:187
+msgid "We are currently saving your settings."
+msgstr ""
+
+#: framework/helpers/class-fw-wp-filesystem.php:43
+msgid "Cannot connect to Filesystem directly"
+msgstr ""
+
+#: framework/helpers/class-fw-wp-filesystem.php:271
+#, php-format
+msgid "Cannot create directory \"%s\". It must be inside \"%s\""
+msgstr ""
+
+#: framework/helpers/class-fw-wp-filesystem.php:273
+msgid "\" or \""
+msgstr ""
+
+#: framework/helpers/class-fw-wp-filesystem.php:327
+msgid "Error writing to file: "
+msgstr ""
+
+#: framework/helpers/class-fw-wp-filesystem.php:348
+msgid "Error to get content from file: "
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:185
+msgid "No items found."
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:309
+msgid "Bulk Actions"
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:319
+#: framework/core/components/backend.php:423
+msgid "Apply"
+msgstr "تفعيل"
+
+#: framework/helpers/class-fw-wp-list-table.php:403
+msgid "All dates"
+msgstr "كل التواريخ"
+
+#: framework/helpers/class-fw-wp-list-table.php:416
+#, php-format
+msgid "%1$s %2$d"
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:432
+msgid "List View"
+msgstr "عرض قائمة"
+
+#: framework/helpers/class-fw-wp-list-table.php:433
+msgid "Excerpt View"
+msgstr "عرض النص المقطتف"
+
+#: framework/helpers/class-fw-wp-list-table.php:459
+#, php-format
+msgid "%s pending"
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:545
+msgid "Go to the first page"
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:552
+msgid "Go to the previous page"
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:561
+msgid "Current page"
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:567
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:571
+msgid "Go to the next page"
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:578
+msgid "Go to the last page"
+msgstr ""
+
+#: framework/helpers/class-fw-wp-list-table.php:714
+#: framework/extensions/update/includes/classes/class--fw-ext-update-extensions-list-table.php:33
+msgid "Select All"
+msgstr "اختيار الكل"
+
+#: framework/helpers/class-fw-form.php:102
+#, php-format
+msgid "Form with id \"%s\" was already defined"
+msgstr ""
+
+#: framework/helpers/class-fw-form.php:271
+msgid "Submit"
+msgstr "ارسال"
+
+#: framework/helpers/class-fw-form.php:465
+msgid "Your session expired. Please refresh page and try again."
+msgstr ""
+
+#: framework/helpers/class-fw-settings-form.php:73
+#: framework/core/components/extensions/manager/views/extension-page-header.php:31
+#: framework/core/components/extensions/manager/views/extension.php:112
+msgid "Settings"
+msgstr "إعدادات"
+
+#: framework/helpers/class-fw-settings-form.php:74
+#: framework/helpers/class-fw-settings-form.php:217
+msgid "Save Changes"
+msgstr "حفظ"
+
+#: framework/helpers/class-fw-settings-form.php:75
+#: framework/helpers/class-fw-settings-form.php:218
+msgid "Reset Options"
+msgstr "إعادة الضبط"
+
+#: framework/helpers/class-fw-settings-form.php:76
+msgid ""
+"Click OK to reset.\n"
+"All settings will be lost and replaced with default settings!"
+msgstr ""
+
+#: framework/helpers/class-fw-settings-form.php:205
+msgid "No options to display."
+msgstr ""
+
+#: framework/helpers/class-fw-settings-form.php:261
+msgid "You have no permissions to change settings options"
+msgstr ""
+
+#: framework/helpers/class-fw-settings-form.php:298
+msgid "The options were successfully reset"
+msgstr "تم اعادة ضبط الإعدادات بنجاح"
+
+#: framework/helpers/class-fw-settings-form.php:314
+msgid "The options were successfully saved"
+msgstr ""
+
+#: framework/helpers/general.php:1424
+msgid "year"
+msgstr "سنه"
+
+#: framework/helpers/general.php:1425
+msgid "years"
+msgstr "سنوات"
+
+#: framework/helpers/general.php:1427
+msgid "month"
+msgstr "شهر"
+
+#: framework/helpers/general.php:1428
+msgid "months"
+msgstr "شهور"
+
+#: framework/helpers/general.php:1430
+msgid "week"
+msgstr "اسبوع"
+
+#: framework/helpers/general.php:1431
+msgid "weeks"
+msgstr "اسابيع"
+
+#: framework/helpers/general.php:1433
+msgid "day"
+msgstr ""
+
+#: framework/helpers/general.php:1434
+msgid "days"
+msgstr ""
+
+#: framework/helpers/general.php:1436
+msgid "hour"
+msgstr "ساعه"
+
+#: framework/helpers/general.php:1437
+msgid "hours"
+msgstr "ساعات"
+
+#: framework/helpers/general.php:1439
+msgid "minute"
+msgstr "دقيقة"
+
+#: framework/helpers/general.php:1440
+msgid "minutes"
+msgstr "دقائق"
+
+#: framework/helpers/general.php:1442
+msgid "second"
+msgstr "ثانية"
+
+#: framework/helpers/general.php:1443
+msgid "seconds"
+msgstr "ثوانى"
+
+#: framework/helpers/general.php:1840
+msgid "Maximum stack depth exceeded"
+msgstr ""
+
+#: framework/helpers/general.php:1843
+msgid "Underflow or the modes mismatch"
+msgstr ""
+
+#: framework/helpers/general.php:1846
+msgid "Unexpected control character found"
+msgstr ""
+
+#: framework/helpers/general.php:1849
+msgid "Syntax error, malformed JSON"
+msgstr ""
+
+#: framework/helpers/general.php:1852
+msgid "Malformed UTF-8 characters, possibly incorrectly encoded"
+msgstr ""
+
+#: framework/helpers/general.php:1855
+#: framework/extensions/backups/class-fw-extension-backups.php:618
+msgid "Unknown error"
+msgstr ""
+
+#: framework/core/extends/class-fw-option-type.php:329
+#, php-format
+msgid "Option type %s has no default value"
+msgstr ""
+
+#: framework/core/components/theme.php:207
+msgid "Theme requirements not met:"
+msgstr ""
+
+#: framework/core/components/theme.php:223
+msgid "Try Brizy: A Fast & Easy Way of Creating Pages Visually"
+msgstr ""
+
+#: framework/core/components/theme.php:225
+msgid "More Details"
+msgstr "المزيد"
+
+#: framework/core/components/theme.php:230
+msgid "Activate Now | for FREE"
+msgstr ""
+
+#: framework/core/components/backend.php:204
+#: framework/core/components/backend.php:208
+#: framework/core/components/backend.php:213
+msgid "New"
+msgstr "جديد"
+
+#: framework/core/components/backend.php:419
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2352
+msgid "Save"
+msgstr "حفظ"
+
+#: framework/core/components/backend.php:420
+msgid "Done"
+msgstr ""
+
+#: framework/core/components/backend.php:421
+msgid "Ah, Sorry"
+msgstr "عذرا.."
+
+#: framework/core/components/backend.php:422
+#: framework/includes/option-types/color-picker/class-fw-option-type-color-picker.php:39
+#: framework/includes/option-types/color-picker/class-fw-option-type-color-picker.php:40
+#: framework/includes/option-types/rgba-color-picker/class-fw-option-type-rgba-color-picker.php:42
+msgid "Reset"
+msgstr "إعادة الضبط"
+
+#: framework/core/components/backend.php:424
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2357
+msgid "Cancel"
+msgstr "الغاء"
+
+#: framework/core/components/backend.php:425
+msgid "Ok"
+msgstr "نعم"
+
+#: framework/core/components/backend.php:608
+msgid "leave a review"
+msgstr "اترك تعليق"
+
+#: framework/core/components/backend.php:615
+msgid "Facebook"
+msgstr ""
+
+#: framework/core/components/backend.php:619
+msgid ""
+"Unyson WordPress Framework is the fastest and easiest way to develop a "
+"premium theme. I highly recommend it"
+msgstr ""
+
+#: framework/core/components/backend.php:623
+msgid "Twitter"
+msgstr "تويتر"
+
+#: framework/core/components/backend.php:625
+msgid ""
+"If you like Unyson, {wp_review_link}, share on {facebook_share_link} or "
+"{twitter_share_link}."
+msgstr ""
+
+#: framework/core/components/backend.php:994
+msgid "Info about fw-storage"
+msgstr ""
+
+#: framework/core/components/backend.php:1457
+msgid "Unknown collected group"
+msgstr ""
+
+#: framework/core/components/backend.php:1798
+#, php-format
+msgid "Undefined option type: %s"
+msgstr ""
+
+#: framework/core/components/backend.php:1857
+#, php-format
+msgid "Undefined container type: %s"
+msgstr ""
+
+#: framework/core/components/extensions.php:472
+#: framework/core/components/extensions.php:552
+#, php-format
+msgid "Extension %s is invalid."
+msgstr ""
+
+#: framework/includes/option-types/simple.php:467
+#: framework/includes/option-types/switch/class-fw-option-type-switch.php:170
+msgid "Yes"
+msgstr "نعم"
+
+#: framework/includes/option-types/class-fw-option-type-undefined.php:25
+msgid "UNDEFINED OPTION TYPE"
+msgstr ""
+
+#: framework/extensions/update/manifest.php:5
+msgid "Update"
+msgstr ""
+
+#: framework/extensions/update/manifest.php:6
+msgid "Keep you framework, extensions and theme up to date."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:67
+msgid "Unyson updates"
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:123
+msgid "Available extensions updates."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:314
+#: framework/extensions/update/class-fw-extension-update.php:633
+msgid "Cannot delete: "
+msgstr "لا يمكن حذف: "
+
+#: framework/extensions/update/class-fw-extension-update.php:321
+msgid "Cannot create: "
+msgstr "لا يمكن حذف: "
+
+#: framework/extensions/update/class-fw-extension-update.php:399
+msgid "Cannot remove old temporary directory: "
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:405
+#: framework/extensions/update/class-fw-extension-update.php:603
+msgid "Cannot create directory: "
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:410
+#, php-format
+msgid "Downloading the %s..."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:415
+#, php-format
+msgid "Cannot download the %s."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:425
+#, php-format
+msgid "Installing the %s..."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:431
+#: framework/extensions/update/class-fw-extension-update.php:460
+#: framework/extensions/update/class-fw-extension-update.php:562
+#: framework/extensions/update/class-fw-extension-update.php:583
+#: framework/extensions/update/class-fw-extension-update.php:613
+msgid "Cannot access directory: "
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:450
+msgid "Cannot remove: "
+msgstr "غير قادر على الازالة"
+
+#: framework/extensions/update/class-fw-extension-update.php:485
+#: framework/extensions/update/class-fw-extension-update.php:552
+#: framework/extensions/update/class-fw-extension-update.php:659
+#: framework/extensions/update/class-fw-extension-update.php:683
+#, php-format
+msgid "Cannot move \"%s\" to \"%s\""
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:501
+#, php-format
+msgid "Cannot merge \"%s\" with \"%s\""
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:514
+#, php-format
+msgid "The %s has been successfully updated."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:521
+#, php-format
+msgid "Cannot remove temporary directory \"%s\"."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:702
+#: framework/extensions/update/class-fw-extension-update.php:769
+#: framework/extensions/update/class-fw-extension-update.php:837
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:981
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1455
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1888
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2121
+msgid "Invalid nonce."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:713
+msgid "Framework Update"
+msgstr "تحديث اطار العمل"
+
+#: framework/extensions/update/class-fw-extension-update.php:729
+msgid "Failed to get framework latest version."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:780
+msgid "Theme Update"
+msgstr "تحديث القالب"
+
+#: framework/extensions/update/class-fw-extension-update.php:796
+msgid "Failed to get theme latest version."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:813
+#: framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:211
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:386
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:399
+#: framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:207
+msgid "Theme"
+msgstr "قالب"
+
+#: framework/extensions/update/class-fw-extension-update.php:846
+msgid "Please check the extensions you want to update."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:871
+msgid "Extensions Update"
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:905
+msgid "No extensions updates found."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:911
+#, php-format
+msgid "Extension \"%s\" does not exist or is disabled."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:916
+#, php-format
+msgid "No update found for the \"%s\" extension."
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:941
+#: framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:236
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:417
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:430
+#: framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:228
+#, php-format
+msgid "%s extension"
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:1006
+#, php-format
+msgid "New %s available. %s"
+msgstr ""
+
+#: framework/extensions/update/class-fw-extension-update.php:1011
+msgid "Go to Updates page"
+msgstr ""
+
+#: framework/extensions/blog/class-fw-extension-blog.php:36
+#: framework/extensions/blog/class-fw-extension-blog.php:37
+#: framework/extensions/breadcrumbs/settings-options.php:7
+#: framework/extensions/breadcrumbs/includes/class-breadcrumbs-builder.php:10
+msgid "Blog"
+msgstr "مدونة"
+
+#: framework/extensions/blog/class-fw-extension-blog.php:38
+msgid "Add blog post"
+msgstr "اضافة مقالة"
+
+#: framework/extensions/blog/class-fw-extension-blog.php:39
+msgid "Add new blog post"
+msgstr "اضافة مقالة جديدة"
+
+#: framework/extensions/blog/class-fw-extension-blog.php:40
+msgid "All blog posts"
+msgstr ""
+
+#: framework/extensions/blog/class-fw-extension-blog.php:41
+msgid "Edit blog post"
+msgstr ""
+
+#: framework/extensions/blog/class-fw-extension-blog.php:42
+#: framework/extensions/blog/class-fw-extension-blog.php:43
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:51
+msgid "Blog Post"
+msgstr "مقالة"
+
+#: framework/extensions/blog/class-fw-extension-blog.php:44
+msgid "New blog post"
+msgstr "مقالة جديدة"
+
+#: framework/extensions/blog/class-fw-extension-blog.php:45
+msgid "No blog posts found"
+msgstr ""
+
+#: framework/extensions/blog/class-fw-extension-blog.php:46
+msgid "No blog posts found in trash"
+msgstr ""
+
+#: framework/extensions/blog/class-fw-extension-blog.php:47
+msgid "Search blog posts"
+msgstr ""
+
+#: framework/extensions/blog/class-fw-extension-blog.php:48
+msgid "View blog post"
+msgstr "مشاهدة المقالة"
+
+#: framework/extensions/blog/class-fw-extension-blog.php:67
+#: framework/extensions/blog/class-fw-extension-blog.php:87
+#: framework/extensions/blog/manifest.php:7
+#: framework/extensions/blog/manifest.php:8
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:52
+msgid "Blog Posts"
+msgstr "المقالات"
+
+#: framework/extensions/blog/class-fw-extension-blog.php:76
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:76
+msgid "Blog Categories"
+msgstr "التصنيفات"
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:116
+msgid "Sidebar Picker"
+msgstr ""
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:150
+msgid "No matches found"
+msgstr ""
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:158
+msgid "Do you realy want to change without saving?"
+msgstr ""
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:160
+msgid "Missing ID. Check that you provided all mandatory data."
+msgstr ""
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:161
+#: framework/extensions/sidebars/views/backend-main-view.php:27
+msgid "Created"
+msgstr ""
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:162
+msgid "(For Grouped Pages)"
+msgstr ""
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:163
+msgid "(For Specific Pages)"
+msgstr ""
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:164
+msgid "No sidebar name specified"
+msgstr ""
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:165
+msgid "Sidebar Name"
+msgstr ""
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:166
+msgid "New Sidebar"
+msgstr "شريط جانبى جديد"
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:167
+#: framework/includes/option-types/addable-box/class-fw-option-type-addable-box.php:203
+#: framework/includes/option-types/addable-option/class-fw-option-type-addable-option.php:20
+#: framework/includes/option-types/addable-popup/class-fw-option-type-addable-popup.php:187
+msgid "Add"
+msgstr "اضافة"
+
+#: framework/extensions/sidebars/class-fw-extension-sidebars.php:168
+msgid "Are you sure you want to delete it?"
+msgstr ""
+
+#: framework/extensions/sidebars/manifest.php:7
+#: framework/core/components/extensions/manager/available-extensions.php:72
+msgid "Sidebars"
+msgstr ""
+
+#: framework/extensions/sidebars/manifest.php:8
+msgid " or different sidebars on different pages."
+msgstr ""
+
+#: framework/extensions/backups/manifest.php:7
+#: framework/core/components/extensions/manager/available-extensions.php:58
+msgid "Backup & Demo Content"
+msgstr "النسخ الاحتياطى و المحتوى الافتراضى"
+
+#: framework/extensions/backups/manifest.php:8
+msgid ""
+" import demo content or even create a demo content archive for migration "
+"purposes."
+msgstr ""
+
+#: framework/extensions/backups/class-fw-extension-backups.php:127
+#, php-format
+msgid ""
+"Oops, %s requires %s but it is not enabled on your server. If you are not "
+"familiar with PHP Zip module, please contact your hosting provider."
+msgstr ""
+
+#: framework/extensions/backups/class-fw-extension-backups.php:132
+msgid "Unyson Backup"
+msgstr "النسخ الاحتياطى"
+
+#: framework/extensions/backups/class-fw-extension-backups.php:136
+msgid "PHP Zip module"
+msgstr ""
+
+#: framework/extensions/backups/class-fw-extension-backups.php:197
+#, php-format
+msgid ""
+"Your website is hosted using the LiteSpeed web server. Please consult this "
+"%sarticle%s if you have problems backing up."
+msgstr ""
+
+#: framework/extensions/backups/class-fw-extension-backups.php:281
+#: framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:87
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:253
+msgid "Are you sure?"
+msgstr ""
+
+#: framework/extensions/backups/class-fw-extension-backups.php:373
+#: framework/extensions/backups/class-fw-extension-backups.php:440
+msgid "File not specified"
+msgstr ""
+
+#: framework/extensions/backups/class-fw-extension-backups.php:382
+msgid "Filesystem access required"
+msgstr ""
+
+#: framework/extensions/backups/class-fw-extension-backups.php:404
+#: framework/extensions/backups/class-fw-extension-backups.php:409
+msgid "Invalid filesystem credentials"
+msgstr ""
+
+#: framework/extensions/backups/class-fw-extension-backups.php:473
+#: framework/extensions/backups/class-fw-extension-backups.php:474
+#: framework/extensions/backups/views/page.php:11
+#: framework/core/components/extensions/manager/available-extensions.php:282
+msgid "Backup"
+msgstr "نسخه احتياطية"
+
+#: framework/extensions/backups/class-fw-extension-backups.php:622
+#: framework/extensions/backups/class-fw-extension-backups.php:636
+msgid "Access Denied"
+msgstr ""
+
+#: framework/extensions/backups/class-fw-extension-backups.php:629
+msgid "Archive not found"
+msgstr "الارشيف مفقود"
+
+#: framework/extensions/backups/class-fw-extension-backups.php:643
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:197
+msgid "Failed to open file"
+msgstr ""
+
+#: framework/extensions/backups/helpers.php:25
+#, php-format
+msgid "Response code: %d"
+msgstr ""
+
+#: framework/extensions/backups/helpers.php:37
+msgid "Invalid JSON response"
+msgstr ""
+
+#: framework/extensions/backups/helpers.php:43
+msgid "preventing connections from working properly."
+msgstr ""
+
+#: framework/extensions/backups/helpers.php:196
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-zip.php:73
+#: framework/extensions/backups/includes/module/tasks/type/download/type/class-fw-ext-backups-task-type-download-local.php:50
+msgid "Zip extension missing"
+msgstr ""
+
+#: framework/extensions/backups/helpers.php:202
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-zip.php:81
+#, php-format
+msgid "Cannot open zip (Error code: %s)"
+msgstr ""
+
+#: framework/extensions/backups/helpers.php:223
+#, php-format
+msgid "Cannot restore previous zip entry: %s"
+msgstr ""
+
+#: framework/extensions/backups/helpers.php:258
+#, php-format
+msgid "Cannot create directory: %s"
+msgstr ""
+
+#: framework/extensions/backups/helpers.php:266
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-dir-clean.php:55
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-dir-clean.php:70
+#, php-format
+msgid "Cannot create file: %s"
+msgstr ""
+
+#: framework/extensions/backups/helpers.php:281
+#, php-format
+msgid "Cannot read chunk from zip entry: %s"
+msgstr ""
+
+#: framework/extensions/backups/helpers.php:292
+#, php-format
+msgid "Cannot close file: %s"
+msgstr ""
+
+#: framework/extensions/breadcrumbs/manifest.php:7
+#: framework/core/components/extensions/manager/available-extensions.php:128
+msgid "Breadcrumbs"
+msgstr ""
+
+#: framework/extensions/breadcrumbs/manifest.php:8
+msgid " This will make navigating the website much easier."
+msgstr ""
+
+#: framework/extensions/breadcrumbs/settings-options.php:6
+#: framework/extensions/breadcrumbs/includes/class-breadcrumbs-builder.php:9
+msgid "Homepage"
+msgstr "الصفحة الرئيسية"
+
+#: framework/extensions/breadcrumbs/settings-options.php:8
+msgid "404 Not Found"
+msgstr ""
+
+#: framework/extensions/breadcrumbs/settings-options.php:18
+msgid "Text for Homepage"
+msgstr "نص الصفحة الرئيسية"
+
+#: framework/extensions/breadcrumbs/settings-options.php:19
+msgid "The homepage anchor will have this text"
+msgstr ""
+
+#: framework/extensions/breadcrumbs/settings-options.php:24
+msgid "Text for Blog Page"
+msgstr "نص صفحة المدونة"
+
+#: framework/extensions/breadcrumbs/settings-options.php:25
+msgid ""
+"The blog page anchor will have this text. In case homepage will be set as "
+"blog page, will be taken the homepage text"
+msgstr ""
+
+#: framework/extensions/breadcrumbs/settings-options.php:30
+msgid "Text for 404 Page"
+msgstr "نص صفحة الخطا ٤٠٤"
+
+#: framework/extensions/breadcrumbs/settings-options.php:31
+msgid "The 404 anchor will have this text"
+msgstr ""
+
+#: framework/extensions/analytics/manifest.php:7
+#: framework/core/components/extensions/manager/available-extensions.php:170
+msgid "Analytics"
+msgstr ""
+
+#: framework/extensions/analytics/manifest.php:8
+#: framework/core/components/extensions/manager/available-extensions.php:171
+msgid ""
+"Enables the possibility to add the Google Analytics tracking code that will "
+"let you get all the analytics about visitors, page views and more."
+msgstr ""
+
+#: framework/extensions/analytics/settings-options.php:11
+msgid "Google Analytics"
+msgstr ""
+
+#: framework/extensions/analytics/settings-options.php:12
+msgid "Enter your Google Analytics code (Ex: UA-XXXXX-X)"
+msgstr ""
+
+#: framework/core/components/backend/class-fw-settings-form-theme.php:12
+#: framework/core/components/backend/class-fw-settings-form-theme.php:166
+#: framework/core/components/backend/class-fw-settings-form-theme.php:167
+msgid "Theme Settings"
+msgstr "إعدادات القالب"
+
+#: framework/core/components/backend/class-fw-settings-form-theme.php:56
+msgid "by"
+msgstr "بواسطة"
+
+#: framework/includes/option-types/addable-box/class-fw-option-type-addable-box.php:88
+#: framework/core/components/extensions/manager/views/extension.php:169
+#: framework/core/components/extensions/manager/views/extension.php:170
+#: framework/core/components/extensions/manager/views/extension.php:231
+msgid "Remove"
+msgstr ""
+
+#: framework/includes/option-types/gradient/view.php:46
+#: framework/includes/option-types/datetime-range/view.php:41
+msgid "to"
+msgstr "الى"
+
+#: framework/includes/option-types/popup/class-fw-option-type-popup.php:173
+#: framework/includes/option-types/multi-upload/class-fw-option-type-multi-upload.php:169
+#: framework/includes/option-types/multi-upload/class-fw-option-type-multi-upload.php:197
+#: framework/includes/option-types/upload/class-fw-option-type-upload.php:155
+#: framework/includes/option-types/upload/class-fw-option-type-upload.php:183
+msgid "Edit"
+msgstr ""
+
+#: framework/includes/option-types/multi-upload/class-fw-option-type-multi-upload.php:168
+msgid "Add Images"
+msgstr "اضافة صور"
+
+#: framework/includes/option-types/multi-upload/class-fw-option-type-multi-upload.php:170
+msgid "Select Images"
+msgstr ""
+
+#: framework/includes/option-types/multi-upload/class-fw-option-type-multi-upload.php:196
+#: framework/includes/option-types/upload/class-fw-option-type-upload.php:182
+#: framework/includes/option-types/icon-v2/views/templates.php:164
+msgid "Upload"
+msgstr "رفع"
+
+#: framework/includes/option-types/multi-upload/class-fw-option-type-multi-upload.php:198
+msgid "1 File"
+msgstr ""
+
+#: framework/includes/option-types/multi-upload/class-fw-option-type-multi-upload.php:199
+#, php-format
+msgid "%u Files"
+msgstr ""
+
+#: framework/includes/option-types/multi-select/class-fw-option-type-multi-select.php:126
+#: framework/extensions/breadcrumbs/includes/class-breadcrumbs-builder.php:249
+msgid "No title"
+msgstr "لا يوجد عنوان"
+
+#: framework/includes/option-types/multi-select/class-fw-option-type-multi-select.php:497
+#: framework/includes/option-types/multi-select/class-fw-option-type-multi-select.php:507
+msgctxt "unknown-post-type"
+msgid "Unknown"
+msgstr ""
+
+#: framework/includes/option-types/background-image/view.php:37
+msgid "Predefined images"
+msgstr ""
+
+#: framework/includes/option-types/background-image/view.php:38
+msgid "Custom image"
+msgstr ""
+
+#: framework/includes/option-types/multi-picker/class-fw-option-type-multi-picker.php:241
+#, php-format
+msgid "No 'picker' key set for multi-picker option: %s"
+msgstr ""
+
+#: framework/includes/option-types/switch/class-fw-option-type-switch.php:165
+msgid "No"
+msgstr "لا"
+
+#: framework/includes/option-types/addable-popup/view.php:38
+#: framework/includes/option-types/addable-popup/view.php:53
+msgid "Clone"
+msgstr ""
+
+#: framework/includes/option-types/typography-v2/view.php:40
+msgid "Font face"
+msgstr ""
+
+#: framework/includes/option-types/typography-v2/view.php:50
+msgid "Normal"
+msgstr "عادى"
+
+#: framework/includes/option-types/typography-v2/view.php:51
+msgid "Italic"
+msgstr "مائل"
+
+#: framework/includes/option-types/typography-v2/view.php:52
+msgid "Oblique"
+msgstr ""
+
+#: framework/includes/option-types/typography-v2/view.php:61
+#: framework/includes/option-types/typography-v2/view.php:125
+msgid "Style"
+msgstr ""
+
+#: framework/includes/option-types/typography-v2/view.php:89
+msgid "Weight"
+msgstr ""
+
+#: framework/includes/option-types/typography-v2/view.php:106
+msgid "Script"
+msgstr "سكربت"
+
+#: framework/includes/option-types/typography-v2/view.php:136
+msgid "Size"
+msgstr "حجم"
+
+#: framework/includes/option-types/typography-v2/view.php:147
+msgid "Line height"
+msgstr ""
+
+#: framework/includes/option-types/typography-v2/view.php:158
+msgid "Spacing"
+msgstr "المسافات"
+
+#: framework/includes/option-types/typography-v2/view.php:181
+msgid "Color"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:156
+msgid "Unknown Set"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:186
+msgid "Web Application Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:188
+msgid "Hand Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:189
+msgid "Transportation Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:190
+msgid "Gender Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:191
+msgid "File Type Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:194
+msgid "Payment Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:196
+msgid "Currency Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:197
+msgid "Text Editor Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:198
+msgid "Directional Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:199
+msgid "Video Player Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:200
+msgid "Brand Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/class-fw-option-type-icon.php:201
+msgid "Medical Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon/view.php:39
+msgid "All Categories"
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/class-fw-option-type-icon-v2.php:74
+msgid "Change Icon"
+msgstr "تغيير الايقونة"
+
+#: framework/includes/option-types/icon-v2/class-fw-option-type-icon-v2.php:75
+msgid "Add Icon"
+msgstr ""
+
+#: framework/includes/option-types/upload/class-fw-option-type-upload.php:154
+msgid "Add Image"
+msgstr "اضافة صورة"
+
+#: framework/includes/option-types/upload/class-fw-option-type-upload.php:156
+msgid "Select Image"
+msgstr ""
+
+#: framework/includes/option-types/radio-text/class-fw-option-type-radio-text.php:26
+msgid "25%"
+msgstr ""
+
+#: framework/includes/option-types/radio-text/class-fw-option-type-radio-text.php:27
+msgid "50%"
+msgstr ""
+
+#: framework/includes/option-types/radio-text/class-fw-option-type-radio-text.php:28
+msgid "100%"
+msgstr ""
+
+#: framework/extensions/update/views/updates-list.php:8
+#, php-format
+msgid "You have the latest version of %s."
+msgstr ""
+
+#: framework/extensions/update/views/updates-list.php:24
+msgid "Update Framework"
+msgstr ""
+
+#: framework/extensions/update/views/updates-list.php:38
+msgid "Your theme is up to date."
+msgstr ""
+
+#: framework/extensions/update/views/updates-list.php:54
+msgid "Update Theme"
+msgstr ""
+
+#: framework/extensions/update/views/updates-list.php:64
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:901
+#, php-format
+msgid "%s Extensions"
+msgstr ""
+
+#: framework/extensions/update/views/updates-list.php:66
+#, php-format
+msgid "You have the latest version of %s Extensions."
+msgstr ""
+
+#: framework/extensions/update/views/updates-list.php:85
+#: framework/extensions/update/views/updates-list.php:99
+#: framework/extensions/update/views/updates-list.php:106
+msgid "Update Extensions"
+msgstr ""
+
+#: framework/extensions/update/views/updates-list.php:104
+msgid "New extensions updates available."
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:57
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:274
+msgid "Page"
+msgstr "صفحة"
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:58
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:155
+msgid "Pages"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:63
+msgid "Portfolio Project"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:64
+msgid "Portfolio Projects"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:75
+msgid "Blog Category"
+msgstr "تصنيف"
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:81
+msgid "Portfolio Category"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:87
+msgid "Home Page"
+msgstr "الصفحة الرئيسية"
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:92
+msgid "Search Page"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:97
+msgid "404 Page"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:102
+msgid "Author Page"
+msgstr "صفحة الكاتب"
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:107
+msgid "Archive Page"
+msgstr "صفحة الارشيف"
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:151
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:329
+msgid "All Pages"
+msgstr "كل الصفحات"
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:170
+msgid "Categories"
+msgstr "التصنيفات"
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:185
+#: framework/extensions/backups/views/page.php:70
+msgid "Archives"
+msgstr "الارشيف"
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:205
+msgid "Others"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:289
+msgid "Category"
+msgstr "التصنيف"
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:241
+msgid "No sidebar name specified."
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:270
+msgid "Dynamic sidebar doesn't exixt"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:277
+msgid ""
+"The placeholder can't be deleted because it is used in one of sidebars below."
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:280
+msgid ""
+"Please replace it first so that you will not have visual gaps in your layout."
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:293
+msgid "Successfully removed"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:544
+msgid "Default for all pages"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:614
+msgid " (no title)"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:781
+msgid "Error: Type or sub_type error"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:856
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:887
+msgid "Error: Sidebars not set"
+msgstr ""
+
+#: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:883
+msgid "Error: Position doesn't exists. Please check config file."
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-tab-specific.php:5
+msgid "For specific"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-tab-specific.php:23
+msgid "Type to search ..."
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-tab-specific.php:30
+msgid "Search for a specific page you want to set a sidebar for"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-sidebars-positions-mode-insert.php:5
+#: framework/extensions/sidebars/views/backend-sidebars-positions-mode-replace.php:7
+#: framework/extensions/sidebars/includes/option-type/sidebar-picker/view.php:40
+#: framework/extensions/sidebars/includes/option-type/sidebar-picker/view.php:91
+msgid "Sidebar"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-sidebars-positions-mode-insert.php:18
+#: framework/extensions/sidebars/includes/option-type/sidebar-picker/view.php:60
+msgid "Choose the position for your sidebar(s)"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-sidebars-positions-mode-insert.php:43
+#: framework/extensions/sidebars/views/backend-sidebars-positions-mode-replace.php:40
+msgid "Add Sidebar"
+msgstr "اضافة شريط جانبى"
+
+#: framework/extensions/sidebars/views/backend-sidebars-positions-mode-replace.php:32
+#: framework/extensions/sidebars/includes/option-type/sidebar-picker/view.php:121
+msgid "Select sidebar you wish to replace."
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-tab-created-sidebars.php:4
+msgid "Sidebars for"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-tab-created-sidebars.php:16
+msgid "For Specific Page"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-tab-created-sidebars.php:16
+msgid "For Grouped Page"
+msgstr ""
+
+#: framework/extensions/sidebars/views/frontend-no-widgets.php:5
+msgid "Widgets Page"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-tab-grouped.php:6
+msgid "For group"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-tab-grouped.php:25
+msgid "Select group of pages you want to set a sidebar for."
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-main-view.php:11
+#: framework/extensions/sidebars/views/backend-main-view.php:15
+msgid "Manage Sidebars"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-main-view.php:18
+msgid ""
+"Use this section to create and/or set different sidebar(s) for different "
+"page(s)"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-main-view.php:24
+msgid "For Grouped Pages"
+msgstr ""
+
+#: framework/extensions/sidebars/views/backend-main-view.php:25
+msgid "For Specific Pages"
+msgstr ""
+
+#: framework/extensions/backups/views/tasks-status.php:33
+msgid "Nothing running in background"
+msgstr ""
+
+#: framework/extensions/backups/views/tasks-status.php:38
+#: framework/extensions/backups/extensions/backups-demo/views/status.php:52
+msgid "Abort"
+msgstr "خروج"
+
+#: framework/extensions/backups/views/page.php:17
+#: framework/extensions/backups/views/page.php:28
+#: framework/extensions/backups/extensions/backups-demo/views/page.php:28
+#: framework/extensions/backups/extensions/backups-demo/views/page.php:39
+msgid "Important"
+msgstr "هام"
+
+#: framework/extensions/backups/views/page.php:19
+#: framework/extensions/backups/extensions/backups-demo/views/page.php:30
+#, php-format
+msgid "You need to activate %s."
+msgstr ""
+
+#: framework/extensions/backups/views/page.php:20
+#: framework/extensions/backups/extensions/backups-demo/views/page.php:31
+msgid "zip extension"
+msgstr ""
+
+#: framework/extensions/backups/views/page.php:34
+msgid "Here you can create a backup schedule for your website."
+msgstr "هنا يمكنك جدولة النسخ الاحتياطية لموقعك"
+
+#: framework/extensions/backups/views/page.php:39
+#: framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:69
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:76
+msgid "Full Backup"
+msgstr "نسخه احتياطية كامله"
+
+#: framework/extensions/backups/views/page.php:46
+#: framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:69
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:85
+msgid "Content Backup"
+msgstr "نسخة احتياطية للمحتوى"
+
+#: framework/extensions/backups/views/page.php:57
+msgid "Edit Backup Schedule"
+msgstr "تحرير جدولة النسخ الاحتياطى"
+
+#: framework/extensions/backups/views/page.php:61
+msgid "Create Full Backup Now"
+msgstr "انشاء نسخه احتياطية كاملة الان"
+
+#: framework/extensions/backups/views/page.php:65
+msgid "Create Content Backup Now"
+msgstr "انشاء نسخه احتياطية للمحتوى الان"
+
+#: framework/extensions/breadcrumbs/includes/class-breadcrumbs-builder.php:11
+msgid "404 Not found"
+msgstr ""
+
+#: framework/extensions/breadcrumbs/includes/class-breadcrumbs-builder.php:124
+msgid "Searching for:"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:12
+msgid "Page Builder"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:13
+msgid ""
+"Let's you easily build countless pages with the help of the drag and drop "
+"visual page builder that comes with a lot of already created shortcodes."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:26
+msgid "Brizy - Visual Page Builder"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:27
+msgid ""
+"Lets you build pages live on the front end. No designer or developer skills "
+"required. The only tools you’ll need to master are clicks and drags."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:41
+msgid "WordPress Shortcodes"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:42
+msgid "Lets you insert Unyson shortcodes inside any wp-editor"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:59
+msgid ""
+"This extension lets you create an automated backup schedule, import demo "
+"content or even create a demo content archive for migration purposes."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:73
+msgid ""
+"Brings a new layer of customization freedom to your website by letting you "
+"add more than one sidebar to a page, or different sidebars on different "
+"pages."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:86
+msgid "Sliders"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:87
+msgid ""
+"Adds a sliders module to your website from where you'll be able to create "
+"different built in jQuery sliders for your homepage and rest of the pages."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:100
+msgid "Portfolio"
+msgstr "المعرض"
+
+#: framework/core/components/extensions/manager/available-extensions.php:101
+msgid ""
+"This extension will add a fully fledged portfolio module that will let you "
+"display your projects using the built in portfolio pages."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:114
+msgid "Mega Menu"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:115
+msgid ""
+"The Mega Menu extension adds a user-friendly drop down menu that will let "
+"you easily create highly customized menu configurations."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:129
+msgid ""
+"Creates a simplified navigation menu for the pages that can be placed "
+"anywhere in the theme. This will make navigating the website much easier."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:142
+msgid "SEO"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:143
+msgid ""
+"This extension will enable you to have a fully optimized WordPress website "
+"by adding optimized meta titles, keywords and descriptions."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:156
+msgid "Events"
+msgstr "الاحداث"
+
+#: framework/core/components/extensions/manager/available-extensions.php:157
+msgid ""
+"This extension adds a fully fledged Events module to your theme. It comes "
+"with built in pages that contain a calendar where events can be added."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:184
+msgid "Feedback"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:185
+msgid ""
+"Adds the possibility to leave feedback (comments, reviews and rating) about "
+"your products, articles, etc. This replaces the default comments system."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:198
+msgid "Learning"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:199
+msgid ""
+"This extension adds a Learning module to your theme. Using this extension "
+"you can add courses, lessons and tests for your users to take."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:212
+msgid "Shortcodes"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:226
+msgid "Builder"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:240
+msgid "Forms"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:241
+msgid ""
+"This extension adds the possibility to create a contact form. Use the drag & "
+"drop form builder to create any contact form you'll ever want or need."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:254
+msgid "Mailer"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:255
+msgid ""
+"This extension will let you set some global email options and it is used by "
+"other extensions (like Forms) to send emails."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:268
+msgid "Social"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:269
+msgid ""
+"Use this extension to configure all your social related APIs. Other "
+"extensions will use the Social extension to connect to your social accounts."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:283
+msgid ""
+"This extension lets you set up daily, weekly or monthly backup schedule. You "
+"can choose between a full backup or a data base only backup."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:296
+msgid "Media"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:310
+msgid "Population method"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:324
+msgid "Translate Press"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:325
+msgid ""
+"This extension lets you translate your website in any language or even add "
+"multiple languages for your users to change at their will from the front-end."
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:340
+msgid "Styling"
+msgstr ""
+
+#: framework/core/components/extensions/manager/available-extensions.php:341
+msgid ""
+"This extension lets you control the website visual style. Starting from "
+"predefined styles to changing specific fonts and colors across the website."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:393
+msgid "Cannot remove the old extensions backup dir"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:399
+msgid "Cannot create the extensions backup dir"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:404
+msgid "Cannot backup the extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:450
+msgid "Cannot clear the extensions directory"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:455
+msgid "Cannot recreate the extensions directory"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:461
+msgid "Cannot recover the extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:689
+#, php-format
+msgid "Cannot activate hidden standalone extension %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:931
+msgid "You are not allowed to install extensions."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:948
+msgid "All supported extensions are already installed."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:969
+msgid "Install Compatible Extension"
+msgid_plural "Install Compatible Extensions"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:970
+msgid "Install Extension"
+msgid_plural "Install Extensions"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1019
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2473
+#, php-format
+msgid "Cannot remove temporary directory: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1096
+msgid "You have no permissions to install extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1103
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1546
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1952
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2183
+msgid "No extensions provided"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1127
+#, php-format
+msgid "Extension \"%s\" is already installed."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1140
+#, php-format
+msgid "Extension \"%s\" is not available for install."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1166
+#, php-format
+msgid "Parent extension \"%s\" not available."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1205
+#, php-format
+msgid "Downloading the \"%s\" extension..."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1245
+#, php-format
+msgid "Installing the \"%s\" extension..."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1284
+#, php-format
+msgid "The %s extension has been successfully installed."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1352
+msgid "Activating extension..."
+msgid_plural "Activating extensions..."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1392
+msgid "Extension has been successfully activated."
+msgid_plural "Extensions has been successfully activated."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1418
+msgid "Cannot install extension"
+msgid_plural "Cannot install extensions"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1433
+msgid "You are not allowed to delete extensions."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1444
+msgid "Delete Extension"
+msgid_plural "Delete Extensions"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1539
+msgid "You have no permissions to uninstall extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1556
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3258
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3348
+msgid "WP Filesystem is not initialized"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1578
+#, php-format
+msgid "Extension \"%s\" has been deleted."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1635
+#, php-format
+msgid "Deleting the \"%s\" extension..."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1640
+#, php-format
+msgid "Cannot delete the \"%s\" extension."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1650
+#, php-format
+msgid "The %s extension has been successfully deleted."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1700
+msgid "Cannot uninstall extension"
+msgid_plural "Cannot uninstall extensions"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1754
+msgid "Extension not specified."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1759
+#, php-format
+msgid "Extension \"%s\" is not installed."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1827
+#, php-format
+msgid "Extension \"%s\" does not exist or is not active."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1836
+#, php-format
+msgid "%s extension does not have settings."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1856
+msgid "Extension has no documentation. Maybe ask its developer to write some?"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1881
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2114
+msgid "Invalid request method."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1893
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2126
+msgid "No extension specified."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1945
+msgid "You have no permissions to activate extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:1981
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2207
+#, php-format
+msgid "Extension \"%s\" does not exist."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2025
+msgid "Cannot activate extension"
+msgid_plural "Cannot activate extensions"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2176
+msgid "You have no permissions to deactivate extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2255
+msgid "Cannot deactivate extension"
+msgid_plural "Cannot activate extensions"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2372
+msgid "You are not allowed to save extensions settings."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2379
+msgid "Invalid extension."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2384
+msgid "Extension does not have settings options."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2416
+msgid "Extensions settings successfully saved."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2443
+#, php-format
+msgid "Extension \"%s\" has no download sources."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2481
+#, php-format
+msgid "Cannot create temporary directory: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2520
+#, php-format
+msgid "Cannot remove the \"%s\" extension downloaded zip."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2529
+#: framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:167
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:321
+#: framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:163
+msgid "Cannot access the unzipped directory files."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2545
+#, php-format
+msgid "The unzipped \"%s\" extension directory not found."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2571
+#, php-format
+msgid "Invalid download source: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2598
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2617
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2706
+#, php-format
+msgid "Cannot read directory \"%s\"."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2653
+#, php-format
+msgid "Cannot delete \"%s\"."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2667
+#, php-format
+msgid "Cannot create the \"%s\" directory."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:2686
+#, php-format
+msgid "Cannot move \"%s\" to \"%s\"."
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3136
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3183
+#, php-format
+msgid "Cannot activate the %s extension because it is not installed. %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3140
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3187
+#: framework/extensions/backups/extensions/backups-demo/views/page.php:62
+msgid "Install"
+msgstr "تنصيب"
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3240
+msgid "Install theme compatible extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3275
+#, php-format
+msgid "Temporary directory cannot be removed: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3282
+#, php-format
+msgid "Temporary directory cannot be created: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3305
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3312
+#, php-format
+msgid "Failed to extract relative directory from: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3321
+#, php-format
+msgid "Failed to create directory %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3329
+#, php-format
+msgid "Failed to copy extension to %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3359
+#, php-format
+msgid "Temporary directory does not exist: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3379
+#, php-format
+msgid "Cannot obtain WP Filesystem dir for %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3516
+#, php-format
+msgid "PHP needs to be updated to %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3525
+#, php-format
+msgid "Maximum supported PHP version is %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3544
+#, php-format
+msgid "You need to update WordPress to %s: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3546
+msgid "Update WordPress"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3550
+#, php-format
+msgid "WordPress needs to be updated to %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3560
+#, php-format
+msgid "Maximum supported WordPress version is %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3577
+#, php-format
+msgid "You need to update %s to %s: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3581
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3621
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3586
+#, php-format
+msgid "%s needs to be updated to %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3597
+#, php-format
+msgid "Maximum supported %s version is %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3617
+#, php-format
+msgid "You need to update the %s extension to %s: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3626
+#, php-format
+msgid "The %s extension needs to be updated to %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3637
+#, php-format
+msgid "Maximum supported %s extension version is %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3652
+#, php-format
+msgid "The %s extension is disabled"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3653
+#, php-format
+msgid "Activate %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3662
+#, php-format
+msgid "The %s extension is not installed: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3665
+#, php-format
+msgid "Install %s"
+msgstr "تنصيب %s"
+
+#: framework/core/components/extensions/manager/class--fw-extensions-manager.php:3670
+#, php-format
+msgid "The %s extension is not installed"
+msgstr ""
+
+#: framework/includes/option-types/multi-upload/views/images-only.php:15
+#: framework/includes/option-types/multi-upload/views/images-only.php:36
+#: framework/includes/option-types/upload/views/images-only.php:13
+#: framework/includes/option-types/upload/views/images-only.php:30
+msgid "No image"
+msgstr ""
+
+#: framework/includes/option-types/map/views/view.php:12
+msgid "Specify location"
+msgstr ""
+
+#: framework/includes/option-types/map/views/view.php:27
+msgid "Location Venue"
+msgstr ""
+
+#: framework/includes/option-types/map/views/view.php:42
+msgid "Address"
+msgstr "العنوان"
+
+#: framework/includes/option-types/map/views/view.php:57
+msgid "City"
+msgstr "المدينة"
+
+#: framework/includes/option-types/map/views/view.php:72
+msgid "Country"
+msgstr ""
+
+#: framework/includes/option-types/map/views/view.php:87
+msgid "State"
+msgstr ""
+
+#: framework/includes/option-types/map/views/view.php:103
+msgid "Zip Code"
+msgstr ""
+
+#: framework/includes/option-types/map/views/view.php:138
+msgid "Cannot find the location?"
+msgstr ""
+
+#: framework/includes/option-types/map/views/view.php:150
+msgid "Reset location"
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:7
+msgid "Icon Fonts"
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:22
+msgid "Custom Upload"
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:35
+msgid "Favorites"
+msgstr "المفضلة"
+
+#: framework/includes/option-types/icon-v2/views/templates.php:79
+msgid "Search Icon"
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:118
+msgid "Sorry, but no results have been found"
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:119
+msgid "You can try something like: wordpress, twitter, heart, cat e.t.c "
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:137
+msgid "You have no favorite icons yet"
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:140
+msgid ""
+"To add icons here, simply click on the star button that's on top right "
+"corner of each icon."
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:161
+msgid "Upload Icons"
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:178
+msgid "You have no uploaded icons yet"
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:182
+msgid "To add new icons simply click on the Upload button."
+msgstr ""
+
+#: framework/includes/option-types/icon-v2/views/templates.php:206
+msgid "Delete item"
+msgstr "حذف عنصر"
+
+#: framework/includes/option-types/icon-v2/views/templates.php:251
+msgid "Add to Favorites"
+msgstr "الاضافة للمفضلة"
+
+#: framework/extensions/update/includes/classes/class--fw-ext-update-framework-upgrader-skin.php:16
+#: framework/extensions/update/includes/classes/class--fw-ext-update-theme-upgrader-skin.php:16
+#: framework/extensions/update/includes/classes/class--fw-ext-update-extensions-upgrader-skin.php:14
+msgid "Go to updates page"
+msgstr ""
+
+#: framework/extensions/update/includes/classes/class--fw-ext-update-framework-upgrader-skin.php:19
+#: framework/extensions/update/includes/classes/class--fw-ext-update-theme-upgrader-skin.php:19
+#: framework/extensions/update/includes/classes/class--fw-ext-update-extensions-upgrader-skin.php:17
+msgid "Return to Updates page"
+msgstr ""
+
+#: framework/extensions/update/includes/classes/class--fw-ext-update-extensions-list-table.php:84
+#, php-format
+msgid "You have version %s installed. Update to %s."
+msgstr ""
+
+#: framework/extensions/update/includes/classes/class--fw-ext-update-extensions-list-table.php:126
+msgid "No Extensions for update."
+msgstr ""
+
+#: framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:106
+#: framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:102
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-bitbucket.php:106
+#, php-format
+msgid "Empty version for item: %s"
+msgstr ""
+
+#: framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:138
+#: framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:134
+#, php-format
+msgid "Empty zip body for item: %s"
+msgstr ""
+
+#: framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:150
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:293
+#: framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:146
+#, php-format
+msgid "Cannot save %s zip."
+msgstr ""
+
+#: framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:161
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:312
+#: framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:157
+#, php-format
+msgid "Cannot remove %s zip."
+msgstr ""
+
+#: framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:180
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:337
+#: framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:176
+#, php-format
+msgid "The unzipped %s directory not found."
+msgstr ""
+
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:89
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:228
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:75
+msgid "Github error:"
+msgstr ""
+
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:98
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:237
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:81
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:90
+#, php-format
+msgid "Failed to access Github repository \"%s\" releases. (Response code: %d)"
+msgstr ""
+
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:106
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:245
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:106
+#, php-format
+msgid "Failed to access Github repository \"%s\" releases."
+msgstr ""
+
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:120
+#, php-format
+msgid "No releases found in repository \"%s\"."
+msgstr ""
+
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:140
+#, php-format
+msgid ""
+"%s manifest has invalid \"github_update\" parameter. Please use "
+"\"user/repo\" format."
+msgstr ""
+
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:168
+#, php-format
+msgid "Failed to fetch %s latest version from github \"%s\"."
+msgstr ""
+
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:260
+#, php-format
+msgid "%s github repository \"%s\" does not have the \"%s\" release."
+msgstr ""
+
+#: framework/extensions/update/extensions/github-update/class-fw-extension-github-update.php:280
+#, php-format
+msgid "Cannot download %s zip."
+msgstr ""
+
+#: framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:111
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-bitbucket.php:115
+#, php-format
+msgid "Wrong Bibucket version for item: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:80
+#: framework/core/components/extensions/manager/views/extension.php:182
+#: framework/extensions/backups/includes/module/tasks/type/download/class-fw-ext-backups-task-type-download.php:18
+msgid "Download"
+msgstr "تحميل"
+
+#: framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:93
+msgid "Delete"
+msgstr "حذف"
+
+#: framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:144
+msgid "No archives found"
+msgstr ""
+
+#: framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:153
+msgid ""
+"Warning! \n"
+"The restore will replace all of your content."
+msgstr ""
+
+#: framework/extensions/backups/includes/log/view.php:9
+msgid "View Activity Log"
+msgstr "سجل النشاط"
+
+#: framework/extensions/backups/includes/log/view.php:10
+msgid "Hide Activity Log"
+msgstr ""
+
+#: framework/extensions/backups/includes/log/view.php:25
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:103
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:104
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:417
+#: framework/extensions/backups/extensions/backups-demo/views/page.php:22
+msgid "Demo Content Install"
+msgstr "تنصيب المحتوى الافتراضى"
+
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:120
+#, php-format
+msgid "Demo Content Install works only in %s."
+msgstr "المحتوى الافتراضى يعمل فقط فى %s"
+
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:122
+msgid "Staging"
+msgstr ""
+
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:303
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:359
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:392
+msgid "Forbidden"
+msgstr "ممنوع"
+
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:372
+msgid "Invalid demo"
+msgstr ""
+
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:379
+msgid "A content install is currently running"
+msgstr ""
+
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:475
+msgid "Error"
+msgstr "خطأ"
+
+#: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:491
+msgid "Demo Install has been aborted"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/class--fw-extensions-install-upgrader-skin.php:14
+#: framework/core/components/extensions/manager/includes/class--fw-extensions-delete-upgrader-skin.php:14
+msgid "Go to extensions page"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/class--fw-extensions-install-upgrader-skin.php:17
+#: framework/core/components/extensions/manager/includes/class--fw-extensions-delete-upgrader-skin.php:17
+msgid "Return to Extensions page"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/delete-form.php:11
+msgid "You are about to remove the following extension:"
+msgid_plural "You are about to remove the following extensions:"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/views/delete-form.php:25
+msgid "Are you sure you wish to delete this extension?"
+msgid_plural "Are you sure you wish to delete these extensions?"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/views/delete-form.php:34
+msgid "Yes, Delete this extension"
+msgid_plural "Yes, Delete these extensions"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/views/delete-form.php:42
+#: framework/core/components/extensions/manager/views/install-form.php:51
+msgid "No, Return me to the extension list"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/delete-form.php:45
+msgid "Click to view entire list of directories which will be deleted"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension-page-header.php:25
+#: framework/core/components/extensions/manager/views/extension.php:119
+msgid "Install Instructions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension-page-header.php:40
+#, php-format
+msgid "%s Settings"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension-page-header.php:43
+#, php-format
+msgid "%s Install Instructions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension-page-header.php:46
+msgid "Unknown tab:"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/install-form.php:12
+msgid ""
+"We've detected that your current theme is compatible with the following "
+"extension and it is recommended that you install it to fully benefit from "
+"your theme."
+msgid_plural ""
+"We've detected that your current theme is compatible with the following "
+"extensions and it is recommended that you install them to fully benefit from "
+"your theme."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/views/install-form.php:19
+msgid "You are about to install the following extension:"
+msgid_plural "You are about to install the following extensions:"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/views/install-form.php:34
+msgid "Are you sure you wish to install this extension?"
+msgid_plural "Are you sure you wish to install these extensions?"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/views/install-form.php:43
+msgid "Yes, Install this extension"
+msgid_plural "Yes, Install these extensions"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: framework/core/components/extensions/manager/views/extensions-page.php:62
+msgid "Active Extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extensions-page.php:77
+msgid "No extensions activated yet"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extensions-page.php:77
+msgid "Check the available extensions below"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extensions-page.php:106
+msgid "Available Extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extensions-page.php:233
+msgid "Show other extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extensions-page.php:234
+msgid "Hide other extensions"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension.php:131
+msgid "Compatible"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension.php:131
+msgid "with your current theme"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension.php:138
+msgid "Deactivate"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension.php:147
+msgid "Activate"
+msgstr "تفعيل"
+
+#: framework/core/components/extensions/manager/views/extension.php:160
+msgid "Are you sure you want to remove this extension?"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension.php:203
+#, php-format
+msgid "Parent extension \"%s\" is disabled"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension.php:209
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:20
+msgid "Disabled"
+msgstr ""
+
+#: framework/core/components/extensions/manager/views/extension.php:228
+msgid "View Requirements"
+msgstr ""
+"عرض المتطلبات\n"
+
+#: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:186
+msgid "Backup Schedule"
+msgstr "جدولة النسخ الاحتياطى"
+
+#: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:342
+msgid "Full"
+msgstr "كامل"
+
+#: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:343
+msgid "Content"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:352
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:21
+msgid "Monthly"
+msgstr "شهرى"
+
+#: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:353
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:22
+msgid "Weekly"
+msgstr "اسبوعى"
+
+#: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:354
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:23
+msgid "Daily"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:365
+msgid "Backup Schedule Active"
+msgstr "جدولة النسخ الاحتياطى مفعل"
+
+#: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:366
+msgid "Next backup on"
+msgstr "النسخ الاحتياطى التالى فى"
+
+#: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:373
+msgid "No backup schedule created yet! We advise you to do it asap!"
+msgstr "انشاء نسخه احتياطية للمحتوى الان"
+
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:16
+msgid "Interval"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:25
+msgid "Select how often do you want to backup your website."
+msgstr ""
+
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:32
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:45
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:58
+msgid "Age Limit"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:33
+msgid "Age limit of backups in months"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:46
+msgid "Age limit of backups in weeks"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/schedule/settings-options.php:59
+msgid "Age limit of backups in days"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/class--fw-ext-backups-module-tasks.php:142
+msgid "undefined"
+msgstr "غير معروف"
+
+#: framework/extensions/backups/includes/module/tasks/class--fw-ext-backups-module-tasks.php:282
+msgid "Task type not registered"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/class--fw-ext-backups-module-tasks.php:289
+msgid "Execution stopped (next step did not started)"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/class--fw-ext-backups-module-tasks.php:309
+msgid "The execution failed. Please check error.log"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/class--fw-ext-backups-module-tasks.php:379
+msgid "Invalid execution end time"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/class--fw-ext-backups-module-tasks.php:602
+msgid "Invalid execution result"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/class--fw-ext-backups-module-tasks.php:721
+msgid "Invalid token"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/class--fw-ext-backups-module-tasks.php:740
+msgid "Invalid tasks hash"
+msgstr ""
+
+#: framework/extensions/backups/extensions/backups-demo/views/status.php:16
+msgid "Installing"
+msgstr ""
+
+#: framework/extensions/backups/extensions/backups-demo/views/status.php:47
+msgid "Pending"
+msgstr ""
+
+#: framework/extensions/backups/extensions/backups-demo/views/page.php:14
+msgid " You can restore the backup from there at any time in the future."
+msgstr ""
+
+#: framework/extensions/backups/extensions/backups-demo/views/page.php:54
+msgid "Live Preview"
+msgstr "مشاهدة"
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:9
+msgid "Files Restore"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:37
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:127
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-zip.php:41
+msgid "Source dir not specified"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:45
+#, php-format
+msgid "Invalid source dir: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:52
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:25
+msgid "Source dirs not specified"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:135
+msgid "No filesystem access, credentials required"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:139
+msgid "No filesystem access, invalid credentials"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:145
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:154
+msgid "Filesystem init failed"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:202
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:315
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:339
+#, php-format
+msgid "Cannot convert Filesystem path: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:207
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:320
+#, php-format
+msgid "Failed to list dir: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:237
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:279
+#, php-format
+msgid "Failed to remove dir: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:244
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:286
+#, php-format
+msgid "Failed to remove file: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:361
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:417
+#, php-format
+msgid "Failed to create dir: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:374
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:430
+#, php-format
+msgid "Failed to copy file: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-image-sizes-restore.php:9
+msgid "Image Sizes Restore"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-image-sizes-restore.php:12
+#, php-format
+msgid "(%d of %d)"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-image-sizes-restore.php:66
+msgid "Cannot get total images count"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:12
+msgid "Database restore"
+msgstr "استعادة قاعدة البيانات"
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:145
+msgid "Database file not found"
+msgstr "ملف قاعدة البيانات غير موجود"
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:179
+msgid ""
+"PHP class SplFileObject is required but not available. Please contact your "
+"hosting"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:196
+#, php-format
+msgid "Invalid sub task %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:310
+#, php-format
+msgid "Cannot drop temporary table: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:337
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:501
+msgid "Cannot open db file"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:346
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:510
+msgid "Cannot move cursor in db file"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:361
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:722
+#, php-format
+msgid "Failed to decode line %d from db file."
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:396
+#, php-format
+msgid "Cannot read line %d from db file"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:405
+msgid "Required params not found"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:442
+msgid "Cannot do full db restore because backup is missing some tables"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:572
+#, php-format
+msgid "Imported url \"%s\" is prefix of current url"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:739
+#, php-format
+msgid "Table name is more than 64 characters: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:748
+#, php-format
+msgid "Failed to drop tmp table %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:807
+#, php-format
+msgid "Failed to create tmp table %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:820
+#, php-format
+msgid "Tried to insert data in table that was not imported %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:1022
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:1048
+#, php-format
+msgid "Failed to insert row from line %d into table %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:1065
+#, php-format
+msgid "Invalid json type %s in db file"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:1072
+msgid "Cannot read line from db file"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:1116
+msgid "Failed to restore options keeping step"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:1151
+#, php-format
+msgid "Failed to keep option: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:1221
+msgid "Tables drop failed"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:1235
+msgid "Tables rename failed."
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-unzip.php:12
+msgid "Archive Unzip"
+msgstr "فك ضغط الارشيف"
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-unzip.php:15
+#, php-format
+msgid "(%d files extracted)"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-unzip.php:29
+msgid "Zip file not specified"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-unzip.php:37
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-export.php:50
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-zip.php:51
+#: framework/extensions/backups/includes/module/tasks/type/download/class-fw-ext-backups-task-type-download.php:114
+msgid "Destination dir not specified"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-unzip.php:47
+msgid "Destination dir is not empty"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-dir-clean.php:12
+msgid "Directory Cleanup"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-dir-clean.php:21
+msgid "Dir not specified"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-dir-clean.php:30
+msgid "Cannot remove directory"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-dir-clean.php:37
+msgid "Cannot create directory"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-export.php:38
+msgid "Database export"
+msgstr "تصدير قاعدة البيانات"
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-export.php:71
+msgid "Database table disappeared"
+msgstr "اختفى جدول قاعدة البيانات"
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-export.php:90
+msgid "Cannot create file"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-export.php:96
+msgid "Cannot reopen file"
+msgstr "لا يمكن اعادة فتح الملف"
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-export.php:141
+#, php-format
+msgid "Cannot export CREATE TABLE sql for %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-export.php:212
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-export.php:268
+msgid "Cannot get next database table"
+msgstr "غير قادر على ايجاد الجدول التالى"
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-image-sizes-remove.php:9
+msgid "Image Sizes Remove"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-image-sizes-remove.php:23
+msgid "Uploads dir not specified"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-zip.php:12
+msgid "Archive Zip"
+msgstr "ارشيف مضغوط"
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-zip.php:45
+msgid "Source dir does not exist"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-zip.php:127
+msgid "Cannot close the zip file"
+msgstr "غير قادر على اغلاق الملف المضغوط"
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-zip.php:146
+msgid "Cannot move zip in destination dir"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:9
+msgid "Files Export"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:33
+msgid "Destination not specified"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:82
+#, php-format
+msgid "Source dir %s is empty"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:124
+msgid "Failed to get dir chmod"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:131
+msgid "Failed to create destination dir"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:145
+#, php-format
+msgid "Failed to copy: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:219
+#, php-format
+msgid "Failed to restore dir listing from: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-bitbucket.php:31
+#, php-format
+msgid "\"%s\" extension bitbucket source \"user_repo\" parameter is required"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-bitbucket.php:47
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:155
+#, php-format
+msgid "Cannot download the \"%s\" extension zip. (Response code: %d)"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-bitbucket.php:54
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:162
+#, php-format
+msgid "Cannot download the \"%s\" extension zip. %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-bitbucket.php:62
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:170
+#, php-format
+msgid "Cannot download the \"%s\" extension zip."
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-bitbucket.php:73
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-custom.php:68
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:181
+#, php-format
+msgid "Cannot save the \"%s\" extension zip."
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-custom.php:58
+#, php-format
+msgid "Empty zip body for extension: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-custom.php:111
+#, php-format
+msgid "Cannot get latest versions for extension: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-custom.php:130
+#, php-format
+msgid "Empty version for extension: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-custom.php:165
+#, php-format
+msgid "Cannot install plugin: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-custom.php:169
+#, php-format
+msgid "Cannot find plugin: %s"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:31
+#, php-format
+msgid "\"%s\" extension github source \"user_repo\" parameter is required"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:98
+#, php-format
+msgid "Failed to access Github repository \"%s\" releases. (%s)"
+msgstr ""
+
+#: framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-github.php:121
+#, php-format
+msgid "\"%s\" extension github repository \"%s\" has no releases."
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/class-fw-ext-backups-task-type-download.php:119
+msgid "Invalid destination dir"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/class-fw-ext-backups-task-type-download.php:132
+#, php-format
+msgid "Invalid type: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/class-fw-ext-backups-task-type-download.php:141
+#, php-format
+msgid "Args not specified for type: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/class-fw-ext-backups-task-type-download-local.php:9
+msgid "Local Download"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/class-fw-ext-backups-task-type-download-local.php:24
+msgid "Source not specified"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/class-fw-ext-backups-task-type-download-local.php:29
+msgid "Invalid source"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/class-fw-ext-backups-task-type-download-local.php:38
+msgid "Invalid source type"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/class-fw-ext-backups-task-type-download-local.php:59
+#, php-format
+msgid "Cannot open zip: %s"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/class-fw-ext-backups-task-type-download-local.php:70
+msgid "Unhandled type"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:13
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:21
+msgid "Downloading"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:17
+#, php-format
+msgid "Downloading (%s of %s)"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:25
+#, php-format
+msgid "Archive Unzip (%d files extracted)"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:27
+msgid "Download finished. Doing unzip"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:30
+msgid "Downloading (invalid state)"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:56
+msgid "Url not specified"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:61
+msgid "Invalid url"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:68
+msgid "File id not specified"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:73
+msgid "Invalid file id"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:104
+msgid "Partial download invalid state"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:147
+#, php-format
+msgid "Request failed. Error code: %d"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:158
+msgid "Invalid byte position"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:163
+msgid "Empty response body"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:183
+msgid "File ended without content"
+msgstr ""
+
+#: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:216
+msgid "Failed to write data to file"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"A free drag & drop framework that comes with a bunch of built in extensions "
+"that will help you develop premium themes fast & easy."
+msgstr ""
+
+#. URI of the plugin
+msgid "http://unyson.io/"
+msgstr ""
+
+#. Author of the plugin
+msgid "ThemeFuse"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://themefuse.com"
+msgstr ""

@@ -52,11 +52,21 @@ if ( ! function_exists( 'dw_theme_setup' ) ) {
 		add_image_size( 'dw_pic_post', 140, 140, true );
 		add_theme_support( 'post-formats', array( 'quote', 'gallery', 'video', 'audio', 'link' ) );
 		load_theme_textdomain( 'dw', get_template_directory() . '/languages' );
+		//load_theme_textdomain( 'fw', get_template_directory() . '/languages' );
 		register_nav_menus( array(
 			'header_menu' => esc_html__( 'Primary Menu', 'dw' ),
 			'footer_menu' => esc_html__( 'Footer Menu', 'dw' )
 		) );
 	}
+}
+
+add_filter( 'load_textdomain_mofile', 'dw_unyson_translations', 10, 2 );
+function dw_unyson_translations( $mofile, $domain ) {
+	if ( 'fw' == $domain ) {
+		$mofile = get_template_directory() . '/languages/' . basename( $mofile );
+	}
+
+	return $mofile;
 }
 
 /**
