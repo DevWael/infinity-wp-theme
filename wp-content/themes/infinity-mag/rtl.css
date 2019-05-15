@@ -29,6 +29,11 @@ body {
 	font-family: FontAwesome;
 }
 
+.header-four-nav .dw-menu .menu > li:last-of-type {
+	border-right: 0;
+	border-left: 0;
+}
+
 @media (min-width: 1200px) {
 	.dw-navbar .dw-menu .menu .sub-menu .sub-menu {
 		left: auto;
@@ -206,6 +211,6 @@ body {
 	margin-right: 5px;
 }
 
-.singular .tags a{
+.singular .tags a {
 	letter-spacing: 0;
 }

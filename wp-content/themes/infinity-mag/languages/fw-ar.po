@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Unyson\n"
 "POT-Creation-Date: 2019-04-15 09:11+0000\n"
-"PO-Revision-Date: 2019-05-14 13:11+0000\n"
+"PO-Revision-Date: 2019-05-15 09:16+0000\n"
 "Last-Translator: الادمن <mm@nn.c>\n"
 "Language-Team: العربية\n"
 "Language: ar\n"
@@ -95,12 +95,12 @@ msgstr "جارى إعادة الضبط"
 
 #: framework/views/backend-settings-form.php:181
 msgid "We are currently resetting your settings."
-msgstr ""
+msgstr "جارى استعاده الإعدادات الإفتراضيه الاّن"
 
 #: framework/views/backend-settings-form.php:183
 #: framework/views/backend-settings-form.php:189
 msgid "This may take a few moments."
-msgstr ""
+msgstr "هذا قد يتطلب لحظات"
 
 #: framework/views/backend-settings-form.php:185
 msgid "Saving"
@@ -108,7 +108,7 @@ msgstr "جارى الحفظ"
 
 #: framework/views/backend-settings-form.php:187
 msgid "We are currently saving your settings."
-msgstr ""
+msgstr "جارى حفظ الاعدادات الاّن"
 
 #: framework/helpers/class-fw-wp-filesystem.php:43
 msgid "Cannot connect to Filesystem directly"
