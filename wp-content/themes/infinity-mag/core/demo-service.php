@@ -5,10 +5,15 @@
 add_filter( 'fw:ext:backups-demo:demos', 'dw_demo_content' );
 function dw_demo_content( $demos ) {
 	$demos_array = array(
-		'rtl_magazine_no_ads'   => array(
-			'title'        => esc_html__( 'RTL Magazine No Ads', 'dw' ),
+		'rtl_magazine'   => array(
+			'title'        => esc_html__( 'RTL Magazine', 'dw' ),
 			'screenshot'   => 'https://infinity.4hoste.com/demo/files/rtl_magazine.png',
-			'preview_link' => 'http://bbioon.com/window/news'
+			'preview_link' => 'https://infinity.4hoste.com/theme/rtl-magazine'
+		),
+		'rtl_magazine_2' => array(
+			'title'        => esc_html__( 'RTL Magazine 2', 'dw' ),
+			'screenshot'   => 'https://infinity.4hoste.com/demo/files/rtl_magazine_2.png',
+			'preview_link' => 'https://infinity.4hoste.com/theme/rtl-magazine-2'
 		),
 	);
 

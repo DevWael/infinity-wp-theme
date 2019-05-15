@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Unyson\n"
 "POT-Creation-Date: 2019-04-15 09:11+0000\n"
-"PO-Revision-Date: 2019-05-15 09:16+0000\n"
+"PO-Revision-Date: 2019-05-15 11:01+0000\n"
 "Last-Translator: الادمن <mm@nn.c>\n"
 "Language-Team: العربية\n"
 "Language: ar\n"
@@ -2291,7 +2291,7 @@ msgstr "حذف"
 
 #: framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:144
 msgid "No archives found"
-msgstr ""
+msgstr "لا توجد ملفات مضغوطة"
 
 #: framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:153
 msgid ""
@@ -2921,7 +2921,7 @@ msgstr ""
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:9
 msgid "Files Export"
-msgstr ""
+msgstr "استخراج الملفات"
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:33
 msgid "Destination not specified"
