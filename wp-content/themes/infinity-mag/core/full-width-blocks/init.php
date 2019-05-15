@@ -19,6 +19,9 @@ function dw_builder_full_width( $place_number = 1, $before = '', $after = '' ) {
 	if ( ! function_exists( 'fw_get_db_settings_option' ) ) {
 		return;
 	}
+	if ( 'hide' == dw_get_setting( 'home_full_enable_' . $place_number ) ) {
+		return;
+	}
 	$all_blocks = dw_get_setting( 'home_full_width_' . $place_number );
 	if ( $all_blocks ) {
 		echo $before;

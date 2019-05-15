@@ -1529,7 +1529,7 @@ function dw_mobile_navigation_bar() {
 	if ( dw_get_setting( 'footer_mobile_bar' ) != 'on' ) {
 		return;
 	}
-	if ( ! class_exists( 'woocommerce' ) ) {
+	if ( class_exists( 'woocommerce' ) ) {
 		?>
         <div class="dw-mobile-navigation">
             <div class="item<?php if ( is_home() ) {
