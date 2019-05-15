@@ -8,6 +8,13 @@ body {
 	font-size: 1.45em;
 }
 
+.progress-bar{
+	float: right;
+}
+.review-system .review-footer .review-description{
+	padding: 10px 130px 10px 10px;
+}
+
 /*.dw-navbar .sub-menu .menu-item-has-children > a::after{*/
 /*	display: none;*/
 /*}*/
