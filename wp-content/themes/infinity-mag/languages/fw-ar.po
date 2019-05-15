@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Unyson\n"
 "POT-Creation-Date: 2019-04-15 09:11+0000\n"
-"PO-Revision-Date: 2019-05-15 11:01+0000\n"
+"PO-Revision-Date: 2019-05-15 11:41+0000\n"
 "Last-Translator: الادمن <mm@nn.c>\n"
 "Language-Team: العربية\n"
 "Language: ar\n"
@@ -121,7 +121,7 @@ msgstr ""
 
 #: framework/helpers/class-fw-wp-filesystem.php:273
 msgid "\" or \""
-msgstr ""
+msgstr "\" او \""
 
 #: framework/helpers/class-fw-wp-filesystem.php:327
 msgid "Error writing to file: "
@@ -168,15 +168,15 @@ msgstr ""
 
 #: framework/helpers/class-fw-wp-list-table.php:545
 msgid "Go to the first page"
-msgstr ""
+msgstr "الذهاب الى الصفحة الاولى"
 
 #: framework/helpers/class-fw-wp-list-table.php:552
 msgid "Go to the previous page"
-msgstr ""
+msgstr "الذهاب للصفحة السابقة"
 
 #: framework/helpers/class-fw-wp-list-table.php:561
 msgid "Current page"
-msgstr ""
+msgstr "الصفحة الحالية"
 
 #: framework/helpers/class-fw-wp-list-table.php:567
 #, php-format
@@ -186,11 +186,11 @@ msgstr ""
 
 #: framework/helpers/class-fw-wp-list-table.php:571
 msgid "Go to the next page"
-msgstr ""
+msgstr "الذهاب الى الصفحة التالية"
 
 #: framework/helpers/class-fw-wp-list-table.php:578
 msgid "Go to the last page"
-msgstr ""
+msgstr "الذهاب الى الصفحة الاخيره"
 
 #: framework/helpers/class-fw-wp-list-table.php:714
 #: framework/extensions/update/includes/classes/class--fw-ext-update-extensions-list-table.php:33
@@ -274,11 +274,11 @@ msgstr "اسابيع"
 
 #: framework/helpers/general.php:1433
 msgid "day"
-msgstr ""
+msgstr "يوم"
 
 #: framework/helpers/general.php:1434
 msgid "days"
-msgstr ""
+msgstr "ايام"
 
 #: framework/helpers/general.php:1436
 msgid "hour"
@@ -363,7 +363,7 @@ msgstr "حفظ"
 
 #: framework/core/components/backend.php:420
 msgid "Done"
-msgstr ""
+msgstr "تم"
 
 #: framework/core/components/backend.php:421
 msgid "Ah, Sorry"
@@ -598,7 +598,7 @@ msgstr ""
 
 #: framework/extensions/update/class-fw-extension-update.php:1011
 msgid "Go to Updates page"
-msgstr ""
+msgstr "الذهاب الى صفحة التحديثات"
 
 #: framework/extensions/blog/class-fw-extension-blog.php:36
 #: framework/extensions/blog/class-fw-extension-blog.php:37
@@ -617,11 +617,11 @@ msgstr "اضافة مقالة جديدة"
 
 #: framework/extensions/blog/class-fw-extension-blog.php:40
 msgid "All blog posts"
-msgstr ""
+msgstr "كل المقالات"
 
 #: framework/extensions/blog/class-fw-extension-blog.php:41
 msgid "Edit blog post"
-msgstr ""
+msgstr "تحرير مقالة"
 
 #: framework/extensions/blog/class-fw-extension-blog.php:42
 #: framework/extensions/blog/class-fw-extension-blog.php:43
@@ -760,12 +760,12 @@ msgstr ""
 #: framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:87
 #: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:253
 msgid "Are you sure?"
-msgstr ""
+msgstr "هل انت متاكد؟"
 
 #: framework/extensions/backups/class-fw-extension-backups.php:373
 #: framework/extensions/backups/class-fw-extension-backups.php:440
 msgid "File not specified"
-msgstr ""
+msgstr "لم يتم تحديد الملف"
 
 #: framework/extensions/backups/class-fw-extension-backups.php:382
 msgid "Filesystem access required"
@@ -786,7 +786,7 @@ msgstr "نسخه احتياطية"
 #: framework/extensions/backups/class-fw-extension-backups.php:622
 #: framework/extensions/backups/class-fw-extension-backups.php:636
 msgid "Access Denied"
-msgstr ""
+msgstr "ممنوع الدخول"
 
 #: framework/extensions/backups/class-fw-extension-backups.php:629
 msgid "Archive not found"
@@ -804,7 +804,7 @@ msgstr ""
 
 #: framework/extensions/backups/helpers.php:37
 msgid "Invalid JSON response"
-msgstr ""
+msgstr "تم استلام JSON غير صالح"
 
 #: framework/extensions/backups/helpers.php:43
 msgid "preventing connections from working properly."
@@ -896,7 +896,7 @@ msgstr ""
 #: framework/extensions/analytics/manifest.php:7
 #: framework/core/components/extensions/manager/available-extensions.php:170
 msgid "Analytics"
-msgstr ""
+msgstr "تحليلات"
 
 #: framework/extensions/analytics/manifest.php:8
 #: framework/core/components/extensions/manager/available-extensions.php:171
@@ -907,7 +907,7 @@ msgstr ""
 
 #: framework/extensions/analytics/settings-options.php:11
 msgid "Google Analytics"
-msgstr ""
+msgstr "تحليلات جوجل"
 
 #: framework/extensions/analytics/settings-options.php:12
 msgid "Enter your Google Analytics code (Ex: UA-XXXXX-X)"
@@ -941,7 +941,7 @@ msgstr "الى"
 #: framework/includes/option-types/upload/class-fw-option-type-upload.php:155
 #: framework/includes/option-types/upload/class-fw-option-type-upload.php:183
 msgid "Edit"
-msgstr ""
+msgstr "تحرير"
 
 #: framework/includes/option-types/multi-upload/class-fw-option-type-multi-upload.php:168
 msgid "Add Images"
@@ -983,7 +983,7 @@ msgstr ""
 
 #: framework/includes/option-types/background-image/view.php:38
 msgid "Custom image"
-msgstr ""
+msgstr "صورة مخصصه"
 
 #: framework/includes/option-types/multi-picker/class-fw-option-type-multi-picker.php:241
 #, php-format
@@ -997,7 +997,7 @@ msgstr "لا"
 #: framework/includes/option-types/addable-popup/view.php:38
 #: framework/includes/option-types/addable-popup/view.php:53
 msgid "Clone"
-msgstr ""
+msgstr "تكرار"
 
 #: framework/includes/option-types/typography-v2/view.php:40
 msgid "Font face"
@@ -1042,7 +1042,7 @@ msgstr "المسافات"
 
 #: framework/includes/option-types/typography-v2/view.php:181
 msgid "Color"
-msgstr ""
+msgstr "اللون"
 
 #: framework/includes/option-types/icon/class-fw-option-type-icon.php:156
 msgid "Unknown Set"
@@ -1098,7 +1098,7 @@ msgstr ""
 
 #: framework/includes/option-types/icon/view.php:39
 msgid "All Categories"
-msgstr ""
+msgstr "كل التصنيفات"
 
 #: framework/includes/option-types/icon-v2/class-fw-option-type-icon-v2.php:74
 msgid "Change Icon"
@@ -1106,7 +1106,7 @@ msgstr "تغيير الايقونة"
 
 #: framework/includes/option-types/icon-v2/class-fw-option-type-icon-v2.php:75
 msgid "Add Icon"
-msgstr ""
+msgstr "اضافة ايقونه"
 
 #: framework/includes/option-types/upload/class-fw-option-type-upload.php:154
 msgid "Add Image"
@@ -1202,7 +1202,7 @@ msgstr ""
 
 #: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:97
 msgid "404 Page"
-msgstr ""
+msgstr "صفحة الخطا ٤٠٤"
 
 #: framework/extensions/sidebars/includes/class-fw-extension-sidebars-config.php:102
 msgid "Author Page"
@@ -1262,7 +1262,7 @@ msgstr ""
 
 #: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:614
 msgid " (no title)"
-msgstr ""
+msgstr "(بدون عنوان)"
 
 #: framework/extensions/sidebars/includes/class-fw-extension-sidebars-backend.php:781
 msgid "Error: Type or sub_type error"
@@ -2098,7 +2098,7 @@ msgstr "المدينة"
 
 #: framework/includes/option-types/map/views/view.php:72
 msgid "Country"
-msgstr ""
+msgstr "الدولة"
 
 #: framework/includes/option-types/map/views/view.php:87
 msgid "State"
@@ -2118,7 +2118,7 @@ msgstr ""
 
 #: framework/includes/option-types/icon-v2/views/templates.php:7
 msgid "Icon Fonts"
-msgstr ""
+msgstr "ايقونات خطية"
 
 #: framework/includes/option-types/icon-v2/views/templates.php:22
 msgid "Custom Upload"
@@ -2174,7 +2174,7 @@ msgstr "الاضافة للمفضلة"
 #: framework/extensions/update/includes/classes/class--fw-ext-update-theme-upgrader-skin.php:16
 #: framework/extensions/update/includes/classes/class--fw-ext-update-extensions-upgrader-skin.php:14
 msgid "Go to updates page"
-msgstr ""
+msgstr "الذهاب الى صفحة التحديثات"
 
 #: framework/extensions/update/includes/classes/class--fw-ext-update-framework-upgrader-skin.php:19
 #: framework/extensions/update/includes/classes/class--fw-ext-update-theme-upgrader-skin.php:19
@@ -2336,7 +2336,7 @@ msgstr "ممنوع"
 
 #: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:372
 msgid "Invalid demo"
-msgstr ""
+msgstr "محتوى تجريبى غير صالح"
 
 #: framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:379
 msgid "A content install is currently running"
@@ -2498,7 +2498,7 @@ msgstr ""
 
 #: framework/core/components/extensions/manager/views/extension.php:138
 msgid "Deactivate"
-msgstr ""
+msgstr "الغاء تفعيل"
 
 #: framework/core/components/extensions/manager/views/extension.php:147
 msgid "Activate"
@@ -2533,7 +2533,7 @@ msgstr "كامل"
 
 #: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:343
 msgid "Content"
-msgstr ""
+msgstr "محتوى"
 
 #: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:352
 #: framework/extensions/backups/includes/module/schedule/settings-options.php:21
@@ -2548,7 +2548,7 @@ msgstr "اسبوعى"
 #: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:354
 #: framework/extensions/backups/includes/module/schedule/settings-options.php:23
 msgid "Daily"
-msgstr ""
+msgstr "يومي"
 
 #: framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:365
 msgid "Backup Schedule Active"
@@ -2610,7 +2610,7 @@ msgstr ""
 
 #: framework/extensions/backups/includes/module/tasks/class--fw-ext-backups-module-tasks.php:602
 msgid "Invalid execution result"
-msgstr ""
+msgstr "نتيجة عملية المعالجة غير صالحة"
 
 #: framework/extensions/backups/includes/module/tasks/class--fw-ext-backups-module-tasks.php:721
 msgid "Invalid token"
@@ -2622,7 +2622,7 @@ msgstr ""
 
 #: framework/extensions/backups/extensions/backups-demo/views/status.php:16
 msgid "Installing"
-msgstr ""
+msgstr "جارى التنصيب"
 
 #: framework/extensions/backups/extensions/backups-demo/views/status.php:47
 msgid "Pending"
@@ -2638,7 +2638,7 @@ msgstr "مشاهدة"
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:9
 msgid "Files Restore"
-msgstr ""
+msgstr "استعادة الملفات"
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-restore.php:37
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-restore.php:127
@@ -2708,7 +2708,7 @@ msgstr ""
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-image-sizes-restore.php:9
 msgid "Image Sizes Restore"
-msgstr ""
+msgstr "استعادة احجام الصور"
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-image-sizes-restore.php:12
 #, php-format
@@ -2855,7 +2855,7 @@ msgstr ""
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-dir-clean.php:12
 msgid "Directory Cleanup"
-msgstr ""
+msgstr "ازالة الملفات المؤقته"
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-dir-clean.php:21
 msgid "Dir not specified"
@@ -2879,7 +2879,7 @@ msgstr "اختفى جدول قاعدة البيانات"
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-export.php:90
 msgid "Cannot create file"
-msgstr ""
+msgstr "غير قادر على انشاء الملف"
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-db-export.php:96
 msgid "Cannot reopen file"
@@ -2897,7 +2897,7 @@ msgstr "غير قادر على ايجاد الجدول التالى"
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-image-sizes-remove.php:9
 msgid "Image Sizes Remove"
-msgstr ""
+msgstr "حذف احجام الصور"
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-image-sizes-remove.php:23
 msgid "Uploads dir not specified"
@@ -2943,7 +2943,7 @@ msgstr ""
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:145
 #, php-format
 msgid "Failed to copy: %s"
-msgstr ""
+msgstr "فشل نسخ:  %s"
 
 #: framework/extensions/backups/includes/module/tasks/type/class-fw-ext-backups-task-type-files-export.php:219
 #, php-format
@@ -3022,7 +3022,7 @@ msgstr ""
 
 #: framework/extensions/backups/includes/module/tasks/type/download/class-fw-ext-backups-task-type-download.php:119
 msgid "Invalid destination dir"
-msgstr ""
+msgstr "عنوان غير صالح"
 
 #: framework/extensions/backups/includes/module/tasks/type/download/class-fw-ext-backups-task-type-download.php:132
 #, php-format
@@ -3062,7 +3062,7 @@ msgstr ""
 #: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:13
 #: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:21
 msgid "Downloading"
-msgstr ""
+msgstr "جارى التحميل"
 
 #: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:17
 #, php-format
@@ -3092,7 +3092,7 @@ msgstr ""
 
 #: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:68
 msgid "File id not specified"
-msgstr ""
+msgstr "لم يتم تحديد معرف الملف"
 
 #: framework/extensions/backups/includes/module/tasks/type/download/type/piecemeal/class-fw-ext-backups-task-type-download-piecemeal.php:73
 msgid "Invalid file id"
