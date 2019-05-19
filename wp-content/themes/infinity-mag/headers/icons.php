@@ -26,6 +26,8 @@ if ( ! defined( 'ABSPATH' ) ) {
                 </a>
             </div>
 		<?php } ?>
-        <div class="dw-search-btn"><i class="fa fa-search" aria-hidden="true"></i></div>
+		<?php if ( dw_get_setting( 'search_nav' ) != 'off' ) { ?>
+            <div class="dw-search-btn"><i class="fa fa-search" aria-hidden="true"></i></div>
+		<?php } ?>
     </div>
 </div>
