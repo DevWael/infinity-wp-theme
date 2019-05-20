@@ -78,20 +78,20 @@ $options = array(
 						),
 						'label'      => esc_html__( 'Post excerpt length', 'dw' )
 					),
-					'breadcrumbs_switch'  => array(
-						'type'         => 'switch',
-						'value'        => 'off',
-						'label'        => esc_html__( 'Breadcrumbs', 'dw' ),
-						'desc'         => esc_html__( 'You must install unyson breadcrumbs extension to activate breadcrumbs', 'dw' ),
-						'left-choice'  => array(
-							'value' => 'off',
-							'label' => esc_html__( 'Hide', 'dw' ),
-						),
-						'right-choice' => array(
-							'value' => 'on',
-							'label' => esc_html__( 'Show', 'dw' ),
-						)
-					),
+//					'breadcrumbs_switch'  => array(
+//						'type'         => 'switch',
+//						'value'        => 'off',
+//						'label'        => esc_html__( 'Breadcrumbs', 'dw' ),
+//						'desc'         => esc_html__( 'You must install unyson breadcrumbs extension to activate breadcrumbs', 'dw' ),
+//						'left-choice'  => array(
+//							'value' => 'off',
+//							'label' => esc_html__( 'Hide', 'dw' ),
+//						),
+//						'right-choice' => array(
+//							'value' => 'on',
+//							'label' => esc_html__( 'Show', 'dw' ),
+//						)
+//					),
 					'pagination_style'    => array(
 						'type'         => 'switch',
 						'value'        => 'number',
@@ -105,45 +105,45 @@ $options = array(
 							'label' => esc_html__( 'Numbers (1,2,3)', 'dw' ),
 						)
 					),
-					'general_date_meta'   => array(
-						'type'         => 'switch',
-						'value'        => 'on',
-						'label'        => esc_html__( 'Date Meta', 'dw' ),
-						'right-choice' => array(
-							'value' => 'on',
-							'label' => esc_html__( 'Show', 'dw' )
-						),
-						'left-choice'  => array(
-							'value' => 'off',
-							'label' => esc_html__( 'Hide', 'dw' )
-						)
-					),
-					'general_views_meta'  => array(
-						'type'         => 'switch',
-						'value'        => 'on',
-						'label'        => esc_html__( 'Views meta', 'dw' ),
-						'right-choice' => array(
-							'value' => 'on',
-							'label' => esc_html__( 'Show', 'dw' )
-						),
-						'left-choice'  => array(
-							'value' => 'off',
-							'label' => esc_html__( 'Hide', 'dw' )
-						)
-					),
-					'general_rating_meta' => array(
-						'type'         => 'switch',
-						'value'        => 'on',
-						'label'        => esc_html__( 'Rate meta', 'dw' ),
-						'right-choice' => array(
-							'value' => 'on',
-							'label' => esc_html__( 'Show', 'dw' )
-						),
-						'left-choice'  => array(
-							'value' => 'off',
-							'label' => esc_html__( 'Hide', 'dw' )
-						)
-					)
+//					'general_date_meta'   => array(
+//						'type'         => 'switch',
+//						'value'        => 'on',
+//						'label'        => esc_html__( 'Date Meta', 'dw' ),
+//						'right-choice' => array(
+//							'value' => 'on',
+//							'label' => esc_html__( 'Show', 'dw' )
+//						),
+//						'left-choice'  => array(
+//							'value' => 'off',
+//							'label' => esc_html__( 'Hide', 'dw' )
+//						)
+//					),
+//					'general_views_meta'  => array(
+//						'type'         => 'switch',
+//						'value'        => 'on',
+//						'label'        => esc_html__( 'Views meta', 'dw' ),
+//						'right-choice' => array(
+//							'value' => 'on',
+//							'label' => esc_html__( 'Show', 'dw' )
+//						),
+//						'left-choice'  => array(
+//							'value' => 'off',
+//							'label' => esc_html__( 'Hide', 'dw' )
+//						)
+//					),
+//					'general_rating_meta' => array(
+//						'type'         => 'switch',
+//						'value'        => 'on',
+//						'label'        => esc_html__( 'Rate meta', 'dw' ),
+//						'right-choice' => array(
+//							'value' => 'on',
+//							'label' => esc_html__( 'Show', 'dw' )
+//						),
+//						'left-choice'  => array(
+//							'value' => 'off',
+//							'label' => esc_html__( 'Hide', 'dw' )
+//						)
+//					)
 				)
 			)
 		)
